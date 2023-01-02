@@ -3,4 +3,6 @@ title: "People"
 listing: 
   contents: people
   image-align: left
+  fields: [image, title, subtitle]
+  categories: true
 ---

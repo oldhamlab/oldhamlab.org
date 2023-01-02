@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Fellow">Fellow <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -158,24 +158,17 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1672692568936" data-listing-reading-time-sort="0.005">
+<div class="quarto-post image-left" data-index="0" data-categories="Fellow" data-listing-file-modified-sort="1672696321274" data-listing-reading-time-sort="0.545">
 <div class="thumbnail">
-<a href="./people/mcgarrity.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./people/mcgarrity.html"></a></p>
+<p><a href="./people/mcgarrity.html"> <img src="./people/mcgarrity.jpg" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./people/mcgarrity.html">
 <h3 class="no-anchor listing-title">
-Sarah McGarrity, Ph.D.
+Sarah McGarrity
 </h3>
 <div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Sarah…
+Post-doctoral Fellow
 </div>
 </a>
 </div>
@@ -194,9 +187,6 @@ William Oldham
 </h3>
 <div class="listing-subtitle">
 Principal Investigator
-</div>
-<div class="listing-description">
-Will is an Assistant Professor of Medicine and Associate…
 </div>
 </a>
 </div>
