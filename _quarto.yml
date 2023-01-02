@@ -5,8 +5,7 @@ website:
   title: "Oldham Lab"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - people.qmd
       - about.qmd
 
 format:

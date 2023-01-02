@@ -1,0 +1,42 @@
+---
+title: "William Oldham"
+subtitle: "Principal Investigator"
+image: oldham.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+  links: 
+    - icon: mastodon
+      href: https://med-mastodon.com/@WillOldham
+    - icon: twitter
+      href: https://www.twitter.com/wm_oldham
+    - icon: github
+      href: https://github.com/wmoldham
+    - icon: google
+      href: https://scholar.google.com/citations?user=cba3bIAAAAAJ&hl=en
+  
+---
+
+Will is an Assistant Professor of Medicine and Associate Physician. His research 
+interests include pulmonary arterial hypertension, cell metabolism, adaptation to 
+hypoxia, and network medicine. He is also the Scientific Director of the [BWH 
+Seahorse Core](https://researchcores.partners.org/sea/about) facility.
+
+## Education and Training
+
+**Harvard Combined Pulmonary and Critical Care Fellowship** | Boston, MA<br>
+Fellow, Pulmonary and Critical Care Medicine | 2010-2015
+
+**Massachusetts General Hospital** | Boston, MA<br>
+Resident, Internal Medicine | 2008-2010
+
+**Vanderbilt University Medical School** | Nashville, TN<br>
+MD | 2008
+
+**Vanderbilt University** | Nashville, TN<br>
+PhD in Pharmacology | 2006
+
+**University of North Carolina at Chapel Hill** | Chapel Hill, NC<br>
+BS in Chemistry with Honors | 2001
+
