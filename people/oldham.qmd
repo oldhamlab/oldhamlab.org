@@ -2,6 +2,7 @@
 title: "William Oldham"
 subtitle: "Principal Investigator"
 image: oldham.jpg
+order: 1
 about:
   template: trestles
   image-shape: round

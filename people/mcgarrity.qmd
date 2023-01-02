@@ -3,6 +3,7 @@ title: "Sarah McGarrity"
 subtitle: "Post-doctoral Fellow"
 image: mcgarrity.jpg
 categories: ["Fellow"]
+order: 2
 about:
   template: trestles
   image-shape: round
@@ -17,7 +18,7 @@ Sarah joined the Oldham lab in February of 2020 as a recipient of a [Novo Nordis
 ## Education and Training
 
 **Newcastle University** | Newcastle, UK<br>
-PhD in Systems Biology | 2015
+PhD in Systems Biology | 2015<br>
 MRes in Medical and Molecular Biology - Systems Biology | 2010
 
 **University of Cambridge** | Cambridge, UK<br>
