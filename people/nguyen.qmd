@@ -1,0 +1,18 @@
+---
+title: "Phuong Nguyen"
+subtitle: "Research Assistant"
+image: nguyen.jpg
+categories: ["Assistant", "Alumni"]
+order: 5
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+---
+
+Phuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments. 
+
+## Education and Training
+
+**Boston University** | Boston, MA<br>
+MS in Biotechnology | 2016

@@ -1,0 +1,24 @@
+---
+title: "Phillip Joseph"
+subtitle: "Post-doctoral Fellow"
+image: joseph.jpg
+categories: ["Fellow", "Alumni"]
+order: 4
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+---
+
+Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology. 
+
+## Education and Training
+
+**Brigham and Women's Hospital** | Boston, MA<br>
+Fellow, Pulmonary and Critical Care Medicine | 2015-2019
+
+**New York University Grossman School of Medicine** | New York, NY<br>
+Resident, Internal Medicine | 2012-2015
+
+**New York University School of Medicine** | New York, NY<br>
+MD | 2012

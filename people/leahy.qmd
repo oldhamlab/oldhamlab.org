@@ -1,0 +1,20 @@
+---
+title: "Kevin Leahy"
+subtitle: "Research Assistant"
+categories: ["Assistant"]
+order: 3
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+---
+
+Kevin Leahy is a research assistant who joined the Oldham lab in June 2019. 
+
+## Education and Training
+
+**University of Chicago** | Chicago, IL<br>
+MS in Biochemistry and Molecular Biophysics | 2010-2017
+
+**University of New Hampshire** | Durham, NH<br>
+BS in Biochemistry and Molecular Biology | 2013

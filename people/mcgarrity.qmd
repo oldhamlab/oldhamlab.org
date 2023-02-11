@@ -2,8 +2,8 @@
 title: "Sarah McGarrity"
 subtitle: "Post-doctoral Fellow"
 image: mcgarrity.jpg
-categories: ["Fellow"]
-order: 2
+categories: ["Fellow", "Alumni"]
+order: 4
 about:
   template: trestles
   image-shape: round
@@ -13,7 +13,7 @@ about:
       href: https://scholar.google.is/citations?user=1Awael0AAAAJ&hl=en
 ---
 
-Sarah joined the Oldham lab in February of 2020 as a recipient of a [Novo Nordisk Foundation Postdoctoral Fellowship](https://novonordiskfonden.dk/en/news/novo-nordisk-foundation-celebrates-talented-young-researchers/) for research abroad in the field of endocrinology and metabolism. She joins the group from the University of Iceland where she continues her work in close collaboration with colleagues from the [Center for Systems Biology](https://systemsbiology.hi.is/). She will use her time here to study how the endothelial glycocalyx contributes to endothelial cell redox homeostasis and how various pathologic stressors affect this relationship.
+Sarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a [Novo Nordisk Foundation Postdoctoral Fellowship](https://novonordiskfonden.dk/en/news/novo-nordisk-foundation-celebrates-talented-young-researchers/) for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the [Center for Systems Biology](https://systemsbiology.hi.is/). She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities.
 
 ## Education and Training
 

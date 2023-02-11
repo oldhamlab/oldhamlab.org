@@ -1,0 +1,15 @@
+---
+title: "Aliya Gottehrer-Cohen"
+subtitle: "Undergraduate"
+categories: ["Undergraduate"]
+image: cohen.jpg
+order: 5
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+---
+
+Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia. 
+
+

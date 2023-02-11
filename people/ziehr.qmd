@@ -1,0 +1,30 @@
+---
+title: "David Ziehr"
+subtitle: "Post-doctoral Fellow"
+image: ziehr.jpg
+categories: ["Fellow"]
+order: 2
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+  links: 
+    - icon: twitter
+      href: https://twitter.com/david_ziehr
+---
+
+David joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis.
+
+## Education and Training
+
+**Harvard Combined Pulmonary and Critical Care Fellowship** | Boston, MA<br>
+Fellow, Pulmonary and Critical Care Medicine | 2018-2022
+
+**Massachusetts General Hospital** | Boston, MA<br>
+Resident, Internal Medicine | 2015-2018
+
+**Harvard Medical School** | Boston, MA<br>
+MD | 2015
+
+**University of Wisconsin at Madison** | Madison, WI<br>
+BS in Molecular Biology | 2009
