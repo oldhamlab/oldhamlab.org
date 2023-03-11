@@ -4,9 +4,9 @@ project:
 website:
   title: "Oldham Lab"
   navbar:
-    left:
+    right:
       - people.qmd
-      - about.qmd
+      - contact.qmd
 
 format:
   html:
