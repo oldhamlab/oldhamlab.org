@@ -10,7 +10,7 @@ website:
       - contact.qmd
   google-analytics: "G-KZ6PJ54VTV"
   cookie-consent: true
-  twitter-card: true
+  twitter-card: 
     creator: "@wm_oldham"
 
 format:
