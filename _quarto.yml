@@ -8,6 +8,8 @@ website:
       - people.qmd
       - papers.qmd
       - contact.qmd
+  google-analytics: "G-KZ6PJ54VTV"
+  cookie-consent: true
 
 format:
   html:
