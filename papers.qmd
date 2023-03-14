@@ -1,0 +1,192 @@
+---
+title: "Papers"
+css: styles.css
+---
+
+[PubMed](https://www.ncbi.nlm.nih.gov/myncbi/william.oldham.1/bibliography/public/) | 
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=cba3bIAAAAAJ) | 
+[ORCID](https://orcid.org/0000-0003-3029-4866)
+
+## 2023
+
+::: {.ref}
+
+Wertheim BM, Wang RS, Guillermier C, Hutter CV, Oldham WM, Menche J, Steinhauser ML, Maron BA. Proline and glucose metabolic reprogramming supports vascular endothelial and medial biomass in pulmonary arterial hypertension. *JCI Insight.* 2023; e163932. <https://doi.org/10.1172/jci.insight.163932>
+
+Diaz-Cuadros M, Miettinen TP, Sheedy D, Diaz-Garcia CM, Gapon S, Hubaud A, Yellen G, Manalis SR, Oldham WM, Pourquie O. Metabolic regulation of species-specific developmental rates. *Nature.* 2023; 613: 550. <https://doi.org/10.1038/s41586-022-05574-4> 
+
+:::
+
+## 2022
+
+::: {.ref}
+
+He H, Mulhern RM, Oldham WM, Xiao W, Lin Y-D, Liao R, Loscalzo J. Genetically determined L-2-hydroxyglutarate accumulation protects against cardiac injury via a metabolic shift from glycolysis to the pentose phosphate pathway. *Circulation Research.* 2022; 131: 562. <https://doi.org/10.1161/circresaha.122.321227>
+
+:::
+
+## 2021
+
+::: {.ref}
+
+Lee LY, Oldham WM, He H, Wang R, Mulhern R, Handy DE, Loscalzo J. Inteferon-γ impairs human coronary artery endothelial glucose metabolism via tryptophan catabolism and activates fatty acid oxidation. *Circulation.* 2021; 144: 1612. <https://doi.org/10.1161/circulationaha.121.053960>
+
+Sauer CM, Gomez J, Botella MR, Ziehr DR, Oldham WM, Gavidia G, Rodriguez A, Elbers P, Girbes A, Bodi M, Celi LA. Understanding critically ill sepsis patients with normal serum lactate levels: results from U.S. and European ICU cohorts. *Scientific Reports.* 2021; 11: 20076. <https://doi.org/10.1038/s41598-021-99581-6>
+
+Torrino S, Grasset EM, Audebert S, Belhadj I, Lacoux C, Haynes M, Pisano S, Abelanet S, Brau F, Chan SY, Mari B, Oldham WM, Ewald AJ, Bertero T. Mechano-induced cell metabolism promotes microtubule glutamylation to force metastasis. *Cell Metabolism.* 2021; 33: 1342. <https://doi.org/10.1016/j.cmet.2021.05.009>
+
+Xiao W, Oldham WM, Priolo C, Pandey AK, Loscalzo J. Immunometabolic endothelial phenotypes: Integrating inflammation and glucose metabolism. *Circulation Research.* 2021; 129: 9. <https://doi.org/10.1161/circresaha.120.318805>
+
+Oldham WM^\*^, Hemnes AR^\*^, Aldred MA, Barnard J, Brittain EL, Chan SY, Cheng F, Cho MH, Desai AA, Garcia JGN, Geraci MW, Ghiassian SD, Hall KT, Horn EM, Jain M, Kelly RS, Leopold JA, Lindstrom S, Modena BD, Nichols WC, Rhodes CJ, Sun W, Sweatt AJ, Vanderpool RR, Wilkins MR, Wilmot B, Zamanian RT, Fessel JP, Aggarwal NR, Loscalzo J, Xiao L. NHLBI-CMREF workshop report on pulmonary vascular disease classification: JACC state-of-the-art review. *Journal of the American College of Cardiology.* 2021; 77: 2040. <https://doi.org/10.1016/j.jacc.2021.02.056>
+
+Oldham WM, Hess E, Waldo SW, Humbert M, Choudhary G, Maron BA. Integrating hemodynamics identifies an extreme pulmonary hypertension phenotype. *European Respiratory Journal.* 2021; 58: 2004625. <https://doi.org/10.1183/13993003.04625-2020>
+
+Mehta AK, Cheney EM, Hartl CA, Pantelidou C, Oliwa M, Castrillon JA, Lin JR, Hurst KE, de Oliveira Taveira M, Johnson NT, Oldham WM, Kalocsay M, Berberich MJ, Bostwell SA, Kothari A, Johnson S, Dillon DA, Lipschitz M, Rodig S, Santagata S, Garber JE, Tung N, Yelamos J, Thaxton JE, Mittendorf EA, Sorger PK, Shapiro GI, Guerriero JL. Targeting immunosuppressive macrophages overcomes PARP-inhibitor resistance in BRCA1-associated triple-negative breast cancer. *Nature Cancer.* 2021; 2: 66. <https://doi.org/10.1038/s43018-020-00148-7>
+
+Maron BA, Wang RS, Shevtsov S, Drakos SG, Arons E, Wever-Pinzon O, Huggins GS, Samokhin AO, Oldham WM, Aguib Y, Yacoub MH, Rowin EJ, Maron BJ, Maron MS, Loscalzo J. Individualized interactomes for network-based precision medicine in hypertrophic cardiomyopathy with implications for other clinical pathophenotypes. *Nature Communications.* 2021; 12: 873. <https://doi.org/10.1038/s41467-021-21146-y> 
+
+Singh I, Oliveira R, Naeije RKF, Oldham WM, Faria-Urbina M, Waxman AB, Systrom DM. Systemic vascular distensibility relates to exercise capacity in connective tissue disease. *Rheumatology.* 2021; 60: 1429. <https://doi.org/10.1093/rheumatology/keaa510>
+
+:::
+
+## 2020
+
+::: {.ref}
+
+Singh I, Oldham WM, Rahaghi FN. Precision medicine in pulmonary hypertension. In: Gomez JL, Himes BE, Kaminski N, editors. *Precision in Pulmonary, Critical Care, and Sleep Medicine.* New York City: Springer; 2020. p. 241-255. 
+
+:::
+
+## 2019
+
+::: {.ref}
+
+Guarino V, Oldham WM, Loscalzo J, Zhang YY. Reaction rate of pyruvate and hydrogen peroxide: assessing antioxidant capacity of pyruvate under biological conditions. *Scientific Reports.* 2019; 9: 19568. <https://doi.org/10.1038/s41598-019-55951-9>
+
+Singh I, Oliveira RKF, Naeije R, Rahaghi FN, Oldham W, Systrom DM, Waxman AB. Pulmonary vascular distensibility and early pulmonary vascular remodeling in pulmonary hypertension. *Chest.* 2019; 156: 724-732. <https://doi.org/10.1016/j.chest.2019.04.111>
+
+Sternschein RM, Oldham WM. Paradoxical embolization via large pulmonary arteriovenous malformation. *American Journal of Respiratory and Critical Care Medicine.* 2019; 200: 29-30. <https://doi.org/10.1164/rccm.201806-1047im>
+
+Kim EY, Oldham WM. Innate T cells in the intensive care unit. *Molecular Immunology.* 2019; 105: 213-223. <https://doi.org/10.1016/j.molimm.2018.09.026>
+
+Bertero T, Oldham WM, Grasset EM, Bourget I, Boulter E, Pisano S, Hofman P, Bellvert F, Meneguzzi G, Bulavin DV, Estrach S, Feral CC, Chan SY, Bozec A, Gaggioli C. Tumor-stroma mechanics coordinate amino acid availability to sustain tumor growth and malignancy. *Cell Metabolism.* 2019; 29: 124-140. <https://doi.org/10.1016/j.cmet.2018.09.012>
+
+:::
+
+## 2018
+
+::: {.ref}
+
+Yang JS, Hsu JW, Seung-Yeol P, Li J, Oldham WM, Beznoussenko GV, Mironov AA, Loscalzo J, Hsu VW. GAPDH inhibits intracellular pathways during starvation for cellular energy homeostasis. *Nature.* 2018; 561: 263-267. <https://doi.org/10.1038/s41586-018-0475-6>
+
+Verwer EE, Kavanagh TR, Mischler WJ, Feng Y, Takahashi K, Wang S, Shoup TM, Neelamegam R, Yang J, Guehl NJ, Ran C, Massefski W, Cui Y, El-Chemaly S, Sadow PM, Oldham WM, Kijewski MF, El Fakhri G, Normandin MD, Priolo C. [<sup>18</sup>F]Fluorocholine and [<sup>18</sup>F] fluoroacetate PET as imaging biomarkers to assess phosphatidylcholine and mitochondrial metabolism in preclinical models of TSC and LAM. *Clinical Cancer Research.* 2018; 24: 5925-5938. <https://doi.org/10.1158/1078-0432.ccr-17-3693>
+
+Samokhin AO, Stephens T, Wertheim BM, Wang RS, Vargas SO, Yung LM, Cao M, Brown M, Arons E, Dieffenbach PB, Fewell JG, Matar M, Bowman FP, Haley KJ, Alba GA, Marino SM, Kumar R, Rosas IO, Waxman AB, Oldham WM, Khanna D, Graham BB, Seo S, Gladyshev VN, Yu PB, Fredenburgh LE, Loscalzo J, Leopold JA, Maron BA. NEDD9 targetes COL3A1 to promote endothelial fibrosis and pulmonary arterial hypertension. *Science Translational Medicine.* 2018; 10: eaap7294. <https://doi.org/10.1126/scitranslmed.aap7294>
+
+Musri MM, Coll-Bonfill N, Maron BA, Peinado VI, Wang RS, Altirriba J, Blanco I, Oldham WM, Tura-Ceide O, Garcia-Lucio J, de la Cruz-Thea B, Meister G, Loscalzo J, Barbera JA. MicroRNA dysregulation in pulmonary arteries from COPD: Relationships with vascular remodeling. *American Journal of Respiratory Cell and Molecular Biology.* 2018; 59: 490-499. <https://doi.org/10.1165/rcmb.2017-0040oc>
+
+Oldham WM^\*^, Oliveira RK^\*^, Wang RS, Opotowsky AR, Rubins DM, Hainer J, Wertheim BM, Alba GA, Choudhary G, Tornyos A, MacRae CA, Loscalzo J, Leopold JA, Waxman AB, Olschewski H, Kovacs G, Systrom DM, Maron BA. Network analysis to risk stratify patients with exercise intolerance. *Circulation Research.* 2018; 122: 864-876. <https://doi.org/10.1161/circresaha.117.312482>
+
+:::
+
+- Editor’s Pick. *Circulation Research.*
+- Editorial. Arena R, Ozemek C, Laddu-Patel D, Myers J. Refining the risk prediction of cardiorespiratory fitness with network analysis: A welcome and needed line of inquiry. *Circulation Research.* 2018; 122: 804-806. <https://doi.org/10.1161/circresaha.118.312849>
+  
+::: {.ref}
+  
+Oldham WM. LncRNA LnRPT puts the brakes on pulmonary artery smooth muscle cell proliferation. *American Journal of Respiratory Cell and Molecular Biology.* 2018; 58: 138-139. <https://doi.org/10.1165/rcmb.2017-0342ed>
+
+Wang RS, Oldham WM, Maron BA, Loscalzo J. Systems biology approaches to redox metabolism in stress and disease states. *Antioxidants & Redox Signaling.* 2018; 29: 953-972. <https://doi.org/10.1089/ars.2017.7256>
+
+Fessel JP, Oldham WM. Nicotine adenine dinucleotides: the redox currency of the cell. *Antioxidants & Redox Signaling.* 2018; 28: 165-166. <https://doi.org/10.1089/ars.2017.7439>
+
+Fessel JP, Oldham WM. Pyridine dinucleotides from molecules to man. Antioxidants & Redox Signaling. 2018; 28: 180-212. <https://doi.org/10.1089/ars.2017.7120>
+
+Wertheim B‡, Maron BA, Oldham WM. Pulmonary Hypertension. In: Singh AK, Loscalzo J, editors. *Brigham Intensive Review of Internal Medicine.* 3rd ed. Philadelphia: Elsevier; 2018. p. 906-916. 
+
+:::
+
+## 2017
+
+::: {.ref}
+
+Lam HC, Liu HJ, Baglini CV, Filippakis H, Alesi N, Mijmeh J, Du H, Lope AL, Cottrill KA, Handen A, Asara JM, Kwiatkowski DJ, Ben-Sahra I, Oldham WM, Chan SY, Henske EP. Rapamycin-induced miR-21 promotes mitochondrial homeostasis and adaptation in mTORC1 activated cells. *Oncotarget.* 2017; 8: 64714-64727. <https://doi.org/10.18632/oncotarget.19947>
+
+Lam HC, Baglini CV, Lope AL, Parkhitko AA, Liu HJ, Alesi N, Malinowska IA, Ebrahimi-Fakhari D, Saffari A, Yu JJ, Pereira A, Khabibullin D, Ogorek B, Nijmeh J, Kavanagh T, Handen A, Chan SY, Asara JM, Oldham WM, Diaz-Meco M, Moscat J, Priolo C, Henske EP. p62/SQSTM1 cooperates with hyperactive mTORC1 to regulate glutathione production, maintain mitochondrial integrity and promote tumorigenesis. *Cancer Research.* 2017; 77: 3255-3267. <https://doi.org/10.1158/0008-5472.can-16-2458>
+
+:::
+
+## 2016
+
+::: {.ref}
+
+Oldham WM, Loscalzo J. Quantification of 2-hydroxyglutarate enantiomers by liquid chromatography-mass spectrometry. *Bio-protocol.* 2016; 6: e1908. <https://doi.org/10.21769/bioprotoc.1908>
+
+Bertero T, Oldham WM, Cottrill KA, Pisano S, Vanderpool RR, Yu Q, Zhao J, Tai Y, Tang Y, Zhang YY, Rehman S, Sugahara M, Qi Z, Gorcsan J, Vargas SO, Saggar R, Saggar R, Wallace WD, Ross DJ, Haley KJ, Waxman AB, Parikh VN, De Marco T, Hsue PY, Morris A, Simon MA, Norris KA, Gaggioli C, Loscalzo J, Fessel J, Chan SY. Vascular stiffness mechanoactivates YAP/TAZ-dependent glutaminolysis to drive pulmonary hypertension. *Journal of Clinical Investigation.* 2016; 126: 3313-3335. <https://doi.org/10.1172/jci86387>
+
+Oldham WM, Lewis GD, Opotowsky AR, Waxman AB, Systrom DM. Unexplained exertional dyspnea caused by low ventricular filling pressures: results of clinical invasive cardiopulmonary exercise testing. *Pulmonary Circulation.* 2016; 6: 55-62. <https://doi.org/10.1086/685054>
+
+:::
+
+-	Letter to the Editor. Blitshteyn S, Fries D. Postural tachycardia syndrome is not caused by deconditioning. *Pulmonary Circulation.* 2016; 6: 401. <https://doi.org/10.1086/687757>
+
+::: {.ref}
+
+Oldham WM, Loscalzo J. Pharmacology of Vascular Tone. In: Golan DE, Tashjian AH, Armstrong EJ, editors. *Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy.* 4th ed. Philadelphia: Lippincott, Williams, & Wilkins; 2016. p. 385-402.
+
+:::
+
+## 2015
+
+::: {.ref}
+
+Berry NC, Manyoo A, Oldham WM, Stephens TE, Goldstein RH, Waxman AB, Tracy JA, Leary PJ, Leopold JA, Kinlay S, Opotowsky AR, Systrom DM, Maron BA. Protocol for exercise hemodynamic assessment: Performing the invasive cardiopulmonary exercise test in clinical practice. *Pulmonary Circulation.* 2015; 5: 610-618. <https://doi.org/10.1086/683815>
+
+Maron BA, Stephens TE, Farrell LA, Oldham WM, Loscalzo J, Leopold JA, Lewis GD. Elevated pulmonary arterial and systemic plasma aldosterone levels associate with impaired cardiac reserve capacity during exercise in left ventricular systolic heart failure patients: A pilot study. *Journal of Heart and Lung Transplantation.* 2016; 35: 342-351. <https://doi.org/10.1016/j.healun.2015.10.019>
+
+Oldham WM, Clish CB, Yang Y, Loscalzo J. Hypoxia-mediated increases in L-2-hydroxyglutarate coordinate the metabolic response to reductive stress. *Cell Metabolism.* 2015; 22: 291-303. <https://doi.org/10.1016/j.cmet.2015.06.021>
+
+:::
+
+- Preview. Harris AL. A new hydroxyl metabolite of 2-oxoglutarate regulates metabolism in hypoxia. *Cell Metabolism.* 2015; 22: 198-200. <https://doi.org/10.1016/j.cmet.2015.07.016>
+- Research Highlights. Miura G. Cancer metabolism: Two sides of a coin. *Nature Chemical Biology.* 2015; 11: 632 <https://doi.org/10.1021/ar2001606>
+
+::: {.ref}
+
+Fessel JP, Oldham WM. Pulmonary hypertension as a metabolic disease. In: Maron BA, Zamanian R, Waxman AB, editors. *Pulmonary Hypertension: Basic Science to Clinical Medicine.* New York: Springer International Publishing; 2015. p. 135-146.
+
+:::
+
+## 2014
+
+::: {.ref}
+
+Wang RS, Oldham WM, Loscalzo J. Network-based association of hypoxia-responsive genes with cardiovascular diseases. *New Journal of Physics.* 2014; 16: 105014. <https://doi.org/10.1088/1367-2630/16/10/105014>
+
+Maron BA, Oldham WM, Chan SY, Vargas SO, Arons E, Zhang Y, Loscalzo J, Leopold JA. Upregulation of steroidogenic acute regulatory protein by hypoxia stimulates aldosterone synthesis in pulmonary artery endothelial cells to promote pulmonary vascular fibrosis. *Circulation.* 2014; 130: 168-179. <https://doi.org/10.1161/circulationaha.113.007690>
+
+:::
+
+## 2010
+
+::: {.ref}
+
+Oldham WM, Systrom DM. Cardiopulmonary exercise testing in the evaluation of unexplained dyspnea. *Advances in Pulmonary Hypertension.* 2010; 9: 101-106. <https://doi.org/10.21693/1933-088X-9.2.101>
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

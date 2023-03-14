@@ -6,6 +6,7 @@ website:
   navbar:
     right:
       - people.qmd
+      - papers.qmd
       - contact.qmd
 
 format:
