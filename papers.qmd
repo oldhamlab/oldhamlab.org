@@ -7,6 +7,8 @@ css: styles.css
 [Google Scholar](https://scholar.google.com/citations?hl=en&user=cba3bIAAAAAJ) | 
 [ORCID](https://orcid.org/0000-0003-3029-4866)
 
+^\*^ denotes co-authorship
+
 ## 2023
 
 ::: {.ref}
