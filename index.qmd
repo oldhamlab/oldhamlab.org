@@ -2,7 +2,7 @@
 title: "Welcome"
 about:
   template: marquee
-  image: cells.png
+  image: img/cells.png
 ---
 
 The Oldham Lab in the [Pulmonary and Critical Care Medicine Division](https://www.brighamandwomens.org/medicine/pulmonary-and-critical-care-medicine) and the [Department of Medicine](https://www.brighamandwomens.org/department-of-medicine) at [Brigham and Women’s Hospital](https://www.brighamandwomens.org/) and [Harvard Medical School](https://hms.harvard.edu/) investigates cell metabolism in the lung diseases pulmonary hypertension and pulmonary fibrosis. We study *in vitro* and *in vivo* model systems with state-of-the-art analytical techniques, including metabolomics, stable isotope tracing, extracellular flux analyses, systems biology, and network medicine. **By improving our understanding of cell metabolism in lung disease, we hope to develop new therapeutic strategies for their treatment.**
