@@ -88,6 +88,9 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Oldham Lab - Papers">
+<meta property="og:description" content="PubMed | Google Scholar | ORCID">
+<meta property="og:site-name" content="Oldham Lab">
 <meta name="twitter:title" content="Oldham Lab - Papers">
 <meta name="twitter:description" content="PubMed | Google Scholar | ORCID">
 <meta name="twitter:creator" content="@wm_oldham">
@@ -422,7 +425,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp(/https:\/\/oldhamlab\.org/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }

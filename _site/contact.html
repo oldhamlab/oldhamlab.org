@@ -88,6 +88,9 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Oldham Lab - Contact">
+<meta property="og:description" content="Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115">
+<meta property="og:site-name" content="Oldham Lab">
 <meta name="twitter:title" content="Oldham Lab - Contact">
 <meta name="twitter:description" content="Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115">
 <meta name="twitter:creator" content="@wm_oldham">
@@ -414,7 +417,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp(/https:\/\/oldhamlab\.org/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }

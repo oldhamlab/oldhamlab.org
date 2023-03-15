@@ -120,6 +120,8 @@ cookieconsent.run({
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Oldham Lab - People">
+<meta property="og:site-name" content="Oldham Lab">
 <meta name="twitter:title" content="Oldham Lab - People">
 <meta name="twitter:creator" content="@wm_oldham">
 <meta name="twitter:card" content="summary">
@@ -477,7 +479,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp(/https:\/\/oldhamlab\.org/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }

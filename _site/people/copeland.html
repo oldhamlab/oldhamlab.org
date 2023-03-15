@@ -87,9 +87,13 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Oldham Lab - Courtney Copeland">
+<meta property="og:description" content="Post-doctoral Fellow">
+<meta property="og:image" content="https://oldhamlab.org/people/copeland.jpg">
+<meta property="og:site-name" content="Oldham Lab">
 <meta name="twitter:title" content="Oldham Lab - Courtney Copeland">
 <meta name="twitter:description" content="Post-doctoral Fellow">
-<meta name="twitter:image" content="copeland.jpg">
+<meta name="twitter:image" content="https://oldhamlab.org/people/copeland.jpg">
 <meta name="twitter:creator" content="@wm_oldham">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -288,7 +292,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp(/https:\/\/oldhamlab\.org/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
