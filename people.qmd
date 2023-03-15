@@ -3,6 +3,7 @@ title: "People"
 listing: 
   contents: people
   image-align: left
+  image-height: 225px
   fields: [image, title, subtitle]
   categories: true
 ---
