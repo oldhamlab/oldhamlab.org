@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Oldham Lab"
+  site-url: "https://oldhamlab.org"
   navbar:
     right:
       - people.qmd
@@ -12,6 +13,7 @@ website:
   cookie-consent: true
   twitter-card: 
     creator: "@wm_oldham"
+  open-graph: true
 
 format:
   html:
