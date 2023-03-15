@@ -12,7 +12,6 @@ website:
   google-analytics: "G-KZ6PJ54VTV"
   cookie-consent: true
   twitter-card: 
-    image: "/img/cells.png"
     creator: "@wm_oldham"
   open-graph: true
 
