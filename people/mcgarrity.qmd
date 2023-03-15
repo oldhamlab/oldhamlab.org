@@ -1,7 +1,7 @@
 ---
 title: "Sarah McGarrity"
 subtitle: "Post-doctoral Fellow"
-image: mcgarrity.jpg
+image: "/people/mcgarrity.jpg"
 categories: ["Fellow", "Alumni"]
 order: 4
 about:

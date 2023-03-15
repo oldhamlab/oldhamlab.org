@@ -1,7 +1,7 @@
 ---
 title: "David Ziehr"
 subtitle: "Post-doctoral Fellow"
-image: ziehr.jpg
+image: "/people/ziehr.jpg"
 categories: ["Fellow"]
 order: 2
 about:

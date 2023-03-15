@@ -2,7 +2,7 @@
 title: "Aliya Gottehrer-Cohen"
 subtitle: "Undergraduate"
 categories: ["Undergraduate"]
-image: cohen.jpg
+image: "/people/cohen.jpg"
 order: 5
 about:
   template: trestles
