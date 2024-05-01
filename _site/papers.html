@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KZ6PJ54VTV"></script>
@@ -81,6 +89,8 @@ cookieconsent.run({
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
+  ,
+"language":"en"
   });
 });
 </script> 
@@ -89,10 +99,10 @@ cookieconsent.run({
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Oldham Lab - Papers">
-<meta property="og:description" content="PubMed | Google Scholar | ORCID">
-<meta property="og:site-name" content="Oldham Lab">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Oldham Lab">
 <meta name="twitter:title" content="Oldham Lab - Papers">
-<meta name="twitter:description" content="PubMed | Google Scholar | ORCID">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://oldhamlab.org/img/cells.png">
 <meta name="twitter:creator" content="@wm_oldham">
 <meta name="twitter:card" content="summary_large_image">
@@ -104,33 +114,35 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Oldham Lab</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./people.html">
- <span class="menu-text">People</span></a>
+    <a class="nav-link" href="./people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./papers.html" aria-current="page">
- <span class="menu-text">Papers</span></a>
+    <a class="nav-link active" href="./papers.html" aria-current="page"> 
+<span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html">
- <span class="menu-text">Contact</span></a>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -143,17 +155,18 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2023</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2022</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2021</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2020</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2019</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2018</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2017</a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2016</a></li>
-  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2015</a></li>
-  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2014</a></li>
-  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">2010</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2020</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2019</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2018</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2017</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2016</a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2015</a></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">2014</a></li>
+  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11">2010</a></li>
   </ul>
 </nav>
     </div>
@@ -175,25 +188,42 @@ cookieconsent.run({
   </div>
   
 
+
 </header>
+
 
 <p><a href="https://www.ncbi.nlm.nih.gov/myncbi/william.oldham.1/bibliography/public/">PubMed</a> | <a href="https://scholar.google.com/citations?hl=en&amp;user=cba3bIAAAAAJ">Google Scholar</a> | <a href="https://orcid.org/0000-0003-3029-4866">ORCID</a></p>
 <p><sup>*</sup> denotes co-authorship</p>
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2023</h2>
+<h2 class="anchored" data-anchor-id="section">2024</h2>
 <div class="ref">
-<p>Wertheim BM, Wang RS, Guillermier C, Hutter CV, Oldham WM, Menche J, Steinhauser ML, Maron BA. Proline and glucose metabolic reprogramming supports vascular endothelial and medial biomass in pulmonary arterial hypertension. <em>JCI Insight.</em> 2023; e163932. <a href="https://doi.org/10.1172/jci.insight.163932" class="uri">https://doi.org/10.1172/jci.insight.163932</a></p>
-<p>Diaz-Cuadros M, Miettinen TP, Sheedy D, Diaz-Garcia CM, Gapon S, Hubaud A, Yellen G, Manalis SR, Oldham WM, Pourquie O. Metabolic regulation of species-specific developmental rates. <em>Nature.</em> 2023; 613: 550. <a href="https://doi.org/10.1038/s41586-022-05574-4" class="uri">https://doi.org/10.1038/s41586-022-05574-4</a></p>
+<p>Philip N, Yun X, Pi H, Murray S, Hill Z, Fonticella J, Perez P, Zhang C, Pathmasiri W, Sumner S, Servinsky L, Jiang H, Huetsch J, Oldham WM, Visovatti S, Leary PJ, Gharib S, Brittain E, Simpson C, Le A, Shimoda L, Suresh K. Fatty acid metabolism promotes TRPV4 activity in lung microvascular endothelial cells in pulmonary arterial hypertension. <em>American Journal of Physiology – Lung Cellular and Molecular Physiology.</em> 2024; 326: L252. <a href="https://doi.org/10.1152/ajplung.00199.2023" class="uri">https://doi.org/10.1152/ajplung.00199.2023</a></p>
+</div>
+<ul>
+<li>APSselect award winner, American Physiological Society.</li>
+</ul>
+<div class="ref">
+<p>Li G, Huang H, Wu Y, Shu C, Hwang N, Li Q, Zhao R, Lam HC, Oldham WM, El-Chemaly S, Agrawal PB, Tian J, Liu X, Perrella MA. Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes. <em>Basic Research in Cardiology.</em> 2024; 119: 151. <a href="https://doi.org/10.1007/s00395-023-01029-7" class="uri">https://doi.org/10.1007/s00395-023-01029-7</a></p>
 </div>
 </section>
 <section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2022</h2>
+<h2 class="anchored" data-anchor-id="section-1">2023</h2>
+<div class="ref">
+<p>Wertheim BM, Wang RS, Guillermier C, Hutter CV, Oldham WM, Menche J, Steinhauser ML, Maron BA. Proline and glucose metabolic reprogramming supports vascular endothelial and medial biomass in pulmonary arterial hypertension. <em>JCI Insight.</em> 2023; e163932. <a href="https://doi.org/10.1172/jci.insight.163932" class="uri">https://doi.org/10.1172/jci.insight.163932</a></p>
+<p>Diaz-Cuadros M, Miettinen TP, Sheedy D, Diaz-Garcia CM, Gapon S, Hubaud A, Yellen G, Manalis SR, Oldham WM, Pourquie O. Metabolic regulation of species-specific developmental rates. <em>Nature.</em> 2023; 613: 550. <a href="https://doi.org/10.1038/s41586-022-05574-4" class="uri">https://doi.org/10.1038/s41586-022-05574-4</a></p>
+<p>Tamura T, Cheng C, Chen W, Merriam LT, Athar H, Kim YH, Manandhar R, Sheikh MDA, Pinilla-Vira M, Varon J, Hou PC, Lawler PR, Oldham WM, Seethala RR, Tesfaigzi Y, Immunology of Cardiac Arrest Network (I-CAN), Weissman AJ, Baron RM, Ichinose F, Berg KM, Bohula EA, Morrow DA, Chen X, Kim EY. Single-cell transcriptomics reveal hyperacute cytokine and immune checkpoint axis in patients with poor neurological outcomes after cardiac arrest. <em>Med.</em> 2023; 4: 432. <a href="https://doi.org/10.1016/j.medj.2023.05.003" class="uri">https://doi.org/10.1016/j.medj.2023.05.003</a></p>
+<p>Wang RS, Huang S, Waldo SW, Hess E, Gokhale M, Johnson SW, Zeder K, Choudhary G, Leopold JA, Oldham WM, Kovacs G, Freiberg MS, Tedford RJ, Maron BA, Brittain EL. Elevated pulmonary artery compliance is associated with survival in pulmonary hypertension: Results from a novel network medicine analysis. <em>American Journal of Respiratory and Critical Care Medicine.</em> 2023; 208: 312. <a href="https://doi.org/10.1164/rccm.202211-2097OC" class="uri">https://doi.org/10.1164/rccm.202211-2097OC</a></p>
+<p>Copeland CA, Olenchock BA, Ziehr D, McGarrity S, Leahy K, Young JD, Loscalzo J, Oldham WM. MYC overrides HIF-1α to regulate proliferating primary cell metabolism in hypoxia. <em>eLife.</em> 2023; 12: e82597. <a href="https://doi.org/10.7554/eLife.82597" class="uri">https://doi.org/10.7554/eLife.82597</a></p>
+</div>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2022</h2>
 <div class="ref">
 <p>He H, Mulhern RM, Oldham WM, Xiao W, Lin Y-D, Liao R, Loscalzo J. Genetically determined L-2-hydroxyglutarate accumulation protects against cardiac injury via a metabolic shift from glycolysis to the pentose phosphate pathway. <em>Circulation Research.</em> 2022; 131: 562. <a href="https://doi.org/10.1161/circresaha.122.321227" class="uri">https://doi.org/10.1161/circresaha.122.321227</a></p>
 </div>
 </section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2021</h2>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2021</h2>
 <div class="ref">
 <p>Lee LY, Oldham WM, He H, Wang R, Mulhern R, Handy DE, Loscalzo J. Inteferon-γ impairs human coronary artery endothelial glucose metabolism via tryptophan catabolism and activates fatty acid oxidation. <em>Circulation.</em> 2021; 144: 1612. <a href="https://doi.org/10.1161/circulationaha.121.053960" class="uri">https://doi.org/10.1161/circulationaha.121.053960</a></p>
 <p>Sauer CM, Gomez J, Botella MR, Ziehr DR, Oldham WM, Gavidia G, Rodriguez A, Elbers P, Girbes A, Bodi M, Celi LA. Understanding critically ill sepsis patients with normal serum lactate levels: results from U.S. and European ICU cohorts. <em>Scientific Reports.</em> 2021; 11: 20076. <a href="https://doi.org/10.1038/s41598-021-99581-6" class="uri">https://doi.org/10.1038/s41598-021-99581-6</a></p>
@@ -206,14 +236,14 @@ cookieconsent.run({
 <p>Singh I, Oliveira R, Naeije RKF, Oldham WM, Faria-Urbina M, Waxman AB, Systrom DM. Systemic vascular distensibility relates to exercise capacity in connective tissue disease. <em>Rheumatology.</em> 2021; 60: 1429. <a href="https://doi.org/10.1093/rheumatology/keaa510" class="uri">https://doi.org/10.1093/rheumatology/keaa510</a></p>
 </div>
 </section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2020</h2>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2020</h2>
 <div class="ref">
 <p>Singh I, Oldham WM, Rahaghi FN. Precision medicine in pulmonary hypertension. In: Gomez JL, Himes BE, Kaminski N, editors. <em>Precision in Pulmonary, Critical Care, and Sleep Medicine.</em> New York City: Springer; 2020. p.&nbsp;241-255.</p>
 </div>
 </section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2019</h2>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">2019</h2>
 <div class="ref">
 <p>Guarino V, Oldham WM, Loscalzo J, Zhang YY. Reaction rate of pyruvate and hydrogen peroxide: assessing antioxidant capacity of pyruvate under biological conditions. <em>Scientific Reports.</em> 2019; 9: 19568. <a href="https://doi.org/10.1038/s41598-019-55951-9" class="uri">https://doi.org/10.1038/s41598-019-55951-9</a></p>
 <p>Singh I, Oliveira RKF, Naeije R, Rahaghi FN, Oldham W, Systrom DM, Waxman AB. Pulmonary vascular distensibility and early pulmonary vascular remodeling in pulmonary hypertension. <em>Chest.</em> 2019; 156: 724-732. <a href="https://doi.org/10.1016/j.chest.2019.04.111" class="uri">https://doi.org/10.1016/j.chest.2019.04.111</a></p>
@@ -222,8 +252,8 @@ cookieconsent.run({
 <p>Bertero T, Oldham WM, Grasset EM, Bourget I, Boulter E, Pisano S, Hofman P, Bellvert F, Meneguzzi G, Bulavin DV, Estrach S, Feral CC, Chan SY, Bozec A, Gaggioli C. Tumor-stroma mechanics coordinate amino acid availability to sustain tumor growth and malignancy. <em>Cell Metabolism.</em> 2019; 29: 124-140. <a href="https://doi.org/10.1016/j.cmet.2018.09.012" class="uri">https://doi.org/10.1016/j.cmet.2018.09.012</a></p>
 </div>
 </section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">2018</h2>
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6">2018</h2>
 <div class="ref">
 <p>Yang JS, Hsu JW, Seung-Yeol P, Li J, Oldham WM, Beznoussenko GV, Mironov AA, Loscalzo J, Hsu VW. GAPDH inhibits intracellular pathways during starvation for cellular energy homeostasis. <em>Nature.</em> 2018; 561: 263-267. <a href="https://doi.org/10.1038/s41586-018-0475-6" class="uri">https://doi.org/10.1038/s41586-018-0475-6</a></p>
 <p>Verwer EE, Kavanagh TR, Mischler WJ, Feng Y, Takahashi K, Wang S, Shoup TM, Neelamegam R, Yang J, Guehl NJ, Ran C, Massefski W, Cui Y, El-Chemaly S, Sadow PM, Oldham WM, Kijewski MF, El Fakhri G, Normandin MD, Priolo C. [<sup>18</sup>F]Fluorocholine and [<sup>18</sup>F] fluoroacetate PET as imaging biomarkers to assess phosphatidylcholine and mitochondrial metabolism in preclinical models of TSC and LAM. <em>Clinical Cancer Research.</em> 2018; 24: 5925-5938. <a href="https://doi.org/10.1158/1078-0432.ccr-17-3693" class="uri">https://doi.org/10.1158/1078-0432.ccr-17-3693</a></p>
@@ -243,15 +273,15 @@ cookieconsent.run({
 <p>Wertheim B‡, Maron BA, Oldham WM. Pulmonary Hypertension. In: Singh AK, Loscalzo J, editors. <em>Brigham Intensive Review of Internal Medicine.</em> 3rd ed.&nbsp;Philadelphia: Elsevier; 2018. p.&nbsp;906-916.</p>
 </div>
 </section>
-<section id="section-6" class="level2">
-<h2 class="anchored" data-anchor-id="section-6">2017</h2>
+<section id="section-7" class="level2">
+<h2 class="anchored" data-anchor-id="section-7">2017</h2>
 <div class="ref">
 <p>Lam HC, Liu HJ, Baglini CV, Filippakis H, Alesi N, Mijmeh J, Du H, Lope AL, Cottrill KA, Handen A, Asara JM, Kwiatkowski DJ, Ben-Sahra I, Oldham WM, Chan SY, Henske EP. Rapamycin-induced miR-21 promotes mitochondrial homeostasis and adaptation in mTORC1 activated cells. <em>Oncotarget.</em> 2017; 8: 64714-64727. <a href="https://doi.org/10.18632/oncotarget.19947" class="uri">https://doi.org/10.18632/oncotarget.19947</a></p>
 <p>Lam HC, Baglini CV, Lope AL, Parkhitko AA, Liu HJ, Alesi N, Malinowska IA, Ebrahimi-Fakhari D, Saffari A, Yu JJ, Pereira A, Khabibullin D, Ogorek B, Nijmeh J, Kavanagh T, Handen A, Chan SY, Asara JM, Oldham WM, Diaz-Meco M, Moscat J, Priolo C, Henske EP. p62/SQSTM1 cooperates with hyperactive mTORC1 to regulate glutathione production, maintain mitochondrial integrity and promote tumorigenesis. <em>Cancer Research.</em> 2017; 77: 3255-3267. <a href="https://doi.org/10.1158/0008-5472.can-16-2458" class="uri">https://doi.org/10.1158/0008-5472.can-16-2458</a></p>
 </div>
 </section>
-<section id="section-7" class="level2">
-<h2 class="anchored" data-anchor-id="section-7">2016</h2>
+<section id="section-8" class="level2">
+<h2 class="anchored" data-anchor-id="section-8">2016</h2>
 <div class="ref">
 <p>Oldham WM, Loscalzo J. Quantification of 2-hydroxyglutarate enantiomers by liquid chromatography-mass spectrometry. <em>Bio-protocol.</em> 2016; 6: e1908. <a href="https://doi.org/10.21769/bioprotoc.1908" class="uri">https://doi.org/10.21769/bioprotoc.1908</a></p>
 <p>Bertero T, Oldham WM, Cottrill KA, Pisano S, Vanderpool RR, Yu Q, Zhao J, Tai Y, Tang Y, Zhang YY, Rehman S, Sugahara M, Qi Z, Gorcsan J, Vargas SO, Saggar R, Saggar R, Wallace WD, Ross DJ, Haley KJ, Waxman AB, Parikh VN, De Marco T, Hsue PY, Morris A, Simon MA, Norris KA, Gaggioli C, Loscalzo J, Fessel J, Chan SY. Vascular stiffness mechanoactivates YAP/TAZ-dependent glutaminolysis to drive pulmonary hypertension. <em>Journal of Clinical Investigation.</em> 2016; 126: 3313-3335. <a href="https://doi.org/10.1172/jci86387" class="uri">https://doi.org/10.1172/jci86387</a></p>
@@ -264,8 +294,8 @@ cookieconsent.run({
 <p>Oldham WM, Loscalzo J. Pharmacology of Vascular Tone. In: Golan DE, Tashjian AH, Armstrong EJ, editors. <em>Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy.</em> 4th ed.&nbsp;Philadelphia: Lippincott, Williams, &amp; Wilkins; 2016. p.&nbsp;385-402.</p>
 </div>
 </section>
-<section id="section-8" class="level2">
-<h2 class="anchored" data-anchor-id="section-8">2015</h2>
+<section id="section-9" class="level2">
+<h2 class="anchored" data-anchor-id="section-9">2015</h2>
 <div class="ref">
 <p>Berry NC, Manyoo A, Oldham WM, Stephens TE, Goldstein RH, Waxman AB, Tracy JA, Leary PJ, Leopold JA, Kinlay S, Opotowsky AR, Systrom DM, Maron BA. Protocol for exercise hemodynamic assessment: Performing the invasive cardiopulmonary exercise test in clinical practice. <em>Pulmonary Circulation.</em> 2015; 5: 610-618. <a href="https://doi.org/10.1086/683815" class="uri">https://doi.org/10.1086/683815</a></p>
 <p>Maron BA, Stephens TE, Farrell LA, Oldham WM, Loscalzo J, Leopold JA, Lewis GD. Elevated pulmonary arterial and systemic plasma aldosterone levels associate with impaired cardiac reserve capacity during exercise in left ventricular systolic heart failure patients: A pilot study. <em>Journal of Heart and Lung Transplantation.</em> 2016; 35: 342-351. <a href="https://doi.org/10.1016/j.healun.2015.10.019" class="uri">https://doi.org/10.1016/j.healun.2015.10.019</a></p>
@@ -279,15 +309,15 @@ cookieconsent.run({
 <p>Fessel JP, Oldham WM. Pulmonary hypertension as a metabolic disease. In: Maron BA, Zamanian R, Waxman AB, editors. <em>Pulmonary Hypertension: Basic Science to Clinical Medicine.</em> New York: Springer International Publishing; 2015. p.&nbsp;135-146.</p>
 </div>
 </section>
-<section id="section-9" class="level2">
-<h2 class="anchored" data-anchor-id="section-9">2014</h2>
+<section id="section-10" class="level2">
+<h2 class="anchored" data-anchor-id="section-10">2014</h2>
 <div class="ref">
 <p>Wang RS, Oldham WM, Loscalzo J. Network-based association of hypoxia-responsive genes with cardiovascular diseases. <em>New Journal of Physics.</em> 2014; 16: 105014. <a href="https://doi.org/10.1088/1367-2630/16/10/105014" class="uri">https://doi.org/10.1088/1367-2630/16/10/105014</a></p>
 <p>Maron BA, Oldham WM, Chan SY, Vargas SO, Arons E, Zhang Y, Loscalzo J, Leopold JA. Upregulation of steroidogenic acute regulatory protein by hypoxia stimulates aldosterone synthesis in pulmonary artery endothelial cells to promote pulmonary vascular fibrosis. <em>Circulation.</em> 2014; 130: 168-179. <a href="https://doi.org/10.1161/circulationaha.113.007690" class="uri">https://doi.org/10.1161/circulationaha.113.007690</a></p>
 </div>
 </section>
-<section id="section-10" class="level2">
-<h2 class="anchored" data-anchor-id="section-10">2010</h2>
+<section id="section-11" class="level2">
+<h2 class="anchored" data-anchor-id="section-11">2010</h2>
 <div class="ref">
 <p>Oldham WM, Systrom DM. Cardiopulmonary exercise testing in the evaluation of unexplained dyspnea. <em>Advances in Pulmonary Hypertension.</em> 2010; 9: 101-106. <a href="https://doi.org/10.21693/1933-088X-9.2.101" class="uri">https://doi.org/10.21693/1933-088X-9.2.101</a></p>
 </div>
@@ -323,9 +353,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -361,10 +405,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/oldhamlab\.org");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -374,8 +440,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -387,9 +462,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -427,28 +738,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/oldhamlab\.org/);
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
+
 
 
 
