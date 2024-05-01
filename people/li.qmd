@@ -1,0 +1,25 @@
+---
+title: "Fei Li"
+subtitle: "Post-doctoral Fellow"
+# image: "/people/mcgarrity.jpg"
+categories: ["Fellow"]
+order: 4
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+---
+
+Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis. 
+
+## Education and Training
+
+**Zhejiang University School of Medicine** | China<br>
+Research fellow in Pharmacology | 2021-2023<br>
+
+**Zhejiang University School of Medicine** | China<br>
+Master's in Internal Medicine (Respiratory disease) | 2017
+Ph.D. in Internal Medicine (Respiratory disease) | 2021
+
+**Wuhan University School of Medicine** | China<br>
+BA in Clinical Medicine | 2014

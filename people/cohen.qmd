@@ -1,7 +1,7 @@
 ---
 title: "Aliya Gottehrer-Cohen"
 subtitle: "Undergraduate"
-categories: ["Undergraduate"]
+categories: ["Undergraduate", "Alumni"]
 image: "/people/cohen.jpg"
 order: 5
 about:
