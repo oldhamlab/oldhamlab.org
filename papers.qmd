@@ -9,6 +9,22 @@ css: styles.css
 
 ^\*^ denotes co-authorship
 
+## 2024
+
+::: {.ref}
+
+Philip N, Yun X, Pi H, Murray S, Hill Z, Fonticella J, Perez P, Zhang C, Pathmasiri W, Sumner S, Servinsky L, Jiang H, Huetsch J, Oldham WM, Visovatti S, Leary PJ, Gharib S, Brittain E, Simpson C, Le A, Shimoda L, Suresh K. Fatty acid metabolism promotes TRPV4 activity in lung microvascular endothelial cells in pulmonary arterial hypertension. *American Journal of Physiology – Lung Cellular and Molecular Physiology.* 2024; 326: L252. <https://doi.org/10.1152/ajplung.00199.2023>
+
+:::
+
+- APSselect award winner, American Physiological Society.
+
+::: {.ref}
+
+Li G, Huang H, Wu Y, Shu C, Hwang N, Li Q, Zhao R, Lam HC, Oldham WM, El-Chemaly S, Agrawal PB, Tian J, Liu X, Perrella MA. Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes. *Basic Research in Cardiology.* 2024; 119: 151. <https://doi.org/10.1007/s00395-023-01029-7>
+
+:::
+
 ## 2023
 
 ::: {.ref}
@@ -16,6 +32,12 @@ css: styles.css
 Wertheim BM, Wang RS, Guillermier C, Hutter CV, Oldham WM, Menche J, Steinhauser ML, Maron BA. Proline and glucose metabolic reprogramming supports vascular endothelial and medial biomass in pulmonary arterial hypertension. *JCI Insight.* 2023; e163932. <https://doi.org/10.1172/jci.insight.163932>
 
 Diaz-Cuadros M, Miettinen TP, Sheedy D, Diaz-Garcia CM, Gapon S, Hubaud A, Yellen G, Manalis SR, Oldham WM, Pourquie O. Metabolic regulation of species-specific developmental rates. *Nature.* 2023; 613: 550. <https://doi.org/10.1038/s41586-022-05574-4> 
+
+Tamura T, Cheng C, Chen W, Merriam LT, Athar H, Kim YH, Manandhar R, Sheikh MDA, Pinilla-Vira M, Varon J, Hou PC, Lawler PR, Oldham WM, Seethala RR, Tesfaigzi Y, Immunology of Cardiac Arrest Network (I-CAN), Weissman AJ, Baron RM, Ichinose F, Berg KM, Bohula EA, Morrow DA, Chen X, Kim EY. Single-cell transcriptomics reveal hyperacute cytokine and immune checkpoint axis in patients with poor neurological outcomes after cardiac arrest. *Med.* 2023; 4: 432. <https://doi.org/10.1016/j.medj.2023.05.003> 
+
+Wang RS, Huang S, Waldo SW, Hess E, Gokhale M, Johnson SW, Zeder K, Choudhary G, Leopold JA, Oldham WM, Kovacs G, Freiberg MS, Tedford RJ, Maron BA, Brittain EL. Elevated pulmonary artery compliance is associated with survival in pulmonary hypertension: Results from a novel network medicine analysis. *American Journal of Respiratory and Critical Care Medicine.* 2023; 208: 312. <https://doi.org/10.1164/rccm.202211-2097OC> 
+
+Copeland CA, Olenchock BA, Ziehr D, McGarrity S, Leahy K, Young JD, Loscalzo J, Oldham WM. MYC overrides HIF-1α to regulate proliferating primary cell metabolism in hypoxia. *eLife.* 2023; 12: e82597. <https://doi.org/10.7554/eLife.82597>
 
 :::
 
