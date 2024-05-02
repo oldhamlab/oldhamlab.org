@@ -1,7 +1,7 @@
 ---
 title: "Fei Li"
 subtitle: "Post-doctoral Fellow"
-# image: "/people/mcgarrity.jpg"
+image: "/people/li.jpg"
 categories: ["Fellow"]
 order: 4
 about:
@@ -18,8 +18,8 @@ Fei joined the Oldham lab in October 2023. He studies the metabolic pathways tha
 Research fellow in Pharmacology | 2021-2023<br>
 
 **Zhejiang University School of Medicine** | China<br>
-Master's in Internal Medicine (Respiratory disease) | 2017
 Ph.D. in Internal Medicine (Respiratory disease) | 2021
+Master's in Internal Medicine (Respiratory disease) | 2017
 
 **Wuhan University School of Medicine** | China<br>
 BA in Clinical Medicine | 2014
