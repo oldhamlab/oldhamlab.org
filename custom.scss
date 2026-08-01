@@ -1,4 +1,205 @@
 /*-- scss:defaults --*/
-$primary:     #4E79A6 !default;
+
+// NOTE: this layer is emitted BEFORE brand and the Bootswatch theme, so
+// `!default` makes these win. It also means brand/Bootswatch variables
+// ($primary, $body-color, ...) do NOT exist yet here - use literal hex.
+// $primary now comes from _brand.yml (color.primary -> steel-600 / steel-300).
+
+// ── Quarto page grid ──────────────────────────────────────────────────
+$grid-body-width:           860px !default;
+$grid-sidebar-width:        250px !default;
+$grid-margin-width:         220px !default;
+$grid-column-gutter-width:  1.5rem !default;
+
+// ── Font stacks ───────────────────────────────────────────────────────
+// _brand.yml emits a bare `Source Sans 3` with NO fallback, so if the
+// Google Fonts request fails (blocked, offline, privacy extension) the
+// whole site drops to Times New Roman. Declare real stacks here.
+$font-family-sans-serif:  "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:       "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-monospace:   "Source Code Pro", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+$headings-font-family:    $font-family-serif !default;
+
+// ── Type scale (~1.28 ratio off a 17px base) ──────────────────────────
+$font-size-base:            1.0625rem !default;
+$h1-font-size:              2.25rem !default;
+$h2-font-size:              1.65rem !default;
+$h3-font-size:              1.30rem !default;
+$h4-font-size:              1.10rem !default;
+$headings-margin-bottom:    0.6rem !default;
+$paragraph-margin-bottom:   1.1rem !default;
+$lead-font-size:            1.30rem !default;
+$lead-font-weight:          400 !default;
+
+// ── Chrome ────────────────────────────────────────────────────────────
+$navbar-padding-y:          0.8rem !default;
+$nav-link-font-weight:      600 !default;
+$border-radius:             0.375rem !default;
+$card-border-radius:        0.75rem !default;
+$card-border-width:         1px !default;
+$link-decoration:           underline !default;
+$link-hover-decoration:     underline !default;
+$table-striped-bg-factor:   0.03 !default;
+$blockquote-font-size:      1rem !default;
+
 
 /*-- scss:rules --*/
+
+// ── 1. Title blocks: a brand rule, not a giant banner ─────────────────
+#title-block-header.quarto-title-block.default {
+  border-bottom: 3px solid $primary;
+  padding-bottom: 0.6rem;
+  margin-bottom: 2.25rem;
+}
+#title-block-header .quarto-title h1.title {
+  letter-spacing: -0.012em;
+  margin-bottom: 0.25rem;
+}
+#title-block-header .subtitle {
+  font-family: var(--bs-body-font-family);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: $secondary;
+}
+
+// ── 2. Measure: prose never exceeds a comfortable line length ─────────
+main.content > p,
+main.content > ul,
+main.content > ol,
+main.content > blockquote { max-width: 68ch; }
+
+// ── 3. Navbar ─────────────────────────────────────────────────────────
+// flatly ships a dark navbar and darkly a light one, so the stock pair
+// *inverts* between modes and reads as a bug. Pin it dark in both, and
+// let the navbar carry the brand steel.
+.navbar {
+  background-color: #2F4B6B !important;   // steel-700
+  border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+.quarto-dark .navbar {
+  background-color: #1A222C !important;   // night-alt
+  border-bottom-color: rgba(255, 255, 255, .10);
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-toggler-icon,
+.navbar .quarto-navbar-tools a {
+  color: rgba(255, 255, 255, .88) !important;
+}
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #FFFFFF !important;
+}
+.navbar-brand > img { height: 32px; width: auto; }
+.navbar-brand { font-weight: 600; letter-spacing: .01em; }
+.navbar .nav-link { letter-spacing: .005em; }
+
+// ── 3b. Centre the body column ────────────────────────────────────────
+// With toc off there is no margin content, so let the article centre
+// itself rather than sitting against the (empty) sidebar gutter.
+body.quarto-light, body.quarto-dark { --mermaid-bg-color: transparent; }
+main.content { margin-left: auto; margin-right: auto; }
+
+// ── 4. People grid cards ──────────────────────────────────────────────
+.quarto-grid-item .card {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+.quarto-grid-item .card-img-top,
+.quarto-grid-item img.thumbnail-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 22%;   // faces sit above centre in most portraits
+  border-radius: 50%;
+  width: 74%;
+  height: auto;
+  margin: 1.25rem auto 0.75rem;
+  display: block;
+  border: 3px solid transparent;
+  transition: border-color .18s ease;
+}
+.quarto-grid-item:hover .card-img-top { border-color: $primary; }
+.quarto-grid-item .card-title {
+  font-family: var(--bs-body-font-family);
+  font-size: 1.06rem;
+  font-weight: 600;
+  margin-bottom: .1rem;
+}
+.quarto-grid-item .listing-subtitle {
+  color: $secondary;
+  font-size: .9rem;
+  font-style: normal;
+}
+
+// Alumni listing: same card, smaller
+#alumni .quarto-grid-item .card-img-top { width: 62%; }
+#alumni .quarto-grid-item .card-title { font-size: .96rem; }
+
+// Research cards keep rectangles, not circles
+#projects .quarto-grid-item .card {
+  border: 1px solid rgba(0, 0, 0, .09);
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  text-align: left;
+}
+#projects .quarto-grid-item .card-img-top {
+  aspect-ratio: 16 / 9;
+  border-radius: 0;
+  width: 100%;
+  margin: 0;
+}
+
+// ── 5. Publications ───────────────────────────────────────────────────
+// .csl-entry replaces the old hand-rolled `.ref` class from styles.css
+.csl-bib-body { margin-top: .5rem; }
+.csl-entry {
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+  margin-bottom: 1.05rem;
+  line-height: 1.5;
+}
+.csl-entry .lab-author { font-weight: 700; }
+
+h2.pub-year {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  color: $primary;
+  border-bottom: 1px solid rgba($primary, .28);
+  padding-bottom: .25rem;
+  margin: 2.5rem 0 1.1rem;
+}
+.pub-note {
+  margin: -0.55rem 0 1.1rem 1.6em;
+  padding-left: .8rem;
+  border-left: 3px solid #E39B5F;
+  font-size: .9rem;
+  color: $secondary;
+}
+
+// ── 6. Footer ─────────────────────────────────────────────────────────
+.nav-footer {
+  font-size: .9rem;
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+// ── 7. Responsive embeds (maps, video) ────────────────────────────────
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 10;
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: $border-radius;
+  }
+}

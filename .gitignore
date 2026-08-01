@@ -1,8 +1,19 @@
+# R / RStudio
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
+# Quarto
 /.quarto/
-
 **/*.quarto_ipynb
+
+# Editor / tooling
+.claude/
+
+# Dropbox & OS cruft. A Dropbox-hosted repo will eventually produce files
+# like "_quarto (Will's conflicted copy 2026-08-01).yml" - never commit those.
+.DS_Store
+._*
+Icon?
+*conflicted copy*

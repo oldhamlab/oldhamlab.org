@@ -1,30 +1,96 @@
 project:
   type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "people/*.qmd"
+    - "!**/_template.qmd"
+  preview:
+    port: 4200
+    browser: false
 
 website:
   title: "Oldham Lab"
+  description: >-
+    Cell metabolism in pulmonary hypertension and pulmonary fibrosis.
+    Brown University and Brown University Health.
   site-url: "https://oldhamlab.org"
+  repo-url: "https://github.com/oldhamlab/oldhamlab.org"
+  favicon: img/logo-mark.svg
+  image: img/cells.jpg
+  open-graph: true
+  twitter-card:
+    card-style: summary_large_image
+    creator: "@wm_oldham"
+  google-analytics:
+    tracking-id: "G-KZ6PJ54VTV"
+    anonymize-ip: true
+  # NOTE: Quarto 1.9 changed the default to `express` (opt-in, blocks cookies
+  # until consent). `implied` preserves the behaviour this site had on 1.2 so
+  # the toolchain upgrade doesn't silently change analytics. Switch to
+  # `express` if you'd rather have opt-in consent.
+  cookie-consent:
+    type: implied
+    style: simple
+    palette: light
+  search:
+    location: navbar
+    type: overlay
+  back-to-top-navigation: true
+  page-navigation: false
+
   navbar:
-    right:
+    # Do NOT set `logo-href` to a .qmd path: from pages in subdirectories it
+    # resolves relative to the page (people/index.qmd) and emits a literal,
+    # broken href="index.qmd". Omitting it makes Quarto link to the site root.
+    # Light-on-dark mark: the navbar is dark in BOTH colour schemes (see
+    # custom.scss), so it needs the light variant regardless of page theme.
+    logo: img/logo-mark-navbar.svg
+    logo-alt: "Oldham Lab"
+    title: "Oldham Lab"
+    collapse-below: lg
+    left:
       - people.qmd
       - papers.qmd
       - contact.qmd
-  google-analytics: "G-KZ6PJ54VTV"
-  cookie-consent: true
-  twitter-card: 
-    image: "/img/cells.png"
-    card-style: summary_large_image
-    creator: "@wm_oldham"
-  open-graph: true
+    right:
+      - icon: github
+        href: https://github.com/oldhamlab
+        aria-label: "Oldham Lab on GitHub"
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=cba3bIAAAAAJ&hl=en
+        aria-label: "Google Scholar"
+
+  page-footer:
+    border: true
+    background: light
+    left: |
+      &copy; 2026 Oldham Lab
+    center:
+      - people.qmd
+      - papers.qmd
+      - contact.qmd
+    right: |
+      [ORCID](https://orcid.org/0000-0003-3029-4866) &middot;
+      [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/william.oldham.1/bibliography/public/) &middot;
+      [GitHub](https://github.com/oldhamlab)
 
 format:
   html:
-    theme: 
-    - cosmo
-    - custom.scss
-    css: styles.css
-    toc: true
+    theme:
+      light: [flatly, brand, custom.scss]
+      dark: [darkly, brand, custom.scss]
+    respect-user-color-scheme: true
+    toc: false
+    anchor-sections: true
+    smooth-scroll: true
     link-external-newwindow: true
-
-
-
+    link-external-icon: false
+    lightbox: auto
+    email-obfuscation: references
+    grid:
+      body-width: 860px
+      sidebar-width: 250px
+      # Wide enough for listing category lists to render without clipping.
+      margin-width: 200px
+      gutter-width: 1.5rem
