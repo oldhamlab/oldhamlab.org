@@ -23,6 +23,8 @@ Philip N, Yun X, Pi H, Murray S, Hill Z, Fonticella J, Perez P, Zhang C, Pathmas
 
 Li G, Huang H, Wu Y, Shu C, Hwang N, Li Q, Zhao R, Lam HC, Oldham WM, El-Chemaly S, Agrawal PB, Tian J, Liu X, Perrella MA. Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes. *Basic Research in Cardiology.* 2024; 119: 151. <https://doi.org/10.1007/s00395-023-01029-7>
 
+Rachedi NS, Tang Y, Tai YY, Zhao J, Chauvet C, Grynblat J, Akoumia KKF, Estephan L, Torrino S, Sbai C, Ait-Mouffok A, Latoche JD, Al Aaraj Y, Brau F, Abelanet S, Clavel S, Zhang Y, Guillermier C, Kumar NVG, Tavakoli S, Mercier O, Risbano MG, Yao ZK, Yang G, Ouerfelli O, Lewis JS, Montani D, Humbert M, Steinhauser ML, Anderson CJ, Oldham WM, Perros F, Bertero T, Chan SY. Dietary intake and glutamine-serine metabolism control pathologic vascular stiffness. *Cell Metabolism.* 2024; In press. <https://doi.org/10.1016/j.cmet.2024.04.010>
+
 :::
 
 ## 2023
