@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://oldhamlab.org/contact.html</loc>
-    <lastmod>2023-03-15T15:20:30.670Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/papers.html</loc>
-    <lastmod>2024-05-01T19:21:01.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/index.html</loc>
-    <lastmod>2023-03-15T15:20:31.403Z</lastmod>
-  </url>
-  <url>
     <loc>https://oldhamlab.org/people.html</loc>
     <lastmod>2023-03-15T15:19:18.000Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/people/leahy.html</loc>
-    <lastmod>2023-03-15T15:20:32.246Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/copeland.html</loc>
-    <lastmod>2023-03-15T15:20:32.583Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/nguyen.html</loc>
-    <lastmod>2023-03-15T15:20:32.893Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/cohen.html</loc>
-    <lastmod>2024-05-01T19:22:48.381Z</lastmod>
-  </url>
-  <url>
     <loc>https://oldhamlab.org/people/ziehr.html</loc>
-    <lastmod>2023-03-15T15:20:33.542Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/mcgarrity.html</loc>
-    <lastmod>2023-03-15T15:20:33.856Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/joseph.html</loc>
-    <lastmod>2023-03-15T15:20:34.165Z</lastmod>
+    <lastmod>2023-03-15T01:05:49.000Z</lastmod>
   </url>
   <url>
     <loc>https://oldhamlab.org/people/oldham.html</loc>
-    <lastmod>2023-03-15T15:20:34.487Z</lastmod>
+    <lastmod>2023-03-15T01:05:40.000Z</lastmod>
   </url>
   <url>
     <loc>https://oldhamlab.org/people/li.html</loc>
-    <lastmod>2024-05-02T14:35:24.056Z</lastmod>
+    <lastmod>2024-05-02T14:35:24.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/joseph.html</loc>
+    <lastmod>2023-03-15T01:05:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/copeland.html</loc>
+    <lastmod>2023-03-15T01:04:36.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/contact.html</loc>
+    <lastmod>2023-03-14T01:10:23.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/index.html</loc>
+    <lastmod>2023-03-15T15:03:53.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/nguyen.html</loc>
+    <lastmod>2023-03-15T01:05:24.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/cohen.html</loc>
+    <lastmod>2024-05-01T19:22:48.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/leahy.html</loc>
+    <lastmod>2023-02-11T16:22:10.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/mcgarrity.html</loc>
+    <lastmod>2023-03-15T01:05:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/papers.html</loc>
+    <lastmod>2024-05-14T17:32:27.000Z</lastmod>
   </url>
 </urlset>

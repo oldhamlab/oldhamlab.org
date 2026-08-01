@@ -1,7 +1,91 @@
 [
   {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "William Oldham\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDavid Ziehr\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKevin Leahy\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCourtney Copeland\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFei Li\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhillip Joseph\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSarah McGarrity\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAliya Gottehrer-Cohen\n\n\nUndergraduate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhuong Nguyen\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people/ziehr.html",
+    "href": "people/ziehr.html",
+    "title": "David Ziehr",
+    "section": "",
+    "text": "David joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis."
+  },
+  {
+    "objectID": "people/ziehr.html#education-and-training",
+    "href": "people/ziehr.html#education-and-training",
+    "title": "David Ziehr",
+    "section": "Education and Training",
+    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2018-2022\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2015-2018\nHarvard Medical School | Boston, MA MD | 2015\nUniversity of Wisconsin at Madison | Madison, WI BS in Molecular Biology | 2009"
+  },
+  {
+    "objectID": "people/oldham.html",
+    "href": "people/oldham.html",
+    "title": "William Oldham",
+    "section": "",
+    "text": "Will is an Assistant Professor of Medicine and Associate Physician. His research interests include pulmonary arterial hypertension, cell metabolism, adaptation to hypoxia, and network medicine. He is also the Scientific Director of the BWH Seahorse Core facility."
+  },
+  {
+    "objectID": "people/oldham.html#education-and-training",
+    "href": "people/oldham.html#education-and-training",
+    "title": "William Oldham",
+    "section": "Education and Training",
+    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2010-2015\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2008-2010\nVanderbilt University Medical School | Nashville, TN MD | 2008\nVanderbilt University | Nashville, TN PhD in Pharmacology | 2006\nUniversity of North Carolina at Chapel Hill | Chapel Hill, NC BS in Chemistry with Honors | 2001"
+  },
+  {
+    "objectID": "people/li.html",
+    "href": "people/li.html",
+    "title": "Fei Li",
+    "section": "",
+    "text": "Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis."
+  },
+  {
+    "objectID": "people/li.html#education-and-training",
+    "href": "people/li.html#education-and-training",
+    "title": "Fei Li",
+    "section": "Education and Training",
+    "text": "Education and Training\nZhejiang University School of Medicine | China Research fellow in Pharmacology | 2021-2023\nZhejiang University School of Medicine | China Ph.D. in Internal Medicine (Respiratory disease) | 2021 Master’s in Internal Medicine (Respiratory disease) | 2017\nWuhan University School of Medicine | China BA in Clinical Medicine | 2014"
+  },
+  {
+    "objectID": "people/joseph.html",
+    "href": "people/joseph.html",
+    "title": "Phillip Joseph",
+    "section": "",
+    "text": "Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology."
+  },
+  {
+    "objectID": "people/joseph.html#education-and-training",
+    "href": "people/joseph.html#education-and-training",
+    "title": "Phillip Joseph",
+    "section": "Education and Training",
+    "text": "Education and Training\nBrigham and Women’s Hospital | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2015-2019\nNew York University Grossman School of Medicine | New York, NY Resident, Internal Medicine | 2012-2015\nNew York University School of Medicine | New York, NY MD | 2012"
+  },
+  {
+    "objectID": "people/copeland.html",
+    "href": "people/copeland.html",
+    "title": "Courtney Copeland",
+    "section": "",
+    "text": "Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant."
+  },
+  {
+    "objectID": "people/copeland.html#education-and-training",
+    "href": "people/copeland.html#education-and-training",
+    "title": "Courtney Copeland",
+    "section": "Education and Training",
+    "text": "Education and Training\nVanderbilt University Medical Center | Nashville, TN Post-doctoral fellow | 2017 PhD in Molecular Physiology & Biophysics | 2017\nUniversity of Tennessee | Knoxville, TN BS in Biochemistry and Cellular and Molecular Biology | 2008"
+  },
+  {
     "objectID": "contact.html",
     "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115"
+  },
+  {
+    "objectID": "contact.html#address",
+    "href": "contact.html#address",
     "title": "Contact",
     "section": "",
     "text": "Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115"
@@ -12,6 +96,62 @@
     "title": "Contact",
     "section": "Email",
     "text": "Email\n\n\nFull Name  Email Address  Message"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "The Oldham Lab in the Pulmonary and Critical Care Medicine Division and the Department of Medicine at Brigham and Women’s Hospital and Harvard Medical School investigates how cellular metabolic reprogramming contributes to the lung diseases pulmonary hypertension and pulmonary fibrosis. We study in vitro and in vivo model systems with state-of-the-art analytical techniques, including metabolomics, stable isotope tracing, extracellular flux analyses, systems biology, and network medicine. By improving our understanding of cell metabolism, we aim to develop new therapeutic strategies for the treatment lung diseases."
+  },
+  {
+    "objectID": "people/nguyen.html",
+    "href": "people/nguyen.html",
+    "title": "Phuong Nguyen",
+    "section": "",
+    "text": "Phuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments."
+  },
+  {
+    "objectID": "people/nguyen.html#education-and-training",
+    "href": "people/nguyen.html#education-and-training",
+    "title": "Phuong Nguyen",
+    "section": "Education and Training",
+    "text": "Education and Training\nBoston University | Boston, MA MS in Biotechnology | 2016"
+  },
+  {
+    "objectID": "people/cohen.html",
+    "href": "people/cohen.html",
+    "title": "Aliya Gottehrer-Cohen",
+    "section": "",
+    "text": "Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia."
+  },
+  {
+    "objectID": "people/leahy.html",
+    "href": "people/leahy.html",
+    "title": "Kevin Leahy",
+    "section": "",
+    "text": "Kevin Leahy is a research assistant who joined the Oldham lab in June 2019."
+  },
+  {
+    "objectID": "people/leahy.html#education-and-training",
+    "href": "people/leahy.html#education-and-training",
+    "title": "Kevin Leahy",
+    "section": "Education and Training",
+    "text": "Education and Training\nUniversity of Chicago | Chicago, IL MS in Biochemistry and Molecular Biophysics | 2010-2017\nUniversity of New Hampshire | Durham, NH BS in Biochemistry and Molecular Biology | 2013"
+  },
+  {
+    "objectID": "people/mcgarrity.html",
+    "href": "people/mcgarrity.html",
+    "title": "Sarah McGarrity",
+    "section": "",
+    "text": "Sarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a Novo Nordisk Foundation Postdoctoral Fellowship for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the Center for Systems Biology. She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities."
+  },
+  {
+    "objectID": "people/mcgarrity.html#education-and-training",
+    "href": "people/mcgarrity.html#education-and-training",
+    "title": "Sarah McGarrity",
+    "section": "Education and Training",
+    "text": "Education and Training\nNewcastle University | Newcastle, UK PhD in Systems Biology | 2015 MRes in Medical and Molecular Biology - Systems Biology | 2010\nUniversity of Cambridge | Cambridge, UK BA in Medical Sciences/Genetics | 2009"
   },
   {
     "objectID": "papers.html",
@@ -25,7 +165,7 @@
     "href": "papers.html#section",
     "title": "Papers",
     "section": "2024",
-    "text": "2024\n\nPhilip N, Yun X, Pi H, Murray S, Hill Z, Fonticella J, Perez P, Zhang C, Pathmasiri W, Sumner S, Servinsky L, Jiang H, Huetsch J, Oldham WM, Visovatti S, Leary PJ, Gharib S, Brittain E, Simpson C, Le A, Shimoda L, Suresh K. Fatty acid metabolism promotes TRPV4 activity in lung microvascular endothelial cells in pulmonary arterial hypertension. American Journal of Physiology – Lung Cellular and Molecular Physiology. 2024; 326: L252. https://doi.org/10.1152/ajplung.00199.2023\n\n\nAPSselect award winner, American Physiological Society.\n\n\nLi G, Huang H, Wu Y, Shu C, Hwang N, Li Q, Zhao R, Lam HC, Oldham WM, El-Chemaly S, Agrawal PB, Tian J, Liu X, Perrella MA. Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes. Basic Research in Cardiology. 2024; 119: 151. https://doi.org/10.1007/s00395-023-01029-7"
+    "text": "2024\n\nPhilip N, Yun X, Pi H, Murray S, Hill Z, Fonticella J, Perez P, Zhang C, Pathmasiri W, Sumner S, Servinsky L, Jiang H, Huetsch J, Oldham WM, Visovatti S, Leary PJ, Gharib S, Brittain E, Simpson C, Le A, Shimoda L, Suresh K. Fatty acid metabolism promotes TRPV4 activity in lung microvascular endothelial cells in pulmonary arterial hypertension. American Journal of Physiology – Lung Cellular and Molecular Physiology. 2024; 326: L252. https://doi.org/10.1152/ajplung.00199.2023\n\n\nAPSselect award winner, American Physiological Society.\n\n\nLi G, Huang H, Wu Y, Shu C, Hwang N, Li Q, Zhao R, Lam HC, Oldham WM, El-Chemaly S, Agrawal PB, Tian J, Liu X, Perrella MA. Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes. Basic Research in Cardiology. 2024; 119: 151. https://doi.org/10.1007/s00395-023-01029-7\nRachedi NS, Tang Y, Tai YY, Zhao J, Chauvet C, Grynblat J, Akoumia KKF, Estephan L, Torrino S, Sbai C, Ait-Mouffok A, Latoche JD, Al Aaraj Y, Brau F, Abelanet S, Clavel S, Zhang Y, Guillermier C, Kumar NVG, Tavakoli S, Mercier O, Risbano MG, Yao ZK, Yang G, Ouerfelli O, Lewis JS, Montani D, Humbert M, Steinhauser ML, Anderson CJ, Oldham WM, Perros F, Bertero T, Chan SY. Dietary intake and glutamine-serine metabolism control pathologic vascular stiffness. Cell Metabolism. 2024; In press. https://doi.org/10.1016/j.cmet.2024.04.010"
   },
   {
     "objectID": "papers.html#section-1",
@@ -98,143 +238,10 @@
     "text": "2014\n\nWang RS, Oldham WM, Loscalzo J. Network-based association of hypoxia-responsive genes with cardiovascular diseases. New Journal of Physics. 2014; 16: 105014. https://doi.org/10.1088/1367-2630/16/10/105014\nMaron BA, Oldham WM, Chan SY, Vargas SO, Arons E, Zhang Y, Loscalzo J, Leopold JA. Upregulation of steroidogenic acute regulatory protein by hypoxia stimulates aldosterone synthesis in pulmonary artery endothelial cells to promote pulmonary vascular fibrosis. Circulation. 2014; 130: 168-179. https://doi.org/10.1161/circulationaha.113.007690"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "The Oldham Lab in the Pulmonary and Critical Care Medicine Division and the Department of Medicine at Brigham and Women’s Hospital and Harvard Medical School investigates how cellular metabolic reprogramming contributes to the lung diseases pulmonary hypertension and pulmonary fibrosis. We study in vitro and in vivo model systems with state-of-the-art analytical techniques, including metabolomics, stable isotope tracing, extracellular flux analyses, systems biology, and network medicine. By improving our understanding of cell metabolism, we aim to develop new therapeutic strategies for the treatment lung diseases."
-  },
-  {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
-    "section": "",
-    "text": "William Oldham\n\n\nPrincipal Investigator\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDavid Ziehr\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKevin Leahy\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCourtney Copeland\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFei Li\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhillip Joseph\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSarah McGarrity\n\n\nPost-doctoral Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAliya Gottehrer-Cohen\n\n\nUndergraduate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhuong Nguyen\n\n\nResearch Assistant\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people/leahy.html",
-    "href": "people/leahy.html",
-    "title": "Kevin Leahy",
-    "section": "",
-    "text": "Kevin Leahy is a research assistant who joined the Oldham lab in June 2019."
-  },
-  {
-    "objectID": "people/leahy.html#education-and-training",
-    "href": "people/leahy.html#education-and-training",
-    "title": "Kevin Leahy",
-    "section": "Education and Training",
-    "text": "Education and Training\nUniversity of Chicago | Chicago, IL MS in Biochemistry and Molecular Biophysics | 2010-2017\nUniversity of New Hampshire | Durham, NH BS in Biochemistry and Molecular Biology | 2013"
-  },
-  {
-    "objectID": "people/copeland.html",
-    "href": "people/copeland.html",
-    "title": "Courtney Copeland",
-    "section": "",
-    "text": "Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant."
-  },
-  {
-    "objectID": "people/copeland.html#education-and-training",
-    "href": "people/copeland.html#education-and-training",
-    "title": "Courtney Copeland",
-    "section": "Education and Training",
-    "text": "Education and Training\nVanderbilt University Medical Center | Nashville, TN Post-doctoral fellow | 2017 PhD in Molecular Physiology & Biophysics | 2017\nUniversity of Tennessee | Knoxville, TN BS in Biochemistry and Cellular and Molecular Biology | 2008"
-  },
-  {
-    "objectID": "people/nguyen.html",
-    "href": "people/nguyen.html",
-    "title": "Phuong Nguyen",
-    "section": "",
-    "text": "Phuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments."
-  },
-  {
-    "objectID": "people/nguyen.html#education-and-training",
-    "href": "people/nguyen.html#education-and-training",
-    "title": "Phuong Nguyen",
-    "section": "Education and Training",
-    "text": "Education and Training\nBoston University | Boston, MA MS in Biotechnology | 2016"
-  },
-  {
-    "objectID": "people/cohen.html",
-    "href": "people/cohen.html",
-    "title": "Aliya Gottehrer-Cohen",
-    "section": "",
-    "text": "Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia."
-  },
-  {
-    "objectID": "people/ziehr.html",
-    "href": "people/ziehr.html",
-    "title": "David Ziehr",
-    "section": "",
-    "text": "David joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis."
-  },
-  {
-    "objectID": "people/ziehr.html#education-and-training",
-    "href": "people/ziehr.html#education-and-training",
-    "title": "David Ziehr",
-    "section": "Education and Training",
-    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2018-2022\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2015-2018\nHarvard Medical School | Boston, MA MD | 2015\nUniversity of Wisconsin at Madison | Madison, WI BS in Molecular Biology | 2009"
-  },
-  {
-    "objectID": "people/mcgarrity.html",
-    "href": "people/mcgarrity.html",
-    "title": "Sarah McGarrity",
-    "section": "",
-    "text": "Sarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a Novo Nordisk Foundation Postdoctoral Fellowship for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the Center for Systems Biology. She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities."
-  },
-  {
-    "objectID": "people/mcgarrity.html#education-and-training",
-    "href": "people/mcgarrity.html#education-and-training",
-    "title": "Sarah McGarrity",
-    "section": "Education and Training",
-    "text": "Education and Training\nNewcastle University | Newcastle, UK PhD in Systems Biology | 2015 MRes in Medical and Molecular Biology - Systems Biology | 2010\nUniversity of Cambridge | Cambridge, UK BA in Medical Sciences/Genetics | 2009"
-  },
-  {
-    "objectID": "people/joseph.html",
-    "href": "people/joseph.html",
-    "title": "Phillip Joseph",
-    "section": "",
-    "text": "Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology."
-  },
-  {
-    "objectID": "people/joseph.html#education-and-training",
-    "href": "people/joseph.html#education-and-training",
-    "title": "Phillip Joseph",
-    "section": "Education and Training",
-    "text": "Education and Training\nBrigham and Women’s Hospital | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2015-2019\nNew York University Grossman School of Medicine | New York, NY Resident, Internal Medicine | 2012-2015\nNew York University School of Medicine | New York, NY MD | 2012"
-  },
-  {
-    "objectID": "people/oldham.html",
-    "href": "people/oldham.html",
-    "title": "William Oldham",
-    "section": "",
-    "text": "Will is an Assistant Professor of Medicine and Associate Physician. His research interests include pulmonary arterial hypertension, cell metabolism, adaptation to hypoxia, and network medicine. He is also the Scientific Director of the BWH Seahorse Core facility."
-  },
-  {
-    "objectID": "people/oldham.html#education-and-training",
-    "href": "people/oldham.html#education-and-training",
-    "title": "William Oldham",
-    "section": "Education and Training",
-    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2010-2015\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2008-2010\nVanderbilt University Medical School | Nashville, TN MD | 2008\nVanderbilt University | Nashville, TN PhD in Pharmacology | 2006\nUniversity of North Carolina at Chapel Hill | Chapel Hill, NC BS in Chemistry with Honors | 2001"
-  },
-  {
     "objectID": "papers.html#section-11",
     "href": "papers.html#section-11",
     "title": "Papers",
     "section": "2010",
     "text": "2010\n\nOldham WM, Systrom DM. Cardiopulmonary exercise testing in the evaluation of unexplained dyspnea. Advances in Pulmonary Hypertension. 2010; 9: 101-106. https://doi.org/10.21693/1933-088X-9.2.101"
-  },
-  {
-    "objectID": "people/li.html",
-    "href": "people/li.html",
-    "title": "Fei Li",
-    "section": "",
-    "text": "Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis."
-  },
-  {
-    "objectID": "people/li.html#education-and-training",
-    "href": "people/li.html#education-and-training",
-    "title": "Fei Li",
-    "section": "Education and Training",
-    "text": "Education and Training\nZhejiang University School of Medicine | China Research fellow in Pharmacology | 2021-2023\nZhejiang University School of Medicine | China Ph.D. in Internal Medicine (Respiratory disease) | 2021 Master’s in Internal Medicine (Respiratory disease) | 2017\nWuhan University School of Medicine | China BA in Clinical Medicine | 2014"
   }
 ]
