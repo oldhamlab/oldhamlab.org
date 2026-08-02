@@ -106,7 +106,8 @@ $nav-link-font-size:      .9375rem !default;
 $border-radius:           .375rem !default;
 $border-radius-sm:        .25rem !default;
 $border-radius-lg:        .5rem !default;
-$link-decoration:         underline !default;
+$link-decoration:         none !default;
+$link-hover-decoration:   underline !default;
 
 $grid-body-width:         1120px !default;
 
@@ -149,16 +150,13 @@ body {
 // ── Type scale ────────────────────────────────────────────────────────
 // Negative tracking that scales with size is the single biggest contributor
 // to "sleek" rather than "chunky".
-// Headline, lede and body all share ONE measure so the text column has a
-// single left AND right edge. Previously h1 was capped at 17em (795px) while
-// prose sat at 680px, which read as three unrelated widths on one page.
+// Headline, lede and body all run the full container width - no measure cap.
 h1, .h1 {
   font-size: clamp(2.25rem, 5.6vw, 2.75rem);
   font-weight: 500;
   letter-spacing: var(--ls-display);
   line-height: 1.06;
   margin-bottom: var(--s3);
-  max-width: var(--measure);
   text-wrap: balance;
 }
 h2, .h2 {
@@ -187,7 +185,6 @@ h4, h5, h6 { font-weight: 500; letter-spacing: var(--ls-mid); }
   line-height: 1.5;
   letter-spacing: var(--ls-mid);
   color: var(--text);
-  max-width: var(--measure);
 }
 
 // Uppercase tracked label - the metadata voice
@@ -202,20 +199,27 @@ h4, h5, h6 { font-weight: 500; letter-spacing: var(--ls-mid); }
   margin-bottom: var(--s2);
 }
 
-// ── Measure ───────────────────────────────────────────────────────────
-// Quarto wraps page content in <section> elements, so a `main > p` selector
-// silently never matches and body copy runs the full container width while
-// the headline and lede sit at the measure. Match at any depth instead.
-// Grid children (.teaser p) are already narrower than the measure, so the
-// cap is a no-op there.
-// `.roster` is a <ul> laid out as a grid - it must span the full container,
-// so it is explicitly exempt from the prose measure.
-main.content :is(p, ul, ol, blockquote):not(.roster),
-.prose { max-width: var(--measure); }
+// No prose measure. Headline, lede and body all run the full container width.
 
 // ── Links ─────────────────────────────────────────────────────────────
-a { text-underline-offset: .18em; text-decoration-thickness: .06em; }
+// No underlines at rest anywhere; underline appears on hover as the only
+// affordance. Accent colour is reserved for prose links and the "All ... ->"
+// links. Titles inside listings (research teasers, paper titles, person
+// names) stay body-coloured so the page is not a field of green.
+a {
+  text-underline-offset: .18em;
+  text-decoration-thickness: .06em;
+}
 a:hover { color: var(--accent-hover); }
+
+.teaser h3 a,
+a.paper-title,
+.person a {
+  color: inherit;
+  text-decoration: none;
+}
+.teaser h3 a:hover,
+a.paper-title:hover { color: inherit; text-decoration: underline; }
 
 :focus-visible {
   outline: 2px solid var(--accent);

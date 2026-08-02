@@ -74,7 +74,9 @@ format:
   html:
     theme: custom.scss
     toc: false
-    anchor-sections: true
+    # Off: adds a hover glyph to every heading, and nests an anchor link
+    # inside teaser headings that are already links.
+    anchor-sections: false
     smooth-scroll: true
     link-external-newwindow: true
     link-external-icon: false
