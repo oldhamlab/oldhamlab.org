@@ -3,9 +3,22 @@ title: "Contact"
 toc: false
 ---
 
+## Patient care
+
+Patients are seen at the [Center for Advanced Lung Care](https://www.brownhealth.org/centers-services/center-advanced-lung-care),
+which provides comprehensive care for advanced lung and heart–lung disease and
+for unexplained breathlessness.
+
+West River Center\
+146 West River Street, Suite 11A\
+Providence, Rhode Island 02904\
+**401-606-8250**
+
+## Lab
+
 ::: {.contact-grid}
 ::: {}
-### Lab
+### Address
 
 Rhode Island Hospital\
 55 Claverick Street, Room 430\
@@ -31,17 +44,6 @@ Division of Pulmonary, Critical Care and Sleep Medicine\
     allowfullscreen></iframe>
 </div>
 ```
-
-## Patient care
-
-Patients are seen at the [Center for Advanced Lung Care](https://www.brownhealth.org/centers-services/center-advanced-lung-care),
-which provides comprehensive care for advanced lung and heart–lung disease and
-for unexplained breathlessness.
-
-West River Center\
-146 West River Street, Suite 11A\
-Providence, Rhode Island 02904\
-**401-606-8250**
 
 ## Send a message
 

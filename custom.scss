@@ -303,6 +303,14 @@ main.content:has(> .plate) {
 @media (max-width: 640px) { .plate img { aspect-ratio: 3 / 2; } }
 
 // ── Section rhythm ────────────────────────────────────────────────────
+// Quarto zeroes margin-top on the first heading inside a <section>, so an h2
+// following a full-width block (a map, a grid) ends up flush against it with
+// a 0px gap. Space the sections themselves instead of their headings. The
+// adjacent-sibling selector keeps the first section on a page flush to the
+// title block.
+main.content > section.level2 + section.level2,
+main.content > section.level1 + section.level1 { margin-top: var(--s7); }
+
 .section { margin-top: var(--s7); }
 .section > h2:first-child { margin-top: 0; }
 
@@ -539,6 +547,7 @@ main.content:has(> .plate) {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 16 / 9;
+  margin-top: var(--s4);
 
   iframe {
     position: absolute;
