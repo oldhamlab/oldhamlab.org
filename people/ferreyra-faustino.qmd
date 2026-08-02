@@ -1,21 +1,40 @@
 ---
 title: "Diana Ferreyra Faustino"
 subtitle: "Graduate Student"
+image: "/people/ferreyra-faustino.jpg"
 status: current
 role: student
 order: 50
+started: "2026-02"
 description: >-
-  Graduate student in the Pathobiology Graduate Program at Brown University.
+  PhD candidate in Pathobiology studying lactate transporters in idiopathic
+  pulmonary fibrosis.
 ---
 
 ::: {.person-top}
+::: {.person-figure}
+![](/people/ferreyra-faustino.jpg){.person-photo fig-alt="Diana Ferreyra Faustino"}
+
+[[ORCID](https://orcid.org/0009-0009-1078-0147) · [LinkedIn](https://www.linkedin.com/in/diana-ferreyra-faustino-399a251a1)]{.person-links}
+:::
+
 ::: {.person-meta}
 #### Education and Training
 
-[BS]{.et-role}
-[State University of New York at Binghamton, Binghamton, NY]{.et-place}
+[PhD Candidate, Pathobiology]{.et-role} [In progress]{.et-year}
+[Brown University, Providence, RI]{.et-place}
+
+[BS in Molecular Biology]{.et-role} [2020]{.et-year}
+[Binghamton University, State University of New York]{.et-place}
+
+[AS in Biology]{.et-role} [2018]{.et-year}
+[Borough of Manhattan Community College, City University of New York]{.et-place}
 :::
 :::
 
-Diana is a graduate student in the [Pathobiology Graduate Program](https://pathobiology.biomed.brown.edu/)
-at Brown University.
+Diana is a PhD candidate in the [Pathobiology Graduate
+Program](https://pathobiology.biomed.brown.edu/) studying lactate transporters
+in idiopathic pulmonary fibrosis. She has previously conducted research in two
+distinct areas: pancreatic ductal adenocarcinoma, and the pharmacokinetics of
+P-gp and BCRP. In her free time, she loves to travel, eat, and make pottery
+pieces.

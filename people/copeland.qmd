@@ -5,6 +5,7 @@ image: "/people/copeland.jpg"
 status: alumni
 role: fellow
 order: 30
+started: "2017-12"
 years: "2017–2021"
 now: "Consultant, Deloitte"
 ---

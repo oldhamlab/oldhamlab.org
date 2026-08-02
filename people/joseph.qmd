@@ -4,7 +4,8 @@ subtitle: "Post-doctoral Fellow"
 image: "/people/joseph.jpg"
 status: alumni
 role: fellow
-order: 40
+order: 30
+started: "2016-09"
 years: "2016–2017"
 ---
 

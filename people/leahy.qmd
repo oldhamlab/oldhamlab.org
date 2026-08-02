@@ -4,6 +4,7 @@ subtitle: "Research Assistant"
 status: alumni
 role: staff
 order: 60
+started: "2019-06"
 ---
 
 ::: {.person-top}

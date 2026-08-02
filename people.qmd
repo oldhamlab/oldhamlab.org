@@ -9,7 +9,7 @@ listing:
     template: _people.ejs
     template-params:
       bio: true
-    sort: ["order asc", "title asc"]
+    sort: ["order asc", "started asc"]
     sort-ui: false
     filter-ui: false
     categories: false
@@ -19,7 +19,7 @@ listing:
     include:
       status: alumni
     template: _alumni.ejs
-    sort: ["order asc", "title asc"]
+    sort: ["order asc", "started asc"]
     sort-ui: false
     filter-ui: false
     categories: false

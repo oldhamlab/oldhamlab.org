@@ -4,7 +4,8 @@ subtitle: "Post-doctoral Fellow"
 image: "/people/ziehr.jpg"
 status: alumni
 role: fellow
-order: 40
+order: 30
+started: "2020-06"
 now: "Instructor in Medicine, Massachusetts General Hospital"
 ---
 
