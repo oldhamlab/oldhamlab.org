@@ -1,9 +1,9 @@
 ---
 title: "Metabolic regulation in pulmonary vascular disease"
 description: >-
-  Pulmonary artery smooth muscle cells keep proliferating in low oxygen when
-  most cells stop. We are defining the metabolic signal that permits it, and
-  testing whether blocking that signal prevents vascular remodeling.
+  Pulmonary artery smooth muscle cells proliferate in low oxygen when most
+  cells stop. We are defining the metabolic signal that permits it, and
+  testing whether blocking it prevents vascular remodeling.
 order: 30
 toc: false
 ---
