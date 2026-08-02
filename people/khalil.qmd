@@ -6,7 +6,8 @@ role: student
 order: 50
 started: "2026-03"
 description: >-
-  PhD student in Pathobiology at Brown University.
+  PhD student working on alanine transport in pulmonary fibrosis, and on
+  methods to measure the biomechanics of lung matrix.
 ---
 
 ::: {.person-top}
@@ -25,7 +26,8 @@ description: >-
 :::
 
 Aseel joined the lab in March 2026 as a graduate student in the [Pathobiology
-Graduate Program](https://pathobiology.biomed.brown.edu/). She completed a
-master's degree at Brown, where she built organoid-derived monolayer models to
-study host immune responses to *Candida* infection, and did her undergraduate
-research in green organic synthesis.
+Graduate Program](https://pathobiology.biomed.brown.edu/). She is continuing the
+lab's work on alanine transport in pulmonary fibrosis, and is developing methods
+to measure the biomechanical properties of lung extracellular matrix. She
+completed a master's degree at Brown, where she built organoid-derived monolayer
+models to study host immune responses to *Candida* infection.

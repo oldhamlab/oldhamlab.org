@@ -5,6 +5,7 @@ status: alumni
 role: staff
 order: 60
 started: "2019-06"
+years: "2019–2025"
 ---
 
 ::: {.person-top}
@@ -19,4 +20,4 @@ started: "2019-06"
 :::
 :::
 
-Kevin Leahy is a research assistant who joined the Oldham lab in June 2019.
+Kevin was a research assistant in the lab from June 2019 to May 2025.
