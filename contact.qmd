@@ -10,9 +10,6 @@ toc: false
 Rhode Island Hospital\
 55 Claverick Street, Room 430\
 Providence, Rhode Island 02903
-
-[william_oldham@brown.edu](mailto:william_oldham@brown.edu)\
-(401) 606-5236
 :::
 
 ::: {}
@@ -27,10 +24,42 @@ Division of Pulmonary, Critical Care and Sleep Medicine\
 ```{=html}
 <div class="embed-responsive">
   <iframe
-    title="Map of Rhode Island Hospital, 55 Claverick Street, Providence, Rhode Island"
-    src="https://www.google.com/maps?q=Rhode%20Island%20Hospital%2C%2055%20Claverick%20Street%2C%20Providence%2C%20RI%2002903&output=embed"
+    title="Map of 55 Claverick Street, Providence, Rhode Island"
+    src="https://maps.google.com/maps?q=55%20Claverick%20St%2C%20Providence%2C%20RI%2002903&t=m&z=17&ie=UTF8&iwloc=B&output=embed"
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
     allowfullscreen></iframe>
 </div>
+```
+
+## Patient care
+
+Patients are seen at the [Center for Advanced Lung Care](https://www.brownhealth.org/centers-services/center-advanced-lung-care),
+which provides comprehensive care for advanced lung and heart–lung disease and
+for unexplained breathlessness.
+
+West River Center\
+146 West River Street, Suite 11A\
+Providence, Rhode Island 02904\
+**401-606-8250**
+
+## Send a message
+
+```{=html}
+<form class="contact-form" action="https://formspree.io/f/xnjeeavp" method="POST">
+  <div class="field">
+    <label for="cf-name">Name</label>
+    <input id="cf-name" type="text" name="name" autocomplete="name" required>
+  </div>
+  <div class="field">
+    <label for="cf-email">Email</label>
+    <input id="cf-email" type="email" name="email" autocomplete="email" required>
+  </div>
+  <div class="field">
+    <label for="cf-message">Message</label>
+    <textarea id="cf-message" name="message" rows="6" required></textarea>
+  </div>
+  <input type="hidden" name="_subject" value="oldhamlab.org contact form">
+  <button type="submit">Send</button>
+</form>
 ```
