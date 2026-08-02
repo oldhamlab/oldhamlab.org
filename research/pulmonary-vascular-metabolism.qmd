@@ -1,15 +1,69 @@
 ---
 title: "Metabolic regulation in pulmonary vascular disease"
 description: >-
-  How proliferating vascular cells rewire metabolism in pulmonary
-  hypertension, including the role of MYC in the hypoxic response.
+  Pulmonary artery smooth muscle cells keep proliferating in low oxygen when
+  most cells stop. We are defining the metabolic signal that permits it, and
+  testing whether blocking that signal prevents vascular remodeling.
 order: 30
+toc: false
 ---
 
-::: {.callout-note}
-Draft. Needs your text.
+Pulmonary hypertension arising from chronic lung disease is common and carries
+the highest mortality of any subtype, yet only one therapy is approved for it
+and it helps only some patients. Sustained low oxygen thickens and narrows the
+pulmonary arteries, and that remodeling is driven by proliferation of the smooth
+muscle cells in the vessel wall. Most cells slow or stop dividing in hypoxia.
+Pulmonary artery smooth muscle cells do not, which implies a pathway that
+sustains growth when it should be suppressed.
+
+The canonical account of hypoxic metabolism is that HIF-1α stabilizes, glycolytic
+gene expression rises, and glycolytic flux follows. Working in primary human lung
+fibroblasts and pulmonary artery smooth muscle cells rather than tumor lines, we
+found that this does not hold. Hypoxia *decreased* glycolysis in these cells even
+though HIF-1α was activated and glycolytic enzyme expression increased.
+Stabilizing HIF-1α pharmacologically in normal oxygen did raise glycolysis, but
+hypoxia blocked that response, so something downstream of HIF was overriding it.
+That something is MYC: knocking MYC down in hypoxia increased glycolysis, and
+overexpressing it in normoxia suppressed the glycolytic response to HIF
+stabilization. MYC signaling in hypoxia uncouples HIF-driven glycolytic
+transcription from glycolytic flux.
+
+Our current work asks what sustains MYC activity when oxygen is limited. In
+hypoxia, cells increasingly run the reaction catalyzed by isocitrate
+dehydrogenase in reverse, fixing carbon dioxide onto α-ketoglutarate to make
+citrate rather than oxidizing citrate to α-ketoglutarate. This reductive
+carboxylation supplies carbon for biosynthesis when oxidative metabolism is
+constrained, and our preliminary data indicate that it is required to maintain
+MYC signaling and proliferation in hypoxic smooth muscle cells.
+
+::: {.fig-narrow-wide}
+![](/img/research/reductive-carboxylation.jpg){fig-alt="Diagram of the tricarboxylic acid cycle showing oxidative flux from glutamine-derived alpha-ketoglutarate around to citrate, and the reductive route in which isocitrate dehydrogenase fixes carbon dioxide onto alpha-ketoglutarate to form citrate directly. Carbon atoms derived from labeled glutamine are marked."}
+
+[In hypoxia, isocitrate dehydrogenase increasingly runs in reverse, building citrate directly from α-ketoglutarate rather than oxidizing it. Stable isotope tracing distinguishes the two routes.]{.fig-note}
 :::
 
-Key paper: Copeland CA, et al. MYC overrides HIF-1α to regulate proliferating
-primary cell metabolism in hypoxia. *eLife.* 2023.
-<https://doi.org/10.7554/eLife.82597>
+This gives a metabolic–transcriptional axis to test. We are quantifying IDH
+expression in remodeled human pulmonary arteries and asking whether inhibiting
+IDH — with compounds already approved in oncology — suppresses reductive
+carboxylation, MYC activation, and proliferation. In parallel, inducible
+smooth-muscle-specific expression of Omomyc, a peptide inhibitor of MYC now in
+clinical trials, will test whether MYC is required for hypoxic pulmonary vascular
+remodeling in an intact animal. Because both classes of drug are already well
+advanced in human medicine, a positive result would have a short path to trial in
+a patient population with few options.
+
+## Key paper
+
+```{=html}
+<div class="papers">
+  <div class="paper">
+    <span class="paper-year">2023</span>
+    <div>
+      <a class="paper-title" href="https://doi.org/10.7554/eLife.82597">MYC overrides
+        HIF-1α to regulate proliferating primary cell metabolism in hypoxia</a>
+      <span class="paper-meta">Copeland CA, Olenchock BA, Ziehr DR, et al.
+        <em>eLife.</em></span>
+    </div>
+  </div>
+</div>
+```
