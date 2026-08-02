@@ -29,9 +29,9 @@ stabilization. MYC signaling in hypoxia uncouples HIF-driven glycolytic
 transcription from glycolytic flux.
 
 ::: {.fig-wide}
-![](/img/research/pasmc-flux-myc-model.jpg){fig-alt="Left: metabolic flux map of pulmonary artery smooth muscle cells in low oxygen relative to room air, arrows coloured by fold change and weighted by absolute flux. Right: model in which hypoxia-induced MYC suppresses HIF-driven glycolysis, tested by silencing MYC in low oxygen and overexpressing it during pharmacologic HIF stabilization in room air."}
+![](/img/research/pasmc-flux-map.jpg){fig-alt="Metabolic flux map of pulmonary artery smooth muscle cells in low oxygen relative to room air, with arrows coloured by fold change and weighted by absolute flux."}
 
-[Modeled metabolic fluxes in pulmonary artery smooth muscle cells in low oxygen relative to room air (left), and the model tested by MYC knockdown and overexpression (right).]{.fig-note}
+[Modeled metabolic fluxes in pulmonary artery smooth muscle cells in low oxygen relative to room air.]{.fig-note}
 :::
 
 Our current work asks what sustains MYC activity when oxygen is limited. In
