@@ -460,6 +460,44 @@ main.content:has(> .plate) {
 #title-block-header .quarto-title h1.title { margin-bottom: 0; }
 .quarto-title-banner { background: transparent; }
 
+// ── Contact ───────────────────────────────────────────────────────────
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s5);
+  margin-bottom: var(--s5);
+
+  h3 {
+    margin-top: 0;
+    font-family: $headings-font-family;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: var(--ls-caps);
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: var(--s2);
+  }
+}
+@media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; gap: var(--s4); } }
+
+// ── Responsive embeds (the old map was hardcoded to width="600") ──────
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--img-edge);
+    border-radius: $border-radius;
+  }
+}
+@media (max-width: 640px) { .embed-responsive { aspect-ratio: 4 / 3; } }
+
 // ── Images ────────────────────────────────────────────────────────────
 img { max-width: 100%; height: auto; }
 
