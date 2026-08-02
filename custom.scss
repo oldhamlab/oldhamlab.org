@@ -468,6 +468,39 @@ main.content > section.level1 + section.level1 { margin-top: var(--s7); }
 #title-block-header .quarto-title h1.title { margin-bottom: 0; }
 .quarto-title-banner { background: transparent; }
 
+// ── Research figures ──────────────────────────────────────────────────
+// Two sizes: .fig-wide runs the container, .fig-narrow is a diagram that
+// would look absurd blown up to 1120px.
+.fig-wide, .fig-narrow {
+  margin: var(--s5) 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--img-edge);
+    border-radius: 4px;
+    background: var(--surface);
+  }
+  p { margin: 0; }
+}
+.fig-narrow {
+  max-width: 30rem;
+  img { border: 0; background: transparent; }
+}
+
+.fig-note {
+  display: block;
+  margin-top: var(--s2);
+  font-size: .8125rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+// The first figure on a research page opens it, so pull it up under the title.
+main.content > section.level1 > .fig-wide:first-child,
+main.content > .fig-wide:first-child { margin-top: 0; }
+
 // ── Person page ───────────────────────────────────────────────────────
 // Hand-rolled instead of Quarto's `about: trestles` template, which centred
 // the role under the name, rendered the scholarly links as outlined buttons,

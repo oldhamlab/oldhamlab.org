@@ -1,18 +1,70 @@
 ---
 title: "Lactate transport"
 description: >-
-  Inhibiting monocarboxylate transport reprograms fibroblast metabolism and
-  attenuates fibrosis in experimental models of pulmonary fibrosis.
+  Blocking the transporters that carry lactate out of the cell breaks the
+  metabolic dependency that fibroblasts need to drive pulmonary fibrosis.
 order: 10
+toc: false
 ---
 
-::: {.callout-note}
-Draft. Needs your text.
+::: {.fig-wide}
+![](/img/research/ipf-trichrome.jpg){fig-alt="Trichrome-stained section of lung from a patient with idiopathic pulmonary fibrosis. Collagen is stained blue."}
+
+[Lung tissue from a patient with idiopathic pulmonary fibrosis. Collagen is stained blue.]{.fig-note}
 :::
 
-Supported by **R01 HL167718** (NHLBI).
+Idiopathic pulmonary fibrosis affects roughly 150,000 people in the United States,
+and median survival after diagnosis is three to five years. The two approved drugs
+slow the disease but do not stop it, and for advanced disease a lung transplant
+remains the only option. Better targets are needed.
 
-Key paper: Ziehr DR, et al. Lactate transport inhibition therapeutically
-reprograms fibroblast metabolism in experimental pulmonary fibrosis.
-*Science Translational Medicine.* 2026.
-<https://doi.org/10.1126/scitranslmed.ads2673>
+Fibrosis is driven by myofibroblasts — activated cells that fill the lung with
+excessive scar tissue. Turning an ordinary lung fibroblast into a myofibroblast is
+not only a change in behaviour; it is a change in metabolism. Myofibroblasts burn
+far more glucose than resting cells, and they convert most of it to lactate.
+
+That creates a vulnerability. A cell running glycolysis this hard has to get the
+lactate out, and it does so through a family of proteins called monocarboxylate
+transporters. **If lactate cannot leave, the metabolic program that supports
+fibrosis cannot be sustained.**
+
+::: {.fig-narrow}
+![](/img/research/lactate-pathway.jpg){fig-alt="Diagram of glycolysis showing glucose converted to pyruvate and then to lactate, with lactate exported from the cell by monocarboxylate transporters, and the inhibitors that block each step."}
+
+[Glycolysis, and the points in it that drugs can block. Lactate export by MCTs is the step we target.]{.fig-note}
+:::
+
+We found that two of these transporters, MCT1 and MCT4, are increased in the lungs
+of patients with pulmonary fibrosis and in experimental models of the disease.
+Blocking either one — genetically or with small molecules — prevents fibroblasts
+from becoming myofibroblasts, in cells from healthy donors and from patients alike.
+In mice, MCT inhibitors reduce lung fibrosis, and they do so in aged animals as well
+as young ones, which matters because this is a disease of older people.
+
+Blocking lactate export does not simply starve the cell. It reroutes it. Fibroblasts
+treated with these drugs shift toward oxidative metabolism, produce fewer reactive
+oxygen species, and stop directing glucose carbon into the scarring regions of the
+lung. We are now working out how that metabolic shift is read by the cell's
+machinery for switching genes on and off, and which cells in the lung the drugs must
+reach in order to work.
+
+## Support
+
+National Heart, Lung, and Blood Institute, **R01 HL167718**.
+
+## Key paper
+
+```{=html}
+<div class="papers">
+  <div class="paper">
+    <span class="paper-year">2026</span>
+    <div>
+      <a class="paper-title" href="https://doi.org/10.1126/scitranslmed.ads2673">Lactate
+        transport inhibition therapeutically reprograms fibroblast metabolism in
+        experimental pulmonary fibrosis</a>
+      <span class="paper-meta">Ziehr DR, Li F, Parnell KM, et al.
+        <em>Science Translational Medicine.</em></span>
+    </div>
+  </div>
+</div>
+```
