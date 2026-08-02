@@ -5,6 +5,7 @@ image: "/people/ziehr.jpg"
 status: alumni
 role: fellow
 order: 40
+now: "Instructor in Medicine, Massachusetts General Hospital"
 ---
 
 ::: {.person-top}

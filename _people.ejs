@@ -1,16 +1,17 @@
 ```{=html}
-<ul class="roster<%= templateParams.variant === 'alumni' ? ' roster--alumni' : '' %>">
+<ul class="roster<%= templateParams.bio ? '' : ' roster--compact' %>">
 <% for (const item of items) { %>
   <li class="person" <%= metadataAttrs(item) %>>
-    <a href="<%= item.path %>">
-      <% if (item.image) { %>
-        <img class="portrait" src="<%= item.image %>" alt="" loading="lazy">
-      <% } else { %>
-        <span class="monogram" aria-hidden="true"><%- (item.title || '').split(/\s+/).filter(w => /[A-Za-z]/.test(w)).slice(0, 2).map(w => w[0]).join('') %></span>
-      <% } %>
-      <span class="person-name"><%- item.title %></span>
+    <% if (item.image) { %>
+      <span class="portrait"><img src="<%= item.image %>" alt="" loading="lazy"></span>
+    <% } %>
+    <div class="person-body">
       <% if (item.subtitle) { %><span class="person-role"><%- item.subtitle %></span><% } %>
-    </a>
+      <h3 class="person-name"><a href="<%= item.path %>"><%- item.title %></a></h3>
+      <% if (templateParams.bio && item.description) { %>
+        <p class="person-bio"><%= item.description %></p>
+      <% } %>
+    </div>
   </li>
 <% } %>
 </ul>

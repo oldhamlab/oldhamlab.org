@@ -5,6 +5,8 @@ image: "/people/oldham.jpg"
 status: current
 role: pi
 order: 10
+description: >-
+  Associate Professor of Medicine and Director of Research and Innovation for Pulmonary, Critical Care and Sleep Medicine. Studies cell metabolism in pulmonary vascular and fibrotic lung disease.
 ---
 
 ::: {.person-top}

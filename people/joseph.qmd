@@ -5,6 +5,7 @@ image: "/people/joseph.jpg"
 status: alumni
 role: fellow
 order: 40
+years: "2016–2017"
 ---
 
 ::: {.person-top}

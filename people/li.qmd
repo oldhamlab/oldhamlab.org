@@ -5,6 +5,8 @@ image: "/people/li.jpg"
 status: current
 role: fellow
 order: 30
+description: >-
+  Studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis.
 ---
 
 ::: {.person-top}

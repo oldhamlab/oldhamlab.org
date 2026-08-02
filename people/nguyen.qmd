@@ -5,6 +5,7 @@ image: "/people/nguyen.jpg"
 status: alumni
 role: staff
 order: 60
+years: "2017–2019"
 ---
 
 ::: {.person-top}

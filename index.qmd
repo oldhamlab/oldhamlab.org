@@ -21,7 +21,7 @@ listing:
       status: current
     template: _people.ejs
     template-params:
-      variant: current
+      bio: false
     sort: ["order asc", "title asc"]
     sort-ui: false
     filter-ui: false

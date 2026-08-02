@@ -4,6 +4,8 @@ subtitle: "Graduate Student"
 status: current
 role: student
 order: 50
+description: >-
+  Graduate student in the Pathobiology Graduate Program at Brown University.
 ---
 
 ::: {.person-top}

@@ -5,6 +5,7 @@ image: "/people/cohen.jpg"
 status: alumni
 role: undergrad
 order: 70
+years: "2016"
 ---
 
 ::: {.person-top}
