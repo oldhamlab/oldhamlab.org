@@ -1,9 +1,11 @@
 ```{=html}
 <div class="alumni">
-  <div class="alumni-head"><span>Name</span><span>Years</span><span>Now</span></div>
+  <div class="alumni-head"><span>Name</span><span>In the lab</span><span>Now</span></div>
 <% for (const item of items) { %>
   <div class="alumnus" <%= metadataAttrs(item) %>>
-    <span class="alumnus-name"><a href="<%= item.path %>"><%- item.title %></a></span>
+    <h3 class="alumnus-name"><a href="<%= item.path %>"><%- item.title %></a>
+      <% if (item.subtitle) { %><span class="alumnus-role"><%- item.subtitle %></span><% } %>
+    </h3>
     <span class="alumnus-years"><%- item.years || '' %></span>
     <span class="alumnus-now"><%- item.now || '' %></span>
   </div>
