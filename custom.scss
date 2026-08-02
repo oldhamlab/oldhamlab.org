@@ -499,6 +499,9 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   p { margin: 0; }
 }
 .fig-narrow { max-width: 30rem; }
+// For portrait-ish diagrams: wider than .fig-narrow but not full container,
+// so a tall schematic doesn't dominate the page.
+.fig-narrow-wide { max-width: 38rem; }
 
 .fig-note {
   display: block;
