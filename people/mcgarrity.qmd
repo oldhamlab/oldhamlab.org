@@ -2,7 +2,6 @@
 title: "Sarah McGarrity"
 subtitle: "Post-doctoral Fellow"
 image: "/people/mcgarrity.jpg"
-categories: ["Fellow"]
 status: alumni
 role: fellow
 order: 30

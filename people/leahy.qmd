@@ -1,7 +1,6 @@
 ---
 title: "Kevin Leahy"
 subtitle: "Research Assistant"
-categories: ["Assistant"]
 status: alumni
 role: staff
 order: 60

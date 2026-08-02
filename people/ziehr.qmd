@@ -2,7 +2,6 @@
 title: "David Ziehr"
 subtitle: "Post-doctoral Fellow"
 image: "/people/ziehr.jpg"
-categories: ["Fellow"]
 status: alumni
 role: fellow
 order: 40

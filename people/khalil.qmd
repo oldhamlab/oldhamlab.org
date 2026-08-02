@@ -1,7 +1,6 @@
 ---
 title: "Aseel Khalil"
 subtitle: "Graduate Student"
-categories: ["Graduate Student"]
 status: current
 role: student
 order: 50

@@ -1,7 +1,6 @@
 ---
 title: "Aliya Gottehrer-Cohen"
 subtitle: "Undergraduate"
-categories: ["Undergraduate"]
 image: "/people/cohen.jpg"
 status: alumni
 role: undergrad

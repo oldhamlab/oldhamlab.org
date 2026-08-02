@@ -1,7 +1,6 @@
 ---
 title: "Diana Ferreyra Faustino"
 subtitle: "Graduate Student"
-categories: ["Graduate Student"]
 status: current
 role: student
 order: 50

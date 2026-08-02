@@ -2,7 +2,6 @@
 title: "Phuong Nguyen"
 subtitle: "Research Assistant"
 image: "/people/nguyen.jpg"
-categories: ["Assistant"]
 status: alumni
 role: staff
 order: 60
