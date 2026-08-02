@@ -26,12 +26,6 @@ glycolytic enzymes have been limited by poor specificity and narrow therapeutic
 indices, MCT inhibitors have favorable pharmacologic profiles and have advanced
 to clinical trials in other diseases.
 
-::: {.fig-wide}
-![](/img/research/mct-immunofluorescence.jpg){fig-alt="Immunofluorescence of MCT1 and MCT4 in control and IPF lung. Both transporters show greater signal in IPF."}
-
-[MCT1 and MCT4 in explanted lung from unused donor controls and from patients with idiopathic pulmonary fibrosis.]{.fig-note}
-:::
-
 We found that MCT1 and MCT4 are upregulated in IPF lung and in experimental
 fibrosis, and that inhibiting either transporter, genetically or
 pharmacologically, blocks TGF-β–stimulated myofibroblast differentiation in
@@ -45,12 +39,18 @@ incorporation of glucose carbon into fibrotic regions of the lung.
 ::: {.fig-wide}
 ![](/img/research/mct-bleomycin-histology.jpg){fig-alt="Four trichrome-stained mouse lung sections — control, bleomycin, bleomycin with AZD3965, and bleomycin with VB124 — beside a bar plot of Ashcroft fibrosis scores for the same four groups."}
 
-[Lung from mice given bleomycin and treated with the MCT1 inhibitor AZD3965 or the MCT4 inhibitor VB124, with corresponding Ashcroft fibrosis scores.]{.fig-note}
+[Lung from mice given bleomycin and treated with the MCT1 inhibitor AZD3965 or the MCT4 inhibitor VB124, with corresponding Ashcroft fibrosis scores. Scale bar, 200 μm. AZD3965 *P* = 0.004 and VB124 *P* = 0.002 versus bleomycin.]{.fig-note}
 :::
 
 Current work addresses how this metabolic shift is transduced to the profibrotic
 transcriptional program, and which cells must be targeted *in vivo* for MCT
-inhibition to be effective.
+inhibition to be effective. We are using fibroblast-specific conditional
+knockout animals to establish which cellular compartment requires lactate
+transport for fibrogenesis, and whether the benefit of MCT inhibition is
+attributable to the fibroblast itself. We are also examining the epigenetic
+consequences of intracellular lactate accumulation, including histone
+lactylation, as a candidate mechanism coupling the metabolic state of the cell
+to the profibrotic gene program.
 
 ## Support
 

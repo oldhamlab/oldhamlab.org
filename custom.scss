@@ -308,8 +308,10 @@ main.content:has(> .plate) {
 // a 0px gap. Space the sections themselves instead of their headings. The
 // adjacent-sibling selector keeps the first section on a page flush to the
 // title block.
-main.content > section.level2 + section.level2,
-main.content > section.level1 + section.level1 { margin-top: var(--s6); }
+// Any top-level section that follows something gets the same gap. Matching
+// only `section + section` left the FIRST heading on a page (which follows a
+// paragraph, not a section) with a visibly smaller gap than the ones after it.
+main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); }
 
 .section { margin-top: var(--s7); }
 .section > h2:first-child { margin-top: 0; }
