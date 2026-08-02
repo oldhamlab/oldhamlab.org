@@ -6,13 +6,15 @@ status: alumni
 role: fellow
 order: 30
 started: "2020-06"
-now: "Instructor in Medicine, Massachusetts General Hospital"
 years: "2020–2023"
+now: "Instructor in Medicine, Massachusetts General Hospital"
 ---
 
 ::: {.person-top}
 ::: {.person-figure}
 ![](/people/ziehr.jpg){.person-photo fig-alt="David Ziehr"}
+
+[[LinkedIn](https://www.linkedin.com/in/david-ziehr-862aa021/)]{.person-links}
 :::
 
 ::: {.person-meta}

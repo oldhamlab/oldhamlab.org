@@ -7,11 +7,14 @@ role: undergrad
 order: 70
 started: "2016-01"
 years: "2016"
+now: "NYC Director, BBYO"
 ---
 
 ::: {.person-top}
 ::: {.person-figure}
 ![](/people/cohen.jpg){.person-photo fig-alt="Aliya Gottehrer-Cohen"}
+
+[[LinkedIn](https://www.linkedin.com/in/aliyagcohen/)]{.person-links}
 :::
 :::
 

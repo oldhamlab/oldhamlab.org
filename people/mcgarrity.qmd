@@ -7,6 +7,7 @@ role: fellow
 order: 30
 started: "2020-02"
 years: "2020–2023"
+now: "Senior Researcher, Center for Endotheliomics, Rigshospitalet"
 ---
 
 ::: {.person-top}

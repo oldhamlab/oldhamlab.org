@@ -6,7 +6,7 @@ role: faculty
 order: 20
 started: "2026-06"
 description: >-
-  Physician-scientist and Assistant Professor of Medicine (Research), studying
+  Physician-scientist and Assistant Professor of Medicine, studying
   the liver–lung axis in pulmonary arterial hypertension.
 ---
 

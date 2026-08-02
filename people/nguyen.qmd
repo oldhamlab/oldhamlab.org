@@ -7,11 +7,14 @@ role: staff
 order: 60
 started: "2017-01"
 years: "2017–2019"
+now: "Deputy Group CEO, Phương Châu Healthcare Group"
 ---
 
 ::: {.person-top}
 ::: {.person-figure}
 ![](/people/nguyen.jpg){.person-photo fig-alt="Phuong Nguyen"}
+
+[[LinkedIn](https://www.linkedin.com/in/phuongngocanhnguyen/)]{.person-links}
 :::
 
 ::: {.person-meta}

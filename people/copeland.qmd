@@ -7,12 +7,14 @@ role: fellow
 order: 30
 started: "2017-12"
 years: "2017–2021"
-now: "Consultant, Deloitte"
+now: "Senior Business Consultant, Veeva Systems"
 ---
 
 ::: {.person-top}
 ::: {.person-figure}
 ![](/people/copeland.jpg){.person-photo fig-alt="Courtney Copeland"}
+
+[[LinkedIn](https://www.linkedin.com/in/courtney-copeland-ph-d-a268a43b/)]{.person-links}
 :::
 
 ::: {.person-meta}
