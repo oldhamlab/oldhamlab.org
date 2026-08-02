@@ -1,11 +1,29 @@
 ---
 title: "A small molecule for reperfusion injury"
 description: >-
-  Developing small molecule inhibitors of L2HGDH as a therapeutic strategy
-  for reperfusion injury.
+  Restoring blood flow to ischemic tissue causes injury of its own. We are
+  developing small molecules against a metabolic enzyme to blunt it.
 order: 40
+toc: false
 ---
 
-::: {.callout-note}
-Draft. Needs your text.
-:::
+Restoring blood flow to ischemic tissue is necessary, and it is also injurious.
+When oxygen returns to a tissue that has been without it, the abrupt resumption
+of mitochondrial electron transport produces a burst of reactive oxygen species
+that damages the tissue the intervention was meant to salvage. This is the
+central problem of reperfusion injury, and it limits the benefit of
+revascularization after myocardial infarction, of thrombectomy in stroke, and of
+transplantation, where every organ is reperfused by definition. No approved
+therapy addresses it directly.
+
+Ischemia leaves a metabolic signature. Substrates accumulate during oxygen
+deprivation and are consumed when oxygen returns, and the manner of their
+disposal determines how much oxidative damage follows. Our work on the metabolic
+response to low oxygen identified an enzymatic step that governs how tissue
+handles one of these accumulated substrates on reperfusion, and that can be
+inhibited pharmacologically to shift the balance away from injury.
+
+We are developing small molecule inhibitors of that step. Work so far has covered
+target validation and early compound discovery. Current effort is directed at
+potency, selectivity, and the pharmacologic properties needed for testing in
+animal models of ischemia and reperfusion.
