@@ -27,19 +27,26 @@ indices, MCT inhibitors have favorable pharmacologic profiles and have advanced
 to clinical trials in other diseases.
 
 ::: {.fig-wide}
-![](/img/research/mct-bleomycin-histology.jpg){fig-alt="Four trichrome-stained mouse lung sections — control, bleomycin, bleomycin with AZD3965, and bleomycin with VB124 — beside a bar plot of Ashcroft fibrosis scores for the same four groups."}
+![](/img/research/mct-immunofluorescence.jpg){fig-alt="Immunofluorescence of MCT1 and MCT4 in control and IPF lung. Both transporters show greater signal in IPF."}
 
-[Trichrome-stained lung from mice given bleomycin and treated with the MCT1 inhibitor AZD3965 or the MCT4 inhibitor VB124, with corresponding Ashcroft fibrosis scores.]{.fig-note}
+[MCT1 and MCT4 in explanted lung from unused donor controls and from patients with idiopathic pulmonary fibrosis.]{.fig-note}
 :::
 
-MCT1 and MCT4 are upregulated in IPF lung and in experimental fibrosis.
-Inhibiting either transporter, genetically or pharmacologically, blocks
-TGF-β–stimulated myofibroblast differentiation in fibroblasts from healthy donors
-and from patients with IPF. In mice, MCT inhibitors attenuate bleomycin-induced
-fibrosis with efficacy comparable to approved antifibrotics, in aged as well as
-young animals. Lactate transport inhibition enhances oxidative phosphorylation,
-reduces reactive oxygen species production, and diminishes incorporation of
-glucose carbon into fibrotic regions of the lung.
+We found that MCT1 and MCT4 are upregulated in IPF lung and in experimental
+fibrosis, and that inhibiting either transporter, genetically or
+pharmacologically, blocks TGF-β–stimulated myofibroblast differentiation in
+fibroblasts from healthy donors and from patients with IPF. In mice, we showed
+that MCT inhibitors attenuate bleomycin-induced fibrosis with efficacy
+comparable to approved antifibrotics, in aged as well as young animals. We
+further demonstrated that lactate transport inhibition enhances oxidative
+phosphorylation, reduces reactive oxygen species production, and diminishes
+incorporation of glucose carbon into fibrotic regions of the lung.
+
+::: {.fig-wide}
+![](/img/research/mct-bleomycin-histology.jpg){fig-alt="Four trichrome-stained mouse lung sections — control, bleomycin, bleomycin with AZD3965, and bleomycin with VB124 — beside a bar plot of Ashcroft fibrosis scores for the same four groups."}
+
+[Lung from mice given bleomycin and treated with the MCT1 inhibitor AZD3965 or the MCT4 inhibitor VB124, with corresponding Ashcroft fibrosis scores.]{.fig-note}
+:::
 
 Current work addresses how this metabolic shift is transduced to the profibrotic
 transcriptional program, and which cells must be targeted *in vivo* for MCT
@@ -47,7 +54,7 @@ inhibition to be effective.
 
 ## Support
 
-National Heart, Lung, and Blood Institute, **R01 HL167718**.
+National Heart, Lung, and Blood Institute, R01 HL167718.
 
 ## Key paper
 

@@ -309,7 +309,7 @@ main.content:has(> .plate) {
 // adjacent-sibling selector keeps the first section on a page flush to the
 // title block.
 main.content > section.level2 + section.level2,
-main.content > section.level1 + section.level1 { margin-top: var(--s7); }
+main.content > section.level1 + section.level1 { margin-top: var(--s6); }
 
 .section { margin-top: var(--s7); }
 .section > h2:first-child { margin-top: 0; }
@@ -466,6 +466,19 @@ main.content > section.level1 + section.level1 { margin-top: var(--s7); }
 // ── Title blocks: no coloured rule under every heading ─────────────────
 #title-block-header.quarto-title-block.default { margin-bottom: var(--s5); }
 #title-block-header .quarto-title h1.title { margin-bottom: 0; }
+
+// The `description:` front matter renders here, flush against the h1 by
+// default. Give it room and set it as a lede rather than body copy.
+#title-block-header .description {
+  // padding, not margin: .description is the first child of an unstyled
+  // wrapper div, so a margin-top collapses through it and does nothing.
+  padding-top: var(--s3);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: var(--ls-mid);
+  color: var(--muted);
+  p { margin: 0; }
+}
 .quarto-title-banner { background: transparent; }
 
 // ── Research figures ──────────────────────────────────────────────────
@@ -474,20 +487,16 @@ main.content > section.level1 + section.level1 { margin-top: var(--s7); }
 .fig-wide, .fig-narrow {
   margin: var(--s5) 0;
 
+  // No frame. The figures are built on the page background, so a border
+  // just draws a box around nothing.
   img {
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid var(--img-edge);
-    border-radius: 4px;
-    background: var(--surface);
   }
   p { margin: 0; }
 }
-.fig-narrow {
-  max-width: 30rem;
-  img { border: 0; background: transparent; }
-}
+.fig-narrow { max-width: 30rem; }
 
 .fig-note {
   display: block;
