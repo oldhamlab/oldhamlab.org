@@ -2,11 +2,11 @@
 title: "Fei Li"
 subtitle: "Post-doctoral Fellow"
 image: "/people/li.jpg"
-status: current
+status: alumni
 role: fellow
 order: 30
-description: >-
-  Studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis.
+years: "2023–2026"
+now: "Associate Research Fellow, Ningbo University Affiliated First Hospital"
 ---
 
 ::: {.person-top}
@@ -31,4 +31,9 @@ description: >-
 :::
 :::
 
-Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis.
+Fei worked in the Oldham lab from October 2023 to February 2026. He studied the
+metabolic pathways that contribute to myofibroblast differentiation and
+extracellular matrix production in experimental models of pulmonary fibrosis,
+and showed that TGF-β coordinates alanine synthesis and import to support
+myofibroblast differentiation. He is now an Associate Research Fellow at Ningbo
+University Affiliated First Hospital.
