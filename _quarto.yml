@@ -8,6 +8,11 @@ project:
   preview:
     port: 4200
     browser: false
+  # Self-hosted webfonts are not referenced from any .qmd, so Quarto will not
+  # discover them - they must be declared as project resources or the site
+  # ships with no fonts at all.
+  resources:
+    - fonts/
 
 website:
   title: "Oldham Lab"
@@ -32,22 +37,47 @@ website:
     type: implied
     style: simple
     palette: light
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: false
 
   navbar:
-    right:
+    # An explicit hex is what stops Quarto painting the navbar with $primary.
+    # Without it you get a full-bleed coloured slab regardless of the SCSS.
+    # (`body` is not accepted here - the schema wants a named or hex colour.)
+    background: "#fdfcfb"
+    title: "Oldham Lab"
+    collapse-below: lg
+    left:
       - people.qmd
       - papers.qmd
       - contact.qmd
 
-
+  # Deliberately DISJOINT from the navbar - no People / Papers / Contact here.
+  page-footer:
+    border: false
+    background: "#fdfcfb"
+    left: |
+      Division of Pulmonary, Critical Care and Sleep Medicine<br>
+      The Warren Alpert Medical School of Brown University<br>
+      Providence, Rhode Island
+    right: |
+      [ORCID](https://orcid.org/0000-0003-3029-4866)<br>
+      [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/william.oldham.1/bibliography/public/)<br>
+      [Google Scholar](https://scholar.google.com/citations?user=cba3bIAAAAAJ&hl=en)<br>
+      [GitHub](https://github.com/oldhamlab)
 
 format:
   html:
-    theme:
-      - cosmo
-      - custom.scss
-    toc: true
+    theme: custom.scss
+    toc: false
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true
     link-external-icon: false
+    grid:
+      body-width: 1120px
+      sidebar-width: 240px
+      margin-width: 180px
+      gutter-width: 1.5rem

@@ -2,8 +2,10 @@
 title: "Phillip Joseph"
 subtitle: "Post-doctoral Fellow"
 image: "/people/joseph.jpg"
-categories: ["Fellow", "Alumni"]
-order: 4
+categories: ["Fellow"]
+status: alumni
+role: fellow
+order: 40
 about:
   template: trestles
   image-shape: round

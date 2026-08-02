@@ -3,7 +3,9 @@ title: "Fei Li"
 subtitle: "Post-doctoral Fellow"
 image: "/people/li.jpg"
 categories: ["Fellow"]
-order: 4
+status: current
+role: fellow
+order: 30
 about:
   template: trestles
   image-shape: round

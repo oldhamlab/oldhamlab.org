@@ -1,0 +1,20 @@
+---
+title: "Diana Ferreyra Faustino"
+subtitle: "Graduate Student"
+categories: ["Graduate Student"]
+status: current
+role: student
+order: 50
+about:
+  template: trestles
+  image-shape: round
+  image-width: 10em
+---
+
+Diana is a graduate student in the [Pathobiology Graduate Program](https://pathobiology.biomed.brown.edu/)
+at Brown University.
+
+## Education and Training
+
+**State University of New York at Binghamton** | Binghamton, NY<br>
+BS

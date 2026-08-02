@@ -1,9 +1,127 @@
 ---
-title: "Welcome"
-about:
-  template: marquee
-  image: "/img/cells.jpg"
+pagetitle: "Oldham Lab"
+description-meta: >-
+  Cell metabolism in pulmonary hypertension and pulmonary fibrosis.
+  Brown University and Brown University Health.
+toc: false
 ---
 
-The Oldham Lab in the [Pulmonary and Critical Care Medicine Division](https://www.brighamandwomens.org/medicine/pulmonary-and-critical-care-medicine) and the [Department of Medicine](https://www.brighamandwomens.org/department-of-medicine) at [Brigham and Women’s Hospital](https://www.brighamandwomens.org/) and [Harvard Medical School](https://hms.harvard.edu/) investigates how cellular metabolic reprogramming contributes to the lung diseases pulmonary hypertension and pulmonary fibrosis. We study *in vitro* and *in vivo* model systems with state-of-the-art analytical techniques, including metabolomics, stable isotope tracing, extracellular flux analyses, systems biology, and network medicine. **By improving our understanding of cell metabolism, we aim to develop new therapeutic strategies for the treatment lung diseases.**
+```{=html}
+<div class="plate">
+  <img src="img/cells.jpg"
+       alt="Fluorescence micrograph of mitochondria in pulmonary artery endothelial cells."
+       width="1500" height="500" fetchpriority="high">
+</div>
+```
 
+# Metabolic reprogramming in pulmonary vascular and fibrotic lung disease
+
+::: {.lede}
+The Oldham Lab investigates how cellular metabolic reprogramming contributes to
+pulmonary hypertension and pulmonary fibrosis. By improving our understanding of
+cell metabolism, we aim to develop new therapeutic strategies for the treatment
+of lung disease.
+:::
+
+We study *in vitro* and *in vivo* model systems with state-of-the-art analytical
+techniques, including metabolomics, stable isotope tracing, extracellular flux
+analysis, and systems biology. The lab is part of the [Division of Pulmonary,
+Critical Care and Sleep Medicine](https://dom.med.brown.edu/divisions/pulmonary-critical-care-and-sleep-medicine)
+at [The Warren Alpert Medical School of Brown University](https://medical.brown.edu/)
+and [Brown University Health](https://www.brownhealth.org/).
+
+```{=html}
+<section class="section">
+  <h2>Research</h2>
+  <div class="teasers">
+    <div class="teaser">
+      <h3>Lactate transport in pulmonary fibrosis</h3>
+      <p>Inhibiting monocarboxylate transport reprograms fibroblast metabolism and
+         attenuates fibrosis in experimental models.</p>
+    </div>
+    <div class="teaser">
+      <h3>Amino acid metabolism in myofibroblast differentiation</h3>
+      <p>How TGF-&beta; coordinates alanine synthesis and import to support the
+         myofibroblast phenotype.</p>
+    </div>
+    <div class="teaser">
+      <h3>Metabolism in pulmonary vascular disease</h3>
+      <p>Metabolic reprogramming of endothelial and smooth muscle cells in
+         pulmonary arterial hypertension.</p>
+    </div>
+    <div class="teaser">
+      <h3>Immunometabolism in lung injury</h3>
+      <p>Immune mechanisms and their metabolic control in fibrotic interstitial
+         lung disease and critical illness.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>The lab</h2>
+  <ul class="roster">
+    <li class="person">
+      <a href="people/oldham.html">
+        <img class="portrait" src="people/oldham.jpg" alt="" loading="lazy">
+        <span class="person-name">William Oldham</span>
+        <span class="person-role">Principal Investigator</span>
+      </a>
+    </li>
+    <li class="person">
+      <a href="people/li.html">
+        <img class="portrait" src="people/li.jpg" alt="" loading="lazy">
+        <span class="person-name">Fei Li</span>
+        <span class="person-role">Postdoctoral Fellow</span>
+      </a>
+    </li>
+    <li class="person">
+      <span class="monogram" aria-hidden="true">AK</span>
+      <span class="person-name">Aseel Khalil</span>
+      <span class="person-role">Graduate Student</span>
+    </li>
+    <li class="person">
+      <span class="monogram" aria-hidden="true">DF</span>
+      <span class="person-name">Diana Ferreyra Faustino</span>
+      <span class="person-role">Graduate Student</span>
+    </li>
+  </ul>
+  <p class="more"><a href="people.html">Full roster and alumni &rarr;</a></p>
+</section>
+
+<section class="section">
+  <h2>Recent papers</h2>
+  <div class="papers">
+    <div class="paper">
+      <span class="paper-year">2026</span>
+      <div>
+        <span class="paper-title">Lactate transport inhibition therapeutically
+          reprograms fibroblast metabolism in experimental pulmonary fibrosis</span>
+        <span class="paper-meta">Ziehr DR, Li F, Parnell KM, et al.
+          <em>Science Translational Medicine.</em>
+          <a href="https://doi.org/10.1126/scitranslmed.ads2673">10.1126/scitranslmed.ads2673</a></span>
+      </div>
+    </div>
+    <div class="paper">
+      <span class="paper-year">2026</span>
+      <div>
+        <span class="paper-title">TGF-&beta; coordinates alanine synthesis and import
+          for myofibroblast differentiation in pulmonary fibrosis</span>
+        <span class="paper-meta">Li F, Vigder N, Ziehr DR, et al.
+          <em>JCI Insight.</em>
+          <a href="https://doi.org/10.1172/jci.insight.199449">10.1172/jci.insight.199449</a></span>
+      </div>
+    </div>
+    <div class="paper">
+      <span class="paper-year">2026</span>
+      <div>
+        <span class="paper-title">Exploring the lung&ndash;liver axis in pulmonary
+          arterial hypertension</span>
+        <span class="paper-meta">Singh N, Lawson J, Ragavendran A, et al.
+          <em>Comprehensive Physiology.</em>
+          <a href="https://doi.org/10.1002/cph4.70171">10.1002/cph4.70171</a></span>
+      </div>
+    </div>
+  </div>
+  <p class="more"><a href="papers.html">All publications &rarr;</a></p>
+</section>
+```

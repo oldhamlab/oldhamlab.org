@@ -2,8 +2,10 @@
 title: "Phuong Nguyen"
 subtitle: "Research Assistant"
 image: "/people/nguyen.jpg"
-categories: ["Assistant", "Alumni"]
-order: 5
+categories: ["Assistant"]
+status: alumni
+role: staff
+order: 60
 about:
   template: trestles
   image-shape: round

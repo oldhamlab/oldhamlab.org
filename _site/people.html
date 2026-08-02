@@ -46,10 +46,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b7cf2f000dc4fadd1c7a8a6468550e37.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c782a20ab11200a0fa23076917143b46.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +62,6 @@ ul.task-list li input[type="checkbox"] {
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -80,20 +79,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-current-members .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-subtitle','listing-categories','listing-status','listing-role','listing-order','listing-about','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-categories","listing-status","listing-role","listing-order","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-current-members'] = new List('listing-current-members', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lab-alumni .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-subtitle','listing-categories','listing-image','listing-status','listing-role','listing-order','listing-about','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-categories","listing-image","listing-status","listing-role","listing-order","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lab-alumni'] = new List('listing-lab-alumni', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -168,13 +195,15 @@ window.Quarto = {
 <meta property="og:title" content="People – Oldham Lab">
 <meta property="og:image" content="https://oldhamlab.org/people/oldham.jpg">
 <meta property="og:site_name" content="Oldham Lab">
+<meta property="og:image:alt" content="">
 <meta name="twitter:title" content="People – Oldham Lab">
 <meta name="twitter:image" content="https://oldhamlab.org/people/oldham.jpg">
 <meta name="twitter:creator" content="@wm_oldham">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -190,7 +219,7 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./people.html" aria-current="page"> 
 <span class="menu-text">People</span></a>
@@ -214,9 +243,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="QWx1bW5p">Alumni <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QXNzaXN0YW50">Assistant <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RmVsbG93">Fellow <span class="quarto-category-count">(5)</span></div><div class="category" data-category="VW5kZXJncmFkdWF0ZQ==">Undergraduate <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -239,186 +266,136 @@ window.Quarto = {
 </header>
 
 
+<div id="listing-current-members" class="quarto-listing quarto-listing-container-custom">
+<ul class="roster">
 
+  <li class="person" data-index="0" data-listing-file-modified-sort="1785634248722" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
+    <a href="./people/oldham.html">
+      
+        <img class="portrait" src="./people/oldham.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">William Oldham</span>
+      <span class="person-role">Principal Investigator</span>
+    </a>
+  </li>
 
+  <li class="person" data-index="1" data-categories="RmVsbG93" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+    <a href="./people/li.html">
+      
+        <img class="portrait" src="./people/li.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">Fei Li</span>
+      <span class="person-role">Post-doctoral Fellow</span>
+    </a>
+  </li>
 
+  <li class="person" data-index="2" data-categories="R3JhZHVhdGUlMjBTdHVkZW50" data-listing-file-modified-sort="1785634299036" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+    <a href="./people/khalil.html">
+      
+        <span class="monogram" aria-hidden="true">AK</span>
+      
+      <span class="person-name">Aseel Khalil</span>
+      <span class="person-role">Graduate Student</span>
+    </a>
+  </li>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1678842340000" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
-<div class="thumbnail"><a href="./people/oldham.html" class="no-external">
+  <li class="person" data-index="3" data-categories="R3JhZHVhdGUlMjBTdHVkZW50" data-listing-file-modified-sort="1785634300459" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+    <a href="./people/ferreyra-faustino.html">
+      
+        <span class="monogram" aria-hidden="true">DF</span>
+      
+      <span class="person-name">Diana Ferreyra Faustino</span>
+      <span class="person-role">Graduate Student</span>
+    </a>
+  </li>
 
-<img loading="lazy" src="./people/oldham.jpg" class="thumbnail-image" style="height: 225px;">
+  <li class="person" data-index="4" data-categories="QXNzaXN0YW50" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+    <a href="./people/leahy.html">
+      
+        <span class="monogram" aria-hidden="true">KL</span>
+      
+      <span class="person-name">Kevin Leahy</span>
+      <span class="person-role">Research Assistant</span>
+    </a>
+  </li>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/oldham.html" class="no-external">William Oldham</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/oldham.html" class="no-external">Principal Investigator</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/oldham.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-categories="RmVsbG93" data-listing-file-modified-sort="1678842349000" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
-<div class="thumbnail"><a href="./people/ziehr.html" class="no-external">
-
-<img loading="lazy" src="./people/ziehr.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/ziehr.html" class="no-external">David Ziehr</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/ziehr.html" class="no-external">Post-doctoral Fellow</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/ziehr.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-categories="QXNzaXN0YW50" data-listing-file-modified-sort="1676132530000" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
-<div class="thumbnail"><a href="./people/leahy.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" style="height: 225px;">&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/leahy.html" class="no-external">Kevin Leahy</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/leahy.html" class="no-external">Research Assistant</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/leahy.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="3" data-categories="RmVsbG93JTJDQWx1bW5p" data-listing-file-modified-sort="1678842276000" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
-<div class="thumbnail"><a href="./people/copeland.html" class="no-external">
-
-<img loading="lazy" src="./people/copeland.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/copeland.html" class="no-external">Courtney Copeland</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/copeland.html" class="no-external">Post-doctoral Fellow</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/copeland.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="4" data-categories="RmVsbG93" data-listing-file-modified-sort="1714660524000" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
-<div class="thumbnail"><a href="./people/li.html" class="no-external">
-
-<img loading="lazy" src="./people/li.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/li.html" class="no-external">Fei Li</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/li.html" class="no-external">Post-doctoral Fellow</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/li.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="5" data-categories="RmVsbG93JTJDQWx1bW5p" data-listing-file-modified-sort="1678842301000" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
-<div class="thumbnail"><a href="./people/joseph.html" class="no-external">
-
-<img loading="lazy" src="./people/joseph.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/joseph.html" class="no-external">Phillip Joseph</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/joseph.html" class="no-external">Post-doctoral Fellow</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/joseph.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="6" data-categories="RmVsbG93JTJDQWx1bW5p" data-listing-file-modified-sort="1678842314000" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
-<div class="thumbnail"><a href="./people/mcgarrity.html" class="no-external">
-
-<img loading="lazy" src="./people/mcgarrity.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/mcgarrity.html" class="no-external">Sarah McGarrity</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/mcgarrity.html" class="no-external">Post-doctoral Fellow</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/mcgarrity.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="7" data-categories="VW5kZXJncmFkdWF0ZSUyQ0FsdW1uaQ==" data-listing-file-modified-sort="1714591368000" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail"><a href="./people/cohen.html" class="no-external">
-
-<img loading="lazy" src="./people/cohen.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/cohen.html" class="no-external">Aliya Gottehrer-Cohen</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/cohen.html" class="no-external">Undergraduate</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/cohen.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="8" data-categories="QXNzaXN0YW50JTJDQWx1bW5p" data-listing-file-modified-sort="1678842324000" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
-<div class="thumbnail"><a href="./people/nguyen.html" class="no-external">
-
-<img loading="lazy" src="./people/nguyen.jpg" class="thumbnail-image" style="height: 225px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./people/nguyen.html" class="no-external">Phuong Nguyen</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./people/nguyen.html" class="no-external">Research Assistant</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./people/nguyen.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<section id="alumni" class="level2">
+<h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
+<div id="listing-lab-alumni" class="quarto-listing quarto-listing-container-custom">
+<ul class="roster roster--alumni">
+
+  <li class="person" data-index="0" data-categories="RmVsbG93" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+    <a href="./people/copeland.html">
+      
+        <img class="portrait" src="./people/copeland.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">Courtney Copeland</span>
+      <span class="person-role">Post-doctoral Fellow</span>
+    </a>
+  </li>
+
+  <li class="person" data-index="1" data-categories="RmVsbG93" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
+    <a href="./people/mcgarrity.html">
+      
+        <img class="portrait" src="./people/mcgarrity.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">Sarah McGarrity</span>
+      <span class="person-role">Post-doctoral Fellow</span>
+    </a>
+  </li>
+
+  <li class="person" data-index="2" data-categories="RmVsbG93" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
+    <a href="./people/ziehr.html">
+      
+        <img class="portrait" src="./people/ziehr.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">David Ziehr</span>
+      <span class="person-role">Post-doctoral Fellow</span>
+    </a>
+  </li>
+
+  <li class="person" data-index="3" data-categories="RmVsbG93" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+    <a href="./people/joseph.html">
+      
+        <img class="portrait" src="./people/joseph.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">Phillip Joseph</span>
+      <span class="person-role">Post-doctoral Fellow</span>
+    </a>
+  </li>
+
+  <li class="person" data-index="4" data-categories="QXNzaXN0YW50" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+    <a href="./people/nguyen.html">
+      
+        <img class="portrait" src="./people/nguyen.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">Phuong Nguyen</span>
+      <span class="person-role">Research Assistant</span>
+    </a>
+  </li>
+
+  <li class="person" data-index="5" data-categories="VW5kZXJncmFkdWF0ZQ==" data-listing-file-modified-sort="1785634248723" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+    <a href="./people/cohen.html">
+      
+        <img class="portrait" src="./people/cohen.jpg" alt="" loading="lazy">
+      
+      <span class="person-name">Aliya Gottehrer-Cohen</span>
+      <span class="person-role">Undergraduate</span>
+    </a>
+  </li>
+
+</ul>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -828,14 +805,14 @@ window.Quarto = {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>Division of Pulmonary, Critical Care and Sleep Medicine<br> The Warren Alpert Medical School of Brown University<br> Providence, Rhode Island</p>
+</div>   
     <div class="nav-footer-center">
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p><a href="https://orcid.org/0000-0003-3029-4866">ORCID</a><br> <a href="https://www.ncbi.nlm.nih.gov/myncbi/william.oldham.1/bibliography/public/">PubMed</a><br> <a href="https://scholar.google.com/citations?user=cba3bIAAAAAJ&amp;hl=en">Google Scholar</a><br> <a href="https://github.com/oldhamlab">GitHub</a></p>
+</div>
   </div>
 </footer>
 

@@ -2,8 +2,10 @@
 title: "Sarah McGarrity"
 subtitle: "Post-doctoral Fellow"
 image: "/people/mcgarrity.jpg"
-categories: ["Fellow", "Alumni"]
-order: 4
+categories: ["Fellow"]
+status: alumni
+role: fellow
+order: 30
 about:
   template: trestles
   image-shape: round

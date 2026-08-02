@@ -1,9 +1,11 @@
 ---
 title: "Aliya Gottehrer-Cohen"
 subtitle: "Undergraduate"
-categories: ["Undergraduate", "Alumni"]
+categories: ["Undergraduate"]
 image: "/people/cohen.jpg"
-order: 5
+status: alumni
+role: undergrad
+order: 70
 about:
   template: trestles
   image-shape: round

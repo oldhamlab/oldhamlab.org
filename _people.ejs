@@ -1,0 +1,17 @@
+```{=html}
+<ul class="roster<%= templateParams.variant === 'alumni' ? ' roster--alumni' : '' %>">
+<% for (const item of items) { %>
+  <li class="person" <%= metadataAttrs(item) %>>
+    <a href="<%= item.path %>">
+      <% if (item.image) { %>
+        <img class="portrait" src="<%= item.image %>" alt="" loading="lazy">
+      <% } else { %>
+        <span class="monogram" aria-hidden="true"><%- (item.title || '').split(/\s+/).filter(w => /[A-Za-z]/.test(w)).slice(0, 2).map(w => w[0]).join('') %></span>
+      <% } %>
+      <span class="person-name"><%- item.title %></span>
+      <% if (item.subtitle) { %><span class="person-role"><%- item.subtitle %></span><% } %>
+    </a>
+  </li>
+<% } %>
+</ul>
+```

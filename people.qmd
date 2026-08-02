@@ -1,9 +1,36 @@
 ---
 title: "People"
-listing: 
-  contents: people
-  image-align: left
-  image-height: 225px
-  fields: [image, title, subtitle]
-  categories: true
+toc: false
+listing:
+  - id: current-members
+    contents: "people/*.qmd"
+    include:
+      status: current
+    template: _people.ejs
+    template-params:
+      variant: current
+    sort: ["order asc", "title asc"]
+    sort-ui: false
+    filter-ui: false
+    categories: false
+
+  - id: lab-alumni
+    contents: "people/*.qmd"
+    include:
+      status: alumni
+    template: _people.ejs
+    template-params:
+      variant: alumni
+    sort: ["order asc", "title asc"]
+    sort-ui: false
+    filter-ui: false
+    categories: false
 ---
+
+::: {#current-members}
+:::
+
+## Alumni
+
+::: {#lab-alumni}
+:::

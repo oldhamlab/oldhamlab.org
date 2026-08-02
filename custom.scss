@@ -1,4 +1,439 @@
+/*-- scss:functions --*/
+
+// Self-hosted Inter + Inter Tight (OFL). Subsets: latin, latin-ext, greek.
+// Greek is REQUIRED, not optional: titles carry HIF-1α, TGF-β, μM. A face
+// without Greek drops the α mid-word.
+// Files are served from fonts/ - no fonts.googleapis.com / gstatic request,
+// which also keeps visitor IPs out of a third party (GDPR Art. 6(1)).
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/inter-greek.woff2') format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/intertight-greek.woff2') format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/intertight-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/intertight-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 /*-- scss:defaults --*/
-$primary:     #4E79A6 !default;
+
+// NOTE: this layer is emitted before Bootstrap, so Bootstrap variables do not
+// exist yet here. Use literal values only.
+
+// ── Type ──────────────────────────────────────────────────────────────
+// Always a full fallback stack. A bare family name means a failed font load
+// drops the whole site to Times New Roman.
+$font-family-sans-serif:  "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !default;
+$font-family-monospace:   ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace !default;
+$headings-font-family:    "Inter Tight", "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif !default;
+
+$font-size-base:          1.0625rem !default;   // 17px
+$line-height-base:        1.647 !default;
+$headings-font-weight:    500 !default;         // never bold - bold is what read as "chunky"
+$headings-line-height:    1.15 !default;
+
+$h1-font-size:            2.75rem !default;
+$h2-font-size:            1.75rem !default;
+$h3-font-size:            1.25rem !default;
+$h4-font-size:            1.0625rem !default;
+$headings-margin-bottom:  .5rem !default;
+$paragraph-margin-bottom: 1.15rem !default;
+$lead-font-size:          1.25rem !default;
+$lead-font-weight:        400 !default;
+
+// ── Color ─────────────────────────────────────────────────────────────
+// Light only. One accent, three jobs: links, focus ring, current-nav mark.
+$body-bg:                 #fdfcfb !default;
+$body-color:              #1a1817 !default;
+$primary:                 #176955 !default;   // BUH emerald, darkened: 6.6:1 on canvas
+$link-color:              #176955 !default;
+$link-hover-color:        #0f4d3d !default;
+$border-color:            #e2e6e4 !default;
+
+// Quarto paints the navbar with $primary unless told otherwise. This, plus
+// `navbar.background: body` in _quarto.yml, is what prevents the slab.
+$navbar-bg:               transparent !default;
+$navbar-light-bg:         transparent !default;
+$navbar-light-color:      rgba(26, 24, 23, .68) !default;
+$navbar-light-hover-color:#1a1817 !default;
+$navbar-light-active-color:#1a1817 !default;
+$navbar-padding-y:        0 !default;
+$nav-link-padding-y:      .5rem !default;
+$nav-link-font-size:      .9375rem !default;
+
+$border-radius:           .375rem !default;
+$border-radius-sm:        .25rem !default;
+$border-radius-lg:        .5rem !default;
+$link-decoration:         underline !default;
+
+$grid-body-width:         1120px !default;
+
 
 /*-- scss:rules --*/
+
+:root {
+  --bg:        #fdfcfb;
+  --surface:   #f2eeec;
+  --hairline:  #e2e6e4;
+  --rule:      #b8b1af;
+  --img-edge:  #cfc8c6;
+  --text:      #1a1817;
+  --muted:     #6f6a69;
+  --accent:    #176955;
+  --accent-hover: #0f4d3d;
+
+  --measure:   40rem;    // 640px ~ 66ch at 17px
+  --container: 1120px;
+  --gutter:    24px;
+
+  --s1: 8px;  --s2: 16px; --s3: 24px; --s4: 32px;
+  --s5: 48px; --s6: 64px; --s7: 96px;
+
+  --ls-display: -.032em;
+  --ls-head:    -.02em;
+  --ls-mid:     -.012em;
+  --ls-caps:    .09em;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+}
+
+// ── Type scale ────────────────────────────────────────────────────────
+// Negative tracking that scales with size is the single biggest contributor
+// to "sleek" rather than "chunky".
+h1, .h1 {
+  font-size: clamp(2.25rem, 5.6vw, 2.75rem);
+  font-weight: 500;
+  letter-spacing: var(--ls-display);
+  line-height: 1.06;
+  margin-bottom: var(--s3);
+  max-width: 17em;          // a display line this wide is unreadable un-capped
+  text-wrap: balance;
+}
+h2, .h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-head);
+  line-height: 1.2;
+  margin-top: var(--s6);
+  margin-bottom: var(--s2);
+}
+h3, .h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-mid);
+  line-height: 1.3;
+  margin-top: var(--s4);
+}
+h4, h5, h6 { font-weight: 500; letter-spacing: var(--ls-mid); }
+
+.lede {
+  font-size: clamp(1.125rem, 2.4vw, 1.25rem);
+  line-height: 1.5;
+  letter-spacing: var(--ls-mid);
+  color: var(--text);
+  max-width: var(--measure);
+}
+
+// Uppercase tracked label - the metadata voice
+.label {
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: var(--s2);
+}
+
+// ── Measure ───────────────────────────────────────────────────────────
+main.content > p,
+main.content > ul,
+main.content > ol,
+main.content > blockquote,
+.prose { max-width: var(--measure); }
+
+// ── Links ─────────────────────────────────────────────────────────────
+a { text-underline-offset: .18em; text-decoration-thickness: .06em; }
+a:hover { color: var(--accent-hover); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection { background: #cdefdd; color: #10231b; }
+
+// ── Header: a hairline, never a slab ──────────────────────────────────
+.navbar {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--hairline);
+  min-height: 56px;
+  padding-block: 0;
+}
+.navbar > .container-fluid,
+.navbar > .container { min-height: 56px; align-items: center; }
+
+.navbar-brand,
+.navbar .navbar-title {
+  font-family: $headings-font-family;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-mid);
+  color: var(--text) !important;
+}
+.navbar-brand:hover { color: var(--text) !important; }
+
+.navbar .nav-link {
+  font-size: .9375rem;
+  font-weight: 400;
+  color: rgba(26, 24, 23, .68) !important;
+  letter-spacing: 0;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--text) !important;
+}
+// Current page marked by weight + a rule, never by colour alone
+.navbar .nav-link.active { font-weight: 500; box-shadow: inset 0 -2px 0 var(--accent); }
+
+// ── Full-bleed micrograph plate ───────────────────────────────────────
+// Sits outside the content column so it runs edge to edge. No caption:
+// the image is not a figure with a claim, it is the lab's own work.
+//
+// 100vw INCLUDES the scrollbar, so the break-out overflows by ~15px and the
+// page scrolls sideways. `overflow-x: clip` on the root kills that without
+// creating a scroll container (unlike `hidden`, it does not break sticky).
+html, body { overflow-x: clip; }
+
+// When the micrograph opens the page it should meet the header, not float
+// below Quarto's default content padding. Note Quarto injects an empty
+// <header class="quarto-title-block"> ahead of the first block, so the plate
+// is never literally :first-child.
+main.content:has(> .plate) {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+
+  > header.quarto-title-block { display: none; }
+}
+
+.plate {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: var(--s6);
+  background: var(--surface);
+  border-bottom: 1px solid var(--img-edge);
+}
+.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+@media (max-width: 900px) { .plate img { aspect-ratio: 5 / 2; } }
+@media (max-width: 640px) { .plate img { aspect-ratio: 3 / 2; } }
+
+// ── Section rhythm ────────────────────────────────────────────────────
+.section { margin-top: var(--s7); }
+.section > h2:first-child { margin-top: 0; }
+
+.rule-top {
+  border-top: 1px solid var(--hairline);
+  padding-top: var(--s4);
+}
+
+// ── Research teaser cards ─────────────────────────────────────────────
+// Two columns, not auto-fit: four teasers in a 3-wide grid strands one
+// orphan on the second row.
+.teasers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s5) var(--s5);
+  margin-top: var(--s4);
+}
+@media (max-width: 640px) { .teasers { grid-template-columns: 1fr; gap: var(--s4); } }
+.teaser {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s2);
+}
+.teaser h3 {
+  margin: 0 0 var(--s1);
+  font-size: 1.0625rem;
+  letter-spacing: var(--ls-mid);
+}
+.teaser p {
+  margin: 0;
+  font-size: .9375rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+// ── Papers list ───────────────────────────────────────────────────────
+.papers { margin-top: var(--s4); }
+.paper {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: var(--s3);
+  padding-block: var(--s3);
+  border-top: 1px solid var(--hairline);
+  align-items: baseline;
+}
+.paper:last-child { border-bottom: 1px solid var(--hairline); }
+.paper-year {
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.paper-title { display: block; letter-spacing: var(--ls-mid); }
+.paper-meta { display: block; font-size: .9375rem; color: var(--muted); margin-top: 2px; }
+@media (max-width: 560px) {
+  .paper { grid-template-columns: 1fr; gap: var(--s1); }
+}
+
+// ── People grid ───────────────────────────────────────────────────────
+.roster {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s5) var(--s3);
+  margin-top: var(--s4);
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 900px) { .roster { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .roster { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.person { margin: 0; }
+.person a { color: inherit; text-decoration: none; }
+.person a:hover .person-name { text-decoration: underline; text-underline-offset: .18em; }
+
+.portrait,
+.monogram {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--img-edge);
+  display: block;
+}
+.portrait {
+  object-fit: cover;
+  object-position: 50% 30%;   // faces sit high; 50% crops chins
+}
+// Absent portrait reads as a decision, not a gap
+.monogram {
+  display: grid;
+  place-items: center;
+  font-family: $headings-font-family;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--muted);
+}
+
+.person-name {
+  display: block;
+  margin-top: var(--s2);
+  font-family: $headings-font-family;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-mid);
+  line-height: 1.3;
+}
+.person-role {
+  display: block;
+  font-size: .875rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+// Alumni: same card, denser and quieter
+.roster--alumni { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--s4) var(--s3); }
+.roster--alumni .person-name { font-size: .9375rem; margin-top: var(--s1); }
+.roster--alumni .person-role { font-size: .8125rem; }
+.roster--alumni .monogram { font-size: 1.125rem; }
+@media (max-width: 900px) { .roster--alumni { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .roster--alumni { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+// ── Footer: disjoint from the nav, never a filled band ────────────────
+.nav-footer {
+  background: var(--bg) !important;
+  border-top: 1px solid var(--hairline);
+  margin-top: var(--s7);
+  padding-block: var(--s5);
+  font-size: .875rem;
+  color: var(--muted);
+  align-items: start;
+}
+.nav-footer a { color: var(--muted); text-decoration: none; }
+.nav-footer a:hover { color: var(--accent); text-decoration: underline; }
+.nav-footer .nav-footer-center { text-align: left; }
+
+// ── Title blocks: no coloured rule under every heading ─────────────────
+#title-block-header.quarto-title-block.default { margin-bottom: var(--s5); }
+#title-block-header .quarto-title h1.title { margin-bottom: 0; }
+.quarto-title-banner { background: transparent; }
+
+// ── Images ────────────────────────────────────────────────────────────
+img { max-width: 100%; height: auto; }
+
+// ── Quarto listing defaults, quieted ──────────────────────────────────
+.quarto-listing { margin-top: var(--s4); }
+.listing-actions-group { gap: var(--s2); }

@@ -2,7 +2,9 @@
 title: "Kevin Leahy"
 subtitle: "Research Assistant"
 categories: ["Assistant"]
-order: 3
+status: current
+role: staff
+order: 60
 about:
   template: trestles
   image-shape: round

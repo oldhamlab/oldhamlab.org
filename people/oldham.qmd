@@ -2,7 +2,9 @@
 title: "William Oldham"
 subtitle: "Principal Investigator"
 image: "/people/oldham.jpg"
-order: 1
+status: current
+role: pi
+order: 10
 about:
   template: trestles
   image-shape: round
@@ -16,7 +18,6 @@ about:
       href: https://github.com/wmoldham
     - icon: google
       href: https://scholar.google.com/citations?user=cba3bIAAAAAJ&hl=en
-  
 ---
 
 Will is an Assistant Professor of Medicine and Associate Physician. His research 
