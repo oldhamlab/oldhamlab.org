@@ -28,6 +28,12 @@ overexpressing it in normoxia suppressed the glycolytic response to HIF
 stabilization. MYC signaling in hypoxia uncouples HIF-driven glycolytic
 transcription from glycolytic flux.
 
+::: {.fig-wide}
+![](/img/research/pasmc-flux-myc-model.jpg){fig-alt="Left: metabolic flux map of pulmonary artery smooth muscle cells in low oxygen relative to room air, arrows coloured by fold change and weighted by absolute flux. Right: model in which hypoxia-induced MYC suppresses HIF-driven glycolysis, tested by silencing MYC in low oxygen and overexpressing it during pharmacologic HIF stabilization in room air."}
+
+[Modeled metabolic fluxes in pulmonary artery smooth muscle cells in low oxygen relative to room air (left), and the model tested by MYC knockdown and overexpression (right).]{.fig-note}
+:::
+
 Our current work asks what sustains MYC activity when oxygen is limited. In
 hypoxia, cells increasingly run the reaction catalyzed by isocitrate
 dehydrogenase in reverse, fixing carbon dioxide onto α-ketoglutarate to make
@@ -36,11 +42,6 @@ carboxylation supplies carbon for biosynthesis when oxidative metabolism is
 constrained, and our preliminary data indicate that it is required to maintain
 MYC signaling and proliferation in hypoxic smooth muscle cells.
 
-::: {.fig-wide}
-![](/img/research/pasmc-flux-reductive-carboxylation.jpg){fig-alt="Left: metabolic flux map of pulmonary artery smooth muscle cells comparing low oxygen with room air, with arrows coloured by fold change and weighted by absolute flux. Right: diagram of the tricarboxylic acid cycle showing the oxidative route to citrate and the reductive route in which isocitrate dehydrogenase fixes carbon dioxide onto alpha-ketoglutarate."}
-
-[Modeled metabolic fluxes in pulmonary artery smooth muscle cells in low oxygen relative to room air (left), and the reductive carboxylation reaction that increases (right).]{.fig-note}
-:::
 
 This gives a metabolic–transcriptional axis to test. We are quantifying IDH
 expression in remodeled human pulmonary arteries and asking whether inhibiting
