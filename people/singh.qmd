@@ -1,0 +1,43 @@
+---
+title: "Navneet Singh"
+subtitle: "Physician-Scientist"
+status: current
+role: faculty
+order: 20
+started: "2026-06"
+description: >-
+  Physician-scientist and Assistant Professor of Medicine (Research), studying
+  the liver–lung axis in pulmonary arterial hypertension.
+---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[Fellow, Pulmonary and Critical Care Medicine]{.et-role}
+[Brown University, Providence, RI]{.et-place}
+
+[ScM in Clinical and Translational Research]{.et-role}
+[Brown University, Providence, RI]{.et-place}
+
+[MD]{.et-role} [2015]{.et-year}
+[St. George's University]{.et-place}
+
+[MBA]{.et-role} [2011]{.et-year}
+[Stony Brook University, Stony Brook, NY]{.et-place}
+
+[BS]{.et-role} [2008]{.et-year}
+[Stony Brook University, Stony Brook, NY]{.et-place}
+:::
+:::
+
+Navneet joined the lab in June 2026. He is Assistant Professor of Medicine
+(Research) and Associate Program Director for Research in the Pulmonary and
+Critical Care Medicine fellowship program, and sees patients in the Pulmonary
+Hypertension Center at the [Center for Advanced Lung
+Care](https://www.brownhealth.org/centers-services/center-advanced-lung-care).
+His research addresses two connected problems in pulmonary arterial
+hypertension: the liver–lung inflammatory axis and pulmonary endothelial cell
+biology, using human cohort studies, multi-omic approaches, and preclinical
+models to understand how hepatic and endothelial dysfunction drive pulmonary
+vascular remodeling.

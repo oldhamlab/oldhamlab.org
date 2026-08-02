@@ -4,21 +4,28 @@ subtitle: "Graduate Student"
 status: current
 role: student
 order: 50
+started: "2026-03"
 description: >-
-  Graduate student in the Pathobiology Graduate Program at Brown University.
+  PhD student in Pathobiology at Brown University.
 ---
 
 ::: {.person-top}
 ::: {.person-meta}
 #### Education and Training
 
-[MS]{.et-role}
+[PhD Candidate, Pathobiology]{.et-role} [In progress]{.et-year}
 [Brown University, Providence, RI]{.et-place}
 
-[BS]{.et-role}
+[ScM in Biotechnology]{.et-role} [2025]{.et-year}
+[Brown University, Providence, RI]{.et-place}
+
+[BS in Medical and Molecular Biology]{.et-role} [2023]{.et-year}
 [Massachusetts College of Pharmacy and Health Sciences, Boston, MA]{.et-place}
 :::
 :::
 
-Aseel is a graduate student in the [Pathobiology Graduate Program](https://pathobiology.biomed.brown.edu/)
-at Brown University.
+Aseel joined the lab in March 2026 as a graduate student in the [Pathobiology
+Graduate Program](https://pathobiology.biomed.brown.edu/). She completed a
+master's degree at Brown, where she built organoid-derived monolayer models to
+study host immune responses to *Candida* infection, and did her undergraduate
+research in green organic synthesis.

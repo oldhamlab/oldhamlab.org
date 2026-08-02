@@ -1,0 +1,23 @@
+---
+title: "Jacob Nipoti"
+subtitle: "Research Assistant"
+status: current
+role: staff
+order: 60
+started: "2026-08"
+description: >-
+  Research assistant, joining the lab from the University of New Hampshire.
+---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[BS in Biomedical Sciences]{.et-role} [2026]{.et-year}
+[University of New Hampshire, Durham, NH]{.et-place}
+:::
+:::
+
+Jacob joined the lab in August 2026. As an undergraduate at the University of
+New Hampshire he studied cell signaling in salamander limb regeneration, and he
+worked as an emergency medical technician in Brockton, Massachusetts.

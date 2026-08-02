@@ -1,0 +1,38 @@
+---
+title: "Hilaire Lam"
+subtitle: "Research Scientist"
+status: current
+role: faculty
+order: 20
+started: "2025-11"
+description: >-
+  Research scientist and Assistant Professor of Medicine (Research), studying
+  the metabolic drivers of lung disease.
+---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[Instructor in Medicine]{.et-role} [2017–2022]{.et-year}
+[Harvard Medical School and Brigham and Women's Hospital]{.et-place}
+
+[Postdoctoral Fellow, Pulmonary and Critical Care Medicine]{.et-role} [2012–2017]{.et-year}
+[Brigham and Women's Hospital and Harvard Medical School]{.et-place}
+
+[PhD in Cellular and Molecular Pathology]{.et-role} [2011]{.et-year}
+[University of Pittsburgh School of Medicine]{.et-place}
+
+[BA in Biological Chemistry]{.et-role} [2006]{.et-year}
+[Wellesley College, Wellesley, MA]{.et-place}
+:::
+:::
+
+Hilaire joined the lab in November 2025 as a research scientist and Assistant
+Professor of Medicine (Research). She has spent her career on pulmonary biology
+and the metabolic drivers of disease, working on autophagy in cigarette
+smoke–induced lung injury during her doctoral training and, as a postdoctoral
+fellow and instructor at Brigham and Women's Hospital, on mitochondrial dynamics
+and microRNA regulation in tuberous sclerosis complex and lymphangioleiomyomatosis.
+Her work has been supported by the NIH, the LAM Foundation, and the American
+Heart Association.
