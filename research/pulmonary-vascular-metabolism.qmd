@@ -28,12 +28,6 @@ overexpressing it in normoxia suppressed the glycolytic response to HIF
 stabilization. MYC signaling in hypoxia uncouples HIF-driven glycolytic
 transcription from glycolytic flux.
 
-::: {.fig-narrow-wide}
-![](/img/research/myc-hypoxia.jpg){fig-alt="Immunoblot and quantification showing MYC protein increased in lung fibroblasts cultured in low oxygen compared with room air, with and without the prolyl hydroxylase inhibitor molidustat."}
-
-[MYC protein rises in hypoxia, but not with pharmacologic HIF stabilization in normal oxygen.]{.fig-note}
-:::
-
 Our current work asks what sustains MYC activity when oxygen is limited. In
 hypoxia, cells increasingly run the reaction catalyzed by isocitrate
 dehydrogenase in reverse, fixing carbon dioxide onto α-ketoglutarate to make
@@ -42,10 +36,10 @@ carboxylation supplies carbon for biosynthesis when oxidative metabolism is
 constrained, and our preliminary data indicate that it is required to maintain
 MYC signaling and proliferation in hypoxic smooth muscle cells.
 
-::: {.fig-narrow-wide}
-![](/img/research/reductive-carboxylation.jpg){fig-alt="Diagram of the tricarboxylic acid cycle showing the oxidative route to citrate and the reductive route in which isocitrate dehydrogenase fixes carbon dioxide onto alpha-ketoglutarate, alongside bar charts of glutamine uptake, citrate labeling, and reductive flux in pulmonary artery smooth muscle cells in room air and in low oxygen."}
+::: {.fig-wide}
+![](/img/research/pasmc-flux-reductive-carboxylation.jpg){fig-alt="Left: metabolic flux map of pulmonary artery smooth muscle cells comparing low oxygen with room air, with arrows coloured by fold change and weighted by absolute flux. Right: diagram of the tricarboxylic acid cycle showing the oxidative route to citrate and the reductive route in which isocitrate dehydrogenase fixes carbon dioxide onto alpha-ketoglutarate."}
 
-[In hypoxia, isocitrate dehydrogenase increasingly runs in reverse, building citrate directly from α-ketoglutarate rather than oxidizing it (**A**). In pulmonary artery smooth muscle cells, low oxygen increases glutamine uptake (**B**), shifts glutamine-derived citrate labeling from M4 to M5 (**C**), and raises reductive flux from α-ketoglutarate to citrate roughly sixfold (**D**).]{.fig-note}
+[Modeled metabolic fluxes in pulmonary artery smooth muscle cells in low oxygen relative to room air (left), and the reductive carboxylation reaction that increases (right).]{.fig-note}
 :::
 
 This gives a metabolic–transcriptional axis to test. We are quantifying IDH
