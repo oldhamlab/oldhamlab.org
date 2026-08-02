@@ -7,6 +7,7 @@ role: fellow
 order: 30
 started: "2016-09"
 years: "2016–2017"
+now: "Associate Professor of Medicine, Yale School of Medicine"
 ---
 
 ::: {.person-top}
