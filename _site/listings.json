@@ -1,11 +1,14 @@
 [
   {
-    "listing": "/research.html",
+    "listing": "/index.html",
     "items": [
       "/research/lactate-transport.html",
       "/research/matrix-synthesis.html",
       "/research/pulmonary-vascular-metabolism.html",
-      "/research/reperfusion-injury.html"
+      "/people/oldham.html",
+      "/people/li.html",
+      "/people/khalil.html",
+      "/people/ferreyra-faustino.html"
     ]
   },
   {
@@ -25,16 +28,11 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/research.html",
     "items": [
       "/research/lactate-transport.html",
       "/research/matrix-synthesis.html",
-      "/research/pulmonary-vascular-metabolism.html",
-      "/research/reperfusion-injury.html",
-      "/people/oldham.html",
-      "/people/li.html",
-      "/people/khalil.html",
-      "/people/ferreyra-faustino.html"
+      "/research/pulmonary-vascular-metabolism.html"
     ]
   }
 ]

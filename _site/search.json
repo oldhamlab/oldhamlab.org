@@ -1,129 +1,80 @@
 [
   {
-    "objectID": "research/reperfusion-injury.html",
-    "href": "research/reperfusion-injury.html",
-    "title": "A small molecule for reperfusion injury",
+    "objectID": "research/pulmonary-vascular-metabolism.html",
+    "href": "research/pulmonary-vascular-metabolism.html",
+    "title": "Metabolic regulation in pulmonary vascular disease",
     "section": "",
-    "text": "Restoring blood flow to ischemic tissue is necessary, and it is also injurious. When oxygen returns to a tissue that has been without it, the abrupt resumption of mitochondrial electron transport produces a burst of reactive oxygen species that damages the tissue the intervention was meant to salvage. This is the central problem of reperfusion injury, and it limits the benefit of revascularization after myocardial infarction, of thrombectomy in stroke, and of transplantation, where every organ is reperfused by definition. No approved therapy addresses it directly.\nIschemia leaves a metabolic signature. Substrates accumulate during oxygen deprivation and are consumed when oxygen returns, and the manner of their disposal determines how much oxidative damage follows. Our work on the metabolic response to low oxygen identified an enzymatic step that governs how tissue handles one of these accumulated substrates on reperfusion, and that can be inhibited pharmacologically to shift the balance away from injury.\nWe are developing small molecule inhibitors of that step. Work so far has covered target validation and early compound discovery. Current effort is directed at potency, selectivity, and the pharmacologic properties needed for testing in animal models of ischemia and reperfusion."
+    "text": "Pulmonary hypertension arising from chronic lung disease is common and carries the highest mortality of any subtype, yet only one therapy is approved for it and it helps only some patients. Sustained low oxygen thickens and narrows the pulmonary arteries, and that remodeling is driven by proliferation of the smooth muscle cells in the vessel wall. Most cells slow or stop dividing in hypoxia. Pulmonary artery smooth muscle cells do not, which implies a pathway that sustains growth when it should be suppressed.\nThe canonical account of hypoxic metabolism is that HIF-1α stabilizes, glycolytic gene expression rises, and glycolytic flux follows. Working in primary human lung fibroblasts and pulmonary artery smooth muscle cells rather than tumor lines, we found that this does not hold. Hypoxia decreased glycolysis in these cells even though HIF-1α was activated and glycolytic enzyme expression increased. Stabilizing HIF-1α pharmacologically in normal oxygen did raise glycolysis, but hypoxia blocked that response, so something downstream of HIF was overriding it. That something is MYC: knocking MYC down in hypoxia increased glycolysis, and overexpressing it in normoxia suppressed the glycolytic response to HIF stabilization. MYC signaling in hypoxia uncouples HIF-driven glycolytic transcription from glycolytic flux.\nOur current work asks what sustains MYC activity when oxygen is limited. In hypoxia, cells increasingly run the reaction catalyzed by isocitrate dehydrogenase in reverse, fixing carbon dioxide onto α-ketoglutarate to make citrate rather than oxidizing citrate to α-ketoglutarate. This reductive carboxylation supplies carbon for biosynthesis when oxidative metabolism is constrained, and our preliminary data indicate that it is required to maintain MYC signaling and proliferation in hypoxic smooth muscle cells.\nThis gives a metabolic–transcriptional axis to test. We are quantifying IDH expression in remodeled human pulmonary arteries and asking whether inhibiting IDH — with compounds already approved in oncology — suppresses reductive carboxylation, MYC activation, and proliferation. In parallel, inducible smooth-muscle-specific expression of Omomyc, a peptide inhibitor of MYC now in clinical trials, will test whether MYC is required for hypoxic pulmonary vascular remodeling in an intact animal. Because both classes of drug are already well advanced in human medicine, a positive result would have a short path to trial in a patient population with few options."
   },
   {
-    "objectID": "research/matrix-synthesis.html",
-    "href": "research/matrix-synthesis.html",
-    "title": "Nutrient requirements for matrix synthesis",
-    "section": "",
-    "text": "Extracellular matrix production by myofibroblasts is the central pathologic process in pulmonary fibrosis, yet the pathways that channel specific nutrients into fibrogenic matrix proteins in vivo remain poorly defined. Approved antifibrotics slow the decline in lung function but do not halt disease progression, and none targets the biosynthetic machinery fibroblasts use to generate matrix. Prior work has identified candidate metabolic dependencies in cultured fibroblasts without tracing nutrients into matrix in intact tissue or in patients.\nWe identified alanine as a required substrate for fibrogenic matrix production. Alanine supplies both carbon and nitrogen to the amino acid pools used for collagen biosynthesis, and depleting it attenuates TGF-β–induced α-smooth muscle actin and collagen expression in lung fibroblasts from patients with IPF. TGF-β raises intracellular alanine by two routes at once: synthesis by the transaminase GPT2, and import through the transporter SLC38A2. Blocking either route alone is insufficient, because the cell compensates using the other. This is why the requirement was visible only in medium of realistic composition — inhibiting synthesis suppressed differentiation in simple medium but failed when extracellular alanine was available. Inhibiting synthesis and uptake together suppresses the fibrogenic response in fibroblasts and in human precision-cut lung slices.\nAnswering these questions in tissue rather than in culture requires measurements the field has not previously applied to fibrosis, and much of our current effort is methodological. We culture fibroblasts in human plasma-like medium so that nutrient availability approximates the circulation rather than a general-purpose growth medium. We use scaffold-free three-dimensional microtissues to connect a metabolic perturbation directly to matrix stiffness and collagen organization, which cannot be assessed in two-dimensional culture. We perform whole-animal isotope infusions in fibrotic mice to quantify how much of a circulating substrate is incorporated into lung metabolites and into matrix-bound amino acids. Multi-isotope imaging mass spectrometry then resolves that incorporation spatially, so labeling can be read out in fibrotic regions rather than averaged across the lung.\nWe are extending these measurements to patients. Building on a pilot study establishing the feasibility of preoperative oral isotope tracing at lung transplantation, we administer labeled alanine to transplant recipients with pulmonary fibrosis and map spatially resolved incorporation in the explanted lung. In parallel, fibroblast-specific Slc38a2 knockout mice will establish whether alanine transport is required for fibrosis in vivo, and whether the benefit of blocking it is attributable to the fibroblast itself. The broader aim is to establish amino acid transporters as a class of antifibrotic target that acts on the substrate supply for matrix production."
-  },
-  {
-    "objectID": "research/matrix-synthesis.html#key-paper",
-    "href": "research/matrix-synthesis.html#key-paper",
-    "title": "Nutrient requirements for matrix synthesis",
+    "objectID": "research/pulmonary-vascular-metabolism.html#key-paper",
+    "href": "research/pulmonary-vascular-metabolism.html#key-paper",
+    "title": "Metabolic regulation in pulmonary vascular disease",
     "section": "Key paper",
-    "text": "Key paper\n\n  \n    2026\n    \n      TGF-β\n        coordinates alanine synthesis and import for myofibroblast differentiation\n        in pulmonary fibrosis\n      Li F, Vigder N, Ziehr DR, et al.\n        JCI Insight."
+    "text": "Key paper\n\n  \n    2023\n    \n      MYC overrides\n        HIF-1α to regulate proliferating primary cell metabolism in hypoxia\n      Copeland CA, Olenchock BA, Ziehr DR, et al.\n        eLife."
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "research/lactate-transport.html",
+    "href": "research/lactate-transport.html",
+    "title": "Lactate transport",
     "section": "",
-    "text": "Lactate transport\n    Myofibroblast differentiation depends on sustained glycolysis, and therefore on lactate export. We are defining monocarboxylate transport as a target in pulmonary fibrosis.\n  \n\n  \n    Nutrient requirements for matrix synthesis\n    Matrix production is a biosynthetic problem. We are identifying the nutrients fibroblasts consume to build extracellular matrix, and testing whether blocking their transport attenuates fibrosis.\n  \n\n  \n    Metabolic regulation in pulmonary vascular disease\n    Pulmonary artery smooth muscle cells proliferate in low oxygen when most cells stop. We are defining the metabolic signal that permits it, and testing whether blocking it prevents vascular remodeling.\n  \n\n  \n    A small molecule for reperfusion injury\n    Restoring blood flow to ischemic tissue causes injury of its own. We are developing small molecules against a metabolic enzyme to blunt it.\n  \n\n\nNo matching items"
+    "text": "Idiopathic pulmonary fibrosis is a fatal disease characterized by excessive deposition of extracellular matrix that leads to alveolar fibrosis, impaired gas exchange, and respiratory failure. Even with modern antifibrotic therapies, median survival is three to five years. Myofibroblasts are the primary effector cells of lung fibrogenesis, and excessive TGF-β signaling drives the differentiation of lung fibroblasts into myofibroblasts. Identifying the mechanisms that mediate this transition will both clarify disease pathobiology and reveal targets for antifibrotic therapy.\nMetabolic reprogramming is essential for myofibroblast differentiation. Myofibroblasts exhibit increased glycolysis, lactate production, and reactive oxygen species generation, and inhibition of glycolysis prevents differentiation and ameliorates experimental fibrosis. Sustained glycolysis depends on lactate export through the monocarboxylate transporters (MCTs). Where inhibitors of the glycolytic enzymes have been limited by poor specificity and narrow therapeutic indices, MCT inhibitors have favorable pharmacologic profiles and have advanced to clinical trials in other diseases.\nWe found that MCT1 and MCT4 are upregulated in IPF lung and in experimental fibrosis, and that inhibiting either transporter, genetically or pharmacologically, blocks TGF-β–stimulated myofibroblast differentiation in fibroblasts from healthy donors and from patients with IPF. In mice, we showed that MCT inhibitors attenuate bleomycin-induced fibrosis with efficacy comparable to approved antifibrotics, in aged as well as young animals. We further demonstrated that lactate transport inhibition enhances oxidative phosphorylation, reduces reactive oxygen species production, and diminishes incorporation of glucose carbon into fibrotic regions of the lung.\nCurrent work addresses how this metabolic shift is transduced to the profibrotic transcriptional program, and which cells must be targeted in vivo for MCT inhibition to be effective. We are using fibroblast-specific conditional knockout animals to establish which cellular compartment requires lactate transport for fibrogenesis, and whether the benefit of MCT inhibition is attributable to the fibroblast itself. We are also examining the epigenetic consequences of intracellular lactate accumulation, including histone lactylation, as a candidate mechanism coupling the metabolic state of the cell to the profibrotic gene program."
   },
   {
-    "objectID": "people/oldham.html",
-    "href": "people/oldham.html",
-    "title": "William Oldham",
+    "objectID": "research/lactate-transport.html#support",
+    "href": "research/lactate-transport.html#support",
+    "title": "Lactate transport",
+    "section": "Support",
+    "text": "Support\nNational Heart, Lung, and Blood Institute, R01 HL167718."
+  },
+  {
+    "objectID": "research/lactate-transport.html#key-paper",
+    "href": "research/lactate-transport.html#key-paper",
+    "title": "Lactate transport",
+    "section": "Key paper",
+    "text": "Key paper\n\n  \n    2026\n    \n      Lactate\n        transport inhibition therapeutically reprograms fibroblast metabolism in\n        experimental pulmonary fibrosis\n      Ziehr DR, Li F, Parnell KM, et al.\n        Science Translational Medicine."
+  },
+  {
+    "objectID": "people/ziehr.html",
+    "href": "people/ziehr.html",
+    "title": "David Ziehr",
     "section": "",
-    "text": "ORCID · Google Scholar · GitHub\n\n\nEducation and Training\nResearch Fellow, Pulmonary and Critical Care Medicine 2012–2015 Brigham and Women’s Hospital and Harvard Medical School\nFellow, Pulmonary Disease and Critical Care Medicine 2010–2014 Harvard Combined Pulmonary and Critical Care Fellowship\nResident, Internal Medicine 2008–2010 Massachusetts General Hospital\nMD 2008 Vanderbilt University School of Medicine\nPhD in Pharmacology 2006 Vanderbilt University\nBS in Chemistry with Honors 2001 University of North Carolina at Chapel Hill\n\n\nWill is Associate Professor of Medicine at The Warren Alpert Medical School of Brown University and Director of Research and Innovation for Pulmonary, Critical Care and Sleep Medicine at Brown University Health. He is an attending physician in pulmonary and critical care medicine and an Associate Member of the Broad Institute. His research interests include pulmonary hypertension, pulmonary fibrosis, cell metabolism, adaptation to hypoxia, and network medicine."
+    "text": "Education and Training\nFellow, Pulmonary and Critical Care Medicine 2018–2022 Harvard Combined Pulmonary and Critical Care Fellowship, Boston, MA\nResident, Internal Medicine 2015–2018 Massachusetts General Hospital, Boston, MA\nMD 2015 Harvard Medical School, Boston, MA\nBS in Molecular Biology 2009 University of Wisconsin at Madison, Madison, WI\n\n\nDavid joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis."
   },
   {
-    "objectID": "people/mcgarrity.html",
-    "href": "people/mcgarrity.html",
-    "title": "Sarah McGarrity",
+    "objectID": "people/nguyen.html",
+    "href": "people/nguyen.html",
+    "title": "Phuong Nguyen",
     "section": "",
-    "text": "Google Scholar\n\n\nEducation and Training\nPhD in Systems Biology 2015 Newcastle University, Newcastle, UK\nMRes in Medical and Molecular Biology - Systems Biology 2010 Newcastle University, Newcastle, UK\nBA in Medical Sciences/Genetics 2009 University of Cambridge, Cambridge, UK\n\n\nSarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a Novo Nordisk Foundation Postdoctoral Fellowship for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the Center for Systems Biology. She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities."
+    "text": "Education and Training\nMS in Biotechnology 2016 Boston University, Boston, MA\n\n\nPhuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments."
   },
   {
-    "objectID": "people/leahy.html",
-    "href": "people/leahy.html",
-    "title": "Kevin Leahy",
+    "objectID": "people/li.html",
+    "href": "people/li.html",
+    "title": "Fei Li",
     "section": "",
-    "text": "Education and Training\nMS in Biochemistry and Molecular Biophysics 2010–2017 University of Chicago, Chicago, IL\nBS in Biochemistry and Molecular Biology 2013 University of New Hampshire, Durham, NH\n\n\nKevin Leahy is a research assistant who joined the Oldham lab in June 2019."
+    "text": "Education and Training\nResearch fellow in Pharmacology 2021–2023 Zhejiang University School of Medicine, China\nPh.D. in Internal Medicine (Respiratory disease) 2021 Zhejiang University School of Medicine, China\nMaster’s in Internal Medicine (Respiratory disease) 2017 Zhejiang University School of Medicine, China\nBA in Clinical Medicine 2014 Wuhan University School of Medicine, China\n\n\nFei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis."
   },
   {
-    "objectID": "people/joseph.html",
-    "href": "people/joseph.html",
-    "title": "Phillip Joseph",
+    "objectID": "people/khalil.html",
+    "href": "people/khalil.html",
+    "title": "Aseel Khalil",
     "section": "",
-    "text": "Education and Training\nFellow, Pulmonary and Critical Care Medicine 2015–2019 Brigham and Women’s Hospital, Boston, MA\nResident, Internal Medicine 2012–2015 New York University Grossman School of Medicine, New York, NY\nMD 2012 New York University School of Medicine, New York, NY\n\n\nPhillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology."
+    "text": "Education and Training\nMS Brown University, Providence, RI\nBS Massachusetts College of Pharmacy and Health Sciences, Boston, MA\n\n\nAseel is a graduate student in the Pathobiology Graduate Program at Brown University."
   },
   {
-    "objectID": "people/copeland.html",
-    "href": "people/copeland.html",
-    "title": "Courtney Copeland",
+    "objectID": "people/ferreyra-faustino.html",
+    "href": "people/ferreyra-faustino.html",
+    "title": "Diana Ferreyra Faustino",
     "section": "",
-    "text": "Education and Training\nPost-doctoral fellow 2017 Vanderbilt University Medical Center, Nashville, TN\nPhD in Molecular Physiology & Biophysics 2017 Vanderbilt University Medical Center, Nashville, TN\nBS in Biochemistry and Cellular and Molecular Biology 2008 University of Tennessee, Knoxville, TN\n\n\nCourtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant."
+    "text": "Education and Training\nBS State University of New York at Binghamton, Binghamton, NY\n\n\nDiana is a graduate student in the Pathobiology Graduate Program at Brown University."
   },
   {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
+    "objectID": "people/cohen.html",
+    "href": "people/cohen.html",
+    "title": "Aliya Gottehrer-Cohen",
     "section": "",
-    "text": "William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "people.html#alumni",
-    "href": "people.html#alumni",
-    "title": "People",
-    "section": "Alumni",
-    "text": "Alumni\n\n\n\n  \n    \n      \n        \n      \n      Courtney Copeland\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Sarah McGarrity\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      David Ziehr\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Phillip Joseph\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        KL\n      \n      Kevin Leahy\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Phuong Nguyen\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Aliya Gottehrer-Cohen\n      Undergraduate\n    \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#research",
-    "href": "index.html#research",
-    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
-    "section": "Research",
-    "text": "Research\n\n\n\n  \n    Lactate transport\n    Myofibroblast differentiation depends on sustained glycolysis, and therefore on lactate export. We are defining monocarboxylate transport as a target in pulmonary fibrosis.\n  \n\n  \n    Nutrient requirements for matrix synthesis\n    Matrix production is a biosynthetic problem. We are identifying the nutrients fibroblasts consume to build extracellular matrix, and testing whether blocking their transport attenuates fibrosis.\n  \n\n  \n    Metabolic regulation in pulmonary vascular disease\n    Pulmonary artery smooth muscle cells proliferate in low oxygen when most cells stop. We are defining the metabolic signal that permits it, and testing whether blocking it prevents vascular remodeling.\n  \n\n  \n    A small molecule for reperfusion injury\n    Restoring blood flow to ischemic tissue causes injury of its own. We are developing small molecules against a metabolic enzyme to blunt it.\n  \n\n\nNo matching items\n\nAll research →"
-  },
-  {
-    "objectID": "index.html#the-lab",
-    "href": "index.html#the-lab",
-    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
-    "section": "The lab",
-    "text": "The lab\n\n\n\n  \n    \n      \n        \n      \n      William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n\nNo matching items\n\nFull roster and alumni →"
-  },
-  {
-    "objectID": "index.html#recent-papers",
-    "href": "index.html#recent-papers",
-    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
-    "section": "Recent papers",
-    "text": "Recent papers\n\n\n\n  \n    2026\n    \n      Exploring the lung–liver axis in pulmonary arterial hypertension\n      Singh N, Lawson J, Ragavendran A, et al. · Comprehensive Physiology\n    \n  \n\n  \n    2026\n    \n      Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis\n      Ziehr DR, Li F, Parnell KM, et al. · Science Translational Medicine\n    \n  \n\n  \n    2026\n    \n      TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis\n      Li F, Vigder N, Ziehr DR, et al. · JCI Insight\n    \n  \n\n\nNo matching items\n\nAll publications →"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Patients are seen at the Center for Advanced Lung Care, which provides comprehensive care for advanced lung and heart–lung disease and for unexplained breathlessness.\nWest River Center\n146 West River Street, Suite 11A\nProvidence, Rhode Island 02904\n401-606-8250"
-  },
-  {
-    "objectID": "contact.html#patient-care",
-    "href": "contact.html#patient-care",
-    "title": "Contact",
-    "section": "",
-    "text": "Patients are seen at the Center for Advanced Lung Care, which provides comprehensive care for advanced lung and heart–lung disease and for unexplained breathlessness.\nWest River Center\n146 West River Street, Suite 11A\nProvidence, Rhode Island 02904\n401-606-8250"
-  },
-  {
-    "objectID": "contact.html#lab",
-    "href": "contact.html#lab",
-    "title": "Contact",
-    "section": "Lab",
-    "text": "Lab\n\n\nAddress\nRhode Island Hospital\n55 Claverick Street, Room 430\nProvidence, Rhode Island 02903\n\n\nAffiliation\nDivision of Pulmonary, Critical Care and Sleep Medicine\nThe Warren Alpert Medical School of Brown University\nBrown University Health"
-  },
-  {
-    "objectID": "contact.html#send-a-message",
-    "href": "contact.html#send-a-message",
-    "title": "Contact",
-    "section": "Send a message",
-    "text": "Send a message\n\n  \n    Name\n    \n  \n  \n    Email\n    \n  \n  \n    Message\n    \n  \n  \n  Send"
+    "text": "Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia."
   },
   {
     "objectID": "papers.html",
@@ -217,80 +168,122 @@
     "text": "2010\n\nOldham WM, Systrom DM. Cardiopulmonary exercise testing in the evaluation of unexplained dyspnea. Advances in Pulmonary Hypertension. 2010; 9: 101-106. https://doi.org/10.21693/1933-088X-9.2.101"
   },
   {
-    "objectID": "people/cohen.html",
-    "href": "people/cohen.html",
-    "title": "Aliya Gottehrer-Cohen",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia."
+    "text": "Patients are seen at the Center for Advanced Lung Care, which provides comprehensive care for advanced lung and heart–lung disease and for unexplained breathlessness.\nWest River Center\n146 West River Street, Suite 11A\nProvidence, Rhode Island 02904\n401-606-8250"
   },
   {
-    "objectID": "people/ferreyra-faustino.html",
-    "href": "people/ferreyra-faustino.html",
-    "title": "Diana Ferreyra Faustino",
+    "objectID": "contact.html#patient-care",
+    "href": "contact.html#patient-care",
+    "title": "Contact",
     "section": "",
-    "text": "Education and Training\nBS State University of New York at Binghamton, Binghamton, NY\n\n\nDiana is a graduate student in the Pathobiology Graduate Program at Brown University."
+    "text": "Patients are seen at the Center for Advanced Lung Care, which provides comprehensive care for advanced lung and heart–lung disease and for unexplained breathlessness.\nWest River Center\n146 West River Street, Suite 11A\nProvidence, Rhode Island 02904\n401-606-8250"
   },
   {
-    "objectID": "people/khalil.html",
-    "href": "people/khalil.html",
-    "title": "Aseel Khalil",
+    "objectID": "contact.html#lab",
+    "href": "contact.html#lab",
+    "title": "Contact",
+    "section": "Lab",
+    "text": "Lab\n\n\nAddress\nRhode Island Hospital\n55 Claverick Street, Room 430\nProvidence, Rhode Island 02903\n\n\nAffiliation\nDivision of Pulmonary, Critical Care and Sleep Medicine\nThe Warren Alpert Medical School of Brown University\nBrown University Health"
+  },
+  {
+    "objectID": "contact.html#send-a-message",
+    "href": "contact.html#send-a-message",
+    "title": "Contact",
+    "section": "Send a message",
+    "text": "Send a message\n\n  \n    Name\n    \n  \n  \n    Email\n    \n  \n  \n    Message\n    \n  \n  \n  Send"
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
+    "section": "Research",
+    "text": "Research\n\n\n\n  \n    Lactate transport\n    Myofibroblast differentiation depends on sustained glycolysis, and therefore on lactate export. We are defining monocarboxylate transport as a target in pulmonary fibrosis.\n  \n\n  \n    Nutrient requirements for matrix synthesis\n    Matrix production is a biosynthetic problem. We are identifying the nutrients fibroblasts consume to build extracellular matrix, and testing whether blocking their transport attenuates fibrosis.\n  \n\n  \n    Metabolic regulation in pulmonary vascular disease\n    Pulmonary artery smooth muscle cells proliferate in low oxygen when most cells stop. We are defining the metabolic signal that permits it, and testing whether blocking it prevents vascular remodeling.\n  \n\n\nNo matching items\n\nAll research →"
+  },
+  {
+    "objectID": "index.html#the-lab",
+    "href": "index.html#the-lab",
+    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
+    "section": "The lab",
+    "text": "The lab\n\n\n\n  \n    \n      \n        \n      \n      William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n\nNo matching items\n\nFull roster and alumni →"
+  },
+  {
+    "objectID": "index.html#recent-papers",
+    "href": "index.html#recent-papers",
+    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
+    "section": "Recent papers",
+    "text": "Recent papers\n\n\n\n  \n    2026\n    \n      Exploring the lung–liver axis in pulmonary arterial hypertension\n      Singh N, Lawson J, Ragavendran A, et al. · Comprehensive Physiology\n    \n  \n\n  \n    2026\n    \n      Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis\n      Ziehr DR, Li F, Parnell KM, et al. · Science Translational Medicine\n    \n  \n\n  \n    2026\n    \n      TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis\n      Li F, Vigder N, Ziehr DR, et al. · JCI Insight\n    \n  \n\n\nNo matching items\n\nAll publications →"
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
     "section": "",
-    "text": "Education and Training\nMS Brown University, Providence, RI\nBS Massachusetts College of Pharmacy and Health Sciences, Boston, MA\n\n\nAseel is a graduate student in the Pathobiology Graduate Program at Brown University."
+    "text": "William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n\nNo matching items"
   },
   {
-    "objectID": "people/li.html",
-    "href": "people/li.html",
-    "title": "Fei Li",
+    "objectID": "people.html#alumni",
+    "href": "people.html#alumni",
+    "title": "People",
+    "section": "Alumni",
+    "text": "Alumni\n\n\n\n  \n    \n      \n        \n      \n      Courtney Copeland\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Sarah McGarrity\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      David Ziehr\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Phillip Joseph\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        KL\n      \n      Kevin Leahy\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Phuong Nguyen\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Aliya Gottehrer-Cohen\n      Undergraduate\n    \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "people/copeland.html",
+    "href": "people/copeland.html",
+    "title": "Courtney Copeland",
     "section": "",
-    "text": "Education and Training\nResearch fellow in Pharmacology 2021–2023 Zhejiang University School of Medicine, China\nPh.D. in Internal Medicine (Respiratory disease) 2021 Zhejiang University School of Medicine, China\nMaster’s in Internal Medicine (Respiratory disease) 2017 Zhejiang University School of Medicine, China\nBA in Clinical Medicine 2014 Wuhan University School of Medicine, China\n\n\nFei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis."
+    "text": "Education and Training\nPost-doctoral fellow 2017 Vanderbilt University Medical Center, Nashville, TN\nPhD in Molecular Physiology & Biophysics 2017 Vanderbilt University Medical Center, Nashville, TN\nBS in Biochemistry and Cellular and Molecular Biology 2008 University of Tennessee, Knoxville, TN\n\n\nCourtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant."
   },
   {
-    "objectID": "people/nguyen.html",
-    "href": "people/nguyen.html",
-    "title": "Phuong Nguyen",
+    "objectID": "people/joseph.html",
+    "href": "people/joseph.html",
+    "title": "Phillip Joseph",
     "section": "",
-    "text": "Education and Training\nMS in Biotechnology 2016 Boston University, Boston, MA\n\n\nPhuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments."
+    "text": "Education and Training\nFellow, Pulmonary and Critical Care Medicine 2015–2019 Brigham and Women’s Hospital, Boston, MA\nResident, Internal Medicine 2012–2015 New York University Grossman School of Medicine, New York, NY\nMD 2012 New York University School of Medicine, New York, NY\n\n\nPhillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology."
   },
   {
-    "objectID": "people/ziehr.html",
-    "href": "people/ziehr.html",
-    "title": "David Ziehr",
+    "objectID": "people/leahy.html",
+    "href": "people/leahy.html",
+    "title": "Kevin Leahy",
     "section": "",
-    "text": "Education and Training\nFellow, Pulmonary and Critical Care Medicine 2018–2022 Harvard Combined Pulmonary and Critical Care Fellowship, Boston, MA\nResident, Internal Medicine 2015–2018 Massachusetts General Hospital, Boston, MA\nMD 2015 Harvard Medical School, Boston, MA\nBS in Molecular Biology 2009 University of Wisconsin at Madison, Madison, WI\n\n\nDavid joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis."
+    "text": "Education and Training\nMS in Biochemistry and Molecular Biophysics 2010–2017 University of Chicago, Chicago, IL\nBS in Biochemistry and Molecular Biology 2013 University of New Hampshire, Durham, NH\n\n\nKevin Leahy is a research assistant who joined the Oldham lab in June 2019."
   },
   {
-    "objectID": "research/lactate-transport.html",
-    "href": "research/lactate-transport.html",
-    "title": "Lactate transport",
+    "objectID": "people/mcgarrity.html",
+    "href": "people/mcgarrity.html",
+    "title": "Sarah McGarrity",
     "section": "",
-    "text": "Idiopathic pulmonary fibrosis is a fatal disease characterized by excessive deposition of extracellular matrix that leads to alveolar fibrosis, impaired gas exchange, and respiratory failure. Even with modern antifibrotic therapies, median survival is three to five years. Myofibroblasts are the primary effector cells of lung fibrogenesis, and excessive TGF-β signaling drives the differentiation of lung fibroblasts into myofibroblasts. Identifying the mechanisms that mediate this transition will both clarify disease pathobiology and reveal targets for antifibrotic therapy.\nMetabolic reprogramming is essential for myofibroblast differentiation. Myofibroblasts exhibit increased glycolysis, lactate production, and reactive oxygen species generation, and inhibition of glycolysis prevents differentiation and ameliorates experimental fibrosis. Sustained glycolysis depends on lactate export through the monocarboxylate transporters (MCTs). Where inhibitors of the glycolytic enzymes have been limited by poor specificity and narrow therapeutic indices, MCT inhibitors have favorable pharmacologic profiles and have advanced to clinical trials in other diseases.\nWe found that MCT1 and MCT4 are upregulated in IPF lung and in experimental fibrosis, and that inhibiting either transporter, genetically or pharmacologically, blocks TGF-β–stimulated myofibroblast differentiation in fibroblasts from healthy donors and from patients with IPF. In mice, we showed that MCT inhibitors attenuate bleomycin-induced fibrosis with efficacy comparable to approved antifibrotics, in aged as well as young animals. We further demonstrated that lactate transport inhibition enhances oxidative phosphorylation, reduces reactive oxygen species production, and diminishes incorporation of glucose carbon into fibrotic regions of the lung.\nCurrent work addresses how this metabolic shift is transduced to the profibrotic transcriptional program, and which cells must be targeted in vivo for MCT inhibition to be effective. We are using fibroblast-specific conditional knockout animals to establish which cellular compartment requires lactate transport for fibrogenesis, and whether the benefit of MCT inhibition is attributable to the fibroblast itself. We are also examining the epigenetic consequences of intracellular lactate accumulation, including histone lactylation, as a candidate mechanism coupling the metabolic state of the cell to the profibrotic gene program."
+    "text": "Google Scholar\n\n\nEducation and Training\nPhD in Systems Biology 2015 Newcastle University, Newcastle, UK\nMRes in Medical and Molecular Biology - Systems Biology 2010 Newcastle University, Newcastle, UK\nBA in Medical Sciences/Genetics 2009 University of Cambridge, Cambridge, UK\n\n\nSarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a Novo Nordisk Foundation Postdoctoral Fellowship for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the Center for Systems Biology. She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities."
   },
   {
-    "objectID": "research/lactate-transport.html#support",
-    "href": "research/lactate-transport.html#support",
-    "title": "Lactate transport",
-    "section": "Support",
-    "text": "Support\nNational Heart, Lung, and Blood Institute, R01 HL167718."
+    "objectID": "people/oldham.html",
+    "href": "people/oldham.html",
+    "title": "William Oldham",
+    "section": "",
+    "text": "ORCID · Google Scholar · GitHub\n\n\nEducation and Training\nResearch Fellow, Pulmonary and Critical Care Medicine 2012–2015 Brigham and Women’s Hospital and Harvard Medical School\nFellow, Pulmonary Disease and Critical Care Medicine 2010–2014 Harvard Combined Pulmonary and Critical Care Fellowship\nResident, Internal Medicine 2008–2010 Massachusetts General Hospital\nMD 2008 Vanderbilt University School of Medicine\nPhD in Pharmacology 2006 Vanderbilt University\nBS in Chemistry with Honors 2001 University of North Carolina at Chapel Hill\n\n\nWill is Associate Professor of Medicine at The Warren Alpert Medical School of Brown University and Director of Research and Innovation for Pulmonary, Critical Care and Sleep Medicine at Brown University Health. He is an attending physician in pulmonary and critical care medicine and an Associate Member of the Broad Institute. His research interests include pulmonary hypertension, pulmonary fibrosis, cell metabolism, adaptation to hypoxia, and network medicine."
   },
   {
-    "objectID": "research/lactate-transport.html#key-paper",
-    "href": "research/lactate-transport.html#key-paper",
-    "title": "Lactate transport",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Lactate transport\n    Myofibroblast differentiation depends on sustained glycolysis, and therefore on lactate export. We are defining monocarboxylate transport as a target in pulmonary fibrosis.\n  \n\n  \n    Nutrient requirements for matrix synthesis\n    Matrix production is a biosynthetic problem. We are identifying the nutrients fibroblasts consume to build extracellular matrix, and testing whether blocking their transport attenuates fibrosis.\n  \n\n  \n    Metabolic regulation in pulmonary vascular disease\n    Pulmonary artery smooth muscle cells proliferate in low oxygen when most cells stop. We are defining the metabolic signal that permits it, and testing whether blocking it prevents vascular remodeling.\n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/matrix-synthesis.html",
+    "href": "research/matrix-synthesis.html",
+    "title": "Nutrient requirements for matrix synthesis",
+    "section": "",
+    "text": "Extracellular matrix production by myofibroblasts is the central pathologic process in pulmonary fibrosis, yet the pathways that channel specific nutrients into fibrogenic matrix proteins in vivo remain poorly defined. Approved antifibrotics slow the decline in lung function but do not halt disease progression, and none targets the biosynthetic machinery fibroblasts use to generate matrix. Prior work has identified candidate metabolic dependencies in cultured fibroblasts without tracing nutrients into matrix in intact tissue or in patients.\nWe identified alanine as a required substrate for fibrogenic matrix production. Alanine supplies both carbon and nitrogen to the amino acid pools used for collagen biosynthesis, and depleting it attenuates TGF-β–induced α-smooth muscle actin and collagen expression in lung fibroblasts from patients with IPF. TGF-β raises intracellular alanine by two routes at once: synthesis by the transaminase GPT2, and import through the transporter SLC38A2. Blocking either route alone is insufficient, because the cell compensates using the other. This is why the requirement was visible only in medium of realistic composition — inhibiting synthesis suppressed differentiation in simple medium but failed when extracellular alanine was available. Inhibiting synthesis and uptake together suppresses the fibrogenic response in fibroblasts and in human precision-cut lung slices.\nAnswering these questions in tissue rather than in culture requires measurements the field has not previously applied to fibrosis, and much of our current effort is methodological. We culture fibroblasts in human plasma-like medium so that nutrient availability approximates the circulation rather than a general-purpose growth medium. We use scaffold-free three-dimensional microtissues to connect a metabolic perturbation directly to matrix stiffness and collagen organization, which cannot be assessed in two-dimensional culture. We perform whole-animal isotope infusions in fibrotic mice to quantify how much of a circulating substrate is incorporated into lung metabolites and into matrix-bound amino acids. Multi-isotope imaging mass spectrometry then resolves that incorporation spatially, so labeling can be read out in fibrotic regions rather than averaged across the lung.\nWe are extending these measurements to patients. Building on a pilot study establishing the feasibility of preoperative oral isotope tracing at lung transplantation, we administer labeled alanine to transplant recipients with pulmonary fibrosis and map spatially resolved incorporation in the explanted lung. In parallel, fibroblast-specific Slc38a2 knockout mice will establish whether alanine transport is required for fibrosis in vivo, and whether the benefit of blocking it is attributable to the fibroblast itself. The broader aim is to establish amino acid transporters as a class of antifibrotic target that acts on the substrate supply for matrix production."
+  },
+  {
+    "objectID": "research/matrix-synthesis.html#key-paper",
+    "href": "research/matrix-synthesis.html#key-paper",
+    "title": "Nutrient requirements for matrix synthesis",
     "section": "Key paper",
-    "text": "Key paper\n\n  \n    2026\n    \n      Lactate\n        transport inhibition therapeutically reprograms fibroblast metabolism in\n        experimental pulmonary fibrosis\n      Ziehr DR, Li F, Parnell KM, et al.\n        Science Translational Medicine."
-  },
-  {
-    "objectID": "research/pulmonary-vascular-metabolism.html",
-    "href": "research/pulmonary-vascular-metabolism.html",
-    "title": "Metabolic regulation in pulmonary vascular disease",
-    "section": "",
-    "text": "Pulmonary hypertension arising from chronic lung disease is common and carries the highest mortality of any subtype, yet only one therapy is approved for it and it helps only some patients. Sustained low oxygen thickens and narrows the pulmonary arteries, and that remodeling is driven by proliferation of the smooth muscle cells in the vessel wall. Most cells slow or stop dividing in hypoxia. Pulmonary artery smooth muscle cells do not, which implies a pathway that sustains growth when it should be suppressed.\nThe canonical account of hypoxic metabolism is that HIF-1α stabilizes, glycolytic gene expression rises, and glycolytic flux follows. Working in primary human lung fibroblasts and pulmonary artery smooth muscle cells rather than tumor lines, we found that this does not hold. Hypoxia decreased glycolysis in these cells even though HIF-1α was activated and glycolytic enzyme expression increased. Stabilizing HIF-1α pharmacologically in normal oxygen did raise glycolysis, but hypoxia blocked that response, so something downstream of HIF was overriding it. That something is MYC: knocking MYC down in hypoxia increased glycolysis, and overexpressing it in normoxia suppressed the glycolytic response to HIF stabilization. MYC signaling in hypoxia uncouples HIF-driven glycolytic transcription from glycolytic flux.\nOur current work asks what sustains MYC activity when oxygen is limited. In hypoxia, cells increasingly run the reaction catalyzed by isocitrate dehydrogenase in reverse, fixing carbon dioxide onto α-ketoglutarate to make citrate rather than oxidizing citrate to α-ketoglutarate. This reductive carboxylation supplies carbon for biosynthesis when oxidative metabolism is constrained, and our preliminary data indicate that it is required to maintain MYC signaling and proliferation in hypoxic smooth muscle cells.\nThis gives a metabolic–transcriptional axis to test. We are quantifying IDH expression in remodeled human pulmonary arteries and asking whether inhibiting IDH — with compounds already approved in oncology — suppresses reductive carboxylation, MYC activation, and proliferation. In parallel, inducible smooth-muscle-specific expression of Omomyc, a peptide inhibitor of MYC now in clinical trials, will test whether MYC is required for hypoxic pulmonary vascular remodeling in an intact animal. Because both classes of drug are already well advanced in human medicine, a positive result would have a short path to trial in a patient population with few options."
-  },
-  {
-    "objectID": "research/pulmonary-vascular-metabolism.html#key-paper",
-    "href": "research/pulmonary-vascular-metabolism.html#key-paper",
-    "title": "Metabolic regulation in pulmonary vascular disease",
-    "section": "Key paper",
-    "text": "Key paper\n\n  \n    2023\n    \n      MYC overrides\n        HIF-1α to regulate proliferating primary cell metabolism in hypoxia\n      Copeland CA, Olenchock BA, Ziehr DR, et al.\n        eLife."
+    "text": "Key paper\n\n  \n    2026\n    \n      TGF-β\n        coordinates alanine synthesis and import for myofibroblast differentiation\n        in pulmonary fibrosis\n      Li F, Vigder N, Ziehr DR, et al.\n        JCI Insight."
   }
 ]
