@@ -6,21 +6,25 @@ categories: ["Fellow"]
 status: alumni
 role: fellow
 order: 40
-about:
-  template: trestles
-  image-shape: round
-  image-width: 10em
 ---
 
-Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology. 
+::: {.person-top}
+::: {.person-figure}
+![](/people/joseph.jpg){.person-photo fig-alt="Phillip Joseph"}
+:::
 
-## Education and Training
+::: {.person-meta}
+#### Education and Training
 
-**Brigham and Women's Hospital** | Boston, MA<br>
-Fellow, Pulmonary and Critical Care Medicine | 2015-2019
+[Fellow, Pulmonary and Critical Care Medicine]{.et-role} [2015–2019]{.et-year}
+[Brigham and Women's Hospital, Boston, MA]{.et-place}
 
-**New York University Grossman School of Medicine** | New York, NY<br>
-Resident, Internal Medicine | 2012-2015
+[Resident, Internal Medicine]{.et-role} [2012–2015]{.et-year}
+[New York University Grossman School of Medicine, New York, NY]{.et-place}
 
-**New York University School of Medicine** | New York, NY<br>
-MD | 2012
+[MD]{.et-role} [2012]{.et-year}
+[New York University School of Medicine, New York, NY]{.et-place}
+:::
+:::
+
+Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology.

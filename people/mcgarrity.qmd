@@ -6,22 +6,27 @@ categories: ["Fellow"]
 status: alumni
 role: fellow
 order: 30
-about:
-  template: trestles
-  image-shape: round
-  image-width: 10em
-  links: 
-    - icon: google
-      href: https://scholar.google.is/citations?user=1Awael0AAAAJ&hl=en
 ---
 
+::: {.person-top}
+::: {.person-figure}
+![](/people/mcgarrity.jpg){.person-photo fig-alt="Sarah McGarrity"}
+
+[[Google Scholar](https://scholar.google.is/citations?user=1Awael0AAAAJ&hl=en)]{.person-links}
+:::
+
+::: {.person-meta}
+#### Education and Training
+
+[PhD in Systems Biology]{.et-role} [2015]{.et-year}
+[Newcastle University, Newcastle, UK]{.et-place}
+
+[MRes in Medical and Molecular Biology - Systems Biology]{.et-role} [2010]{.et-year}
+[Newcastle University, Newcastle, UK]{.et-place}
+
+[BA in Medical Sciences/Genetics]{.et-role} [2009]{.et-year}
+[University of Cambridge, Cambridge, UK]{.et-place}
+:::
+:::
+
 Sarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a [Novo Nordisk Foundation Postdoctoral Fellowship](https://novonordiskfonden.dk/en/news/novo-nordisk-foundation-celebrates-talented-young-researchers/) for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the [Center for Systems Biology](https://systemsbiology.hi.is/). She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities.
-
-## Education and Training
-
-**Newcastle University** | Newcastle, UK<br>
-PhD in Systems Biology | 2015<br>
-MRes in Medical and Molecular Biology - Systems Biology | 2010
-
-**University of Cambridge** | Cambridge, UK<br>
-BA in Medical Sciences/Genetics | 2009

@@ -24,9 +24,10 @@ website:
   repo-url: "https://github.com/oldhamlab/oldhamlab.org"
   image: img/cells.jpg
   open-graph: true
+  # Card kept so shared links still get a large preview image, but no
+  # `creator:` attribution - the account is no longer used.
   twitter-card:
     card-style: summary_large_image
-    creator: "@wm_oldham"
   google-analytics:
     tracking-id: "G-KZ6PJ54VTV"
     anonymize-ip: true

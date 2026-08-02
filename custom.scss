@@ -468,6 +468,90 @@ main.content > section.level1 + section.level1 { margin-top: var(--s7); }
 #title-block-header .quarto-title h1.title { margin-bottom: 0; }
 .quarto-title-banner { background: transparent; }
 
+// ── Person page ───────────────────────────────────────────────────────
+// Hand-rolled instead of Quarto's `about: trestles` template, which centred
+// the role under the name, rendered the scholarly links as outlined buttons,
+// and stacked a long Education block full-width down the page.
+// Layout: square portrait left, training beside it, bio full width beneath.
+
+// The role line under the name: a quiet left-aligned label, not a centred tag.
+#title-block-header .subtitle {
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: .35rem;
+}
+
+.person-top {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: var(--s5);
+  align-items: start;
+  margin-bottom: var(--s5);
+}
+// Three current members have no portrait. Without a figure the two-column
+// grid would squeeze their training into the 220px photo column.
+.person-top:not(:has(.person-figure)) { grid-template-columns: minmax(0, 1fr); }
+// ...and with a figure but no training, don't leave a dangling empty column.
+.person-top:not(:has(.person-meta)) { grid-template-columns: 220px; }
+
+@media (max-width: 700px) {
+  .person-top { grid-template-columns: 1fr !important; gap: var(--s4); }
+  .person-figure { max-width: 220px; }
+}
+
+.person-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 30%;   // faces sit high; 50% crops chins
+  border-radius: 4px;
+  background: var(--surface);
+}
+.person-figure p { margin: 0; }
+
+.person-links {
+  display: block;
+  margin-top: var(--s2);
+  font-size: .8125rem;
+  color: var(--muted);
+
+  a { color: var(--muted); }
+  a:hover { color: var(--accent); }
+}
+
+.person-meta {
+  h4 {
+    margin: 0 0 var(--s3);
+    font-family: $headings-font-family;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: var(--ls-caps);
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  // One training entry per paragraph: role + right-aligned year, place beneath.
+  p {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: var(--s3);
+    margin: 0;
+    padding-block: .55rem;
+    border-top: 1px solid var(--hairline);
+    line-height: 1.4;
+  }
+  p:last-child { border-bottom: 1px solid var(--hairline); }
+}
+
+.et-role  { font-size: .9375rem; }
+.et-year  { font-size: .8125rem; color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+.et-place { grid-column: 1 / -1; font-size: .8125rem; color: var(--muted); }
+
 // ── Contact ───────────────────────────────────────────────────────────
 .contact-grid {
   display: grid;

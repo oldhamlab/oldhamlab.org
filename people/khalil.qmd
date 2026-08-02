@@ -5,19 +5,19 @@ categories: ["Graduate Student"]
 status: current
 role: student
 order: 50
-about:
-  template: trestles
-  image-shape: round
-  image-width: 10em
 ---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[MS]{.et-role}
+[Brown University, Providence, RI]{.et-place}
+
+[BS]{.et-role}
+[Massachusetts College of Pharmacy and Health Sciences, Boston, MA]{.et-place}
+:::
+:::
 
 Aseel is a graduate student in the [Pathobiology Graduate Program](https://pathobiology.biomed.brown.edu/)
 at Brown University.
-
-## Education and Training
-
-**Brown University** | Providence, RI<br>
-MS
-
-**Massachusetts College of Pharmacy and Health Sciences** | Boston, MA<br>
-BS

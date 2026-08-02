@@ -6,19 +6,25 @@ categories: ["Fellow"]
 status: alumni
 role: fellow
 order: 30
-about:
-  template: trestles
-  image-shape: round
-  image-width: 10em
 ---
 
-Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant. 
+::: {.person-top}
+::: {.person-figure}
+![](/people/copeland.jpg){.person-photo fig-alt="Courtney Copeland"}
+:::
 
-## Education and Training
+::: {.person-meta}
+#### Education and Training
 
-**Vanderbilt University Medical Center** | Nashville, TN<br>
-Post-doctoral fellow | 2017
-PhD in Molecular Physiology & Biophysics | 2017
+[Post-doctoral fellow]{.et-role} [2017]{.et-year}
+[Vanderbilt University Medical Center, Nashville, TN]{.et-place}
 
-**University of Tennessee** | Knoxville, TN<br>
-BS in Biochemistry and Cellular and Molecular Biology | 2008
+[PhD in Molecular Physiology & Biophysics]{.et-role} [2017]{.et-year}
+[Vanderbilt University Medical Center, Nashville, TN]{.et-place}
+
+[BS in Biochemistry and Cellular and Molecular Biology]{.et-role} [2008]{.et-year}
+[University of Tennessee, Knoxville, TN]{.et-place}
+:::
+:::
+
+Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant.

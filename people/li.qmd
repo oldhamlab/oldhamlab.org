@@ -6,22 +6,28 @@ categories: ["Fellow"]
 status: current
 role: fellow
 order: 30
-about:
-  template: trestles
-  image-shape: round
-  image-width: 10em
 ---
 
-Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis. 
+::: {.person-top}
+::: {.person-figure}
+![](/people/li.jpg){.person-photo fig-alt="Fei Li"}
+:::
 
-## Education and Training
+::: {.person-meta}
+#### Education and Training
 
-**Zhejiang University School of Medicine** | China<br>
-Research fellow in Pharmacology | 2021-2023<br>
+[Research fellow in Pharmacology]{.et-role} [2021–2023]{.et-year}
+[Zhejiang University School of Medicine, China]{.et-place}
 
-**Zhejiang University School of Medicine** | China<br>
-Ph.D. in Internal Medicine (Respiratory disease) | 2021
-Master's in Internal Medicine (Respiratory disease) | 2017
+[Ph.D. in Internal Medicine (Respiratory disease)]{.et-role} [2021]{.et-year}
+[Zhejiang University School of Medicine, China]{.et-place}
 
-**Wuhan University School of Medicine** | China<br>
-BA in Clinical Medicine | 2014
+[Master's in Internal Medicine (Respiratory disease)]{.et-role} [2017]{.et-year}
+[Zhejiang University School of Medicine, China]{.et-place}
+
+[BA in Clinical Medicine]{.et-role} [2014]{.et-year}
+[Wuhan University School of Medicine, China]{.et-place}
+:::
+:::
+
+Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis.

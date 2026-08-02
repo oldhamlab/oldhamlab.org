@@ -5,16 +5,16 @@ categories: ["Graduate Student"]
 status: current
 role: student
 order: 50
-about:
-  template: trestles
-  image-shape: round
-  image-width: 10em
 ---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[BS]{.et-role}
+[State University of New York at Binghamton, Binghamton, NY]{.et-place}
+:::
+:::
 
 Diana is a graduate student in the [Pathobiology Graduate Program](https://pathobiology.biomed.brown.edu/)
 at Brown University.
-
-## Education and Training
-
-**State University of New York at Binghamton** | Binghamton, NY<br>
-BS
