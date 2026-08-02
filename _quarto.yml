@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "people/*.qmd"
+    - "research/*.qmd"
     - "!**/_template.qmd"
   preview:
     port: 4200
@@ -50,23 +51,24 @@ website:
     title: "Oldham Lab"
     collapse-below: lg
     left:
+      - research.qmd
       - people.qmd
       - papers.qmd
       - contact.qmd
+    # Scholarly IDs live here as icons rather than as footer links.
+    right:
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=cba3bIAAAAAJ&hl=en
+        aria-label: "Google Scholar"
+      - icon: person-badge
+        href: https://orcid.org/0000-0003-3029-4866
+        aria-label: "ORCID"
+      - icon: github
+        href: https://github.com/oldhamlab
+        aria-label: "GitHub"
 
-  # Deliberately DISJOINT from the navbar - no People / Papers / Contact here.
-  page-footer:
-    border: false
-    background: "#fdfcfb"
-    left: |
-      Division of Pulmonary, Critical Care and Sleep Medicine<br>
-      The Warren Alpert Medical School of Brown University<br>
-      Providence, Rhode Island
-    right: |
-      [ORCID](https://orcid.org/0000-0003-3029-4866)<br>
-      [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/william.oldham.1/bibliography/public/)<br>
-      [Google Scholar](https://scholar.google.com/citations?user=cba3bIAAAAAJ&hl=en)<br>
-      [GitHub](https://github.com/oldhamlab)
+  # No page-footer. The only thing that has to appear at the bottom is the
+  # cookie-consent control, which Quarto injects on its own.
 
 format:
   html:

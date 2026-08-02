@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://oldhamlab.org/people/ziehr.html</loc>
+    <loc>https://oldhamlab.org/research/reperfusion-injury.html</loc>
+    <lastmod>2026-08-02T03:30:45.860Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/research/matrix-synthesis.html</loc>
+    <lastmod>2026-08-02T03:30:45.854Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/research.html</loc>
+    <lastmod>2026-08-02T03:30:45.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/oldham.html</loc>
+    <lastmod>2026-08-02T01:30:48.722Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/mcgarrity.html</loc>
+    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/leahy.html</loc>
+    <lastmod>2026-08-02T01:53:10.022Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/joseph.html</loc>
+    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/copeland.html</loc>
+    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people.html</loc>
+    <lastmod>2026-08-02T01:33:58.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/index.html</loc>
+    <lastmod>2026-08-02T03:31:32.391Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/contact.html</loc>
+    <lastmod>2023-03-14T01:10:23.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/papers.html</loc>
+    <lastmod>2024-05-14T17:32:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/cohen.html</loc>
+    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/ferreyra-faustino.html</loc>
+    <lastmod>2026-08-02T01:31:40.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/khalil.html</loc>
+    <lastmod>2026-08-02T01:31:39.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/li.html</loc>
     <lastmod>2026-08-02T01:30:48.723Z</lastmod>
   </url>
   <url>
@@ -9,55 +69,15 @@
     <lastmod>2026-08-02T01:30:48.723Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/people/li.html</loc>
+    <loc>https://oldhamlab.org/people/ziehr.html</loc>
     <lastmod>2026-08-02T01:30:48.723Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/people/khalil.html</loc>
-    <lastmod>2026-08-02T01:31:39.036Z</lastmod>
+    <loc>https://oldhamlab.org/research/lactate-transport.html</loc>
+    <lastmod>2026-08-02T03:30:45.847Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/people/ferreyra-faustino.html</loc>
-    <lastmod>2026-08-02T01:31:40.459Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/cohen.html</loc>
-    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/papers.html</loc>
-    <lastmod>2024-05-14T17:32:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/contact.html</loc>
-    <lastmod>2023-03-14T01:10:23.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/index.html</loc>
-    <lastmod>2026-08-02T01:24:03.969Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people.html</loc>
-    <lastmod>2026-08-02T01:33:58.027Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/copeland.html</loc>
-    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/joseph.html</loc>
-    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/leahy.html</loc>
-    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/mcgarrity.html</loc>
-    <lastmod>2026-08-02T01:30:48.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/oldham.html</loc>
-    <lastmod>2026-08-02T01:30:48.722Z</lastmod>
+    <loc>https://oldhamlab.org/research/pulmonary-vascular-metabolism.html</loc>
+    <lastmod>2026-08-02T03:30:45.856Z</lastmod>
   </url>
 </urlset>

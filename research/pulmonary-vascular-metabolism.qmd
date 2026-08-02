@@ -1,0 +1,15 @@
+---
+title: "Metabolic regulation in pulmonary vascular disease"
+description: >-
+  How proliferating vascular cells rewire metabolism in pulmonary
+  hypertension, including the role of MYC in the hypoxic response.
+order: 30
+---
+
+::: {.callout-note}
+Draft. Needs your text.
+:::
+
+Key paper: Copeland CA, et al. MYC overrides HIF-1α to regulate proliferating
+primary cell metabolism in hypoxia. *eLife.* 2023.
+<https://doi.org/10.7554/eLife.82597>

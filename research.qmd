@@ -1,0 +1,15 @@
+---
+title: "Research"
+toc: false
+listing:
+  - id: projects
+    contents: "research/*.qmd"
+    template: _research.ejs
+    sort: "order asc"
+    sort-ui: false
+    filter-ui: false
+    categories: false
+---
+
+::: {#projects}
+:::

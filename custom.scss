@@ -149,13 +149,16 @@ body {
 // ── Type scale ────────────────────────────────────────────────────────
 // Negative tracking that scales with size is the single biggest contributor
 // to "sleek" rather than "chunky".
+// Headline, lede and body all share ONE measure so the text column has a
+// single left AND right edge. Previously h1 was capped at 17em (795px) while
+// prose sat at 680px, which read as three unrelated widths on one page.
 h1, .h1 {
   font-size: clamp(2.25rem, 5.6vw, 2.75rem);
   font-weight: 500;
   letter-spacing: var(--ls-display);
   line-height: 1.06;
   margin-bottom: var(--s3);
-  max-width: 17em;          // a display line this wide is unreadable un-capped
+  max-width: var(--measure);
   text-wrap: balance;
 }
 h2, .h2 {
@@ -165,6 +168,10 @@ h2, .h2 {
   line-height: 1.2;
   margin-top: var(--s6);
   margin-bottom: var(--s2);
+  // Quarto puts a border-bottom on every h2. Combined with the border-top on
+  // the first item of the list beneath it, that renders as two stacked rules.
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 h3, .h3 {
   font-size: 1.25rem;
@@ -196,10 +203,14 @@ h4, h5, h6 { font-weight: 500; letter-spacing: var(--ls-mid); }
 }
 
 // ── Measure ───────────────────────────────────────────────────────────
-main.content > p,
-main.content > ul,
-main.content > ol,
-main.content > blockquote,
+// Quarto wraps page content in <section> elements, so a `main > p` selector
+// silently never matches and body copy runs the full container width while
+// the headline and lede sit at the measure. Match at any depth instead.
+// Grid children (.teaser p) are already narrower than the measure, so the
+// cap is a no-op there.
+// `.roster` is a <ul> laid out as a grid - it must span the full container,
+// so it is explicitly exempt from the prose measure.
+main.content :is(p, ul, ol, blockquote):not(.roster),
 .prose { max-width: var(--measure); }
 
 // ── Links ─────────────────────────────────────────────────────────────
@@ -412,19 +423,33 @@ main.content:has(> .plate) {
 @media (max-width: 900px) { .roster--alumni { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .roster--alumni { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
-// ── Footer: disjoint from the nav, never a filled band ────────────────
+// ── Footer ────────────────────────────────────────────────────────────
+// There is no page-footer. The only thing left at the bottom is Quarto's
+// cookie-consent control, which it centres by default and which looks
+// stranded on its own. Pull it to the content's left edge and quiet it down.
 .nav-footer {
   background: var(--bg) !important;
-  border-top: 1px solid var(--hairline);
-  margin-top: var(--s7);
-  padding-block: var(--s5);
-  font-size: .875rem;
+  border-top: 0;
+  margin: var(--s6) auto 0;
+  padding-block: var(--s3);
+  padding-inline: 0;
+  font-size: .8125rem;
   color: var(--muted);
-  align-items: start;
+  justify-content: flex-start;
+  // Align to the content column rather than the viewport edge.
+  max-width: var(--container);
+  width: 100%;
 }
+.nav-footer > * { text-align: left !important; flex: 0 0 auto; margin: 0; padding-inline: 0; }
+.nav-footer .nav-footer-left:empty,
+.nav-footer .nav-footer-right:empty { display: none; }
 .nav-footer a { color: var(--muted); text-decoration: none; }
 .nav-footer a:hover { color: var(--accent); text-decoration: underline; }
-.nav-footer .nav-footer-center { text-align: left; }
+
+// ── Navbar icon links ─────────────────────────────────────────────────
+.navbar .quarto-navbar-tools a,
+.navbar .nav-link .bi { font-size: 1.05rem; }
+.navbar .quarto-navbar-tools { display: flex; gap: .25rem; align-items: center; }
 
 // ── Title blocks: no coloured rule under every heading ─────────────────
 #title-block-header.quarto-title-block.default { margin-bottom: var(--s5); }

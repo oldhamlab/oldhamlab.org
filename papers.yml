@@ -1,0 +1,22 @@
+# Recent papers shown on the home page.
+#
+# PHASE 4 NOTE: this file will be GENERATED from papers.bib (itself built from
+# ORCID) so there is exactly one place to update. Until that script exists,
+# these three entries are maintained by hand.
+- title: "Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis"
+  author: "Ziehr DR, Li F, Parnell KM, et al."
+  journal: "Science Translational Medicine"
+  date: 2026-05-06
+  path: "https://doi.org/10.1126/scitranslmed.ads2673"
+
+- title: "TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis"
+  author: "Li F, Vigder N, Ziehr DR, et al."
+  journal: "JCI Insight"
+  date: 2026-04-23
+  path: "https://doi.org/10.1172/jci.insight.199449"
+
+- title: "Exploring the lung–liver axis in pulmonary arterial hypertension"
+  author: "Singh N, Lawson J, Ragavendran A, et al."
+  journal: "Comprehensive Physiology"
+  date: 2026-06-01
+  path: "https://doi.org/10.1002/cph4.70171"

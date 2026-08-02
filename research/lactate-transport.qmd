@@ -1,0 +1,18 @@
+---
+title: "Lactate transport"
+description: >-
+  Inhibiting monocarboxylate transport reprograms fibroblast metabolism and
+  attenuates fibrosis in experimental models of pulmonary fibrosis.
+order: 10
+---
+
+::: {.callout-note}
+Draft. Needs your text.
+:::
+
+Supported by **R01 HL167718** (NHLBI).
+
+Key paper: Ziehr DR, et al. Lactate transport inhibition therapeutically
+reprograms fibroblast metabolism in experimental pulmonary fibrosis.
+*Science Translational Medicine.* 2026.
+<https://doi.org/10.1126/scitranslmed.ads2673>

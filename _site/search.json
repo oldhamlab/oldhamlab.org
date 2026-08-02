@@ -1,80 +1,150 @@
 [
   {
-    "objectID": "people/ziehr.html",
-    "href": "people/ziehr.html",
-    "title": "David Ziehr",
+    "objectID": "research/reperfusion-injury.html",
+    "href": "research/reperfusion-injury.html",
+    "title": "A small molecule for reperfusion injury",
     "section": "",
-    "text": "David joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis."
+    "text": "Note\n\n\n\nDraft. Needs your text."
   },
   {
-    "objectID": "people/ziehr.html#education-and-training",
-    "href": "people/ziehr.html#education-and-training",
-    "title": "David Ziehr",
+    "objectID": "research/matrix-synthesis.html",
+    "href": "research/matrix-synthesis.html",
+    "title": "Nutrient requirements for matrix synthesis",
+    "section": "",
+    "text": "Note\n\n\n\nDraft. Needs your text.\n\n\nKey paper: Li F, et al. TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis. JCI Insight. 2026. https://doi.org/10.1172/jci.insight.199449"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Lactate transport\n    Inhibiting monocarboxylate transport reprograms fibroblast metabolism and attenuates fibrosis in experimental models of pulmonary fibrosis.\n  \n\n  \n    Nutrient requirements for matrix synthesis\n    Which nutrients cells require to build extracellular matrix, studied in complex model systems.\n  \n\n  \n    Metabolic regulation in pulmonary vascular disease\n    How proliferating vascular cells rewire metabolism in pulmonary hypertension, including the role of MYC in the hypoxic response.\n  \n\n  \n    A small molecule for reperfusion injury\n    Developing small molecule inhibitors of L2HGDH as a therapeutic strategy for reperfusion injury.\n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "people/oldham.html",
+    "href": "people/oldham.html",
+    "title": "William Oldham",
+    "section": "",
+    "text": "Will is an Assistant Professor of Medicine and Associate Physician. His research interests include pulmonary arterial hypertension, cell metabolism, adaptation to hypoxia, and network medicine. He is also the Scientific Director of the BWH Seahorse Core facility."
+  },
+  {
+    "objectID": "people/oldham.html#education-and-training",
+    "href": "people/oldham.html#education-and-training",
+    "title": "William Oldham",
     "section": "Education and Training",
-    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2018-2022\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2015-2018\nHarvard Medical School | Boston, MA MD | 2015\nUniversity of Wisconsin at Madison | Madison, WI BS in Molecular Biology | 2009"
+    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2010-2015\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2008-2010\nVanderbilt University Medical School | Nashville, TN MD | 2008\nVanderbilt University | Nashville, TN PhD in Pharmacology | 2006\nUniversity of North Carolina at Chapel Hill | Chapel Hill, NC BS in Chemistry with Honors | 2001"
   },
   {
-    "objectID": "people/nguyen.html",
-    "href": "people/nguyen.html",
-    "title": "Phuong Nguyen",
+    "objectID": "people/mcgarrity.html",
+    "href": "people/mcgarrity.html",
+    "title": "Sarah McGarrity",
     "section": "",
-    "text": "Phuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments."
+    "text": "Sarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a Novo Nordisk Foundation Postdoctoral Fellowship for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the Center for Systems Biology. She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities."
   },
   {
-    "objectID": "people/nguyen.html#education-and-training",
-    "href": "people/nguyen.html#education-and-training",
-    "title": "Phuong Nguyen",
+    "objectID": "people/mcgarrity.html#education-and-training",
+    "href": "people/mcgarrity.html#education-and-training",
+    "title": "Sarah McGarrity",
     "section": "Education and Training",
-    "text": "Education and Training\nBoston University | Boston, MA MS in Biotechnology | 2016"
+    "text": "Education and Training\nNewcastle University | Newcastle, UK PhD in Systems Biology | 2015 MRes in Medical and Molecular Biology - Systems Biology | 2010\nUniversity of Cambridge | Cambridge, UK BA in Medical Sciences/Genetics | 2009"
   },
   {
-    "objectID": "people/li.html",
-    "href": "people/li.html",
-    "title": "Fei Li",
+    "objectID": "people/leahy.html",
+    "href": "people/leahy.html",
+    "title": "Kevin Leahy",
     "section": "",
-    "text": "Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis."
+    "text": "Kevin Leahy is a research assistant who joined the Oldham lab in June 2019."
   },
   {
-    "objectID": "people/li.html#education-and-training",
-    "href": "people/li.html#education-and-training",
-    "title": "Fei Li",
+    "objectID": "people/leahy.html#education-and-training",
+    "href": "people/leahy.html#education-and-training",
+    "title": "Kevin Leahy",
     "section": "Education and Training",
-    "text": "Education and Training\nZhejiang University School of Medicine | China Research fellow in Pharmacology | 2021-2023\nZhejiang University School of Medicine | China Ph.D. in Internal Medicine (Respiratory disease) | 2021 Master’s in Internal Medicine (Respiratory disease) | 2017\nWuhan University School of Medicine | China BA in Clinical Medicine | 2014"
+    "text": "Education and Training\nUniversity of Chicago | Chicago, IL MS in Biochemistry and Molecular Biophysics | 2010-2017\nUniversity of New Hampshire | Durham, NH BS in Biochemistry and Molecular Biology | 2013"
   },
   {
-    "objectID": "people/khalil.html",
-    "href": "people/khalil.html",
-    "title": "Aseel Khalil",
+    "objectID": "people/joseph.html",
+    "href": "people/joseph.html",
+    "title": "Phillip Joseph",
     "section": "",
-    "text": "Aseel is a graduate student in the Pathobiology Graduate Program at Brown University."
+    "text": "Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology."
   },
   {
-    "objectID": "people/khalil.html#education-and-training",
-    "href": "people/khalil.html#education-and-training",
-    "title": "Aseel Khalil",
+    "objectID": "people/joseph.html#education-and-training",
+    "href": "people/joseph.html#education-and-training",
+    "title": "Phillip Joseph",
     "section": "Education and Training",
-    "text": "Education and Training\nBrown University | Providence, RI MS\nMassachusetts College of Pharmacy and Health Sciences | Boston, MA BS"
+    "text": "Education and Training\nBrigham and Women’s Hospital | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2015-2019\nNew York University Grossman School of Medicine | New York, NY Resident, Internal Medicine | 2012-2015\nNew York University School of Medicine | New York, NY MD | 2012"
   },
   {
-    "objectID": "people/ferreyra-faustino.html",
-    "href": "people/ferreyra-faustino.html",
-    "title": "Diana Ferreyra Faustino",
+    "objectID": "people/copeland.html",
+    "href": "people/copeland.html",
+    "title": "Courtney Copeland",
     "section": "",
-    "text": "Diana is a graduate student in the Pathobiology Graduate Program at Brown University."
+    "text": "Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant."
   },
   {
-    "objectID": "people/ferreyra-faustino.html#education-and-training",
-    "href": "people/ferreyra-faustino.html#education-and-training",
-    "title": "Diana Ferreyra Faustino",
+    "objectID": "people/copeland.html#education-and-training",
+    "href": "people/copeland.html#education-and-training",
+    "title": "Courtney Copeland",
     "section": "Education and Training",
-    "text": "Education and Training\nState University of New York at Binghamton | Binghamton, NY BS"
+    "text": "Education and Training\nVanderbilt University Medical Center | Nashville, TN Post-doctoral fellow | 2017 PhD in Molecular Physiology & Biophysics | 2017\nUniversity of Tennessee | Knoxville, TN BS in Biochemistry and Cellular and Molecular Biology | 2008"
   },
   {
-    "objectID": "people/cohen.html",
-    "href": "people/cohen.html",
-    "title": "Aliya Gottehrer-Cohen",
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
     "section": "",
-    "text": "Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia."
+    "text": "William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "people.html#alumni",
+    "href": "people.html#alumni",
+    "title": "People",
+    "section": "Alumni",
+    "text": "Alumni\n\n\n\n  \n    \n      \n        \n      \n      Courtney Copeland\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Sarah McGarrity\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      David Ziehr\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Phillip Joseph\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        KL\n      \n      Kevin Leahy\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Phuong Nguyen\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Aliya Gottehrer-Cohen\n      Undergraduate\n    \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
+    "section": "Research",
+    "text": "Research\n\n\n\n  \n    Lactate transport\n    Inhibiting monocarboxylate transport reprograms fibroblast metabolism and attenuates fibrosis in experimental models of pulmonary fibrosis.\n  \n\n  \n    Nutrient requirements for matrix synthesis\n    Which nutrients cells require to build extracellular matrix, studied in complex model systems.\n  \n\n  \n    Metabolic regulation in pulmonary vascular disease\n    How proliferating vascular cells rewire metabolism in pulmonary hypertension, including the role of MYC in the hypoxic response.\n  \n\n  \n    A small molecule for reperfusion injury\n    Developing small molecule inhibitors of L2HGDH as a therapeutic strategy for reperfusion injury.\n  \n\n\nNo matching items\n\nAll research →"
+  },
+  {
+    "objectID": "index.html#the-lab",
+    "href": "index.html#the-lab",
+    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
+    "section": "The lab",
+    "text": "The lab\n\n\n\n  \n    \n      \n        \n      \n      William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n\nNo matching items\n\nFull roster and alumni →"
+  },
+  {
+    "objectID": "index.html#recent-papers",
+    "href": "index.html#recent-papers",
+    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
+    "section": "Recent papers",
+    "text": "Recent papers\n\n\n\n  \n    2026\n    \n      Exploring the lung–liver axis in pulmonary arterial hypertension\n      Singh N, Lawson J, Ragavendran A, et al. · Comprehensive Physiology\n    \n  \n\n  \n    2026\n    \n      Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis\n      Ziehr DR, Li F, Parnell KM, et al. · Science Translational Medicine\n    \n  \n\n  \n    2026\n    \n      TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis\n      Li F, Vigder N, Ziehr DR, et al. · JCI Insight\n    \n  \n\n\nNo matching items\n\nAll publications →"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115"
+  },
+  {
+    "objectID": "contact.html#address",
+    "href": "contact.html#address",
+    "title": "Contact",
+    "section": "",
+    "text": "Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115"
+  },
+  {
+    "objectID": "contact.html#email",
+    "href": "contact.html#email",
+    "title": "Contact",
+    "section": "Email",
+    "text": "Email\n\n\nFull Name  Email Address  Message"
   },
   {
     "objectID": "papers.html",
@@ -168,115 +238,94 @@
     "text": "2010\n\nOldham WM, Systrom DM. Cardiopulmonary exercise testing in the evaluation of unexplained dyspnea. Advances in Pulmonary Hypertension. 2010; 9: 101-106. https://doi.org/10.21693/1933-088X-9.2.101"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "people/cohen.html",
+    "href": "people/cohen.html",
+    "title": "Aliya Gottehrer-Cohen",
     "section": "",
-    "text": "Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115"
+    "text": "Aliya worked in the lab from January to July 2016 as a co-op research assistant from Northeastern University. She performed the initial bioinformatic analyses pointing the lab toward a possible role for taurine metabolism in the metabolic adaptation of cells to hypoxia."
   },
   {
-    "objectID": "contact.html#address",
-    "href": "contact.html#address",
-    "title": "Contact",
+    "objectID": "people/ferreyra-faustino.html",
+    "href": "people/ferreyra-faustino.html",
+    "title": "Diana Ferreyra Faustino",
     "section": "",
-    "text": "Brigham and Women’s Hospital  NRB 630, 77 Avenue Louis Pasteur  Boston, MA 02115"
+    "text": "Diana is a graduate student in the Pathobiology Graduate Program at Brown University."
   },
   {
-    "objectID": "contact.html#email",
-    "href": "contact.html#email",
-    "title": "Contact",
-    "section": "Email",
-    "text": "Email\n\n\nFull Name  Email Address  Message"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease",
-    "section": "",
-    "text": "Metabolic reprogramming in pulmonary vascular and fibrotic lung disease\n\nThe Oldham Lab investigates how cellular metabolic reprogramming contributes to pulmonary hypertension and pulmonary fibrosis. By improving our understanding of cell metabolism, we aim to develop new therapeutic strategies for the treatment of lung disease.\n\nWe study in vitro and in vivo model systems with state-of-the-art analytical techniques, including metabolomics, stable isotope tracing, extracellular flux analysis, and systems biology. The lab is part of the Division of Pulmonary, Critical Care and Sleep Medicine at The Warren Alpert Medical School of Brown University and Brown University Health.\n\n  Research\n  \n    \n      Lactate transport in pulmonary fibrosis\n      Inhibiting monocarboxylate transport reprograms fibroblast metabolism and\n         attenuates fibrosis in experimental models.\n    \n    \n      Amino acid metabolism in myofibroblast differentiation\n      How TGF-β coordinates alanine synthesis and import to support the\n         myofibroblast phenotype.\n    \n    \n      Metabolism in pulmonary vascular disease\n      Metabolic reprogramming of endothelial and smooth muscle cells in\n         pulmonary arterial hypertension.\n    \n    \n      Immunometabolism in lung injury\n      Immune mechanisms and their metabolic control in fibrotic interstitial\n         lung disease and critical illness.\n    \n  \n\n\n\n  The lab\n  \n    \n      \n        \n        William Oldham\n        Principal Investigator\n      \n    \n    \n      \n        \n        Fei Li\n        Postdoctoral Fellow\n      \n    \n    \n      AK\n      Aseel Khalil\n      Graduate Student\n    \n    \n      DF\n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n  Full roster and alumni →\n\n\n\n  Recent papers\n  \n    \n      2026\n      \n        Lactate transport inhibition therapeutically\n          reprograms fibroblast metabolism in experimental pulmonary fibrosis\n        Ziehr DR, Li F, Parnell KM, et al.\n          Science Translational Medicine.\n          10.1126/scitranslmed.ads2673\n      \n    \n    \n      2026\n      \n        TGF-β coordinates alanine synthesis and import\n          for myofibroblast differentiation in pulmonary fibrosis\n        Li F, Vigder N, Ziehr DR, et al.\n          JCI Insight.\n          10.1172/jci.insight.199449\n      \n    \n    \n      2026\n      \n        Exploring the lung–liver axis in pulmonary\n          arterial hypertension\n        Singh N, Lawson J, Ragavendran A, et al.\n          Comprehensive Physiology.\n          10.1002/cph4.70171\n      \n    \n  \n  All publications →"
-  },
-  {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
-    "section": "",
-    "text": "William Oldham\n      Principal Investigator\n    \n  \n\n  \n    \n      \n        \n      \n      Fei Li\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        AK\n      \n      Aseel Khalil\n      Graduate Student\n    \n  \n\n  \n    \n      \n        DF\n      \n      Diana Ferreyra Faustino\n      Graduate Student\n    \n  \n\n  \n    \n      \n        KL\n      \n      Kevin Leahy\n      Research Assistant\n    \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "people.html#alumni",
-    "href": "people.html#alumni",
-    "title": "People",
-    "section": "Alumni",
-    "text": "Alumni\n\n\n\n  \n    \n      \n        \n      \n      Courtney Copeland\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Sarah McGarrity\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      David Ziehr\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Phillip Joseph\n      Post-doctoral Fellow\n    \n  \n\n  \n    \n      \n        \n      \n      Phuong Nguyen\n      Research Assistant\n    \n  \n\n  \n    \n      \n        \n      \n      Aliya Gottehrer-Cohen\n      Undergraduate\n    \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "people/copeland.html",
-    "href": "people/copeland.html",
-    "title": "Courtney Copeland",
-    "section": "",
-    "text": "Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant."
-  },
-  {
-    "objectID": "people/copeland.html#education-and-training",
-    "href": "people/copeland.html#education-and-training",
-    "title": "Courtney Copeland",
+    "objectID": "people/ferreyra-faustino.html#education-and-training",
+    "href": "people/ferreyra-faustino.html#education-and-training",
+    "title": "Diana Ferreyra Faustino",
     "section": "Education and Training",
-    "text": "Education and Training\nVanderbilt University Medical Center | Nashville, TN Post-doctoral fellow | 2017 PhD in Molecular Physiology & Biophysics | 2017\nUniversity of Tennessee | Knoxville, TN BS in Biochemistry and Cellular and Molecular Biology | 2008"
+    "text": "Education and Training\nState University of New York at Binghamton | Binghamton, NY BS"
   },
   {
-    "objectID": "people/joseph.html",
-    "href": "people/joseph.html",
-    "title": "Phillip Joseph",
+    "objectID": "people/khalil.html",
+    "href": "people/khalil.html",
+    "title": "Aseel Khalil",
     "section": "",
-    "text": "Phillip worked in the lab from September 2016 to June 2017 during the research portion of his pulmonary and critical care medicine fellowship training. He performed our initial experiments investigating the role of taurine in pulmonary vascular cell biology."
+    "text": "Aseel is a graduate student in the Pathobiology Graduate Program at Brown University."
   },
   {
-    "objectID": "people/joseph.html#education-and-training",
-    "href": "people/joseph.html#education-and-training",
-    "title": "Phillip Joseph",
+    "objectID": "people/khalil.html#education-and-training",
+    "href": "people/khalil.html#education-and-training",
+    "title": "Aseel Khalil",
     "section": "Education and Training",
-    "text": "Education and Training\nBrigham and Women’s Hospital | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2015-2019\nNew York University Grossman School of Medicine | New York, NY Resident, Internal Medicine | 2012-2015\nNew York University School of Medicine | New York, NY MD | 2012"
+    "text": "Education and Training\nBrown University | Providence, RI MS\nMassachusetts College of Pharmacy and Health Sciences | Boston, MA BS"
   },
   {
-    "objectID": "people/leahy.html",
-    "href": "people/leahy.html",
-    "title": "Kevin Leahy",
+    "objectID": "people/li.html",
+    "href": "people/li.html",
+    "title": "Fei Li",
     "section": "",
-    "text": "Kevin Leahy is a research assistant who joined the Oldham lab in June 2019."
+    "text": "Fei joined the Oldham lab in October 2023. He studies the metabolic pathways that contribute to myofibroblast differentiation and extracellular matrix production in experimental models of pulmonary fibrosis."
   },
   {
-    "objectID": "people/leahy.html#education-and-training",
-    "href": "people/leahy.html#education-and-training",
-    "title": "Kevin Leahy",
+    "objectID": "people/li.html#education-and-training",
+    "href": "people/li.html#education-and-training",
+    "title": "Fei Li",
     "section": "Education and Training",
-    "text": "Education and Training\nUniversity of Chicago | Chicago, IL MS in Biochemistry and Molecular Biophysics | 2010-2017\nUniversity of New Hampshire | Durham, NH BS in Biochemistry and Molecular Biology | 2013"
+    "text": "Education and Training\nZhejiang University School of Medicine | China Research fellow in Pharmacology | 2021-2023\nZhejiang University School of Medicine | China Ph.D. in Internal Medicine (Respiratory disease) | 2021 Master’s in Internal Medicine (Respiratory disease) | 2017\nWuhan University School of Medicine | China BA in Clinical Medicine | 2014"
   },
   {
-    "objectID": "people/mcgarrity.html",
-    "href": "people/mcgarrity.html",
-    "title": "Sarah McGarrity",
+    "objectID": "people/nguyen.html",
+    "href": "people/nguyen.html",
+    "title": "Phuong Nguyen",
     "section": "",
-    "text": "Sarah worked in the Oldham lab from February 2020 to January 2023 as a recipient of a Novo Nordisk Foundation Postdoctoral Fellowship for research abroad in the field of endocrinology and metabolism. She joined the group from the University of Iceland where she continued her work in close collaboration with colleagues from the Center for Systems Biology. She studied how the endothelial glycocalyx contributes to endothelial cell redox homeostasis through effects on glutathione peroxidase and endothelial nitric oxide synthase enzymatic activities."
+    "text": "Phuong was a research assistant in the laboratory from January 2017 through September 2019. She assisted with all aspects of our research program from molecular biology through animal experiments."
   },
   {
-    "objectID": "people/mcgarrity.html#education-and-training",
-    "href": "people/mcgarrity.html#education-and-training",
-    "title": "Sarah McGarrity",
+    "objectID": "people/nguyen.html#education-and-training",
+    "href": "people/nguyen.html#education-and-training",
+    "title": "Phuong Nguyen",
     "section": "Education and Training",
-    "text": "Education and Training\nNewcastle University | Newcastle, UK PhD in Systems Biology | 2015 MRes in Medical and Molecular Biology - Systems Biology | 2010\nUniversity of Cambridge | Cambridge, UK BA in Medical Sciences/Genetics | 2009"
+    "text": "Education and Training\nBoston University | Boston, MA MS in Biotechnology | 2016"
   },
   {
-    "objectID": "people/oldham.html",
-    "href": "people/oldham.html",
-    "title": "William Oldham",
+    "objectID": "people/ziehr.html",
+    "href": "people/ziehr.html",
+    "title": "David Ziehr",
     "section": "",
-    "text": "Will is an Assistant Professor of Medicine and Associate Physician. His research interests include pulmonary arterial hypertension, cell metabolism, adaptation to hypoxia, and network medicine. He is also the Scientific Director of the BWH Seahorse Core facility."
+    "text": "David joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis."
   },
   {
-    "objectID": "people/oldham.html#education-and-training",
-    "href": "people/oldham.html#education-and-training",
-    "title": "William Oldham",
+    "objectID": "people/ziehr.html#education-and-training",
+    "href": "people/ziehr.html#education-and-training",
+    "title": "David Ziehr",
     "section": "Education and Training",
-    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2010-2015\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2008-2010\nVanderbilt University Medical School | Nashville, TN MD | 2008\nVanderbilt University | Nashville, TN PhD in Pharmacology | 2006\nUniversity of North Carolina at Chapel Hill | Chapel Hill, NC BS in Chemistry with Honors | 2001"
+    "text": "Education and Training\nHarvard Combined Pulmonary and Critical Care Fellowship | Boston, MA Fellow, Pulmonary and Critical Care Medicine | 2018-2022\nMassachusetts General Hospital | Boston, MA Resident, Internal Medicine | 2015-2018\nHarvard Medical School | Boston, MA MD | 2015\nUniversity of Wisconsin at Madison | Madison, WI BS in Molecular Biology | 2009"
+  },
+  {
+    "objectID": "research/lactate-transport.html",
+    "href": "research/lactate-transport.html",
+    "title": "Lactate transport",
+    "section": "",
+    "text": "Note\n\n\n\nDraft. Needs your text.\n\n\nSupported by R01 HL167718 (NHLBI).\nKey paper: Ziehr DR, et al. Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis. Science Translational Medicine. 2026. https://doi.org/10.1126/scitranslmed.ads2673"
+  },
+  {
+    "objectID": "research/pulmonary-vascular-metabolism.html",
+    "href": "research/pulmonary-vascular-metabolism.html",
+    "title": "Metabolic regulation in pulmonary vascular disease",
+    "section": "",
+    "text": "Note\n\n\n\nDraft. Needs your text.\n\n\nKey paper: Copeland CA, et al. MYC overrides HIF-1α to regulate proliferating primary cell metabolism in hypoxia. eLife. 2023. https://doi.org/10.7554/eLife.82597"
   }
 ]

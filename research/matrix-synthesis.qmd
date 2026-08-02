@@ -1,0 +1,15 @@
+---
+title: "Nutrient requirements for matrix synthesis"
+description: >-
+  Which nutrients cells require to build extracellular matrix, studied in
+  complex model systems.
+order: 20
+---
+
+::: {.callout-note}
+Draft. Needs your text.
+:::
+
+Key paper: Li F, et al. TGF-β coordinates alanine synthesis and import for
+myofibroblast differentiation in pulmonary fibrosis. *JCI Insight.* 2026.
+<https://doi.org/10.1172/jci.insight.199449>
