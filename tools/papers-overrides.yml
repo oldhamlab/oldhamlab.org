@@ -1,0 +1,36 @@
+# Hand-maintained additions to the publication list.
+#
+# tools/update-papers.py OVERWRITES papers.yml on every run. This file is never
+# written to, so anything editorial belongs here, keyed by DOI.
+#
+#   award:  a prize or selection      -> printed after the entry
+#   note:   accompanying commentary   -> printed after the entry, smaller
+#   equal:  co-first authorship       -> "Ziehr DR, Li F contributed equally"
+#   drop:   suppress the entry entirely
+#
+# A bare `- doi:` with no fields is a seed: it pulls a paper into the list that
+# ORCID does not know about. Metadata comes from Crossref.
+
+# --- papers missing from ORCID ---
+- doi: "10.1016/j.cmet.2024.04.010"     # Rachedi, Cell Metabolism 2024
+- doi: "10.21693/1933-088x-9.2.101"     # Advances in Pulmonary Hypertension 2010
+- doi: "10.1086/687757"                 # Pulmonary Circulation 2016
+
+# --- awards and commentary ---
+- doi: "10.1152/ajplung.00199.2023"
+  award: "APSselect award winner, American Physiological Society"
+
+- doi: "10.1161/circresaha.117.312482"
+  award: "Editor's Pick, Circulation Research"
+  note: "Editorial: Arena R, Ozemek C, Laddu-Patel D, Myers J. Refining the risk prediction of cardiorespiratory fitness with network analysis. *Circulation Research.* 2018;122:804."
+
+- doi: "10.1016/j.cmet.2015.06.021"
+  note: "Preview: Harris AL. A new hydroxyl metabolite of 2-oxoglutarate regulates metabolism in hypoxia. *Cell Metabolism.* 2015;22:198. Research Highlight: Miura G. Cancer metabolism: two sides of a coin. *Nature Chemical Biology.* 2015;11:632."
+
+# --- suppressed ---
+# Published as "Mechano-induced cell metabolism promotes microtubule
+# glutamylation to force metastasis" (Cell Metabolism 2021, already listed).
+# Crossref records no is-preprint-of edge between the two, and the titles share
+# too few words for the similarity check, so it has to be suppressed by hand.
+- doi: "10.1101/2020.03.10.985036"
+  drop: true

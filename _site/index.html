@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cee2ab1bb3ddfda74f9f7250d4cb7161.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-17385544827766662df836532f42aa31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,9 +142,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-journal','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-journal","listing-date"],
+      valueNames: ['listing-title','listing-author','listing-journal','listing-date','listing-doi','listing-volume','listing-pages','listing-preprint','listing-award','listing-note',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-journal","listing-date","listing-doi","listing-volume","listing-pages","listing-preprint","listing-award","listing-note"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -407,11 +408,11 @@ window.Quarto = {
 <div id="listing-home-papers" class="quarto-listing quarto-listing-container-custom">
 <div class="papers">
 
-  <div class="paper" data-index="0" data-listing-date-sort="1780286400000">
+  <div class="paper" data-index="0" data-listing-date-sort="1783483200000">
     <span class="paper-year">2026</span>
     <div>
-      <a class="paper-title" href="https://doi.org/10.1002/cph4.70171">Exploring the lung–liver axis in pulmonary arterial hypertension</a>
-      <span class="paper-meta">Singh N, Lawson J, Ragavendran A, et al. · <em>Comprehensive Physiology</em></span>
+      <a class="paper-title" href="https://doi.org/10.1172/jci.insight.199449">TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis</a>
+      <span class="paper-meta">&lt;strong&gt;Li F&lt;/strong&gt;, Vigder N, &lt;strong&gt;Ziehr DR&lt;/strong&gt;, … &lt;strong&gt;Oldham WM&lt;/strong&gt; · <em>JCI Insight</em></span>
     </div>
   </div>
 
@@ -419,15 +420,15 @@ window.Quarto = {
     <span class="paper-year">2026</span>
     <div>
       <a class="paper-title" href="https://doi.org/10.1126/scitranslmed.ads2673">Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis</a>
-      <span class="paper-meta">Ziehr DR, Li F, Parnell KM, et al. · <em>Science Translational Medicine</em></span>
+      <span class="paper-meta">&lt;strong&gt;Ziehr DR&lt;/strong&gt;, &lt;strong&gt;Li F&lt;/strong&gt;, Parnell KM, … &lt;strong&gt;Oldham WM&lt;/strong&gt; · <em>Science Translational Medicine</em></span>
     </div>
   </div>
 
-  <div class="paper" data-index="2" data-listing-date-sort="1776916800000">
+  <div class="paper" data-index="2" data-listing-date-sort="1772686800000">
     <span class="paper-year">2026</span>
     <div>
-      <a class="paper-title" href="https://doi.org/10.1172/jci.insight.199449">TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis</a>
-      <span class="paper-meta">Li F, Vigder N, Ziehr DR, et al. · <em>JCI Insight</em></span>
+      <a class="paper-title" href="https://doi.org/10.64898/2026.03.03.707476">ExplainBind: Explainable Physicochemical Determinants of Protein–Ligand Binding via Non-Covalent Interactions</a>
+      <span class="paper-meta">Meng Z, Bai Z, Yuan K, … &lt;strong&gt;Oldham WM&lt;/strong&gt;, Loscalzo J · <em>bioRxiv</em></span>
     </div>
   </div>
 

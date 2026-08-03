@@ -33,6 +33,10 @@
     ]
   },
   {
+    "listing": "/papers.html",
+    "items": []
+  },
+  {
     "listing": "/research.html",
     "items": [
       "/research/lactate-transport.html",

@@ -17,3 +17,7 @@
 ._*
 Icon?
 *conflicted copy*
+
+# Crossref responses cached by tools/update-papers.py
+tools/.crossref-cache.json
+__pycache__/

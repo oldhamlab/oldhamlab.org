@@ -1,0 +1,30 @@
+```{=html}
+<%
+// Quarto has already sorted by date descending; grouping preserves that order.
+const years = [];
+const byYear = {};
+for (const item of items) {
+  const y = item.date ? new Date(item.date).getUTCFullYear() : '';
+  if (!(y in byYear)) { byYear[y] = []; years.push(y); }
+  byYear[y].push(item);
+}
+%>
+<div class="pubs">
+<% for (const y of years) { %>
+  <section class="pub-year">
+    <h2 class="pub-year-label"><%= y %></h2>
+    <div class="pub-list">
+    <% for (const item of byYear[y]) { %>
+      <article class="pub" <%= metadataAttrs(item) %>>
+        <h3 class="pub-title"><a href="<%= item.path %>"><%= item.title %></a></h3>
+        <p class="pub-authors"><%= item.author %></p>
+        <p class="pub-source"><em><%= item.journal %></em><% if (item.volume) { %>. <%= item.volume %><% if (item.pages) { %>:<%= item.pages %><% } %><% } else if (item.pages) { %>. <%= item.pages %><% } %><% if (item.preprint) { %> <span class="pub-tag">Preprint</span><% } %></p>
+        <% if (item.award) { %><p class="pub-award"><%= item.award %></p><% } %>
+        <% if (item.note) { %><p class="pub-note"><%= item.note %></p><% } %>
+      </article>
+    <% } %>
+    </div>
+  </section>
+<% } %>
+</div>
+```

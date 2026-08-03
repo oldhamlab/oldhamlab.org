@@ -31,6 +31,7 @@ listing:
     contents: papers.yml
     template: _papers.ejs
     sort: "date desc"
+    max-items: 3
     sort-ui: false
     filter-ui: false
     categories: false

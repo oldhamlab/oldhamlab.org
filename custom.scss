@@ -372,6 +372,80 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   .paper { grid-template-columns: 1fr; gap: var(--s1); }
 }
 
+// ── Full publication list ─────────────────────────────────────────────
+// Same 4.5rem year gutter as .paper above, but the year is a section
+// heading serving many entries rather than a label on each one.
+.pubs { margin-top: var(--s5); }
+.pub-year {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: var(--s3);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--rule);
+}
+.pub-year + .pub-year { margin-top: var(--s4); }
+.pub-year-label {
+  // Quarto puts a rule under every h2; the section already has one.
+  border-bottom: 0;
+  margin: 0;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  position: sticky;
+  top: calc(56px + var(--s2));
+  align-self: start;
+}
+.pub + .pub {
+  margin-top: var(--s3);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hairline);
+}
+.pub-title {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: var(--ls-mid);
+}
+.pub-title a { color: inherit; text-decoration: none; }
+.pub-title a:hover { text-decoration: underline; }
+.pub-authors,
+.pub-source {
+  margin: 2px 0 0;
+  font-size: .9375rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.pub-authors strong { font-weight: 600; color: var(--text); }
+.pub-tag {
+  display: inline-block;
+  margin-left: .4em;
+  padding: 1px 6px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  font-family: $headings-font-family;
+  font-size: .6875rem;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.pub-award,
+.pub-note {
+  margin: var(--s1) 0 0;
+  font-size: .875rem;
+  line-height: 1.5;
+  color: var(--muted);
+  padding-left: var(--s2);
+  border-left: 2px solid var(--hairline);
+}
+.pub-award { color: var(--text); }
+@media (max-width: 560px) {
+  .pub-year { grid-template-columns: 1fr; gap: var(--s2); }
+  .pub-year-label { position: static; }
+}
+
 // ── People: editorial rows ────────────────────────────────────────────
 // Two-up rows, portrait beside a short biography. A row with no photograph
 // becomes a wider text block rather than a hole, which is what makes this
