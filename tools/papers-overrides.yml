@@ -11,6 +11,11 @@
 #        note:   accompanying commentary -> printed after the entry; repeat the
 #                key for more than one, each gets its own line
 #        drop:   suppress the entry entirely
+#        fix-given: "Family: Given"      -> correct a malformed Crossref name
+#                for this paper only, before it is formatted. Author names
+#                otherwise print exactly as the bibliographic record has them,
+#                so use this only where the publisher's metadata is wrong --
+#                not to make one person read the same way across papers.
 #
 #   2. An entry with a `title:` -- a complete record, used as-is with no
 #      Crossref lookup. Book chapters need this: they have no DOI.
@@ -164,3 +169,11 @@
   date: 2015-01-01
   pages: "135-146"
   path: "https://doi.org/10.1007/978-3-319-23594-3_8"
+
+# ── Publisher metadata corrections ────────────────────────────────────
+# Bio-protocol registered the byline without the middle initial, so it renders
+# "Oldham W" where every other paper has "Oldham WM". Patches the Crossref
+# record before formatting; the published article itself reads "William M.
+# Oldham".
+- doi: "10.21769/bioprotoc.1908"
+  fix-given: "Oldham: William M."

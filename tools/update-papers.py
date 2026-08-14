@@ -111,6 +111,10 @@ def load_overrides(path):
                  re.findall(r"^\s*(?:-\s*)?note:\s*(.+?)\s*$", b, re.M)]
         if notes:
             fields["notes"] = notes
+        fixes = [unquote(x) for x in
+                 re.findall(r"^\s*(?:-\s*)?fix-given:\s*(.+?)\s*$", b, re.M)]
+        if fixes:
+            fields["fixgiven"] = fixes
         m = (re.search(r"^\s*(?:-\s*)?doi:\s*\"?([^\"\s]+)\"?\s*(?:#.*)?$", b, re.M)
              or re.search(r"^\s*(?:-\s*)?path:\s*\"?https?://doi\.org/(10\.[^\"\s]+)\"?\s*(?:#.*)?$",
                           b, re.M))
@@ -120,10 +124,11 @@ def load_overrides(path):
         elif m:
             doi = m.group(1).lower().strip()
             extra = {k: v for k, v in fields.items()
-                     if k in KEEP_FIELDS or k == "notes"}
+                     if k in KEEP_FIELDS or k in ("notes", "fixgiven")}
             prev = ann.setdefault(doi, {})
-            if "notes" in prev and "notes" in extra:   # merge across stubs
-                extra["notes"] = prev["notes"] + extra["notes"]
+            for k in ("notes", "fixgiven"):           # merge across stubs
+                if k in prev and k in extra:
+                    extra[k] = prev[k] + extra[k]
             prev.update(extra)
     return ann, manual
 
@@ -408,6 +413,19 @@ def build():
     if extra:
         print(f"  following {len(extra)} preprint→published link(s)", file=sys.stderr)
         meta.update(crossref(extra))
+
+    # Publisher metadata sometimes drops a middle initial, so the byline
+    # renders short. `fix-given:` patches the Crossref record itself, before
+    # formatting, so bolding, linking and truncation all still apply.
+    for doi, fixes in ((d, v.get("fixgiven")) for d, v in hand.items()):
+        if not fixes or doi not in meta:
+            continue
+        for fix in fixes:
+            fam, _, given = fix.partition(":")
+            fam, given = fam.strip(), given.strip()
+            for a in (meta[doi].get("author") or []):
+                if (a.get("family") or "").strip() == fam:
+                    a["given"] = given
 
     records = []
     for doi, m in meta.items():
