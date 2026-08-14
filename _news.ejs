@@ -7,13 +7,19 @@ const MONTH = ['January','February','March','April','May','June',
 const md = t => String(t)
   .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
   .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+// Group by year, then by month, so two items in the same month share one
+// label instead of repeating it.
 const years = [];
 const byYear = {};
 for (const item of items) {
   const d = new Date(item.date);
   const y = d.getUTCFullYear();
-  if (!(y in byYear)) { byYear[y] = []; years.push(y); }
-  byYear[y].push({item, label: MONTH[d.getUTCMonth()]});
+  const m = d.getUTCMonth();
+  if (!(y in byYear)) { byYear[y] = {order: [], months: {}}; years.push(y); }
+  const g = byYear[y];
+  if (!(m in g.months)) { g.months[m] = []; g.order.push(m); }
+  g.months[m].push(item);
 }
 %>
 <div class="news">
@@ -21,11 +27,15 @@ for (const item of items) {
   <section class="news-year">
     <h2 class="news-year-label"><%= y %></h2>
     <div class="news-list">
-    <% for (const row of byYear[y]) { %>
-      <article class="news-item" <%= metadataAttrs(row.item) %>>
-        <span class="news-when"><%= row.label %></span>
-        <p class="news-text"><%= md(row.item.text) %></p>
-      </article>
+    <% for (const m of byYear[y].order) { %>
+      <section class="news-month">
+        <h3 class="news-when"><%= MONTH[m] %></h3>
+        <% for (const item of byYear[y].months[m]) { %>
+        <article class="news-item" <%= metadataAttrs(item) %>>
+          <p class="news-text"><%= md(item.text) %></p>
+        </article>
+        <% } %>
+      </section>
     <% } %>
     </div>
   </section>

@@ -25,6 +25,15 @@ listing:
     filter-ui: false
     categories: false
 
+  - id: home-news
+    contents: news.yml
+    template: _newsbrief.ejs
+    sort: "date desc"
+    max-items: 3
+    sort-ui: false
+    filter-ui: false
+    categories: false
+
   - id: home-papers
     contents: papers.yml
     template: _papers.ejs
@@ -72,6 +81,13 @@ and [Brown University Health](https://www.brownhealth.org/).
 :::
 
 [Full roster and alumni →](people.qmd)
+
+## News
+
+::: {#home-news}
+:::
+
+[All news →](news.qmd)
 
 ## Recent papers
 

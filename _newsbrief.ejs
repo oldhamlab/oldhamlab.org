@@ -1,0 +1,18 @@
+```{=html}
+<%
+const MONTH = ['January','February','March','April','May','June',
+               'July','August','September','October','November','December'];
+const md = t => String(t)
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+  .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+%>
+<div class="brief">
+<% for (const item of items) {
+     const d = new Date(item.date); %>
+  <div class="brief-item" <%= metadataAttrs(item) %>>
+    <span class="brief-when"><%= MONTH[d.getUTCMonth()] %> <%= d.getUTCFullYear() %></span>
+    <p class="brief-text"><%= md(item.text) %></p>
+  </div>
+<% } %>
+</div>
+```

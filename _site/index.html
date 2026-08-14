@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ba78ae6fb17fcdabc81a5f1f4e3b33d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-58c25610f03e03e4e9e9bebb347f4945.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,6 +121,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-home-people'] = new List('listing-home-people', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-news .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-text',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-date","listing-text"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-news'] = new List('listing-home-news', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -412,6 +440,32 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p><a href="./people.html">Full roster and alumni →</a></p>
+</section>
+<section id="news" class="level2">
+<h2 data-anchor-id="news">News</h2>
+<div id="listing-home-news" class="quarto-listing quarto-listing-container-custom">
+
+<div class="brief">
+
+  <div class="brief-item" data-index="0" data-listing-date-sort="1785556800000">
+    <span class="brief-when">August 2026</span>
+    <p class="brief-text">Jacob Nipoti joins the lab as a research assistant, arriving from the University of New Hampshire.</p>
+  </div>
+
+  <div class="brief-item" data-index="1" data-listing-date-sort="1780286400000">
+    <span class="brief-when">June 2026</span>
+    <p class="brief-text">Navneet Singh joins the lab. He is Assistant Professor of Medicine and studies the liver–lung axis in pulmonary arterial hypertension.</p>
+  </div>
+
+  <div class="brief-item" data-index="2" data-listing-date-sort="1778040000000">
+    <span class="brief-when">May 2026</span>
+    <p class="brief-text">The lab's work on lactate transport in pulmonary fibrosis is published in <em>Science Translational Medicine</em>, and selected for a research highlight in <em>Nature Reviews Drug Discovery</em>.</p>
+  </div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p><a href="./news.html">All news →</a></p>
 </section>
 <section id="recent-papers" class="level2">
 <h2 data-anchor-id="recent-papers">Recent papers</h2>

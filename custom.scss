@@ -1034,20 +1034,23 @@ a.paper-title {
   top: calc(56px + var(--s2));
   align-self: start;
 }
-.news-item + .news-item {
+.news-month + .news-month {
   margin-top: var(--s3);
   padding-top: var(--s3);
   border-top: 1px solid var(--hairline);
 }
+// Items sharing a month sit under one label, separated by space rather than
+// a rule -- the rule belongs to the month, not to each sentence.
+.news-item + .news-item { margin-top: var(--s2); }
 .news-when {
   display: block;
+  margin: 0 0 var(--s1);
   font-family: $headings-font-family;
   font-size: .75rem;
   font-weight: 500;
   letter-spacing: var(--ls-caps);
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 4px;
 }
 .news-text {
   margin: 0;
@@ -1058,4 +1061,30 @@ a.paper-title {
 @media (max-width: 560px) {
   .news-year { grid-template-columns: 1fr; gap: var(--s2); }
   .news-year-label { position: static; }
+}
+
+// ── Home: news brief ──────────────────────────────────────────────────
+// Same month-label voice as the news page, but one line per item and no
+// year gutter -- three items do not need the scaffolding.
+.brief { margin-top: var(--s4); }
+.brief-item + .brief-item {
+  margin-top: var(--s3);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hairline);
+}
+.brief-when {
+  display: block;
+  margin-bottom: 4px;
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.brief-text {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  letter-spacing: -.006em;
 }
