@@ -453,34 +453,22 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 }
 
 // ── Funding ───────────────────────────────────────────────────────────
-// Mirrors the publication list, but the gutter carries the section label and
-// the award years sit on the right, where they read as a duration.
+// A stacked list, not a table. Grant titles run to one line, so putting the
+// years in their own right-hand column left ~500px of dead space in every
+// row. The years now lead the meta line instead, which makes a soft column
+// out of them without any real one.
 .grants { margin-top: var(--s5); }
-.grant-group {
-  display: grid;
-  grid-template-columns: 9rem minmax(0, 1fr);
-  gap: var(--s3);
-  padding-top: var(--s4);
-  border-top: 1px solid var(--rule);
-}
-.grant-group + .grant-group { margin-top: var(--s4); }
+.grant-group { padding-top: var(--s4); border-top: 1px solid var(--rule); }
+.grant-group + .grant-group { margin-top: var(--s5); }
 .grant-group-label {
   border-bottom: 0;      // Quarto puts a rule under every h2
-  margin: 0;
+  margin: 0 0 var(--s3);
+  font-family: $headings-font-family;
   font-size: .75rem;
   font-weight: 500;
   letter-spacing: var(--ls-caps);
   text-transform: uppercase;
   color: var(--muted);
-  position: sticky;
-  top: calc(56px + var(--s2));
-  align-self: start;
-}
-.grant {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 6.5rem;
-  gap: var(--s3);
-  align-items: baseline;
 }
 .grant + .grant {
   margin-top: var(--s3);
@@ -500,20 +488,8 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   line-height: 1.5;
   color: var(--muted);
 }
-.grant-number { color: var(--text); }
-.grant-years {
-  font-size: .9375rem;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  text-align: right;
-  white-space: nowrap;
-}
-@media (max-width: 700px) {
-  .grant-group { grid-template-columns: 1fr; gap: var(--s2); }
-  .grant-group-label { position: static; }
-  .grant { grid-template-columns: 1fr; gap: 2px; }
-  .grant-years { text-align: left; }
-}
+// Same width for every range, so the lines start on a common edge.
+.grant-years { font-variant-numeric: tabular-nums; }
 
 // ── People: editorial rows ────────────────────────────────────────────
 // Two-up rows, portrait beside a short biography. A row with no photograph

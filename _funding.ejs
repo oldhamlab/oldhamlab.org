@@ -14,13 +14,18 @@ for (const item of items) (byGroup[item.group] = byGroup[item.group] || []).push
   <section class="grant-group">
     <h2 class="grant-group-label"><%= label %></h2>
     <div class="grant-list">
-    <% for (const item of byGroup[key]) { %>
+    <% for (const item of byGroup[key]) {
+         // Years lead every line, so they form a soft column without needing
+         // a real one -- the previous layout stranded them 500px to the right.
+         const bits = [];
+         if (item.lead && key === 'trainee') bits.push(item.lead);
+         if (item.number) bits.push(item.number);
+         bits.push(item.funder);
+         if (item.lead && key !== 'trainee') bits.push('PI: ' + item.lead);
+    %>
       <article class="grant" <%= metadataAttrs(item) %>>
         <h3 class="grant-title"><%= item.title %></h3>
-        <p class="grant-meta">
-          <% if (item.number) { %><span class="grant-number"><%= item.number %></span> &middot; <% } %><%= item.funder %><% if (item.lead) { %> &middot; <%= item.lead %><% } %>
-        </p>
-        <span class="grant-years"><%= item.years %></span>
+        <p class="grant-meta"><span class="grant-years"><%= item.years %></span><%= bits.map(b => ' &middot; ' + b).join('') %></p>
       </article>
     <% } %>
     </div>
