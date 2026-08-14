@@ -304,6 +304,61 @@ def fmt_authors(m):
     return out
 
 
+# Words that must keep their capital in sentence case: proper nouns, gene
+# symbols Crossref has title-cased, and initialisms. Anything with an internal
+# capital or digit (COL3A1, HIF1, mTORC1) is preserved automatically and does
+# not need listing here.
+SENTENCE_KEEP = {
+    "European", "American", "Chinese", "Japanese",
+    "Esrra", "Ppargc1a",           # gene symbols, title-cased by the publisher
+}
+
+
+def sentence_case(t):
+    """Title Case -> sentence case, leaving the science alone.
+
+    Works per hyphen-segment, so "Right-Sided" becomes "right-sided" while
+    "NEDD9-SH3" and "BRCA1-associated" are untouched. A segment is lowered
+    only when it is plainly Capitalised; acronyms, gene symbols, Greek and
+    chemical prefixes all fall through.
+    """
+    first = [True]
+
+    def seg(w, is_lead):
+        if w in SENTENCE_KEEP:
+            return w
+        if is_lead:
+            return w
+        if len(w) == 1:                    # T cells, [18F], U.S.
+            return w
+        if w[1:] != w[1:].lower():         # COL3A1, mTORC1, SH3
+            return w
+        if any(c.isdigit() for c in w):    # NEDD9, TRPV4
+            return w
+        return w[0].lower() + w[1:] if w[0].isupper() else w
+
+    def fix(m):
+        word = m.group(0)
+        lead = first[0]
+        first[0] = first[0] and len(word) < 2   # a stray "F" from [18F] is not the first word
+        parts = word.split("-")
+        # Only the very first segment of the very first word keeps its capital.
+        return "-".join(seg(x, lead and i == 0) for i, x in enumerate(parts))
+
+    out = []
+    for chunk in re.split(r"(<[^>]+>)", t):   # never treat <sup> as a word
+        if chunk.startswith("<"):
+            out.append(chunk)
+            continue
+        out.append(re.sub(r"[A-Za-z][A-Za-z0-9\u2019']*(?:-[A-Za-z0-9\u2019']+)*", fix, chunk))
+    t = "".join(out)
+
+    # A subtitle after a colon or full stop starts a new sentence. The
+    # lookbehind requires three lowercase letters so "U.S. and" is not caught.
+    return re.sub(r"(?<=[a-z]{3})([.:?!]\s+)([a-z])",
+                  lambda m: m.group(1) + m.group(2).upper(), t)
+
+
 def md_italics(s):
     """award/note are emitted inside a raw HTML block, where Markdown does not
     run, so *journal names* have to become <em> here."""
@@ -377,7 +432,7 @@ def similar(a, b):
 def to_record(doi, m):
     return {
         "doi": doi,
-        "title": clean((m.get("title") or [""])[0]),
+        "title": sentence_case(clean((m.get("title") or [""])[0])),
         "year": year_of(m),
         "date": date_of(m),
         "author": fmt_authors(m),
@@ -473,7 +528,7 @@ def build():
         d = f.get("date") or ""
         kept.append({
             "doi": f.get("doi"),
-            "title": f["title"],
+            "title": sentence_case(f["title"]),
             "author": bold_lab(f.get("author", "")),
             "journal": f.get("journal", ""),
             "date": d if len(d) == 10 else f"{d[:4]}-01-01",
