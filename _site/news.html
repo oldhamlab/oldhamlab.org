@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>People – Oldham Lab</title>
+<title>News – Oldham Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -78,48 +78,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-current-members .list');
+    const listingTargetEl = window.document.querySelector('#listing-all-news .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-subtitle','listing-image','listing-status','listing-role','listing-order','listing-started','listing-description','listing-pub-match','listing-pub-cite','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-date','listing-text',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-image","listing-status","listing-role","listing-order","listing-started","listing-description","listing-pub-match","listing-pub-cite","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-date","listing-text"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-current-members'] = new List('listing-current-members', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-lab-alumni .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-subtitle','listing-image','listing-status','listing-role','listing-order','listing-started','listing-years','listing-now','listing-pub-match','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-image","listing-status","listing-role","listing-order","listing-started","listing-years","listing-now","listing-pub-match","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-lab-alumni'] = new List('listing-lab-alumni', options);
+    window['quarto-listings']['listing-all-news'] = new List('listing-all-news', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -191,14 +163,12 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="People – Oldham Lab">
-<meta property="og:image" content="https://oldhamlab.org/people/oldham.jpg">
+<meta property="og:title" content="News – Oldham Lab">
+<meta property="og:image" content="https://oldhamlab.org/img/cells.jpg">
 <meta property="og:site_name" content="Oldham Lab">
-<meta property="og:image:alt" content="">
-<meta name="twitter:title" content="People – Oldham Lab">
-<meta name="twitter:image" content="https://oldhamlab.org/people/oldham.jpg">
+<meta name="twitter:title" content="News – Oldham Lab">
+<meta name="twitter:image" content="https://oldhamlab.org/img/cells.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -223,7 +193,7 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./people.html" aria-current="page"> 
+    <a class="nav-link" href="./people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
@@ -235,7 +205,7 @@ window.Quarto = {
 <span class="menu-text">Funding</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
+    <a class="nav-link active" href="./news.html" aria-current="page"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
@@ -276,7 +246,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">People</h1>
+<h1 class="title">News</h1>
 </div>
 
 
@@ -293,151 +263,102 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-current-members" class="quarto-listing quarto-listing-container-custom">
-<ul class="roster">
+<div id="listing-all-news" class="quarto-listing quarto-listing-container-custom">
 
-  <li class="person" data-index="0" data-listing-file-modified-sort="1786747760622" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
+<div class="news">
+
+  <section class="news-year">
+    <h2 class="news-year-label">2026</h2>
+    <div class="news-list">
     
-      <span class="portrait"><img src="./people/oldham.jpg" alt="" loading="lazy"></span>
+      <article class="news-item" data-index="0" data-listing-date-sort="1785556800000">
+        <span class="news-when">August</span>
+        <p class="news-text">Jacob Nipoti joins the lab as a research assistant, arriving from the University of New Hampshire.</p>
+      </article>
     
-    <div class="person-body">
-      <span class="person-role">Principal Investigator</span>
-      <h3 class="person-name"><a href="./people/oldham.html">William Oldham</a></h3>
-      
-        <p class="person-bio">Associate Professor of Medicine and Director of Research and Innovation for Pulmonary, Critical Care and Sleep Medicine. Studies cell metabolism in pulmonary vascular and fibrotic lung disease.</p>
-      
+      <article class="news-item" data-index="1" data-listing-date-sort="1783483200000">
+        <span class="news-when">July</span>
+        <p class="news-text">Fei Li's work on alanine transport in pulmonary fibrosis appears in <em>JCI Insight</em>, showing that TGF-β coordinates alanine synthesis and import to support myofibroblast differentiation.</p>
+      </article>
+    
+      <article class="news-item" data-index="2" data-listing-date-sort="1782878400000">
+        <span class="news-when">July</span>
+        <p class="news-text">Will is promoted to Associate Professor of Medicine at the Warren Alpert Medical School of Brown University.</p>
+      </article>
+    
+      <article class="news-item" data-index="3" data-listing-date-sort="1780286400000">
+        <span class="news-when">June</span>
+        <p class="news-text">Navneet Singh joins the lab. He is Assistant Professor of Medicine and studies the liver–lung axis in pulmonary arterial hypertension.</p>
+      </article>
+    
+      <article class="news-item" data-index="4" data-listing-date-sort="1778040000000">
+        <span class="news-when">May</span>
+        <p class="news-text">The lab's work on lactate transport in pulmonary fibrosis is published in <em>Science Translational Medicine</em>, and selected for a research highlight in <em>Nature Reviews Drug Discovery</em>.</p>
+      </article>
+    
+      <article class="news-item" data-index="5" data-listing-date-sort="1772341200000">
+        <span class="news-when">March</span>
+        <p class="news-text">Aseel Khalil joins the lab as a graduate student in the Pathobiology Graduate Program.</p>
+      </article>
+    
+      <article class="news-item" data-index="6" data-listing-date-sort="1769922000000">
+        <span class="news-when">February</span>
+        <p class="news-text">Diana Ferreyra Faustino joins the lab as a graduate student in the Pathobiology Graduate Program. Fei Li completes his postdoctoral training and returns to China as an Associate Research Fellow at Ningbo University Affiliated First Hospital.</p>
+      </article>
+    
+      <article class="news-item" data-index="7" data-listing-date-sort="1767243600000">
+        <span class="news-when">January</span>
+        <p class="news-text">The Pulmonary Hypertension Association funds an Innovation Research Award to study MYC as a driver of hypoxia-induced pulmonary hypertension.</p>
+      </article>
+    
     </div>
-  </li>
+  </section>
 
-  <li class="person" data-index="1" data-listing-file-modified-sort="1786747760621" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+  <section class="news-year">
+    <h2 class="news-year-label">2025</h2>
+    <div class="news-list">
     
-    <div class="person-body">
-      <span class="person-role">Research Scientist</span>
-      <h3 class="person-name"><a href="./people/lam.html">Hilaire Lam</a></h3>
-      
-        <p class="person-bio">Research scientist and Assistant Professor of Medicine (Research), studying the metabolic drivers of lung disease.</p>
-      
+      <article class="news-item" data-index="8" data-listing-date-sort="1761969600000">
+        <span class="news-when">November</span>
+        <p class="news-text">Hilaire Lam joins the lab as a research scientist and Assistant Professor of Medicine (Research).</p>
+      </article>
+    
+      <article class="news-item" data-index="9" data-listing-date-sort="1748750400000">
+        <span class="news-when">June</span>
+        <p class="news-text">The lab moves to Brown University Health in Providence. Will becomes Director of Research and Innovation for Pulmonary, Critical Care and Sleep Medicine.</p>
+      </article>
+    
     </div>
-  </li>
+  </section>
 
-  <li class="person" data-index="2" data-listing-file-modified-sort="1786747760622" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
+  <section class="news-year">
+    <h2 class="news-year-label">2024</h2>
+    <div class="news-list">
     
-    <div class="person-body">
-      <span class="person-role">Physician-Scientist</span>
-      <h3 class="person-name"><a href="./people/singh.html">Navneet Singh</a></h3>
-      
-        <p class="person-bio">Physician-scientist and Assistant Professor of Medicine, studying the liver–lung axis in pulmonary arterial hypertension.</p>
-      
+      <article class="news-item" data-index="10" data-listing-date-sort="1705554000000">
+        <span class="news-when">January</span>
+        <p class="news-text">The lab's collaborative work on fatty acid metabolism and TRPV4 in pulmonary arterial hypertension is named an APSselect paper by the American Physiological Society.</p>
+      </article>
+    
     </div>
-  </li>
+  </section>
 
-  <li class="person" data-index="3" data-listing-file-modified-sort="1786747760620" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
+  <section class="news-year">
+    <h2 class="news-year-label">2023</h2>
+    <div class="news-list">
     
-      <span class="portrait"><img src="./people/ferreyra-faustino.jpg" alt="" loading="lazy"></span>
+      <article class="news-item" data-index="11" data-listing-date-sort="1693540800000">
+        <span class="news-when">September</span>
+        <p class="news-text">The NHLBI funds R01 HL167718 to study the role of lactate transporters in pulmonary fibrosis.</p>
+      </article>
     
-    <div class="person-body">
-      <span class="person-role">Graduate Student</span>
-      <h3 class="person-name"><a href="./people/ferreyra-faustino.html">Diana Ferreyra Faustino</a></h3>
-      
-        <p class="person-bio">PhD candidate in Pathobiology studying lactate transporters in idiopathic pulmonary fibrosis.</p>
-      
+      <article class="news-item" data-index="12" data-listing-date-sort="1682913600000">
+        <span class="news-when">May</span>
+        <p class="news-text">Will is elected a Fellow of the American Thoracic Society.</p>
+      </article>
+    
     </div>
-  </li>
-
-  <li class="person" data-index="4" data-listing-file-modified-sort="1786747760621" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
-    
-    <div class="person-body">
-      <span class="person-role">Graduate Student</span>
-      <h3 class="person-name"><a href="./people/khalil.html">Aseel Khalil</a></h3>
-      
-        <p class="person-bio">PhD student working on alanine transport in pulmonary fibrosis, and on methods to measure the biomechanics of lung matrix.</p>
-      
-    </div>
-  </li>
-
-  <li class="person" data-index="5" data-listing-file-modified-sort="1786747760622" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-    
-    <div class="person-body">
-      <span class="person-role">Research Assistant</span>
-      <h3 class="person-name"><a href="./people/nipoti.html">Jacob Nipoti</a></h3>
-      
-        <p class="person-bio">Research assistant, joining the lab from the University of New Hampshire.</p>
-      
-    </div>
-  </li>
-
-</ul>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<section id="alumni" class="level2">
-<h2 data-anchor-id="alumni">Alumni</h2>
-<div id="listing-lab-alumni" class="quarto-listing quarto-listing-container-custom">
-<div class="alumni">
-  <div class="alumni-head"><span>Name</span><span>In the lab</span><span>Now</span></div>
-
-  <div class="alumnus" data-index="0" data-listing-file-modified-sort="1786747760621" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
-    <h3 class="alumnus-name"><a href="./people/joseph.html">Phillip Joseph</a>
-      <span class="alumnus-role">Post-doctoral Fellow</span>
-    </h3>
-    <span class="alumnus-years">2016–2017</span>
-    <span class="alumnus-now">Associate Professor of Medicine, Yale School of Medicine</span>
-  </div>
-
-  <div class="alumnus" data-index="1" data-listing-file-modified-sort="1786747760620" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-    <h3 class="alumnus-name"><a href="./people/copeland.html">Courtney Copeland</a>
-      <span class="alumnus-role">Post-doctoral Fellow</span>
-    </h3>
-    <span class="alumnus-years">2017–2021</span>
-    <span class="alumnus-now">Senior Business Consultant, Veeva Systems</span>
-  </div>
-
-  <div class="alumnus" data-index="2" data-listing-file-modified-sort="1786747760622" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
-    <h3 class="alumnus-name"><a href="./people/mcgarrity.html">Sarah McGarrity</a>
-      <span class="alumnus-role">Post-doctoral Fellow</span>
-    </h3>
-    <span class="alumnus-years">2020–2023</span>
-    <span class="alumnus-now">Senior Researcher, Center for Endotheliomics, Rigshospitalet</span>
-  </div>
-
-  <div class="alumnus" data-index="3" data-listing-file-modified-sort="1786747760623" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
-    <h3 class="alumnus-name"><a href="./people/ziehr.html">David Ziehr</a>
-      <span class="alumnus-role">Post-doctoral Fellow</span>
-    </h3>
-    <span class="alumnus-years">2020–2023</span>
-    <span class="alumnus-now">Instructor in Medicine, Massachusetts General Hospital</span>
-  </div>
-
-  <div class="alumnus" data-index="4" data-listing-file-modified-sort="1786747760621" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
-    <h3 class="alumnus-name"><a href="./people/li.html">Fei Li</a>
-      <span class="alumnus-role">Post-doctoral Fellow</span>
-    </h3>
-    <span class="alumnus-years">2023–2026</span>
-    <span class="alumnus-now">Associate Research Fellow, Ningbo University Affiliated First Hospital</span>
-  </div>
-
-  <div class="alumnus" data-index="5" data-listing-file-modified-sort="1786747760622" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
-    <h3 class="alumnus-name"><a href="./people/nguyen.html">Phuong Nguyen</a>
-      <span class="alumnus-role">Research Assistant</span>
-    </h3>
-    <span class="alumnus-years">2017–2019</span>
-    <span class="alumnus-now">Deputy Group CEO, Phương Châu Healthcare Group</span>
-  </div>
-
-  <div class="alumnus" data-index="6" data-listing-file-modified-sort="1786747760621" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
-    <h3 class="alumnus-name"><a href="./people/leahy.html">Kevin Leahy</a>
-      <span class="alumnus-role">Research Assistant</span>
-    </h3>
-    <span class="alumnus-years">2019–2025</span>
-    <span class="alumnus-now"></span>
-  </div>
-
-  <div class="alumnus" data-index="7" data-listing-file-modified-sort="1786747760620" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-    <h3 class="alumnus-name"><a href="./people/cohen.html">Aliya Gottehrer-Cohen</a>
-      <span class="alumnus-role">Undergraduate</span>
-    </h3>
-    <span class="alumnus-years">2016</span>
-    <span class="alumnus-now">NYC Director, BBYO</span>
-  </div>
+  </section>
 
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
@@ -445,7 +366,6 @@ window.Quarto = {
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

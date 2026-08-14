@@ -1,0 +1,68 @@
+# Lab news. Hand-maintained -- nothing generates this file.
+#
+# Add an item at the top; the page sorts by date so position does not matter.
+#
+#   date:  YYYY-MM-DD. Use the first of the month when the day does not matter.
+#   text:  one or two sentences. Markdown links work.
+#
+# Everything here is drawn from the CV, papers.yml or the person pages.
+# Invited talks are deliberately absent: two of the recent titles name the
+# metabolite behind the reperfusion-injury programme, which is kept off the
+# site (see tools/papers-overrides.yml).
+
+- date: 2026-08-01
+  text: "Jacob Nipoti joins the lab as a research assistant, arriving from the
+    University of New Hampshire."
+
+- date: 2026-07-08
+  text: "Fei Li's work on alanine transport in pulmonary fibrosis appears in
+    *JCI Insight*, showing that TGF-β coordinates alanine synthesis and import
+    to support myofibroblast differentiation."
+
+- date: 2026-07-01
+  text: "Will is promoted to Associate Professor of Medicine at the Warren
+    Alpert Medical School of Brown University."
+
+- date: 2026-06-01
+  text: "Navneet Singh joins the lab. He is Assistant Professor of Medicine and
+    studies the liver–lung axis in pulmonary arterial hypertension."
+
+- date: 2026-05-06
+  text: "The lab's work on lactate transport in pulmonary fibrosis is published
+    in *Science Translational Medicine*, and selected for a research highlight
+    in *Nature Reviews Drug Discovery*."
+
+- date: 2026-03-01
+  text: "Aseel Khalil joins the lab as a graduate student in the Pathobiology
+    Graduate Program."
+
+- date: 2026-02-01
+  text: "Diana Ferreyra Faustino joins the lab as a graduate student in the
+    Pathobiology Graduate Program. Fei Li completes his postdoctoral training
+    and returns to China as an Associate Research Fellow at Ningbo University
+    Affiliated First Hospital."
+
+- date: 2026-01-01
+  text: "The Pulmonary Hypertension Association funds an Innovation Research
+    Award to study MYC as a driver of hypoxia-induced pulmonary hypertension."
+
+- date: 2025-11-01
+  text: "Hilaire Lam joins the lab as a research scientist and Assistant
+    Professor of Medicine (Research)."
+
+- date: 2025-06-01
+  text: "The lab moves to Brown University Health in Providence. Will becomes
+    Director of Research and Innovation for Pulmonary, Critical Care and Sleep
+    Medicine."
+
+- date: 2024-01-18
+  text: "The lab's collaborative work on fatty acid metabolism and TRPV4 in
+    pulmonary arterial hypertension is named an APSselect paper by the American
+    Physiological Society."
+
+- date: 2023-09-01
+  text: "The NHLBI funds R01 HL167718 to study the role of lactate transporters
+    in pulmonary fibrosis."
+
+- date: 2023-05-01
+  text: "Will is elected a Fellow of the American Thoracic Society."

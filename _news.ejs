@@ -1,0 +1,34 @@
+```{=html}
+<%
+const MONTH = ['January','February','March','April','May','June',
+               'July','August','September','October','November','December'];
+// news.yml is hand-written in Markdown, but this is a raw HTML block, so
+// Pandoc never sees it. Handle the two things the file actually uses.
+const md = t => String(t)
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+  .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+const years = [];
+const byYear = {};
+for (const item of items) {
+  const d = new Date(item.date);
+  const y = d.getUTCFullYear();
+  if (!(y in byYear)) { byYear[y] = []; years.push(y); }
+  byYear[y].push({item, label: MONTH[d.getUTCMonth()]});
+}
+%>
+<div class="news">
+<% for (const y of years) { %>
+  <section class="news-year">
+    <h2 class="news-year-label"><%= y %></h2>
+    <div class="news-list">
+    <% for (const row of byYear[y]) { %>
+      <article class="news-item" <%= metadataAttrs(row.item) %>>
+        <span class="news-when"><%= row.label %></span>
+        <p class="news-text"><%= md(row.item.text) %></p>
+      </article>
+    <% } %>
+    </div>
+  </section>
+<% } %>
+</div>
+```

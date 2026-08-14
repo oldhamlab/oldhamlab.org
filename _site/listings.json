@@ -19,6 +19,14 @@
     ]
   },
   {
+    "listing": "/news.html",
+    "items": []
+  },
+  {
+    "listing": "/funding.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/research/lactate-transport.html",
@@ -31,10 +39,6 @@
       "/people/ferreyra-faustino.html",
       "/people/nipoti.html"
     ]
-  },
-  {
-    "listing": "/funding.html",
-    "items": []
   },
   {
     "listing": "/papers.html",

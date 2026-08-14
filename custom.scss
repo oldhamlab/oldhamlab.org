@@ -1007,3 +1007,55 @@ a.paper-title {
   line-height: 1.5;
   color: var(--muted);
 }
+
+// ── News ──────────────────────────────────────────────────────────────
+// Same year gutter as the publication list, so the two read as siblings.
+// The month sits above each entry rather than in its own column: entries are
+// a sentence or two, and a second column would leave the same dead space the
+// funding page had.
+.news { margin-top: var(--s5); }
+.news-year {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: var(--s3);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--rule);
+}
+.news-year + .news-year { margin-top: var(--s4); }
+.news-year-label {
+  border-bottom: 0;      // Quarto puts a rule under every h2
+  margin: 0;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  position: sticky;
+  top: calc(56px + var(--s2));
+  align-self: start;
+}
+.news-item + .news-item {
+  margin-top: var(--s3);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hairline);
+}
+.news-when {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.news-text {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  letter-spacing: -.006em;
+}
+@media (max-width: 560px) {
+  .news-year { grid-template-columns: 1fr; gap: var(--s2); }
+  .news-year-label { position: static; }
+}

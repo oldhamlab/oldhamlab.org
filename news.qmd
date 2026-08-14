@@ -1,0 +1,15 @@
+---
+title: "News"
+listing:
+  - id: all-news
+    contents: news.yml
+    template: _news.ejs
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+    categories: false
+    page-size: 200
+---
+
+::: {#all-news}
+:::
