@@ -250,17 +250,37 @@ a.paper-title:hover { color: inherit; text-decoration: underline; }
 .navbar-brand:hover { color: var(--text) !important; }
 
 .navbar .nav-link {
+  position: relative;
   font-size: .9375rem;
   font-weight: 400;
   color: rgba(26, 24, 23, .68) !important;
   letter-spacing: 0;
+  // One value drives both the padding and the inset of the active rule below,
+  // so they cannot drift. !important is needed because Bootstrap's
+  // .navbar-expand-* rule sets this padding at higher specificity.
+  --nav-pad-x: .6rem;
+  padding-inline: var(--nav-pad-x) !important;
 }
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: var(--text) !important;
 }
-// Current page marked by weight + a rule, never by colour alone
-.navbar .nav-link.active { font-weight: 500; box-shadow: inset 0 -2px 0 var(--accent); }
+// Current page marked by weight + a rule, never by colour alone.
+//
+// An inset box-shadow would span the whole padding box, leaving the rule
+// ~10px proud of the word at each end and reading as misaligned. A
+// pseudo-element inset by the horizontal padding makes it exactly the width
+// of the text.
+.navbar .nav-link.active { font-weight: 500; }
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: var(--nav-pad-x);
+  right: var(--nav-pad-x);
+  bottom: 0;
+  height: 2px;
+  background: var(--accent);
+}
 
 // ── Full-bleed micrograph plate ───────────────────────────────────────
 // Sits outside the content column so it runs edge to edge. No caption:
