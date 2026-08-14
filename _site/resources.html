@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>David Ziehr – Oldham Lab</title>
+<title>Resources – Oldham Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,24 +29,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f13597230bf13902fa18aef3351aedbb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a7ca0aeeb369daec4a82722c191fb546.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-all-resources .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-kind','listing-text','listing-url','listing-paper','listing-project',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-kind","listing-text","listing-url","listing-paper","listing-project"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-all-resources'] = new List('listing-all-resources', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KZ6PJ54VTV"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -102,14 +133,43 @@ cookieconsent.run({
   
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<meta property="og:title" content="David Ziehr – Oldham Lab">
-<meta property="og:description" content="Post-doctoral Fellow">
-<meta property="og:image" content="https://oldhamlab.org/people/ziehr.jpg">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Resources – Oldham Lab">
+<meta property="og:description" content="Cell metabolism in pulmonary hypertension and pulmonary fibrosis. Brown University and Brown University Health.">
+<meta property="og:image" content="https://oldhamlab.org/img/cells.jpg">
 <meta property="og:site_name" content="Oldham Lab">
-<meta name="twitter:title" content="David Ziehr – Oldham Lab">
-<meta name="twitter:description" content="Post-doctoral Fellow">
-<meta name="twitter:image" content="https://oldhamlab.org/people/ziehr.jpg">
+<meta name="twitter:title" content="Resources – Oldham Lab">
+<meta name="twitter:description" content="Cell metabolism in pulmonary hypertension and pulmonary fibrosis. Brown University and Brown University Health.">
+<meta name="twitter:image" content="https://oldhamlab.org/img/cells.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -120,7 +180,7 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Oldham Lab</span>
     </a>
   </div>
@@ -131,31 +191,31 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../people.html"> 
+    <a class="nav-link" href="./people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers.html"> 
+    <a class="nav-link" href="./papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../funding.html"> 
+    <a class="nav-link" href="./funding.html"> 
 <span class="menu-text">Funding</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../news.html"> 
+    <a class="nav-link" href="./news.html"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources.html"> 
+    <a class="nav-link active" href="./resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -192,8 +252,7 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">David Ziehr</h1>
-<p class="subtitle lead">Post-doctoral Fellow</p>
+<h1 class="title">Resources</h1>
 </div>
 
 
@@ -210,20 +269,69 @@ cookieconsent.run({
 </header>
 
 
-<div class="person-top">
-<div class="person-figure">
-<p><img src="../people/ziehr.jpg" class="person-photo img-fluid" alt="David Ziehr"></p>
-<p><span class="person-links"><a href="https://www.linkedin.com/in/david-ziehr-862aa021/">LinkedIn</a></span></p>
+<p>Software and data from the lab. Analysis code for individual papers is released as a research compendium alongside the paper; general-purpose tools are separate R packages.</p>
+<div id="listing-all-resources" class="quarto-listing quarto-listing-container-custom">
+
+<div class="resources">
+
+  <section class="res-group">
+    <h2 class="res-group-label">Software</h2>
+    <div class="res-list">
+    
+      <article class="res" data-index="0">
+        <h3 class="res-title"><a href="https://github.com/wmoldham/paramounter">paramounter</a></h3>
+        <p class="res-text">Measures LC–MS processing parameters directly from the data, rather than tuning them by hand.</p>
+      </article>
+    
+      <article class="res" data-index="1">
+        <h3 class="res-title"><a href="https://github.com/wmoldham/fibroquant">fibroquant</a></h3>
+        <p class="res-text">Quantifies lung fibrosis in histological images.</p>
+      </article>
+    
+      <article class="res" data-index="2">
+        <h3 class="res-title"><a href="https://github.com/wmoldham/seahorse">seahorse</a></h3>
+        <p class="res-text">Analyses Seahorse extracellular flux data.</p>
+      </article>
+    
+    </div>
+  </section>
+
+  <section class="res-group">
+    <h2 class="res-group-label">Data and analysis</h2>
+    <div class="res-list">
+    
+      <article class="res" data-index="3">
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti">Lactate transporter inhibition in human lung fibroblasts</a></h3>
+        <p class="res-text">RNA-seq data and analysis supporting the lactate transport paper.</p>
+      </article>
+    
+      <article class="res" data-index="4">
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/Copeland.2023.hypoxia.flux">MYC and proliferating cell metabolism in hypoxia</a></h3>
+        <p class="res-text">Metabolic flux analysis and code supporting the MYC paper. Sequencing data are deposited under BioProject <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA721596">PRJNA721596</a>.</p>
+      </article>
+    
+      <article class="res" data-index="5">
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/rnaseq.lf.hypoxia.molidustat">Prolyl hydroxylase inhibition in lung fibroblasts</a></h3>
+        <p class="res-text">RNA-seq analysis of molidustat-treated lung fibroblasts.</p>
+      </article>
+    
+      <article class="res" data-index="6">
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/Xiao.2021.endothelial.immunometabolism">Endothelial immunometabolic phenotypes</a></h3>
+        <p class="res-text">LC–MS data from the endothelial immunometabolism work.</p>
+      </article>
+    
+      <article class="res" data-index="7">
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/hmdb">Human Metabolome Database summaries</a></h3>
+        <p class="res-text">Summary tables derived from the Human Metabolome Database, released into the public domain under CC0.</p>
+      </article>
+    
+    </div>
+  </section>
+
 </div>
-<section id="education-and-training" class="level4 person-meta">
-<h4 data-anchor-id="education-and-training">Education and Training</h4>
-<p><span class="et-role">Fellow, Pulmonary and Critical Care Medicine</span> <span class="et-year">2018–2022</span> <span class="et-place">Harvard Combined Pulmonary and Critical Care Fellowship, Boston, MA</span></p>
-<p><span class="et-role">Resident, Internal Medicine</span> <span class="et-year">2015–2018</span> <span class="et-place">Massachusetts General Hospital, Boston, MA</span></p>
-<p><span class="et-role">MD</span> <span class="et-year">2015</span> <span class="et-place">Harvard Medical School, Boston, MA</span></p>
-<p><span class="et-role">BS in Molecular Biology</span> <span class="et-year">2009</span> <span class="et-place">University of Wisconsin at Madison, Madison, WI</span></p>
-</section>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p>David worked in the lab from June 2020 to May 2023 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis.</p>
+
 
 
 
@@ -644,5 +752,5 @@ cookieconsent.run({
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

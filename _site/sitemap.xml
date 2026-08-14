@@ -1,83 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://oldhamlab.org/research/pulmonary-vascular-metabolism.html</loc>
+    <loc>https://oldhamlab.org/resources.html</loc>
+    <lastmod>2026-08-14T23:47:43.630Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/research/matrix-synthesis.html</loc>
     <lastmod>2026-08-14T22:49:20.624Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/research/lactate-transport.html</loc>
-    <lastmod>2026-08-14T22:49:20.624Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/ziehr.html</loc>
+    <loc>https://oldhamlab.org/research.html</loc>
     <lastmod>2026-08-14T22:49:20.623Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/people/oldham.html</loc>
-    <lastmod>2026-08-14T22:49:20.622Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/nguyen.html</loc>
-    <lastmod>2026-08-14T22:49:20.622Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/li.html</loc>
-    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/lam.html</loc>
-    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/joseph.html</loc>
-    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/copeland.html</loc>
-    <lastmod>2026-08-14T22:49:20.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people.html</loc>
-    <lastmod>2026-08-14T22:49:20.619Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/news.html</loc>
-    <lastmod>2026-08-14T23:23:25.324Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/funding.html</loc>
-    <lastmod>2026-08-14T22:49:20.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/contact.html</loc>
-    <lastmod>2026-08-14T22:49:20.608Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/index.html</loc>
-    <lastmod>2026-08-14T23:41:46.453Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/papers.html</loc>
-    <lastmod>2026-08-14T22:49:20.619Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/cohen.html</loc>
-    <lastmod>2026-08-14T22:49:20.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/ferreyra-faustino.html</loc>
-    <lastmod>2026-08-14T22:49:20.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/khalil.html</loc>
-    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/leahy.html</loc>
-    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://oldhamlab.org/people/mcgarrity.html</loc>
+    <loc>https://oldhamlab.org/people/singh.html</loc>
     <lastmod>2026-08-14T22:49:20.622Z</lastmod>
   </url>
   <url>
@@ -85,15 +21,83 @@
     <lastmod>2026-08-14T22:49:20.622Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/people/singh.html</loc>
+    <loc>https://oldhamlab.org/people/mcgarrity.html</loc>
     <lastmod>2026-08-14T22:49:20.622Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/research.html</loc>
+    <loc>https://oldhamlab.org/people/leahy.html</loc>
+    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/khalil.html</loc>
+    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/ferreyra-faustino.html</loc>
+    <lastmod>2026-08-14T22:49:20.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/cohen.html</loc>
+    <lastmod>2026-08-14T22:49:20.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/papers.html</loc>
+    <lastmod>2026-08-14T22:49:20.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/index.html</loc>
+    <lastmod>2026-08-14T23:41:46.453Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/contact.html</loc>
+    <lastmod>2026-08-14T22:49:20.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/funding.html</loc>
+    <lastmod>2026-08-14T22:49:20.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/news.html</loc>
+    <lastmod>2026-08-14T23:23:25.324Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people.html</loc>
+    <lastmod>2026-08-14T22:49:20.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/copeland.html</loc>
+    <lastmod>2026-08-14T22:49:20.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/joseph.html</loc>
+    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/lam.html</loc>
+    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/li.html</loc>
+    <lastmod>2026-08-14T22:49:20.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/nguyen.html</loc>
+    <lastmod>2026-08-14T22:49:20.622Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/oldham.html</loc>
+    <lastmod>2026-08-14T22:49:20.622Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/people/ziehr.html</loc>
     <lastmod>2026-08-14T22:49:20.623Z</lastmod>
   </url>
   <url>
-    <loc>https://oldhamlab.org/research/matrix-synthesis.html</loc>
+    <loc>https://oldhamlab.org/research/lactate-transport.html</loc>
+    <lastmod>2026-08-14T22:49:20.624Z</lastmod>
+  </url>
+  <url>
+    <loc>https://oldhamlab.org/research/pulmonary-vascular-metabolism.html</loc>
     <lastmod>2026-08-14T22:49:20.624Z</lastmod>
   </url>
 </urlset>

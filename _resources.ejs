@@ -1,0 +1,25 @@
+```{=html}
+<%
+const SECTIONS = [['software','Software'], ['compendium','Data and analysis']];
+const md = t => String(t)
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+  .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+const byKind = {};
+for (const item of items) (byKind[item.kind] = byKind[item.kind] || []).push(item);
+%>
+<div class="resources">
+<% for (const [key, label] of SECTIONS) { if (!byKind[key]) continue; %>
+  <section class="res-group">
+    <h2 class="res-group-label"><%= label %></h2>
+    <div class="res-list">
+    <% for (const item of byKind[key]) { %>
+      <article class="res" <%= metadataAttrs(item) %>>
+        <h3 class="res-title"><a href="<%= item.url %>"><%= item.title %></a></h3>
+        <p class="res-text"><%= md(item.text) %></p>
+      </article>
+    <% } %>
+    </div>
+  </section>
+<% } %>
+</div>
+```

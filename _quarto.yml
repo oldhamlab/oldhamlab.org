@@ -57,6 +57,7 @@ website:
       - papers.qmd
       - funding.qmd
       - news.qmd
+      - resources.qmd
       - contact.qmd
     # Scholarly IDs live here as icons rather than as footer links.
     right:

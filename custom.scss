@@ -1088,3 +1088,44 @@ a.paper-title {
   line-height: 1.55;
   letter-spacing: -.006em;
 }
+
+// ── Resources ─────────────────────────────────────────────────────────
+// Same stacked shape as the funding page: a section label above, then title
+// plus one line of description. No gutter -- the titles are short and a
+// column would strand the text.
+.resources { margin-top: var(--s5); }
+.res-group { padding-top: var(--s4); border-top: 1px solid var(--rule); }
+.res-group + .res-group { margin-top: var(--s5); }
+.res-group-label {
+  border-bottom: 0;      // Quarto puts a rule under every h2
+  margin: 0 0 var(--s3);
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.res + .res {
+  margin-top: var(--s3);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hairline);
+}
+.res-title {
+  margin: 0;
+  // Inter, matching every other item title on the site; h3 would otherwise
+  // pull in Inter Tight.
+  font-family: $font-family-sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.006em;
+}
+.res-title a { color: inherit; text-decoration: none; font-weight: inherit; }
+.res-title a:hover { text-decoration: underline; }
+.res-text {
+  margin: 2px 0 0;
+  font-size: .9375rem;
+  line-height: 1.5;
+  color: var(--muted);
+}

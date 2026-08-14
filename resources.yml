@@ -1,0 +1,63 @@
+# Software and data the lab publishes. Hand-maintained.
+#
+#   kind:    software | compendium     -- which section it appears under
+#   url:     where it lives
+#   paper:   optional DOI of the paper it supports
+#   project: optional research-page slug, for surfacing on that page later
+#
+# Deliberately excluded:
+#   - forks of other people's packages (multiGSEA, IsoCorrectoR, rbbt)
+#   - repositories whose description is still the package-skeleton placeholder
+#     (mzrtools, wmo, paprpkgr) or that are personal (tackle, peloton-to-garmin,
+#     tidytuesday, R-setup)
+# Add any of those here once they have a description worth publishing.
+
+# ── Software ──────────────────────────────────────────────────────────
+- title: "paramounter"
+  kind: software
+  text: "Measures LC–MS processing parameters directly from the data, rather
+    than tuning them by hand."
+  url: "https://github.com/wmoldham/paramounter"
+
+- title: "fibroquant"
+  kind: software
+  text: "Quantifies lung fibrosis in histological images."
+  url: "https://github.com/wmoldham/fibroquant"
+
+- title: "seahorse"
+  kind: software
+  text: "Analyses Seahorse extracellular flux data."
+  url: "https://github.com/wmoldham/seahorse"
+
+# ── Data and analysis compendia ───────────────────────────────────────
+- title: "Lactate transporter inhibition in human lung fibroblasts"
+  kind: compendium
+  text: "RNA-seq data and analysis supporting the lactate transport paper."
+  url: "https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti"
+  paper: "10.1126/scitranslmed.ads2673"
+  project: lactate-transport
+
+- title: "MYC and proliferating cell metabolism in hypoxia"
+  kind: compendium
+  text: "Metabolic flux analysis and code supporting the MYC paper. Sequencing
+    data are deposited under BioProject
+    [PRJNA721596](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA721596)."
+  url: "https://github.com/oldhamlab/Copeland.2023.hypoxia.flux"
+  paper: "10.7554/eLife.82597"
+  project: pulmonary-vascular-metabolism
+
+- title: "Prolyl hydroxylase inhibition in lung fibroblasts"
+  kind: compendium
+  text: "RNA-seq analysis of molidustat-treated lung fibroblasts."
+  url: "https://github.com/oldhamlab/rnaseq.lf.hypoxia.molidustat"
+
+- title: "Endothelial immunometabolic phenotypes"
+  kind: compendium
+  text: "LC–MS data from the endothelial immunometabolism work."
+  url: "https://github.com/oldhamlab/Xiao.2021.endothelial.immunometabolism"
+
+- title: "Human Metabolome Database summaries"
+  kind: compendium
+  text: "Summary tables derived from the Human Metabolome Database, released
+    into the public domain under CC0."
+  url: "https://github.com/oldhamlab/hmdb"

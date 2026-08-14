@@ -1,0 +1,19 @@
+---
+title: "Resources"
+listing:
+  - id: all-resources
+    contents: resources.yml
+    template: _resources.ejs
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
+    page-size: 200
+---
+
+Software and data from the lab. Analysis code for individual papers is
+released as a research compendium alongside the paper; general-purpose tools
+are separate R packages.
+
+::: {#all-resources}
+:::
