@@ -834,7 +834,10 @@ main.content > .fig-wide:first-child { margin-top: 0; }
 .person-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  // 4/5, matching .portrait in the roster. Square reads as an avatar; the
+  // portrait proportion is what the rest of the people pages use. The square
+  // tiles on the home page are deliberate and stay.
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 50% 30%;   // faces sit high; 50% crops chins
   border-radius: 4px;
