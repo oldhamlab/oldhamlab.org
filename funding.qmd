@@ -1,0 +1,26 @@
+---
+title: "Funding"
+listing:
+  - id: all-grants
+    contents: funding.yml
+    template: _funding.ejs
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+    categories: false
+    page-size: 200
+---
+
+Research in the laboratory is supported by the National Institutes of Health, by
+disease foundations, and by institutional programs at Brown University and,
+previously, Brigham and Women's Hospital.
+
+We are particularly indebted to the foundation and pilot awards. Much of the work
+described on the [research](research.qmd) pages began with a small grant that
+funded an observation well before it was developed enough to compete for federal
+support, and several of those observations became the basis of later career
+development and R01 awards. Trainees have also brought their own fellowship
+support to the laboratory.
+
+::: {#all-grants}
+:::

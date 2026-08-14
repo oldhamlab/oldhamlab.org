@@ -1,0 +1,30 @@
+```{=html}
+<%
+const SECTIONS = [
+  ['current', 'Current support'],
+  ['pi',      'Past support'],
+  ['coi',     'As co-investigator'],
+  ['trainee', 'Held by lab members'],
+];
+const byGroup = {};
+for (const item of items) (byGroup[item.group] = byGroup[item.group] || []).push(item);
+%>
+<div class="grants">
+<% for (const [key, label] of SECTIONS) { if (!byGroup[key]) continue; %>
+  <section class="grant-group">
+    <h2 class="grant-group-label"><%= label %></h2>
+    <div class="grant-list">
+    <% for (const item of byGroup[key]) { %>
+      <article class="grant" <%= metadataAttrs(item) %>>
+        <h3 class="grant-title"><%= item.title %></h3>
+        <p class="grant-meta">
+          <% if (item.number) { %><span class="grant-number"><%= item.number %></span> &middot; <% } %><%= item.funder %><% if (item.lead) { %> &middot; <%= item.lead %><% } %>
+        </p>
+        <span class="grant-years"><%= item.years %></span>
+      </article>
+    <% } %>
+    </div>
+  </section>
+<% } %>
+</div>
+```

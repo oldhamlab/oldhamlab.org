@@ -1,0 +1,161 @@
+# Grant support, maintained by hand from the CV
+# (~/nas/Lab/admin_career/cv/2026-07-27_oldham_cv.docx).
+#
+#   group: current | pi | coi | trainee   -- section on the page
+#   date:  award start, used only for sorting within a section
+#
+# Two award titles name the molecular target of the reperfusion-injury
+# programme in the CV. That target is deliberately not published on this site,
+# so the titles here are generalised. Do not restore them from the CV.
+#
+# Pre-2015 predoctoral and undergraduate fellowships are omitted: this is the
+# laboratory's support, not a full CV. Pending applications are omitted too.
+
+# ── Current ───────────────────────────────────────────────────────────
+- title: "MYC as a driver of hypoxia-induced pulmonary hypertension"
+  funder: "Pulmonary Hypertension Association"
+  number: "Innovation Research Award"
+  years: "2026–2028"
+  group: current
+  date: 2026-01-02
+
+- title: "Small molecule therapeutics for reperfusion injury"
+  funder: "Brown University"
+  number: "Brown Biomedical Innovations to Impact"
+  years: "2026–2027"
+  group: current
+  date: 2026-01-01
+
+- title: "Role of lactate transporters in pulmonary fibrosis"
+  funder: "National Heart, Lung, and Blood Institute"
+  number: "R01 HL167718"
+  years: "2023–2028"
+  group: current
+  date: 2023-01-01
+
+# ── Past, as principal investigator ───────────────────────────────────
+- title: "Development of small molecule therapeutics for reperfusion injury"
+  funder: "Brigham and Women's Hospital"
+  number: "Ignite Seed Grant"
+  years: "2024–2025"
+  group: pi
+  date: 2024-01-01
+
+- title: "Quantifying metabolic reprogramming in pulmonary hypertension in vivo"
+  funder: "Brigham Research Institute"
+  number: "Innovation Evergreen Fund"
+  years: "2022–2025"
+  group: pi
+  date: 2022-01-02
+
+- title: "Role of lactate transporters in pulmonary fibrosis"
+  funder: "Brigham Research Institute"
+  number: "Fund to Sustain Research Excellence"
+  years: "2022–2023"
+  group: pi
+  date: 2022-01-01
+
+- title: "Therapeutic potential of lactate transport inhibition in pulmonary arterial hypertension"
+  funder: "Brigham Research Institute"
+  number: "Fund to Sustain Research Excellence"
+  years: "2021–2022"
+  group: pi
+  date: 2021-01-01
+
+- title: "Taurine metabolism in the pathobiology of pulmonary hypertension"
+  funder: "Cardiovascular Research and Medical Education Fund"
+  years: "2018–2020"
+  group: pi
+  date: 2018-01-01
+
+- title: "Regulation of pulmonary vascular cell redox state by L-2-hydroxyglutarate"
+  funder: "National Heart, Lung, and Blood Institute"
+  number: "K08 HL128802"
+  years: "2016–2021"
+  group: pi
+  date: 2016-01-03
+
+- title: "Metabolic flux analysis in pulmonary arterial hypertension"
+  funder: "American Lung Association"
+  number: "RG-415134"
+  years: "2016–2018"
+  group: pi
+  date: 2016-01-02
+
+- title: "Metabolic flux analysis in pulmonary arterial hypertension"
+  funder: "Pulmonary Hypertension Association and American Thoracic Society Foundation"
+  years: "2016–2018"
+  group: pi
+  date: 2016-01-01
+
+# ── Past, as co-investigator ──────────────────────────────────────────
+- title: "Endothelial proline utilization in pulmonary arterial hypertension"
+  funder: "National Heart, Lung, and Blood Institute"
+  number: "R03 HL172985"
+  years: "2024–2025"
+  lead: "Bradley Wertheim"
+  group: coi
+  date: 2024-01-02
+
+- title: "Lipid-mediated control of acetyl-CoA metabolism in the pathogenesis of NAFLD"
+  funder: "National Institute of Diabetes and Digestive and Kidney Diseases"
+  number: "R01 DK048873"
+  years: "2024–2025"
+  lead: "David Cohen"
+  group: coi
+  date: 2024-01-01
+
+- title: "Branched-chain keto-acids and aerobic glycolysis in vascular smooth muscle cells"
+  funder: "National Heart, Lung, and Blood Institute"
+  number: "R01 HL166137"
+  years: "2023–2025"
+  lead: "Joseph Loscalzo"
+  group: coi
+  date: 2023-01-01
+
+- title: "Immunometabolic pathways enabled by PARP inhibition in breast cancer"
+  funder: "National Cancer Institute"
+  number: "R37 CA269499"
+  years: "2022–2025"
+  lead: "Jennifer Guerriero"
+  group: coi
+  date: 2022-01-01
+
+- title: "Cancer reticulotyping consortium"
+  funder: "Northpond Laboratories"
+  years: "2021–2025"
+  lead: "Joseph Loscalzo"
+  group: coi
+  date: 2021-01-02
+
+- title: "A collaborative research network to discover immunological therapies for cardiac arrest"
+  funder: "American Heart Association"
+  number: "Transformational Project Award"
+  years: "2021–2023"
+  lead: "Edy Kim"
+  group: coi
+  date: 2021-01-01
+
+- title: "Network medicine, risk stratification, and pulmonary hypertension"
+  funder: "National Heart, Lung, and Blood Institute"
+  number: "R21 HL145420"
+  years: "2019–2021"
+  lead: "Bradley Maron"
+  group: coi
+  date: 2019-01-02
+
+- title: "mTOR drives post-sepsis immunosuppression"
+  funder: "American Thoracic Society Foundation"
+  years: "2019–2020"
+  lead: "Edy Kim"
+  group: coi
+  date: 2019-01-01
+
+# ── Held by lab members ───────────────────────────────────────────────
+- title: "The effect of the endothelial glycocalyx on superoxide dismutase, glutathione peroxidase, and nitric oxide synthase activities"
+  funder: "Novo Nordisk Foundation"
+  number: "Postdoctoral Fellowship for Research Abroad"
+  years: "2020–2024"
+  lead: "Sarah McGarrity"
+  group: trainee
+  date: 2020-01-01

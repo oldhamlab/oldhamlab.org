@@ -452,6 +452,69 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   .pub-year-label { position: static; }
 }
 
+// ── Funding ───────────────────────────────────────────────────────────
+// Mirrors the publication list, but the gutter carries the section label and
+// the award years sit on the right, where they read as a duration.
+.grants { margin-top: var(--s5); }
+.grant-group {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: var(--s3);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--rule);
+}
+.grant-group + .grant-group { margin-top: var(--s4); }
+.grant-group-label {
+  border-bottom: 0;      // Quarto puts a rule under every h2
+  margin: 0;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+  position: sticky;
+  top: calc(56px + var(--s2));
+  align-self: start;
+}
+.grant {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 6.5rem;
+  gap: var(--s3);
+  align-items: baseline;
+}
+.grant + .grant {
+  margin-top: var(--s3);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hairline);
+}
+.grant-title {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: var(--ls-mid);
+}
+.grant-meta {
+  margin: 2px 0 0;
+  font-size: .9375rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.grant-number { color: var(--text); }
+.grant-years {
+  font-size: .9375rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .grant-group { grid-template-columns: 1fr; gap: var(--s2); }
+  .grant-group-label { position: static; }
+  .grant { grid-template-columns: 1fr; gap: 2px; }
+  .grant-years { text-align: left; }
+}
+
 // ── People: editorial rows ────────────────────────────────────────────
 // Two-up rows, portrait beside a short biography. A row with no photograph
 // becomes a wider text block rather than a hole, which is what makes this

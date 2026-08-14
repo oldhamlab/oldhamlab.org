@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Cell metabolism in pulmonary hypertension and pulmonary fibrosis. Brown University and Brown University Health.">
 
-<title>Oldham Lab</title>
+<title>Funding – Oldham Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -79,77 +78,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-research .list');
+    const listingTargetEl = window.document.querySelector('#listing-all-grants .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-description','listing-order','listing-toc','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-title','listing-funder','listing-number','listing-years','listing-group','listing-date','listing-lead',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-description","listing-order","listing-toc","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-title","listing-funder","listing-number","listing-years","listing-group","listing-date","listing-lead"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-research'] = new List('listing-home-research', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-people .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-subtitle','listing-image','listing-status','listing-role','listing-order','listing-started','listing-description','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-image","listing-status","listing-role","listing-order","listing-started","listing-description","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-people'] = new List('listing-home-people', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-journal','listing-date','listing-doi','listing-source','listing-notes','listing-award',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-journal","listing-date","listing-doi","listing-source","listing-notes","listing-award"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-papers'] = new List('listing-home-papers', options);
+    window['quarto-listings']['listing-all-grants'] = new List('listing-all-grants', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -221,16 +163,14 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Oldham Lab">
+<meta property="og:title" content="Funding – Oldham Lab">
 <meta property="og:description" content="Cell metabolism in pulmonary hypertension and pulmonary fibrosis. Brown University and Brown University Health.">
 <meta property="og:image" content="https://oldhamlab.org/img/cells.jpg">
 <meta property="og:site_name" content="Oldham Lab">
-<meta property="og:image:alt" content="Fluorescence micrograph of mitochondria in pulmonary artery endothelial cells.">
-<meta name="twitter:title" content="Oldham Lab">
+<meta name="twitter:title" content="Funding – Oldham Lab">
 <meta name="twitter:description" content="Cell metabolism in pulmonary hypertension and pulmonary fibrosis. Brown University and Brown University Health.">
 <meta name="twitter:image" content="https://oldhamlab.org/img/cells.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="Fluorescence micrograph of mitochondria in pulmonary artery endothelial cells.">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -263,7 +203,7 @@ window.Quarto = {
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./funding.html"> 
+    <a class="nav-link active" href="./funding.html" aria-current="page"> 
 <span class="menu-text">Funding</span></a>
   </li>  
   <li class="nav-item">
@@ -300,151 +240,227 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="plate">
-  <img src="img/cells.jpg" alt="Fluorescence micrograph of mitochondria in pulmonary artery endothelial cells." width="1500" height="500" fetchpriority="high">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Funding</h1>
 </div>
-<section id="metabolic-reprogramming-in-pulmonary-vascular-and-fibrotic-lung-disease" class="level1">
-<h1>Metabolic reprogramming in pulmonary vascular and fibrotic lung disease</h1>
-<div class="lede">
-<p>The Oldham Lab investigates how cellular metabolic reprogramming contributes to pulmonary hypertension and pulmonary fibrosis. By improving our understanding of cell metabolism, we aim to develop new therapeutic strategies for the treatment of lung disease.</p>
-</div>
-<p>We study <em>in vitro</em> and <em>in vivo</em> model systems with state-of-the-art analytical techniques, including metabolomics, stable isotope tracing, extracellular flux analysis, systems biology, and network medicine. The lab is part of the <a href="https://dom.med.brown.edu/divisions/pulmonary-critical-care-and-sleep-medicine">Division of Pulmonary, Critical Care and Sleep Medicine</a> at <a href="https://medical.brown.edu/">The Warren Alpert Medical School of Brown University</a> and <a href="https://www.brownhealth.org/">Brown University Health</a>.</p>
-<section id="research" class="level2">
-<h2 data-anchor-id="research">Research</h2>
-<div id="listing-home-research" class="quarto-listing quarto-listing-container-custom">
-<div class="teasers">
 
-  <div class="teaser" data-index="0" data-listing-file-modified-sort="1785690162582" data-listing-reading-time-sort="3" data-listing-word-count-sort="437">
-    <h3><a href="./research/lactate-transport.html">Lactate transport</a></h3>
-    <p>Myofibroblast differentiation depends on sustained glycolysis, and therefore on lactate export. We are defining monocarboxylate transport as a target in pulmonary fibrosis.</p>
-  </div>
 
-  <div class="teaser" data-index="1" data-listing-file-modified-sort="1785690718651" data-listing-reading-time-sort="3" data-listing-word-count-sort="541">
-    <h3><a href="./research/matrix-synthesis.html">Nutrient requirements for matrix synthesis</a></h3>
-    <p>Matrix production is a biosynthetic problem. We are identifying the nutrients fibroblasts consume to build extracellular matrix, and testing whether blocking their transport attenuates fibrosis.</p>
-  </div>
 
-  <div class="teaser" data-index="2" data-listing-file-modified-sort="1785705119298" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
-    <h3><a href="./research/pulmonary-vascular-metabolism.html">Metabolic regulation in pulmonary vascular disease</a></h3>
-    <p>Pulmonary artery smooth muscle cells proliferate in low oxygen when most cells stop. We are defining the metabolic signal that permits it, and testing whether blocking it prevents vascular remodeling.</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
+</header>
+
+
+<p>Research in the laboratory is supported by the National Institutes of Health, by disease foundations, and by institutional programs at Brown University and, previously, Brigham and Women’s Hospital.</p>
+<p>We are particularly indebted to the foundation and pilot awards. Much of the work described on the <a href="./research.html">research</a> pages began with a small grant that funded an observation well before it was developed enough to compete for federal support, and several of those observations became the basis of later career development and R01 awards. Trainees have also brought their own fellowship support to the laboratory.</p>
+<div id="listing-all-grants" class="quarto-listing quarto-listing-container-custom">
+
+<div class="grants">
+
+  <section class="grant-group">
+    <h2 class="grant-group-label">Current support</h2>
+    <div class="grant-list">
+    
+      <article class="grant" data-index="0" data-listing-date-sort="1767330000000">
+        <h3 class="grant-title">MYC as a driver of hypoxia-induced pulmonary hypertension</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Innovation Research Award</span> · Pulmonary Hypertension Association
+        </p>
+        <span class="grant-years">2026–2028</span>
+      </article>
+    
+      <article class="grant" data-index="1" data-listing-date-sort="1767243600000">
+        <h3 class="grant-title">Small molecule therapeutics for reperfusion injury</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Brown Biomedical Innovations to Impact</span> · Brown University
+        </p>
+        <span class="grant-years">2026–2027</span>
+      </article>
+    
+      <article class="grant" data-index="2" data-listing-date-sort="1672549200000">
+        <h3 class="grant-title">Role of lactate transporters in pulmonary fibrosis</h3>
+        <p class="grant-meta">
+          <span class="grant-number">R01 HL167718</span> · National Heart, Lung, and Blood Institute
+        </p>
+        <span class="grant-years">2023–2028</span>
+      </article>
+    
+    </div>
+  </section>
+
+  <section class="grant-group">
+    <h2 class="grant-group-label">Past support</h2>
+    <div class="grant-list">
+    
+      <article class="grant" data-index="3" data-listing-date-sort="1704085200000">
+        <h3 class="grant-title">Development of small molecule therapeutics for reperfusion injury</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Ignite Seed Grant</span> · Brigham and Women's Hospital
+        </p>
+        <span class="grant-years">2024–2025</span>
+      </article>
+    
+      <article class="grant" data-index="4" data-listing-date-sort="1641099600000">
+        <h3 class="grant-title">Quantifying metabolic reprogramming in pulmonary hypertension in vivo</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Innovation Evergreen Fund</span> · Brigham Research Institute
+        </p>
+        <span class="grant-years">2022–2025</span>
+      </article>
+    
+      <article class="grant" data-index="5" data-listing-date-sort="1641013200000">
+        <h3 class="grant-title">Role of lactate transporters in pulmonary fibrosis</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Fund to Sustain Research Excellence</span> · Brigham Research Institute
+        </p>
+        <span class="grant-years">2022–2023</span>
+      </article>
+    
+      <article class="grant" data-index="6" data-listing-date-sort="1609477200000">
+        <h3 class="grant-title">Therapeutic potential of lactate transport inhibition in pulmonary arterial hypertension</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Fund to Sustain Research Excellence</span> · Brigham Research Institute
+        </p>
+        <span class="grant-years">2021–2022</span>
+      </article>
+    
+      <article class="grant" data-index="7" data-listing-date-sort="1514782800000">
+        <h3 class="grant-title">Taurine metabolism in the pathobiology of pulmonary hypertension</h3>
+        <p class="grant-meta">
+          Cardiovascular Research and Medical Education Fund
+        </p>
+        <span class="grant-years">2018–2020</span>
+      </article>
+    
+      <article class="grant" data-index="8" data-listing-date-sort="1451797200000">
+        <h3 class="grant-title">Regulation of pulmonary vascular cell redox state by L-2-hydroxyglutarate</h3>
+        <p class="grant-meta">
+          <span class="grant-number">K08 HL128802</span> · National Heart, Lung, and Blood Institute
+        </p>
+        <span class="grant-years">2016–2021</span>
+      </article>
+    
+      <article class="grant" data-index="9" data-listing-date-sort="1451710800000">
+        <h3 class="grant-title">Metabolic flux analysis in pulmonary arterial hypertension</h3>
+        <p class="grant-meta">
+          <span class="grant-number">RG-415134</span> · American Lung Association
+        </p>
+        <span class="grant-years">2016–2018</span>
+      </article>
+    
+      <article class="grant" data-index="10" data-listing-date-sort="1451624400000">
+        <h3 class="grant-title">Metabolic flux analysis in pulmonary arterial hypertension</h3>
+        <p class="grant-meta">
+          Pulmonary Hypertension Association and American Thoracic Society Foundation
+        </p>
+        <span class="grant-years">2016–2018</span>
+      </article>
+    
+    </div>
+  </section>
+
+  <section class="grant-group">
+    <h2 class="grant-group-label">As co-investigator</h2>
+    <div class="grant-list">
+    
+      <article class="grant" data-index="11" data-listing-date-sort="1704171600000">
+        <h3 class="grant-title">Endothelial proline utilization in pulmonary arterial hypertension</h3>
+        <p class="grant-meta">
+          <span class="grant-number">R03 HL172985</span> · National Heart, Lung, and Blood Institute · Bradley Wertheim
+        </p>
+        <span class="grant-years">2024–2025</span>
+      </article>
+    
+      <article class="grant" data-index="12" data-listing-date-sort="1704085200000">
+        <h3 class="grant-title">Lipid-mediated control of acetyl-CoA metabolism in the pathogenesis of NAFLD</h3>
+        <p class="grant-meta">
+          <span class="grant-number">R01 DK048873</span> · National Institute of Diabetes and Digestive and Kidney Diseases · David Cohen
+        </p>
+        <span class="grant-years">2024–2025</span>
+      </article>
+    
+      <article class="grant" data-index="13" data-listing-date-sort="1672549200000">
+        <h3 class="grant-title">Branched-chain keto-acids and aerobic glycolysis in vascular smooth muscle cells</h3>
+        <p class="grant-meta">
+          <span class="grant-number">R01 HL166137</span> · National Heart, Lung, and Blood Institute · Joseph Loscalzo
+        </p>
+        <span class="grant-years">2023–2025</span>
+      </article>
+    
+      <article class="grant" data-index="14" data-listing-date-sort="1641013200000">
+        <h3 class="grant-title">Immunometabolic pathways enabled by PARP inhibition in breast cancer</h3>
+        <p class="grant-meta">
+          <span class="grant-number">R37 CA269499</span> · National Cancer Institute · Jennifer Guerriero
+        </p>
+        <span class="grant-years">2022–2025</span>
+      </article>
+    
+      <article class="grant" data-index="15" data-listing-date-sort="1609563600000">
+        <h3 class="grant-title">Cancer reticulotyping consortium</h3>
+        <p class="grant-meta">
+          Northpond Laboratories · Joseph Loscalzo
+        </p>
+        <span class="grant-years">2021–2025</span>
+      </article>
+    
+      <article class="grant" data-index="16" data-listing-date-sort="1609477200000">
+        <h3 class="grant-title">A collaborative research network to discover immunological therapies for cardiac arrest</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Transformational Project Award</span> · American Heart Association · Edy Kim
+        </p>
+        <span class="grant-years">2021–2023</span>
+      </article>
+    
+      <article class="grant" data-index="17" data-listing-date-sort="1546405200000">
+        <h3 class="grant-title">Network medicine, risk stratification, and pulmonary hypertension</h3>
+        <p class="grant-meta">
+          <span class="grant-number">R21 HL145420</span> · National Heart, Lung, and Blood Institute · Bradley Maron
+        </p>
+        <span class="grant-years">2019–2021</span>
+      </article>
+    
+      <article class="grant" data-index="18" data-listing-date-sort="1546318800000">
+        <h3 class="grant-title">mTOR drives post-sepsis immunosuppression</h3>
+        <p class="grant-meta">
+          American Thoracic Society Foundation · Edy Kim
+        </p>
+        <span class="grant-years">2019–2020</span>
+      </article>
+    
+    </div>
+  </section>
+
+  <section class="grant-group">
+    <h2 class="grant-group-label">Held by lab members</h2>
+    <div class="grant-list">
+    
+      <article class="grant" data-index="19" data-listing-date-sort="1577854800000">
+        <h3 class="grant-title">The effect of the endothelial glycocalyx on superoxide dismutase, glutathione peroxidase, and nitric oxide synthase activities</h3>
+        <p class="grant-meta">
+          <span class="grant-number">Postdoctoral Fellowship for Research Abroad</span> · Novo Nordisk Foundation · Sarah McGarrity
+        </p>
+        <span class="grant-years">2020–2024</span>
+      </article>
+    
+    </div>
+  </section>
 
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p><a href="./research.html">All research →</a></p>
-</section>
-<section id="the-lab" class="level2">
-<h2 data-anchor-id="the-lab">The lab</h2>
-<div id="listing-home-people" class="quarto-listing quarto-listing-container-custom">
-<ul class="roster roster--compact">
-
-  <li class="person" data-index="0" data-listing-file-modified-sort="1786738304012" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
-    
-      <span class="portrait"><img src="./people/oldham.jpg" alt="" loading="lazy"></span>
-    
-    <div class="person-body">
-      <span class="person-role">Principal Investigator</span>
-      <h3 class="person-name"><a href="./people/oldham.html">William Oldham</a></h3>
-      
-    </div>
-  </li>
-
-  <li class="person" data-index="1" data-listing-file-modified-sort="1785709446428" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
-    
-    <div class="person-body">
-      <span class="person-role">Research Scientist</span>
-      <h3 class="person-name"><a href="./people/lam.html">Hilaire Lam</a></h3>
-      
-    </div>
-  </li>
-
-  <li class="person" data-index="2" data-listing-file-modified-sort="1786738304018" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
-    
-    <div class="person-body">
-      <span class="person-role">Physician-Scientist</span>
-      <h3 class="person-name"><a href="./people/singh.html">Navneet Singh</a></h3>
-      
-    </div>
-  </li>
-
-  <li class="person" data-index="3" data-listing-file-modified-sort="1785711269230" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
-    
-    <div class="person-body">
-      <span class="person-role">Graduate Student</span>
-      <h3 class="person-name"><a href="./people/khalil.html">Aseel Khalil</a></h3>
-      
-    </div>
-  </li>
-
-  <li class="person" data-index="4" data-listing-file-modified-sort="1785708735585" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
-    
-      <span class="portrait"><img src="./people/ferreyra-faustino.jpg" alt="" loading="lazy"></span>
-    
-    <div class="person-body">
-      <span class="person-role">Graduate Student</span>
-      <h3 class="person-name"><a href="./people/ferreyra-faustino.html">Diana Ferreyra Faustino</a></h3>
-      
-    </div>
-  </li>
-
-  <li class="person" data-index="5" data-listing-file-modified-sort="1785709431312" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-    
-    <div class="person-body">
-      <span class="person-role">Research Assistant</span>
-      <h3 class="person-name"><a href="./people/nipoti.html">Jacob Nipoti</a></h3>
-      
-    </div>
-  </li>
-
-</ul>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p><a href="./people.html">Full roster and alumni →</a></p>
-</section>
-<section id="recent-papers" class="level2">
-<h2 data-anchor-id="recent-papers">Recent papers</h2>
-<div id="listing-home-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="papers">
-
-  <div class="paper" data-index="0" data-listing-date-sort="1783483200000">
-    <span class="paper-year">2026</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.1172/jci.insight.199449">TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis</a>
-      <span class="paper-meta">&lt;strong&gt;Li F&lt;/strong&gt;, Vigder N, &lt;strong&gt;Ziehr DR&lt;/strong&gt;, … &lt;strong&gt;Oldham WM&lt;/strong&gt; · <em>JCI Insight</em></span>
-    </div>
-  </div>
-
-  <div class="paper" data-index="1" data-listing-date-sort="1780286400000">
-    <span class="paper-year">2026</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.1002/cph4.70171">Exploring the Lung–Liver Axis in Pulmonary Arterial Hypertension</a>
-      <span class="paper-meta">&lt;strong&gt;Singh N&lt;/strong&gt;, Lawson J, Ragavendran A, … &lt;strong&gt;Oldham WM&lt;/strong&gt;, … Ventetuolo CE · <em>Comprehensive Physiology</em></span>
-    </div>
-  </div>
-
-  <div class="paper" data-index="2" data-listing-date-sort="1778040000000">
-    <span class="paper-year">2026</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.1126/scitranslmed.ads2673">Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis</a>
-      <span class="paper-meta">&lt;strong&gt;Ziehr DR&lt;/strong&gt;, &lt;strong&gt;Li F&lt;/strong&gt;, Parnell KM, … &lt;strong&gt;Oldham WM&lt;/strong&gt; · <em>Science Translational Medicine</em></span>
-    </div>
-  </div>
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p><a href="./papers.html">All publications →</a></p>
 
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
