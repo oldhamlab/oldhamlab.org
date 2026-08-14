@@ -9,6 +9,8 @@ started: "2026-02"
 description: >-
   PhD candidate in Pathobiology studying lactate transporters in idiopathic
   pulmonary fibrosis.
+pub-match: "Faustino D"
+pub-cite: "Ferreyra Faustino DE"
 ---
 
 ::: {.person-top}

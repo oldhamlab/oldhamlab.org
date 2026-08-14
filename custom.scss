@@ -439,6 +439,10 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   color: var(--muted);
 }
 .pub-authors strong { font-weight: 600; color: var(--text); }
+// Lab members link to their page. Invisible until hover: the author line is
+// already carrying bold as a signal and should not also be a field of green.
+.pub-authors a { color: inherit; text-decoration: none; }
+.pub-authors a:hover strong { text-decoration: underline; }
 .pub-note {
   margin: var(--s1) 0 0;
   font-size: .875rem;

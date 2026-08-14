@@ -8,6 +8,8 @@ started: "2025-11"
 description: >-
   Research scientist and Assistant Professor of Medicine (Research), studying
   the metabolic drivers of lung disease.
+pub-match: "Lam H"
+pub-cite: "Lam HC"
 ---
 
 ::: {.person-top}

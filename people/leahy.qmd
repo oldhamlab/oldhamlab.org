@@ -6,6 +6,8 @@ role: staff
 order: 60
 started: "2019-06"
 years: "2019–2025"
+pub-match: "Leahy K"
+pub-cite: "Leahy KJ"
 ---
 
 ::: {.person-top}

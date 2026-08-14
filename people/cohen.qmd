@@ -8,6 +8,8 @@ order: 70
 started: "2016-01"
 years: "2016"
 now: "NYC Director, BBYO"
+pub-match: "Gottehrer-Cohen A"
+pub-cite: "Gottehrer-Cohen A"
 ---
 
 ::: {.person-top}

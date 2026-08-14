@@ -37,12 +37,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 CACHE = ROOT / "tools" / ".crossref-cache.json"
 OVERRIDES = ROOT / "tools" / "papers-overrides.yml"
 
-# Surnames printed in bold: lab members past and present, plus the PI.
-LAB = {
-    "Oldham", "Ziehr", "Li", "Copeland", "McGarrity", "Leahy", "Nguyen",
-    "Joseph", "Gottehrer-Cohen", "Khalil", "Ferreyra Faustino", "Lam",
-    "Singh", "Nipoti",
-}
+# The roster is read from people/*.qmd -- see load_roster(). Nothing about
+# who is in the lab is hardcoded here.
+PEOPLE = ROOT / "people"
 
 # Preserved verbatim across regeneration, keyed by DOI.
 KEEP_FIELDS = ("award", "drop")
@@ -131,13 +128,61 @@ def load_overrides(path):
     return ann, manual
 
 
+def name_key(family, given):
+    """(surname, first initial), casefolded.
+
+    Matching on the surname alone bolded every Li, Nguyen and Singh in the
+    author lists regardless of who they were. Including the first initial
+    separates them, and because it ignores middle initials it also collapses
+    "David R." / "David R" / "David" onto one person.
+    """
+    fam = re.sub(r"\s+", " ", (family or "").strip()).casefold()
+    ini = (given or "").strip()[:1].upper()
+    return (fam, ini)
+
+
+def load_roster():
+    """Map a Crossref name onto the person's page.
+
+    people/*.qmd is the source of truth. `pub-match:` is the name as Crossref
+    records it; `pub-cite:` overrides how it prints when the two differ.
+    """
+    roster = {}
+    for f in sorted(PEOPLE.glob("*.qmd")):
+        if f.name.startswith("_"):
+            continue
+        head = f.read_text(encoding="utf8").split("---")[1]
+        m = re.search(r'^pub-match:\s*"([^"]+)"', head, re.M)
+        if not m:
+            continue
+        fam, _, ini = m.group(1).rpartition(" ")
+        cite = re.search(r'^pub-cite:\s*"([^"]+)"', head, re.M)
+        roster[name_key(fam, ini)] = {
+            "slug": f.stem,
+            "cite": cite.group(1) if cite else None,
+        }
+    return roster
+
+
+ROSTER = load_roster()
+
+
+def mark(key, label):
+    """Bold a lab member and link them to their page; pass others through."""
+    who = ROSTER.get(key)
+    if not who:
+        return label
+    return (f'<a href="/people/{who["slug"]}.html">'
+            f'<strong>{who["cite"] or label}</strong></a>')
+
+
 def bold_lab(authors):
     """Bold lab surnames in a hand-written author string."""
     out = []
     for n in authors.split(","):
         n = n.strip()
-        fam = re.split(r"\s+", n)[0]
-        out.append(f"<strong>{n}</strong>" if fam in LAB else n)
+        fam, _, ini = n.rpartition(" ")
+        out.append(mark(name_key(fam, ini), n))
     return ", ".join(out)
 
 
@@ -200,43 +245,47 @@ def initials(given):
 
 
 def fmt_authors(m):
-    auths = m.get("author") or []
     names = []
-    for a in auths:
+    for a in (m.get("author") or []):
         fam = clean(a.get("family") or a.get("name") or "")
         if not fam:
             continue
-        ini = initials(a.get("given", ""))
-        label = f"{fam} {ini}".strip()
-        names.append((fam, f"<strong>{label}</strong>" if fam in LAB else label))
+        key = name_key(fam, a.get("given"))
+        label = f"{fam} {initials(a.get('given', ''))}".strip()
+        names.append((key, mark(key, label), key in ROSTER))
 
-    if not names:
+    n = len(names)
+    if not n:
         return ""
-    if len(names) <= MAX_AUTHORS:
-        return ", ".join(n for _, n in names)
+    if n <= MAX_AUTHORS:
+        return ", ".join(x for _, x, _ in names)
 
-    pi = next((i for i, (f, _) in enumerate(names) if f == "Oldham"), None)
-    last, n = len(names) - 1, len(names)
-    parts = [x for _, x in names[:HEAD_AUTHORS]]
-    if pi is not None and pi >= HEAD_AUTHORS and pi != last:
-        parts.append("…")
-        parts.append(names[pi][1])
-        if pi < last - 1:          # not second-to-last: ellipsis after him too
-            parts.append("…")
-    else:
-        parts.append("…")
-    if pi != last or n > HEAD_AUTHORS:
-        parts.append(names[last][1])
-    out, prev = [], None
-    for x in parts:                # "…" joins without a comma before it
-        if prev is None:
-            out.append(x)
-        elif x == "…" or prev == "…":
-            out.append(" " + x if prev == "…" else ", " + x)
+    # Keep the head, the last author, and EVERY lab member. Truncating to the
+    # PI alone hid the rest of the lab on multi-author papers -- Diana, Aseel
+    # and Hilaire all vanished from the JCI Insight alanine paper.
+    keep = set(range(min(HEAD_AUTHORS, n))) | {n - 1}
+    keep |= {i for i, (_, _, is_lab) in enumerate(names) if is_lab}
+
+    parts, gap = [], False
+    for i in range(n):
+        if i in keep:
+            parts.append(names[i][1])
+            gap = False
+        elif not gap:
+            parts.append("\u2026")
+            gap = True
+
+    out = ""
+    for i, x in enumerate(parts):
+        if i == 0:
+            out = x
+        elif x == "\u2026":
+            out += ", " + x
+        elif parts[i - 1] == "\u2026":
+            out += " " + x
         else:
-            out.append(", " + x)
-        prev = x
-    return "".join(out)
+            out += ", " + x
+    return out
 
 
 def md_italics(s):
