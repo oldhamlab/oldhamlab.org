@@ -31,4 +31,6 @@ now: "Senior Business Consultant, Veeva Systems"
 :::
 :::
 
-Courtney work in the Oldham lab from December 2017 to August 2021. She studied the role of taurine metabolism in the pathobiology of pulmonary hypertension and metabolic adaptations to hypoxia. After leaving the lab, she joined Deloitte as a consultant.
+Courtney worked in the Oldham lab from December 2017 to August 2021. She studied
+the role of taurine metabolism in the pathobiology of pulmonary hypertension and
+metabolic adaptations to hypoxia.

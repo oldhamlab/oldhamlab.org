@@ -32,7 +32,7 @@ description: >-
 :::
 
 Navneet joined the lab in June 2026. He is Assistant Professor of Medicine
-(Research) and Associate Program Director for Research in the Pulmonary and
+and Associate Program Director for Research in the Pulmonary and
 Critical Care Medicine fellowship program, and sees patients in the Pulmonary
 Hypertension Center at the [Center for Advanced Lung
 Care](https://www.brownhealth.org/centers-services/center-advanced-lung-care).

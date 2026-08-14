@@ -36,5 +36,4 @@ Fei worked in the Oldham lab from October 2023 to February 2026. He studied the
 metabolic pathways that contribute to myofibroblast differentiation and
 extracellular matrix production in experimental models of pulmonary fibrosis,
 and showed that TGF-β coordinates alanine synthesis and import to support
-myofibroblast differentiation. He is now an Associate Research Fellow at Ningbo
-University Affiliated First Hospital.
+myofibroblast differentiation.

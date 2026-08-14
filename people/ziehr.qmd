@@ -34,4 +34,7 @@ now: "Instructor in Medicine, Massachusetts General Hospital"
 :::
 :::
 
-David joined the lab in June 2020 as a fellow in Pulmonary and Critical Care Medicine at Massachusetts General Hospital. He has studied how lung fibroblast metabolism changes during myofibroblast differentiation and how this impacts the development of pulmonary fibrosis.
+David worked in the lab from June 2020 to May 2023 as a fellow in Pulmonary and
+Critical Care Medicine at Massachusetts General Hospital. He studied how lung
+fibroblast metabolism changes during myofibroblast differentiation and how this
+impacts the development of pulmonary fibrosis.
