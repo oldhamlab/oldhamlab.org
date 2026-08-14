@@ -9,7 +9,6 @@ started: "2017-12"
 years: "2017–2021"
 now: "Senior Business Consultant, Veeva Systems"
 pub-match: "Copeland C"
-pub-cite: "Copeland CA"
 ---
 
 ::: {.person-top}

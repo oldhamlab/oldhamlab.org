@@ -10,7 +10,6 @@ description: >-
   Pulmonary, Critical Care and Sleep Medicine. Studies cell metabolism in
   pulmonary vascular and fibrotic lung disease.
 pub-match: "Oldham W"
-pub-cite: "Oldham WM"
 ---
 
 ::: {.person-top}

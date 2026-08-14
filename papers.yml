@@ -214,7 +214,7 @@
   source: "<em>American Journal of Respiratory and Critical Care Medicine</em>. 208:312-321"
 
 - title: "MYC overrides HIF-1α to regulate proliferating primary cell metabolism in hypoxia"
-  author: "<a href=\"/people/copeland.html\"><strong>Copeland CA</strong></a>, Olenchock BA, <a href=\"/people/ziehr.html\"><strong>Ziehr DR</strong></a>, <a href=\"/people/mcgarrity.html\"><strong>McGarrity S</strong></a>, <a href=\"/people/leahy.html\"><strong>Leahy KJ</strong></a>, Young JD, Loscalzo J, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "<a href=\"/people/copeland.html\"><strong>Copeland CA</strong></a>, Olenchock BA, <a href=\"/people/ziehr.html\"><strong>Ziehr D</strong></a>, <a href=\"/people/mcgarrity.html\"><strong>McGarrity S</strong></a>, <a href=\"/people/leahy.html\"><strong>Leahy K</strong></a>, Young JD, Loscalzo J, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
   journal: "eLife"
   date: 2023-07-10
   path: "https://doi.org/10.7554/elife.82597"
@@ -509,7 +509,7 @@
   source: "<em>The Journal of Heart and Lung Transplantation</em>. 35:342-351"
 
 - title: "Quantification of 2-Hydroxyglutarate Enantiomers by Liquid Chromatography-mass Spectrometry"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J"
+  author: "<a href=\"/people/oldham.html\"><strong>Oldham W</strong></a>, Loscalzo J"
   journal: "BIO-PROTOCOL"
   date: 2016-01-01
   path: "https://doi.org/10.21769/bioprotoc.1908"

@@ -9,7 +9,6 @@ description: >-
   PhD student working on alanine transport in pulmonary fibrosis, and on
   methods to measure the biomechanics of lung matrix.
 pub-match: "Khalil A"
-pub-cite: "Khalil AH"
 ---
 
 ::: {.person-top}

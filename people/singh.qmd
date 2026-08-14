@@ -9,7 +9,6 @@ description: >-
   Physician-scientist and Assistant Professor of Medicine, studying
   the liver–lung axis in pulmonary arterial hypertension.
 pub-match: "Singh N"
-pub-cite: "Singh N"
 ---
 
 ::: {.person-top}

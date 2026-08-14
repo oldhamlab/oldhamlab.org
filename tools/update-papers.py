@@ -145,7 +145,14 @@ def load_roster():
     """Map a Crossref name onto the person's page.
 
     people/*.qmd is the source of truth. `pub-match:` is the name as Crossref
-    records it; `pub-cite:` overrides how it prints when the two differ.
+    records it.
+
+    `pub-cite:` is a CORRECTION, not a house style: names print as the
+    bibliographic record has them, so the same person legitimately appears as
+    "Ziehr D" on one paper and "Ziehr DR" on another. Set pub-cite only where
+    Crossref has split family/given wrongly -- Diana Ferreyra Faustino is
+    stored as family "Faustino", given "Diana E. Ferreyra", which would print
+    as "Faustino DEF".
     """
     roster = {}
     for f in sorted(PEOPLE.glob("*.qmd")):

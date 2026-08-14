@@ -9,7 +9,6 @@ started: "2023-10"
 years: "2023–2026"
 now: "Associate Research Fellow, Ningbo University Affiliated First Hospital"
 pub-match: "Li F"
-pub-cite: "Li F"
 ---
 
 ::: {.person-top}
