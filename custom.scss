@@ -977,3 +977,28 @@ img { max-width: 100%; height: auto; }
 // ── Quarto listing defaults, quieted ──────────────────────────────────
 .quarto-listing { margin-top: var(--s4); }
 .listing-actions-group { gap: var(--s2); }
+
+// ── Home: one type treatment across the three listings ────────────────
+// Research teasers, the lab roster and recent papers stack in the same column,
+// but each was inheriting a different treatment: Inter Tight 500, Inter 500,
+// and Inter 400 at body leading. Three unrelated blocks in a row.
+//
+// They now share the item-title and meta styles that .pub-title already uses
+// on the papers page, so the teaser matches the page it links to. Placed last
+// so it wins on equal specificity.
+.teaser h3,
+.labcard-name,
+a.paper-title {
+  font-family: $headings-font-family;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: var(--ls-mid);
+}
+.teaser p,
+.labcard-role,
+.paper-meta {
+  font-size: .9375rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
