@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a7ca0aeeb369daec4a82722c191fb546.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e511c2c732fc27c3fa8834fd58d45b8b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-kind','listing-text','listing-url','listing-paper','listing-project',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-kind','listing-text','listing-url','listing-paper','listing-project','listing-links',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-kind","listing-text","listing-url","listing-paper","listing-project"],
+      searchColumns: ["listing-title","listing-kind","listing-text","listing-url","listing-paper","listing-project","listing-links"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -281,16 +281,7 @@ window.Quarto = {
       <article class="res" data-index="0">
         <h3 class="res-title"><a href="https://github.com/wmoldham/paramounter">paramounter</a></h3>
         <p class="res-text">Measures LC–MS processing parameters directly from the data, rather than tuning them by hand.</p>
-      </article>
-    
-      <article class="res" data-index="1">
-        <h3 class="res-title"><a href="https://github.com/wmoldham/fibroquant">fibroquant</a></h3>
-        <p class="res-text">Quantifies lung fibrosis in histological images.</p>
-      </article>
-    
-      <article class="res" data-index="2">
-        <h3 class="res-title"><a href="https://github.com/wmoldham/seahorse">seahorse</a></h3>
-        <p class="res-text">Analyses Seahorse extracellular flux data.</p>
+        
       </article>
     
     </div>
@@ -300,29 +291,32 @@ window.Quarto = {
     <h2 class="res-group-label">Data and analysis</h2>
     <div class="res-list">
     
+      <article class="res" data-index="1">
+        <h3 class="res-title"><a href="https://doi.org/10.5281/zenodo.19256433">Lactate transport inhibition in pulmonary fibrosis</a></h3>
+        <p class="res-text">Everything behind the <em>Science Translational Medicine</em> paper, deposited in five places. All are CC BY 4.0.</p>
+        
+        <ul class="res-links">
+          <li><a href="https://doi.org/10.5281/zenodo.19256433">Raw data and figure code</a> — Zenodo</li><li><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1011992">RNA-seq reads</a> — NIH SRA, PRJNA1011992</li><li><a href="https://doi.org/10.5281/zenodo.19198539">RNA-seq pipeline and summarised data</a> — Zenodo, archived from <a href="https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti">GitHub</a></li><li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325253">Xenium spatial data</a> — NIH GEO, GSE325253</li><li><a href="https://doi.org/10.5281/zenodo.19244873">Xenium pipeline and summarised data</a> — Zenodo</li>
+        </ul>
+        
+      </article>
+    
+      <article class="res" data-index="2">
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/Copeland.2023.hypoxia.flux">MYC and proliferating cell metabolism in hypoxia</a></h3>
+        <p class="res-text">Metabolic flux analysis and code supporting the MYC paper. Sequencing data are deposited under BioProject <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA721596">PRJNA721596</a>.</p>
+        
+      </article>
+    
       <article class="res" data-index="3">
-        <h3 class="res-title"><a href="https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti">Lactate transporter inhibition in human lung fibroblasts</a></h3>
-        <p class="res-text">RNA-seq data and analysis supporting the lactate transport paper.</p>
+        <h3 class="res-title"><a href="https://github.com/oldhamlab/rnaseq.lf.hypoxia.molidustat">Prolyl hydroxylase inhibition in lung fibroblasts</a></h3>
+        <p class="res-text">RNA-seq analysis of molidustat-treated lung fibroblasts.</p>
+        
       </article>
     
       <article class="res" data-index="4">
-        <h3 class="res-title"><a href="https://github.com/oldhamlab/Copeland.2023.hypoxia.flux">MYC and proliferating cell metabolism in hypoxia</a></h3>
-        <p class="res-text">Metabolic flux analysis and code supporting the MYC paper. Sequencing data are deposited under BioProject <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA721596">PRJNA721596</a>.</p>
-      </article>
-    
-      <article class="res" data-index="5">
-        <h3 class="res-title"><a href="https://github.com/oldhamlab/rnaseq.lf.hypoxia.molidustat">Prolyl hydroxylase inhibition in lung fibroblasts</a></h3>
-        <p class="res-text">RNA-seq analysis of molidustat-treated lung fibroblasts.</p>
-      </article>
-    
-      <article class="res" data-index="6">
         <h3 class="res-title"><a href="https://github.com/oldhamlab/Xiao.2021.endothelial.immunometabolism">Endothelial immunometabolic phenotypes</a></h3>
         <p class="res-text">LC–MS data from the endothelial immunometabolism work.</p>
-      </article>
-    
-      <article class="res" data-index="7">
-        <h3 class="res-title"><a href="https://github.com/oldhamlab/hmdb">Human Metabolome Database summaries</a></h3>
-        <p class="res-text">Summary tables derived from the Human Metabolome Database, released into the public domain under CC0.</p>
+        
       </article>
     
     </div>

@@ -16,6 +16,11 @@ for (const item of items) (byKind[item.kind] = byKind[item.kind] || []).push(ite
       <article class="res" <%= metadataAttrs(item) %>>
         <h3 class="res-title"><a href="<%= item.url %>"><%= item.title %></a></h3>
         <p class="res-text"><%= md(item.text) %></p>
+        <% if (item.links) { %>
+        <ul class="res-links">
+          <% for (const l of item.links) { %><li><%= md(l) %></li><% } %>
+        </ul>
+        <% } %>
       </article>
     <% } %>
     </div>

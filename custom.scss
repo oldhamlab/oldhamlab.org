@@ -1129,3 +1129,15 @@ a.paper-title {
   line-height: 1.5;
   color: var(--muted);
 }
+// Deposit locations for a paper, listed under its description.
+.res-links {
+  list-style: none;
+  margin: var(--s1) 0 0;
+  padding: 0;
+  font-size: .9375rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.res-links li { padding-left: 1em; text-indent: -1em; }
+.res-links li + li { margin-top: 2px; }
+.res-links li::before { content: "·"; margin-right: .5em; color: var(--rule); }

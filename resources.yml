@@ -19,23 +19,20 @@
     than tuning them by hand."
   url: "https://github.com/wmoldham/paramounter"
 
-- title: "fibroquant"
-  kind: software
-  text: "Quantifies lung fibrosis in histological images."
-  url: "https://github.com/wmoldham/fibroquant"
-
-- title: "seahorse"
-  kind: software
-  text: "Analyses Seahorse extracellular flux data."
-  url: "https://github.com/wmoldham/seahorse"
-
 # ── Data and analysis compendia ───────────────────────────────────────
-- title: "Lactate transporter inhibition in human lung fibroblasts"
+- title: "Lactate transport inhibition in pulmonary fibrosis"
   kind: compendium
-  text: "RNA-seq data and analysis supporting the lactate transport paper."
-  url: "https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti"
+  text: "Everything behind the *Science Translational Medicine* paper, deposited
+    in five places. All are CC BY 4.0."
+  url: "https://doi.org/10.5281/zenodo.19256433"
   paper: "10.1126/scitranslmed.ads2673"
   project: lactate-transport
+  links:
+    - "[Raw data and figure code](https://doi.org/10.5281/zenodo.19256433) — Zenodo"
+    - "[RNA-seq reads](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1011992) — NIH SRA, PRJNA1011992"
+    - "[RNA-seq pipeline and summarised data](https://doi.org/10.5281/zenodo.19198539) — Zenodo, archived from [GitHub](https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti)"
+    - "[Xenium spatial data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325253) — NIH GEO, GSE325253"
+    - "[Xenium pipeline and summarised data](https://doi.org/10.5281/zenodo.19244873) — Zenodo"
 
 - title: "MYC and proliferating cell metabolism in hypoxia"
   kind: compendium
@@ -56,8 +53,3 @@
   text: "LC–MS data from the endothelial immunometabolism work."
   url: "https://github.com/oldhamlab/Xiao.2021.endothelial.immunometabolism"
 
-- title: "Human Metabolome Database summaries"
-  kind: compendium
-  text: "Summary tables derived from the Human Metabolome Database, released
-    into the public domain under CC0."
-  url: "https://github.com/oldhamlab/hmdb"
