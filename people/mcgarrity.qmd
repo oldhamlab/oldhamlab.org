@@ -15,7 +15,7 @@ pub-match: "McGarrity S"
 ::: {.person-figure}
 ![](/people/mcgarrity.jpg){.person-photo fig-alt="Sarah McGarrity"}
 
-[[Google Scholar](https://scholar.google.is/citations?user=1Awael0AAAAJ&hl=en)]{.person-links}
+[[Google Scholar](https://scholar.google.is/citations?user=1Awael0AAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/sarah-mcgarrity-5b4ba642/)]{.person-links}
 :::
 
 ::: {.person-meta}
