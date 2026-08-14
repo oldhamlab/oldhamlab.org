@@ -45,7 +45,7 @@ LAB = {
 }
 
 # Preserved verbatim across regeneration, keyed by DOI.
-KEEP_FIELDS = ("award", "note", "equal", "drop")
+KEEP_FIELDS = ("award", "drop")
 
 # Publisher metadata errors in Crossref, corrected on the way through.
 TITLE_FIXUPS = {
@@ -74,7 +74,8 @@ def orcid_dois():
     return out
 
 
-MANUAL_FIELDS = ("title", "author", "journal", "date", "pages", "volume", "path")
+MANUAL_FIELDS = ("title", "author", "journal", "date", "pages", "volume", "path",
+                 "editors", "edition", "publisher", "place")
 
 
 def unquote(v):
@@ -109,6 +110,10 @@ def load_overrides(path):
             fm = re.search(rf"^\s*(?:-\s*)?{f}:\s*(.+?)\s*(?:#[^\"']*)?$", b, re.M)
             if fm:
                 fields[f] = unquote(fm.group(1))
+        notes = [unquote(x) for x in
+                 re.findall(r"^\s*(?:-\s*)?note:\s*(.+?)\s*$", b, re.M)]
+        if notes:
+            fields["notes"] = notes
         m = (re.search(r"^\s*(?:-\s*)?doi:\s*\"?([^\"\s]+)\"?\s*(?:#.*)?$", b, re.M)
              or re.search(r"^\s*(?:-\s*)?path:\s*\"?https?://doi\.org/(10\.[^\"\s]+)\"?\s*(?:#.*)?$",
                           b, re.M))
@@ -117,8 +122,12 @@ def load_overrides(path):
             manual.append(fields)
         elif m:
             doi = m.group(1).lower().strip()
-            extra = {k: v for k, v in fields.items() if k in KEEP_FIELDS}
-            ann.setdefault(doi, {}).update(extra)  # merge repeated stubs
+            extra = {k: v for k, v in fields.items()
+                     if k in KEEP_FIELDS or k == "notes"}
+            prev = ann.setdefault(doi, {})
+            if "notes" in prev and "notes" in extra:   # merge across stubs
+                extra["notes"] = prev["notes"] + extra["notes"]
+            prev.update(extra)
     return ann, manual
 
 
@@ -161,6 +170,9 @@ def clean(s):
     s = re.sub(r"\s+", " ", s).strip()
     for bad, good in TITLE_FIXUPS.items():
         s = s.replace(bad, good)
+    # Radiolabel notation: "[18F]" -> "[<sup>18</sup>F]". Crossref stores these
+    # flat, with no markup to preserve.
+    s = re.sub(r"\[(\d+)([A-Z][a-z]?)\]", r"[<sup>\1</sup>\2]", s)
     return s
 
 
@@ -203,22 +215,71 @@ def fmt_authors(m):
     if len(names) <= MAX_AUTHORS:
         return ", ".join(n for _, n in names)
 
-    head = [n for _, n in names[:HEAD_AUTHORS]]
-    # Always keep the PI visible, even when the cutoff would hide him.
-    pi = next((n for f, n in names[HEAD_AUTHORS:] if f == "Oldham"), None)
-    last = names[-1][1]
-    tail = []
-    if pi and pi != last:
-        tail.append(pi)
-    out = ", ".join(head) + ", … " + ", ".join(tail + [last]) if tail else \
-          ", ".join(head) + ", … " + last
-    return out
+    pi = next((i for i, (f, _) in enumerate(names) if f == "Oldham"), None)
+    last, n = len(names) - 1, len(names)
+    parts = [x for _, x in names[:HEAD_AUTHORS]]
+    if pi is not None and pi >= HEAD_AUTHORS and pi != last:
+        parts.append("…")
+        parts.append(names[pi][1])
+        if pi < last - 1:          # not second-to-last: ellipsis after him too
+            parts.append("…")
+    else:
+        parts.append("…")
+    if pi != last or n > HEAD_AUTHORS:
+        parts.append(names[last][1])
+    out, prev = [], None
+    for x in parts:                # "…" joins without a comma before it
+        if prev is None:
+            out.append(x)
+        elif x == "…" or prev == "…":
+            out.append(" " + x if prev == "…" else ", " + x)
+        else:
+            out.append(", " + x)
+        prev = x
+    return "".join(out)
 
 
 def md_italics(s):
     """award/note are emitted inside a raw HTML block, where Markdown does not
     run, so *journal names* have to become <em> here."""
     return re.sub(r"\*([^*]+)\*", r"<em>\1</em>", s)
+
+
+def build_source(r):
+    """The citation line under the title, as HTML.
+
+    Chapters need the full In:/editors/publisher form -- journal-style
+    "Book. 291-292" reads as a truncated citation.
+    """
+    book = f"<em>{r['journal']}</em>" if r.get("journal") else ""
+    if r.get("chapter"):
+        bits = []
+        if r.get("editors"):
+            bits.append(f"In: {r['editors']}, editors.")
+        bits.append(book + ".")
+        if r.get("edition"):
+            bits.append(r["edition"])
+        imprint = r.get("publisher") or ""
+        if r.get("place"):
+            imprint = f"{r['place']}: {imprint}" if imprint else r["place"]
+        if imprint:
+            bits.append(f"{imprint};")
+        if r.get("year"):
+            bits.append(f"{r['year']}.")
+        if r.get("pages"):
+            bits.append(f"p. {r['pages']}.")
+        return " ".join(x for x in bits if x)
+
+    # Book titles already end in a full stop; journals do not.
+    sep = " " if r.get("journal", "").endswith(".") else ". "
+    out = book
+    if r.get("volume"):
+        out += sep + str(r["volume"])
+        if r.get("pages"):
+            out += ":" + str(r["pages"])
+    elif r.get("pages"):
+        out += sep + str(r["pages"])
+    return out
 
 
 def is_correction(title):
@@ -343,6 +404,10 @@ def build():
             "pages": f.get("pages"),
             "path": f.get("path"),
             "chapter": True,
+            "editors": f.get("editors"),
+            "edition": f.get("edition"),
+            "publisher": f.get("publisher"),
+            "place": f.get("place"),
             "type": "book-chapter",
             **{k: v for k, v in f.items() if k in KEEP_FIELDS},
         })
@@ -384,20 +449,13 @@ def emit(records):
             out.append(f"  path: {yaml_str(path)}")
         if r.get("doi"):
             out.append(f'  doi: "{r["doi"]}"')
-        if r.get("volume"):
-            out.append(f'  volume: {yaml_str(r["volume"])}')
-        if r.get("pages"):
-            out.append(f'  pages: {yaml_str(r["pages"])}')
-        if r.get("preprint"):
-            out.append("  preprint: true")
-        if r.get("chapter"):
-            out.append("  chapter: true")
-        for f in ("award", "note", "equal"):
-            if r.get(f):
-                v = r[f].strip()
-                if v.startswith('"') and v.endswith('"'):
-                    v = v[1:-1]
-                out.append(f"  {f}: {yaml_str(md_italics(v))}")
+        out.append(f'  source: {yaml_str(build_source(r))}')
+        if r.get("award"):
+            out.append(f'  award: {yaml_str(md_italics(unquote(r["award"])))}')
+        if r.get("notes"):
+            out.append("  notes:")
+            for n in r["notes"]:
+                out.append(f"    - {yaml_str(md_italics(unquote(n)))}")
         out.append("")
     return "\n".join(out)
 

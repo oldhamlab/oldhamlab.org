@@ -419,19 +419,6 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   color: var(--muted);
 }
 .pub-authors strong { font-weight: 600; color: var(--text); }
-.pub-tag {
-  display: inline-block;
-  margin-left: .4em;
-  padding: 1px 6px;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  font-family: $headings-font-family;
-  font-size: .6875rem;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.pub-award,
 .pub-note {
   margin: var(--s1) 0 0;
   font-size: .875rem;
@@ -440,7 +427,6 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   padding-left: var(--s2);
   border-left: 2px solid var(--hairline);
 }
-.pub-award { color: var(--text); }
 @media (max-width: 560px) {
   .pub-year { grid-template-columns: 1fr; gap: var(--s2); }
   .pub-year-label { position: static; }

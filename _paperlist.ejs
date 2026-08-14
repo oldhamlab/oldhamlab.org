@@ -18,10 +18,9 @@ for (const item of items) {
       <article class="pub" <%= metadataAttrs(item) %>>
         <h3 class="pub-title"><% if (item.path) { %><a href="<%= item.path %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></h3>
         <p class="pub-authors"><%= item.author %></p>
-        <p class="pub-source"><em><%= item.journal %></em><% const sep = /\.$/.test(item.journal) ? ' ' : '. '; %><% if (item.volume) { %><%= sep %><%= item.volume %><% if (item.pages) { %>:<%= item.pages %><% } %><% } else if (item.pages) { %><%= sep %><%= item.pages %><% } %><% if (item.preprint) { %> <span class="pub-tag">Preprint</span><% } %><% if (item.chapter) { %> <span class="pub-tag">Chapter</span><% } %></p>
-        <% if (item.award) { %><p class="pub-award"><%= item.award %></p><% } %>
-        <% if (item.equal) { %><p class="pub-note"><%= item.equal %></p><% } %>
-        <% if (item.note) { %><p class="pub-note"><%= item.note %></p><% } %>
+        <p class="pub-source"><%= item.source %></p>
+        <% if (item.award) { %><p class="pub-note"><%= item.award %></p><% } %>
+        <% for (const n of (item.notes || [])) { %><p class="pub-note"><%= n %></p><% } %>
       </article>
     <% } %>
     </div>
