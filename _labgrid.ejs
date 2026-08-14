@@ -1,0 +1,23 @@
+```{=html}
+<ul class="labgrid">
+<% for (const item of items) {
+     // Four of the six current members have no photograph yet. A monogram in
+     // an identical square keeps the row even, so a gap reads as a decision
+     // rather than a broken image.
+     const ini = String(item.title || '').split(/\s+/).filter(Boolean)
+                   .map(w => w[0]).slice(0, 2).join('');
+%>
+  <li class="labcard" <%= metadataAttrs(item) %>>
+    <a class="labcard-link" href="<%= item.path %>">
+      <% if (item.image) { %>
+      <span class="labcard-img"><img src="<%= item.image %>" alt="" loading="lazy"></span>
+      <% } else { %>
+      <span class="labcard-img labcard-img--mono" aria-hidden="true"><span><%= ini %></span></span>
+      <% } %>
+      <span class="labcard-name"><%= item.title %></span>
+    </a>
+    <% if (item.subtitle) { %><span class="labcard-role"><%= item.subtitle %></span><% } %>
+  </li>
+<% } %>
+</ul>
+```

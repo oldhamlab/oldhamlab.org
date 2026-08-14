@@ -19,9 +19,7 @@ listing:
     contents: "people/*.qmd"
     include:
       status: current
-    template: _people.ejs
-    template-params:
-      bio: false
+    template: _labgrid.ejs
     sort: ["order asc", "title asc"]
     sort-ui: false
     filter-ui: false

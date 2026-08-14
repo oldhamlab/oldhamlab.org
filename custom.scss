@@ -495,6 +495,63 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 // Same width for every range, so the lines start on a common edge.
 .grant-years { font-variant-numeric: tabular-nums; }
 
+// ── Home: the lab, as square tiles ────────────────────────────────────
+// Photographs carry the only colour on an otherwise near-neutral page, so
+// they are square and sized to actually register. Members without a photo get
+// a monogram in an identical square: an uneven row of half-empty cells is
+// what makes a partial roster look broken.
+.labgrid {
+  list-style: none;
+  margin: var(--s4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--s3);
+}
+.labcard-link { display: block; color: inherit; text-decoration: none; }
+.labcard-img {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--img-edge);
+}
+.labcard-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // Faces sit high in a portrait; centring crops the chin.
+  object-position: 50% 28%;
+}
+.labcard-img--mono { display: grid; place-items: center; }
+.labcard-img--mono span {
+  font-family: $headings-font-family;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  color: var(--muted);
+}
+.labcard-name {
+  display: block;
+  margin-top: var(--s2);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: var(--ls-mid);
+}
+.labcard-link:hover .labcard-name { text-decoration: underline; }
+.labcard-role {
+  display: block;
+  margin-top: 2px;
+  font-size: .875rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+@media (max-width: 560px) {
+  .labgrid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: var(--s2); }
+}
+
 // ── People: editorial rows ────────────────────────────────────────────
 // Two-up rows, portrait beside a short biography. A row with no photograph
 // becomes a wider text block rather than a hole, which is what makes this

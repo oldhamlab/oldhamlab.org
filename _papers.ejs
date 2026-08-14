@@ -2,10 +2,10 @@
 <div class="papers">
 <% for (const item of items) { %>
   <div class="paper" <%= metadataAttrs(item) %>>
-    <span class="paper-year"><%- item.date ? new Date(item.date).getUTCFullYear() : '' %></span>
+    <span class="paper-year"><%= item.date ? new Date(item.date).getUTCFullYear() : '' %></span>
     <div>
-      <a class="paper-title" href="<%= item.path %>"><%- item.title %></a>
-      <span class="paper-meta"><%- item.author %> &middot; <em><%- item.journal %></em></span>
+      <a class="paper-title" href="<%= item.path %>"><%= item.title %></a>
+      <span class="paper-meta"><%= item.author %> &middot; <em><%= item.journal %></em></span>
     </div>
   </div>
 <% } %>

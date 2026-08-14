@@ -21,3 +21,6 @@ Icon?
 # Crossref responses cached by tools/update-papers.py
 tools/.crossref-cache.json
 __pycache__/
+
+# Netlify CLI link state (machine-local)
+.netlify/
