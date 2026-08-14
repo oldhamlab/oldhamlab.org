@@ -150,7 +150,8 @@ def load_roster():
     """Map a Crossref name onto the person's page.
 
     people/*.qmd is the source of truth. `pub-match:` is the name as Crossref
-    records it.
+    records it; it marks who must stay visible when an author list is
+    truncated.
 
     `pub-cite:` is a CORRECTION, not a house style: names print as the
     bibliographic record has them, so the same person legitimately appears as
@@ -180,16 +181,19 @@ ROSTER = load_roster()
 
 
 def mark(key, label):
-    """Bold a lab member and link them to their page; pass others through."""
+    """Author names are plain text.
+
+    They were bolded and linked to the person's page; per WMO that drew the
+    eye to the names rather than the papers. The roster is still consulted --
+    it decides who must survive truncation, and supplies pub-cite for names
+    Crossref has recorded malformed.
+    """
     who = ROSTER.get(key)
-    if not who:
-        return label
-    return (f'<a href="/people/{who["slug"]}.html">'
-            f'<strong>{who["cite"] or label}</strong></a>')
+    return who["cite"] if who and who.get("cite") else label
 
 
 def bold_lab(authors):
-    """Bold lab surnames in a hand-written author string."""
+    """Apply any pub-cite corrections to a hand-written author string."""
     out = []
     for n in authors.split(","):
         n = n.strip()

@@ -7,7 +7,7 @@
 # ORCID does not list are maintained in tools/papers-overrides.yml.
 
 - title: "TGF-β coordinates alanine synthesis and import for myofibroblast differentiation in pulmonary fibrosis"
-  author: "<a href=\"/people/li.html\"><strong>Li F</strong></a>, Vigder N, <a href=\"/people/ziehr.html\"><strong>Ziehr DR</strong></a>, … <a href=\"/people/ferreyra-faustino.html\"><strong>Ferreyra Faustino DE</strong></a>, <a href=\"/people/khalil.html\"><strong>Khalil AH</strong></a>, <a href=\"/people/lam.html\"><strong>Lam HC</strong></a>, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Li F, Vigder N, Ziehr DR, … Ferreyra Faustino DE, Khalil AH, Lam HC, … Oldham WM"
   journal: "JCI Insight"
   date: 2026-07-08
   path: "https://doi.org/10.1172/jci.insight.199449"
@@ -15,7 +15,7 @@
   source: "<em>JCI Insight</em>. 11:e199449"
 
 - title: "Exploring the Lung–Liver Axis in Pulmonary Arterial Hypertension"
-  author: "<a href=\"/people/singh.html\"><strong>Singh N</strong></a>, Lawson J, Ragavendran A, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Ventetuolo CE"
+  author: "Singh N, Lawson J, Ragavendran A, … Oldham WM, … Ventetuolo CE"
   journal: "Comprehensive Physiology"
   date: 2026-06-01
   path: "https://doi.org/10.1002/cph4.70171"
@@ -23,7 +23,7 @@
   source: "<em>Comprehensive Physiology</em>. 16:e70171"
 
 - title: "Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis"
-  author: "<a href=\"/people/ziehr.html\"><strong>Ziehr DR</strong></a>, <a href=\"/people/li.html\"><strong>Li F</strong></a>, Parnell KM, … <a href=\"/people/leahy.html\"><strong>Leahy KJ</strong></a>, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Ziehr DR, Li F, Parnell KM, … Leahy KJ, … Oldham WM"
   journal: "Science Translational Medicine"
   date: 2026-05-06
   path: "https://doi.org/10.1126/scitranslmed.ads2673"
@@ -33,7 +33,7 @@
     - "Research Highlight: Crunkhorn S. Inhibiting lactate transport reduces lung fibrosis. <em>Nature Reviews Drug Discovery.</em> 2026."
 
 - title: "ExplainBind: Explainable Physicochemical Determinants of Protein–Ligand Binding via Non-Covalent Interactions"
-  author: "Meng Z, Bai Z, Yuan K, … <a href=\"/people/leahy.html\"><strong>Leahy KJ</strong></a>, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Loscalzo J"
+  author: "Meng Z, Bai Z, Yuan K, … Leahy KJ, … Oldham WM, … Loscalzo J"
   journal: "bioRxiv"
   date: 2026-03-05
   path: "https://doi.org/10.64898/2026.03.03.707476"
@@ -41,7 +41,7 @@
   source: "<em>bioRxiv</em>"
 
 - title: "Targeting NEDD9-SH3 with a Covalent Peptide Controls Endothelial Phenotype"
-  author: "Samokhin AO, Seo HS, Leed A, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Maron BA"
+  author: "Samokhin AO, Seo HS, Leed A, … Oldham WM, … Maron BA"
   journal: "bioRxiv"
   date: 2025-07-11
   path: "https://doi.org/10.1101/2025.07.10.663547"
@@ -49,7 +49,7 @@
   source: "<em>bioRxiv</em>"
 
 - title: "Dyspnea and Right-Sided Heart Failure in a Patient With a History of Pneumonectomy"
-  author: "Johnson SW, Kwan MC, Cuddy SAM, Waxman AB, Hariri LP, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Johnson SW, Kwan MC, Cuddy SAM, Waxman AB, Hariri LP, Oldham WM"
   journal: "CHEST Pulmonary"
   date: 2025-06-01
   path: "https://doi.org/10.1016/j.chpulm.2025.100149"
@@ -57,7 +57,7 @@
   source: "<em>CHEST Pulmonary</em>. 3:100149"
 
 - title: "Targeting type-2 inflammation in pulmonary hypertension: lessons from a novel model"
-  author: "<a href=\"/people/singh.html\"><strong>Singh N</strong></a>, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Singh N, Oldham WM"
   journal: "American Journal of Physiology-Lung Cellular and Molecular Physiology"
   date: 2025-05-01
   path: "https://doi.org/10.1152/ajplung.00109.2025"
@@ -65,7 +65,7 @@
   source: "<em>American Journal of Physiology-Lung Cellular and Molecular Physiology</em>. 328:L669-L670"
 
 - title: "ALDH7A1 protects against ferroptosis by generating membrane NADH and regulating FSP1"
-  author: "Yang JS, Morris AJ, Kamizaki K, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Hsu VW"
+  author: "Yang JS, Morris AJ, Kamizaki K, … Oldham WM, … Hsu VW"
   journal: "Cell"
   date: 2025-05-01
   path: "https://doi.org/10.1016/j.cell.2025.03.019"
@@ -73,13 +73,13 @@
   source: "<em>Cell</em>. 188:2569-2585.e20"
 
 - title: "Exercise Intolerance"
-  author: "Loscalzo J, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Loscalzo J, Oldham WM"
   journal: "Harrison's Principles of Internal Medicine"
   date: 2025-01-04
   source: "In: Longo DL, Fauci AS, Kasper DL, et al., editors. <em>Harrison's Principles of Internal Medicine</em>. 22nd ed. McGraw Hill; 2025. p. 291-292."
 
 - title: "Targeting Cardiac Fibrosis With a Vaccine Against Fibroblast Activation Protein"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Oldham WM"
   journal: "Circulation Research"
   date: 2025-01-03
   path: "https://doi.org/10.1161/circresaha.124.325804"
@@ -87,19 +87,19 @@
   source: "<em>Circulation Research</em>. 136:41-43"
 
 - title: "Disturbances of Respiratory Function"
-  author: "Washko G, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Washko G, Oldham WM"
   journal: "Harrison's Principles of Internal Medicine"
   date: 2025-01-03
   source: "In: Longo DL, Fauci AS, Kasper DL, et al., editors. <em>Harrison's Principles of Internal Medicine</em>. 22nd ed. McGraw Hill; 2025. p. 2201-2206."
 
 - title: "Pharmacology of Vascular Tone"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J"
+  author: "Oldham WM, Loscalzo J"
   journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy"
   date: 2025-01-02
   source: "In: Golan DE, Loscalzo J, Namchuk M, editors. <em>Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy</em>. 5th ed. Philadelphia: Lippincott, Williams, & Wilkins; 2025. p. 489-506."
 
 - title: "Mechano-dependent sorbitol accumulation supports biomolecular condensate"
-  author: "Torrino S, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Tejedor AR, … Bertero T"
+  author: "Torrino S, Oldham WM, Tejedor AR, … Bertero T"
   journal: "Cell"
   date: 2025-01-01
   path: "https://doi.org/10.1016/j.cell.2024.10.048"
@@ -107,13 +107,13 @@
   source: "<em>Cell</em>. 188:447-464.e20"
 
 - title: "Antifibrotic Therapies"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Hunninghake GM"
+  author: "Oldham WM, Hunninghake GM"
   journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy"
   date: 2025-01-01
   source: "In: Golan DE, Loscalzo J, Namchuk M, editors. <em>Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy</em>. 5th ed. Philadelphia: Lippincott, Williams, & Wilkins; 2025. p. 1094-1099."
 
 - title: "Leukemia inhibitory factor (LIF) receptor amplifies pathogenic activation of fibroblasts in lung fibrosis"
-  author: "Nguyen HN, Jeong Y, Kim Y, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Brenner MB"
+  author: "Nguyen HN, Jeong Y, Kim Y, … Oldham WM, … Brenner MB"
   journal: "Proceedings of the National Academy of Sciences"
   date: 2024-12-10
   path: "https://doi.org/10.1073/pnas.2401899121"
@@ -121,7 +121,7 @@
   source: "<em>Proceedings of the National Academy of Sciences</em>. 121:e2401899121"
 
 - title: "Diverse NKT cells regulate early inflammation and neurological outcomes after cardiac arrest and resuscitation"
-  author: "Tamura T, Cheng C, Villaseñor-Altamirano AB, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Weil BR"
+  author: "Tamura T, Cheng C, Villaseñor-Altamirano AB, … Oldham WM, … Weil BR"
   journal: "Science Translational Medicine"
   date: 2024-12-04
   path: "https://doi.org/10.1126/scitranslmed.adq5796"
@@ -129,7 +129,7 @@
   source: "<em>Science Translational Medicine</em>. 16:eadq5796"
 
 - title: "Branched-chain α-ketoacids aerobically activate HIF1α signalling in vascular cells"
-  author: "Xiao W, Shrimali N, Vigder N, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Loscalzo J"
+  author: "Xiao W, Shrimali N, Vigder N, Oldham WM, … Loscalzo J"
   journal: "Nature Metabolism"
   date: 2024-10-29
   path: "https://doi.org/10.1038/s42255-024-01150-4"
@@ -137,7 +137,7 @@
   source: "<em>Nature Metabolism</em>. 6:2138-2156"
 
 - title: "Exercise Intolerance and Low Cardiac Filling Pressures in a Woman With a Novel eNOS Mutation"
-  author: "<a href=\"/people/mcgarrity.html\"><strong>McGarrity S</strong></a>, <a href=\"/people/ziehr.html\"><strong>Ziehr DR</strong></a>, Austin-Tse CA, Wein MN, Chivukula RR, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "McGarrity S, Ziehr DR, Austin-Tse CA, Wein MN, Chivukula RR, Oldham WM"
   journal: "Circulation: Genomic and Precision Medicine"
   date: 2024-10-01
   path: "https://doi.org/10.1161/circgen.124.004741"
@@ -145,7 +145,7 @@
   source: "<em>Circulation: Genomic and Precision Medicine</em>. 17"
 
 - title: "The bacterial quorum sensing signal 2’-aminoacetophenone rewires immune cell bioenergetics through the Ppargc1a/Esrra axis to mediate tolerance to infection"
-  author: "Chakraborty A, Bandyopadhaya A, Singh VK, Kovacic F, Cha S, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Tzika AA, Rahme LG"
+  author: "Chakraborty A, Bandyopadhaya A, Singh VK, Kovacic F, Cha S, Oldham WM, Tzika AA, Rahme LG"
   journal: "eLife"
   date: 2024-09-13
   path: "https://doi.org/10.7554/elife.97568"
@@ -153,7 +153,7 @@
   source: "<em>eLife</em>. 13:RP97568"
 
 - title: "Exploring the Molecular Signatures of Pulmonary Vascular Lesions"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Oldham WM"
   journal: "American Journal of Respiratory and Critical Care Medicine"
   date: 2024-08-01
   path: "https://doi.org/10.1164/rccm.202404-0695ed"
@@ -161,7 +161,7 @@
   source: "<em>American Journal of Respiratory and Critical Care Medicine</em>. 210:256-257"
 
 - title: "Immune mechanisms in fibrotic interstitial lung disease"
-  author: "Kamiya M, Carter H, Espindola MS, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Kim EY"
+  author: "Kamiya M, Carter H, Espindola MS, … Oldham WM, Kim EY"
   journal: "Cell"
   date: 2024-07-01
   path: "https://doi.org/10.1016/j.cell.2024.05.015"
@@ -169,7 +169,7 @@
   source: "<em>Cell</em>. 187:3506-3530"
 
 - title: "Dietary intake and glutamine-serine metabolism control pathologic vascular stiffness"
-  author: "Rachedi NS, Tang Y, Tai YY, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Chan SY"
+  author: "Rachedi NS, Tang Y, Tai YY, … Oldham WM, … Chan SY"
   journal: "Cell Metabolism"
   date: 2024-06-01
   path: "https://doi.org/10.1016/j.cmet.2024.04.010"
@@ -177,7 +177,7 @@
   source: "<em>Cell Metabolism</em>. 36:1335-1350.e8"
 
 - title: "Fatty acid metabolism promotes TRPV4 activity in lung microvascular endothelial cells in pulmonary arterial hypertension"
-  author: "Philip N, Yun X, Pi H, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Suresh K"
+  author: "Philip N, Yun X, Pi H, … Oldham WM, … Suresh K"
   journal: "American Journal of Physiology-Lung Cellular and Molecular Physiology"
   date: 2024-03-01
   path: "https://doi.org/10.1152/ajplung.00199.2023"
@@ -186,19 +186,19 @@
   award: "APSselect award winner, American Physiological Society"
 
 - title: "Pulmonary Hypertension"
-  author: "Wertheim B, Maron BA, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Wertheim B, Maron BA, Oldham WM"
   journal: "Brigham Intensive Review of Internal Medicine"
   date: 2024-01-02
   source: "In: Singh AK, Loscalzo J, editors. <em>Brigham Intensive Review of Internal Medicine</em>. 4th ed. Philadelphia: Elsevier; 2024. p. 1028-1038."
 
 - title: "New Agents in Pulmonary Disease"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Oldham WM"
   journal: "Brigham Intensive Review of Internal Medicine"
   date: 2024-01-01
   source: "In: Singh AK, Loscalzo J, editors. <em>Brigham Intensive Review of Internal Medicine</em>. 4th ed. Philadelphia: Elsevier; 2024. p. 470-476."
 
 - title: "Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes"
-  author: "Li G, Huang H, Wu Y, … <a href=\"/people/lam.html\"><strong>Lam HC</strong></a>, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Perrella MA"
+  author: "Li G, Huang H, Wu Y, … Lam HC, Oldham WM, … Perrella MA"
   journal: "Basic Research in Cardiology"
   date: 2023-12-26
   path: "https://doi.org/10.1007/s00395-023-01029-7"
@@ -206,7 +206,7 @@
   source: "<em>Basic Research in Cardiology</em>. 119:151-168"
 
 - title: "Elevated Pulmonary Arterial Compliance Is Associated with Survival in Pulmonary Hypertension: Results from a Novel Network Medicine Analysis"
-  author: "Wang RS, Huang S, Waldo SW, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Brittain EL"
+  author: "Wang RS, Huang S, Waldo SW, … Oldham WM, … Brittain EL"
   journal: "American Journal of Respiratory and Critical Care Medicine"
   date: 2023-08-01
   path: "https://doi.org/10.1164/rccm.202211-2097oc"
@@ -214,7 +214,7 @@
   source: "<em>American Journal of Respiratory and Critical Care Medicine</em>. 208:312-321"
 
 - title: "MYC overrides HIF-1α to regulate proliferating primary cell metabolism in hypoxia"
-  author: "<a href=\"/people/copeland.html\"><strong>Copeland CA</strong></a>, Olenchock BA, <a href=\"/people/ziehr.html\"><strong>Ziehr D</strong></a>, <a href=\"/people/mcgarrity.html\"><strong>McGarrity S</strong></a>, <a href=\"/people/leahy.html\"><strong>Leahy K</strong></a>, Young JD, Loscalzo J, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Copeland CA, Olenchock BA, Ziehr D, McGarrity S, Leahy K, Young JD, Loscalzo J, Oldham WM"
   journal: "eLife"
   date: 2023-07-10
   path: "https://doi.org/10.7554/elife.82597"
@@ -222,7 +222,7 @@
   source: "<em>eLife</em>. 12:e82597"
 
 - title: "Single-cell transcriptomics reveal a hyperacute cytokine and immune checkpoint axis after cardiac arrest in patients with poor neurological outcome"
-  author: "Tamura T, Cheng C, Chen W, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Kim EY"
+  author: "Tamura T, Cheng C, Chen W, … Oldham WM, … Kim EY"
   journal: "Med"
   date: 2023-07-01
   path: "https://doi.org/10.1016/j.medj.2023.05.003"
@@ -230,7 +230,7 @@
   source: "<em>Med</em>. 4:432-456.e6"
 
 - title: "Proline and glucose metabolic reprogramming supports vascular endothelial and medial biomass in pulmonary arterial hypertension"
-  author: "Wertheim BM, Wang RS, Guillermier C, Hütter CVR, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Menche J, Steinhauser ML, Maron BA"
+  author: "Wertheim BM, Wang RS, Guillermier C, Hütter CVR, Oldham WM, Menche J, Steinhauser ML, Maron BA"
   journal: "JCI Insight"
   date: 2023-02-22
   path: "https://doi.org/10.1172/jci.insight.163932"
@@ -238,7 +238,7 @@
   source: "<em>JCI Insight</em>. 8:e163932"
 
 - title: "Metabolic regulation of species-specific developmental rates"
-  author: "Diaz-Cuadros M, Miettinen TP, Skinner OS, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Pourquié O"
+  author: "Diaz-Cuadros M, Miettinen TP, Skinner OS, … Oldham WM, Pourquié O"
   journal: "Nature"
   date: 2023-01-19
   path: "https://doi.org/10.1038/s41586-022-05574-4"
@@ -246,7 +246,7 @@
   source: "<em>Nature</em>. 613:550-557"
 
 - title: "L-2-Hydroxyglutarate Protects Against Cardiac Injury via Metabolic Remodeling"
-  author: "He H, Mulhern RM, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Xiao W, Lin YD, Liao R, Loscalzo J"
+  author: "He H, Mulhern RM, Oldham WM, Xiao W, Lin YD, Liao R, Loscalzo J"
   journal: "Circulation Research"
   date: 2022-09-16
   path: "https://doi.org/10.1161/circresaha.122.321227"
@@ -254,7 +254,7 @@
   source: "<em>Circulation Research</em>. 131:562-579"
 
 - title: "Interferon-γ Impairs Human Coronary Artery Endothelial Glucose Metabolism by Tryptophan Catabolism and Activates Fatty Acid Oxidation"
-  author: "Lee LYH, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, He H, Wang R, Mulhern R, Handy DE, Loscalzo J"
+  author: "Lee LYH, Oldham WM, He H, Wang R, Mulhern R, Handy DE, Loscalzo J"
   journal: "Circulation"
   date: 2021-11-16
   path: "https://doi.org/10.1161/circulationaha.121.053960"
@@ -262,7 +262,7 @@
   source: "<em>Circulation</em>. 144:1612-1628"
 
 - title: "Understanding critically ill sepsis patients with normal serum lactate levels: results from U.S. and European ICU cohorts"
-  author: "Sauer CM, Gómez J, Botella MR, <a href=\"/people/ziehr.html\"><strong>Ziehr DR</strong></a>, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Celi LA"
+  author: "Sauer CM, Gómez J, Botella MR, Ziehr DR, Oldham WM, … Celi LA"
   journal: "Scientific Reports"
   date: 2021-10-08
   path: "https://doi.org/10.1038/s41598-021-99581-6"
@@ -270,7 +270,7 @@
   source: "<em>Scientific Reports</em>. 11:20076"
 
 - title: "Integrating haemodynamics identifies an extreme pulmonary hypertension phenotype"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Hess E, Waldo SW, Humbert M, Choudhary G, Maron BA"
+  author: "Oldham WM, Hess E, Waldo SW, Humbert M, Choudhary G, Maron BA"
   journal: "European Respiratory Journal"
   date: 2021-08-01
   path: "https://doi.org/10.1183/13993003.04625-2020"
@@ -278,7 +278,7 @@
   source: "<em>European Respiratory Journal</em>. 58:2004625"
 
 - title: "Mechano-induced cell metabolism promotes microtubule glutamylation to force metastasis"
-  author: "Torrino S, Grasset EM, Audebert S, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Bertero T"
+  author: "Torrino S, Grasset EM, Audebert S, … Oldham WM, … Bertero T"
   journal: "Cell Metabolism"
   date: 2021-07-01
   path: "https://doi.org/10.1016/j.cmet.2021.05.009"
@@ -286,7 +286,7 @@
   source: "<em>Cell Metabolism</em>. 33:1342-1357.e10"
 
 - title: "Immunometabolic Endothelial Phenotypes: Integrating Inflammation and Glucose Metabolism"
-  author: "Xiao W, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Priolo C, Pandey AK, Loscalzo J"
+  author: "Xiao W, Oldham WM, Priolo C, Pandey AK, Loscalzo J"
   journal: "Circulation Research"
   date: 2021-06-25
   path: "https://doi.org/10.1161/circresaha.120.318805"
@@ -294,7 +294,7 @@
   source: "<em>Circulation Research</em>. 129:9-29"
 
 - title: "NHLBI-CMREF Workshop Report on Pulmonary Vascular Disease Classification"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Hemnes AR, Aldred MA, … Xiao L"
+  author: "Oldham WM, Hemnes AR, Aldred MA, … Xiao L"
   journal: "Journal of the American College of Cardiology"
   date: 2021-04-01
   path: "https://doi.org/10.1016/j.jacc.2021.02.056"
@@ -302,7 +302,7 @@
   source: "<em>Journal of the American College of Cardiology</em>. 77:2040-2052"
 
 - title: "Systemic vascular distensibility relates to exercise capacity in connective tissue disease"
-  author: "Singh I, Oliveira RKF, Naeije R, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Faria-Urbina M, Waxman AB, Systrom DM"
+  author: "Singh I, Oliveira RKF, Naeije R, Oldham WM, Faria-Urbina M, Waxman AB, Systrom DM"
   journal: "Rheumatology"
   date: 2021-03-02
   path: "https://doi.org/10.1093/rheumatology/keaa510"
@@ -310,7 +310,7 @@
   source: "<em>Rheumatology</em>. 60:1429-1434"
 
 - title: "Individualized interactomes for network-based precision medicine in hypertrophic cardiomyopathy with implications for other clinical pathophenotypes"
-  author: "Maron BA, Wang RS, Shevtsov S, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Loscalzo J"
+  author: "Maron BA, Wang RS, Shevtsov S, … Oldham WM, … Loscalzo J"
   journal: "Nature Communications"
   date: 2021-02-08
   path: "https://doi.org/10.1038/s41467-021-21146-y"
@@ -318,7 +318,7 @@
   source: "<em>Nature Communications</em>. 12:873"
 
 - title: "Targeting immunosuppressive macrophages overcomes PARP inhibitor resistance in BRCA1-associated triple-negative breast cancer"
-  author: "Mehta AK, Cheney EM, Hartl CA, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Guerriero JL"
+  author: "Mehta AK, Cheney EM, Hartl CA, … Oldham WM, … Guerriero JL"
   journal: "Nature Cancer"
   date: 2020-12-14
   path: "https://doi.org/10.1038/s43018-020-00148-7"
@@ -326,13 +326,13 @@
   source: "<em>Nature Cancer</em>. 2:66-82"
 
 - title: "Precision medicine in pulmonary hypertension"
-  author: "Singh I, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Rahaghi FN"
+  author: "Singh I, Oldham WM, Rahaghi FN"
   journal: "Precision in Pulmonary, Critical Care, and Sleep Medicine"
   date: 2020-01-01
   source: "In: Gomez JL, Himes BE, Kaminski N, editors. <em>Precision in Pulmonary, Critical Care, and Sleep Medicine</em>. New York: Springer; 2020. p. 241-255."
 
 - title: "Reaction rate of pyruvate and hydrogen peroxide: assessing antioxidant capacity of pyruvate under biological conditions"
-  author: "Guarino VA, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J, Zhang YY"
+  author: "Guarino VA, Oldham WM, Loscalzo J, Zhang YY"
   journal: "Scientific Reports"
   date: 2019-12-20
   path: "https://doi.org/10.1038/s41598-019-55951-9"
@@ -340,7 +340,7 @@
   source: "<em>Scientific Reports</em>. 9:19568"
 
 - title: "Pulmonary Vascular Distensibility and Early Pulmonary Vascular Remodeling in Pulmonary Hypertension"
-  author: "Singh I, Oliveira RKF, Naeije R, Rahaghi FN, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Systrom DM, Waxman AB"
+  author: "Singh I, Oliveira RKF, Naeije R, Rahaghi FN, Oldham WM, Systrom DM, Waxman AB"
   journal: "Chest"
   date: 2019-10-01
   path: "https://doi.org/10.1016/j.chest.2019.04.111"
@@ -348,7 +348,7 @@
   source: "<em>Chest</em>. 156:724-732"
 
 - title: "Paradoxical Embolization via Large Pulmonary Arteriovenous Malformation"
-  author: "Sternschein RM, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Sternschein RM, Oldham WM"
   journal: "American Journal of Respiratory and Critical Care Medicine"
   date: 2019-09-01
   path: "https://doi.org/10.1164/rccm.201806-1047im"
@@ -356,7 +356,7 @@
   source: "<em>American Journal of Respiratory and Critical Care Medicine</em>. 200:29-30"
 
 - title: "Tumor-Stroma Mechanics Coordinate Amino Acid Availability to Sustain Tumor Growth and Malignancy"
-  author: "Bertero T, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Grasset EM, … Gaggioli C"
+  author: "Bertero T, Oldham WM, Grasset EM, … Gaggioli C"
   journal: "Cell Metabolism"
   date: 2019-01-01
   path: "https://doi.org/10.1016/j.cmet.2018.09.012"
@@ -364,7 +364,7 @@
   source: "<em>Cell Metabolism</em>. 29:124-140.e10"
 
 - title: "Innate T cells in the intensive care unit"
-  author: "Kim EY, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Kim EY, Oldham WM"
   journal: "Molecular Immunology"
   date: 2019-01-01
   path: "https://doi.org/10.1016/j.molimm.2018.09.026"
@@ -372,7 +372,7 @@
   source: "<em>Molecular Immunology</em>. 105:213-223"
 
 - title: "[<sup>18</sup>F]Fluorocholine and [<sup>18</sup>F]Fluoroacetate PET as Imaging Biomarkers to Assess Phosphatidylcholine and Mitochondrial Metabolism in Preclinical Models of TSC and LAM"
-  author: "Verwer EE, Kavanagh TR, Mischler WJ, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Priolo C"
+  author: "Verwer EE, Kavanagh TR, Mischler WJ, … Oldham WM, … Priolo C"
   journal: "Clinical Cancer Research"
   date: 2018-12-01
   path: "https://doi.org/10.1158/1078-0432.ccr-17-3693"
@@ -380,7 +380,7 @@
   source: "<em>Clinical Cancer Research</em>. 24:5925-5938"
 
 - title: "Systems Biology Approaches to Redox Metabolism in Stress and Disease States"
-  author: "Wang RS, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Maron BA, Loscalzo J"
+  author: "Wang RS, Oldham WM, Maron BA, Loscalzo J"
   journal: "Antioxidants & Redox Signaling"
   date: 2018-10-01
   path: "https://doi.org/10.1089/ars.2017.7256"
@@ -388,7 +388,7 @@
   source: "<em>Antioxidants & Redox Signaling</em>. 29:953-972"
 
 - title: "MicroRNA Dysregulation in Pulmonary Arteries from Chronic Obstructive Pulmonary Disease. Relationships with Vascular Remodeling"
-  author: "Musri MM, Coll-Bonfill N, Maron BA, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Barberà JA"
+  author: "Musri MM, Coll-Bonfill N, Maron BA, … Oldham WM, … Barberà JA"
   journal: "American Journal of Respiratory Cell and Molecular Biology"
   date: 2018-10-01
   path: "https://doi.org/10.1165/rcmb.2017-0040oc"
@@ -396,7 +396,7 @@
   source: "<em>American Journal of Respiratory Cell and Molecular Biology</em>. 59:490-499"
 
 - title: "GAPDH inhibits intracellular pathways during starvation for cellular energy homeostasis"
-  author: "Yang JS, Hsu JW, Park SY, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Hsu VW"
+  author: "Yang JS, Hsu JW, Park SY, … Oldham WM, … Hsu VW"
   journal: "Nature"
   date: 2018-09-01
   path: "https://doi.org/10.1038/s41586-018-0475-6"
@@ -404,7 +404,7 @@
   source: "<em>Nature</em>. 561:263-267"
 
 - title: "NEDD9 targets COL3A1 to promote endothelial fibrosis and pulmonary arterial hypertension"
-  author: "Samokhin AO, Stephens T, Wertheim BM, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Maron BA"
+  author: "Samokhin AO, Stephens T, Wertheim BM, … Oldham WM, … Maron BA"
   journal: "Science Translational Medicine"
   date: 2018-06-13
   path: "https://doi.org/10.1126/scitranslmed.aap7294"
@@ -412,7 +412,7 @@
   source: "<em>Science Translational Medicine</em>. 10:eaap7294"
 
 - title: "Network Analysis to Risk Stratify Patients With Exercise Intolerance"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Oliveira RKF, Wang RS, … Maron BA"
+  author: "Oldham WM, Oliveira RKF, Wang RS, … Maron BA"
   journal: "Circulation Research"
   date: 2018-03-16
   path: "https://doi.org/10.1161/circresaha.117.312482"
@@ -423,7 +423,7 @@
     - "Editorial: Arena R, Ozemek C, Laddu-Patel D, Myers J. Refining the risk prediction of cardiorespiratory fitness with network analysis. <em>Circulation Research.</em> 2018;122:804."
 
 - title: "The Long Noncoding RNA LnRPT Puts the Brakes on Pulmonary Artery Smooth Muscle Cell Proliferation"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Oldham WM"
   journal: "American Journal of Respiratory Cell and Molecular Biology"
   date: 2018-02-01
   path: "https://doi.org/10.1165/rcmb.2017-0342ed"
@@ -439,7 +439,7 @@
   source: "<em>American Journal of Respiratory Cell and Molecular Biology</em>. 58:135-137"
 
 - title: "Pyridine Dinucleotides from Molecules to Man"
-  author: "Fessel JP, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Fessel JP, Oldham WM"
   journal: "Antioxidants & Redox Signaling"
   date: 2018-01-20
   path: "https://doi.org/10.1089/ars.2017.7120"
@@ -447,7 +447,7 @@
   source: "<em>Antioxidants & Redox Signaling</em>. 28:180-212"
 
 - title: "Nicotine Adenine Dinucleotides: The Redox Currency of the Cell"
-  author: "Fessel JP, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Fessel JP, Oldham WM"
   journal: "Antioxidants & Redox Signaling"
   date: 2018-01-20
   path: "https://doi.org/10.1089/ars.2017.7439"
@@ -455,13 +455,13 @@
   source: "<em>Antioxidants & Redox Signaling</em>. 28:165-166"
 
 - title: "Pulmonary Hypertension"
-  author: "Wertheim B, Maron BA, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>"
+  author: "Wertheim B, Maron BA, Oldham WM"
   journal: "Brigham Intensive Review of Internal Medicine"
   date: 2018-01-01
   source: "In: Singh AK, Loscalzo J, editors. <em>Brigham Intensive Review of Internal Medicine</em>. 3rd ed. Philadelphia: Elsevier; 2018. p. 906-916."
 
 - title: "Rapamycin-induced miR-21 promotes mitochondrial homeostasis and adaptation in mTORC1 activated cells"
-  author: "<a href=\"/people/lam.html\"><strong>Lam HC</strong></a>, Liu HJ, Baglini CV, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Henske EP"
+  author: "Lam HC, Liu HJ, Baglini CV, … Oldham WM, … Henske EP"
   journal: "Oncotarget"
   date: 2017-09-12
   path: "https://doi.org/10.18632/oncotarget.19947"
@@ -469,7 +469,7 @@
   source: "<em>Oncotarget</em>. 8:64714-64727"
 
 - title: "p62/SQSTM1 Cooperates with Hyperactive mTORC1 to Regulate Glutathione Production, Maintain Mitochondrial Integrity, and Promote Tumorigenesis"
-  author: "<a href=\"/people/lam.html\"><strong>Lam HC</strong></a>, Baglini CV, Lope AL, … <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Henske EP"
+  author: "Lam HC, Baglini CV, Lope AL, … Oldham WM, … Henske EP"
   journal: "Cancer Research"
   date: 2017-06-15
   path: "https://doi.org/10.1158/0008-5472.can-16-2458"
@@ -485,7 +485,7 @@
   source: "<em>Pulmonary Circulation</em>. 6:401-401"
 
 - title: "Vascular stiffness mechanoactivates YAP/TAZ-dependent glutaminolysis to drive pulmonary hypertension"
-  author: "Bertero T, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Cottrill KA, … Chan SY"
+  author: "Bertero T, Oldham WM, Cottrill KA, … Chan SY"
   journal: "Journal of Clinical Investigation"
   date: 2016-08-22
   path: "https://doi.org/10.1172/jci86387"
@@ -493,7 +493,7 @@
   source: "<em>Journal of Clinical Investigation</em>. 126:3313-3335"
 
 - title: "Unexplained Exertional Dyspnea Caused by Low Ventricular Filling Pressures: Results from Clinical Invasive Cardiopulmonary Exercise Testing"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Lewis GD, Opotowsky AR, Waxman AB, Systrom DM"
+  author: "Oldham WM, Lewis GD, Opotowsky AR, Waxman AB, Systrom DM"
   journal: "Pulmonary Circulation"
   date: 2016-03-01
   path: "https://doi.org/10.1086/685054"
@@ -501,7 +501,7 @@
   source: "<em>Pulmonary Circulation</em>. 6:55-62"
 
 - title: "Elevated pulmonary arterial and systemic plasma aldosterone levels associate with impaired cardiac reserve capacity during exercise in left ventricular systolic heart failure patients: A pilot study"
-  author: "Maron BA, Stephens TE, Farrell LA, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J, Leopold JA, Lewis GD"
+  author: "Maron BA, Stephens TE, Farrell LA, Oldham WM, Loscalzo J, Leopold JA, Lewis GD"
   journal: "The Journal of Heart and Lung Transplantation"
   date: 2016-03-01
   path: "https://doi.org/10.1016/j.healun.2015.10.019"
@@ -509,7 +509,7 @@
   source: "<em>The Journal of Heart and Lung Transplantation</em>. 35:342-351"
 
 - title: "Quantification of 2-Hydroxyglutarate Enantiomers by Liquid Chromatography-mass Spectrometry"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J"
+  author: "Oldham WM, Loscalzo J"
   journal: "BIO-PROTOCOL"
   date: 2016-01-01
   path: "https://doi.org/10.21769/bioprotoc.1908"
@@ -517,13 +517,13 @@
   source: "<em>BIO-PROTOCOL</em>. 6"
 
 - title: "Pharmacology of Vascular Tone"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J"
+  author: "Oldham WM, Loscalzo J"
   journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy"
   date: 2016-01-01
   source: "In: Golan DE, Tashjian AH, Armstrong EJ, editors. <em>Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy</em>. 4th ed. Philadelphia: Lippincott, Williams, & Wilkins; 2016. p. 385-402."
 
 - title: "Protocol for Exercise Hemodynamic Assessment: Performing an Invasive Cardiopulmonary Exercise Test in Clinical Practice"
-  author: "Berry NC, Manyoo A, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, … Maron BA"
+  author: "Berry NC, Manyoo A, Oldham WM, … Maron BA"
   journal: "Pulmonary Circulation"
   date: 2015-12-01
   path: "https://doi.org/10.1086/683815"
@@ -531,7 +531,7 @@
   source: "<em>Pulmonary Circulation</em>. 5:610-618"
 
 - title: "Hypoxia-Mediated Increases in L-2-hydroxyglutarate Coordinate the Metabolic Response to Reductive Stress"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Clish CB, Yang Y, Loscalzo J"
+  author: "Oldham WM, Clish CB, Yang Y, Loscalzo J"
   journal: "Cell Metabolism"
   date: 2015-08-01
   path: "https://doi.org/10.1016/j.cmet.2015.06.021"
@@ -542,7 +542,7 @@
     - "Research Highlight: Miura G. Cancer metabolism: two sides of a coin. <em>Nature Chemical Biology.</em> 2015;11:632."
 
 - title: "Network-based association of hypoxia-responsive genes with cardiovascular diseases"
-  author: "Wang RS, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Loscalzo J"
+  author: "Wang RS, Oldham WM, Loscalzo J"
   journal: "New Journal of Physics"
   date: 2014-10-24
   path: "https://doi.org/10.1088/1367-2630/16/10/105014"
@@ -550,7 +550,7 @@
   source: "<em>New Journal of Physics</em>. 16:105014"
 
 - title: "Upregulation of Steroidogenic Acute Regulatory Protein by Hypoxia Stimulates Aldosterone Synthesis in Pulmonary Artery Endothelial Cells to Promote Pulmonary Vascular Fibrosis"
-  author: "Maron BA, <a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Chan SY, Vargas SO, Arons E, Zhang YY, Loscalzo J, Leopold JA"
+  author: "Maron BA, Oldham WM, Chan SY, Vargas SO, Arons E, Zhang YY, Loscalzo J, Leopold JA"
   journal: "Circulation"
   date: 2014-07-08
   path: "https://doi.org/10.1161/circulationaha.113.007690"
@@ -558,7 +558,7 @@
   source: "<em>Circulation</em>. 130:168-179"
 
 - title: "Cardiopulmonary Exercise Testing in the Evaluation of Unexplained Dyspnea"
-  author: "<a href=\"/people/oldham.html\"><strong>Oldham WM</strong></a>, Systrom DM"
+  author: "Oldham WM, Systrom DM"
   journal: "Advances in Pulmonary Hypertension"
   date: 2010-04-01
   path: "https://doi.org/10.21693/1933-088x-9.2.101"
