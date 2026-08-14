@@ -1,22 +1,34 @@
 # Hand-maintained additions to the publication list.
 #
 # tools/update-papers.py OVERWRITES papers.yml on every run. This file is never
-# written to, so anything editorial belongs here, keyed by DOI.
+# written to, so anything editorial belongs here.
 #
-#   award:  a prize or selection      -> printed after the entry
-#   note:   accompanying commentary   -> printed after the entry, smaller
-#   equal:  co-first authorship       -> "Ziehr DR, Li F contributed equally"
-#   drop:   suppress the entry entirely
+# Two kinds of entry:
 #
-# A bare `- doi:` with no fields is a seed: it pulls a paper into the list that
-# ORCID does not know about. Metadata comes from Crossref.
+#   1. A `doi:` with no title -- a seed (pull this paper in) or an annotation
+#      (attach an award or commentary to it). Metadata comes from Crossref.
+#        award:  a prize or selection      -> printed after the entry
+#        note:   accompanying commentary   -> printed after the entry, smaller
+#        equal:  co-first authorship       -> printed after the entry
+#        drop:   suppress the entry entirely
+#
+#   2. An entry with a `title:` -- a complete record, used as-is with no
+#      Crossref lookup. Book chapters need this: they have no DOI.
+#
+# Source of truth is the CV at
+# ~/nas/Lab/admin_career/cv/2026-07-27_oldham_cv.docx.
 
-# --- papers missing from ORCID ---
+# ── Papers ORCID does not list ────────────────────────────────────────
 - doi: "10.1016/j.cmet.2024.04.010"     # Rachedi, Cell Metabolism 2024
 - doi: "10.21693/1933-088x-9.2.101"     # Advances in Pulmonary Hypertension 2010
 - doi: "10.1086/687757"                 # Pulmonary Circulation 2016
+- doi: "10.1002/cph4.70171"             # Singh, Comprehensive Physiology 2026
+- doi: "10.1073/pnas.2401899121"        # Nguyen, PNAS 2024
+- doi: "10.1016/j.cell.2025.03.019"     # Yang, Cell 2025 (ALDH7A1)
+- doi: "10.1016/j.cell.2024.05.015"     # Kamiya, Cell 2024 (immune mechanisms)
+- doi: "10.1101/2025.07.10.663547"      # Samokhin, bioRxiv 2025 (NEDD9-SH3)
 
-# --- awards and commentary ---
+# ── Awards and commentary ─────────────────────────────────────────────
 - doi: "10.1152/ajplung.00199.2023"
   award: "APSselect award winner, American Physiological Society"
 
@@ -27,10 +39,82 @@
 - doi: "10.1016/j.cmet.2015.06.021"
   note: "Preview: Harris AL. A new hydroxyl metabolite of 2-oxoglutarate regulates metabolism in hypoxia. *Cell Metabolism.* 2015;22:198. Research Highlight: Miura G. Cancer metabolism: two sides of a coin. *Nature Chemical Biology.* 2015;11:632."
 
-# --- suppressed ---
+- doi: "10.1126/scitranslmed.ads2673"
+  note: "Research Highlight: Crunkhorn S. Inhibiting lactate transport reduces lung fibrosis. *Nature Reviews Drug Discovery.* 2026."
+
+# ── Co-first authorship (* in the CV) ─────────────────────────────────
+- doi: "10.1126/scitranslmed.ads2673"
+  equal: "Ziehr DR and Li F contributed equally"
+- doi: "10.1161/circresaha.117.312482"
+  equal: "Oldham WM and Oliveira RK contributed equally"
+- doi: "10.1161/circgen.124.004741"
+  equal: "McGarrity S and Ziehr DR contributed equally"
+- doi: "10.1016/j.chpulm.2025.100149"
+  equal: "Johnson SW and Kwan MC contributed equally"
+- doi: "10.1016/j.jacc.2021.02.056"
+  equal: "Oldham WM and Hemnes AR contributed equally"
+
+# ── Suppressed ────────────────────────────────────────────────────────
 # Published as "Mechano-induced cell metabolism promotes microtubule
 # glutamylation to force metastasis" (Cell Metabolism 2021, already listed).
 # Crossref records no is-preprint-of edge between the two, and the titles share
 # too few words for the similarity check, so it has to be suppressed by hand.
 - doi: "10.1101/2020.03.10.985036"
   drop: true
+
+# ── Book chapters ─────────────────────────────────────────────────────
+# No Crossref records, so these are authored in full.
+
+- title: "Antifibrotic Therapies"
+  author: "Oldham WM, Hunninghake GM"
+  journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 5th ed."
+  date: 2025-01-01
+  pages: "1094-1099"
+
+- title: "Pharmacology of Vascular Tone"
+  author: "Oldham WM, Loscalzo J"
+  journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 5th ed."
+  date: 2025-01-02
+  pages: "489-506"
+
+- title: "Disturbances of Respiratory Function"
+  author: "Washko G, Oldham WM"
+  journal: "Harrison's Principles of Internal Medicine, 22nd ed."
+  date: 2025-01-03
+  pages: "2201-2206"
+
+- title: "Exercise Intolerance"
+  author: "Loscalzo J, Oldham WM"
+  journal: "Harrison's Principles of Internal Medicine, 22nd ed."
+  date: 2025-01-04
+  pages: "291-292"
+
+- title: "New Agents in Pulmonary Disease"
+  author: "Oldham WM"
+  journal: "Brigham Intensive Review of Internal Medicine, 4th ed."
+  date: 2024-01-01
+  pages: "470-476"
+
+- title: "Pulmonary Hypertension"
+  author: "Wertheim B, Maron BA, Oldham WM"
+  journal: "Brigham Intensive Review of Internal Medicine, 4th ed."
+  date: 2024-01-02
+  pages: "1028-1038"
+
+- title: "Precision medicine in pulmonary hypertension"
+  author: "Singh I, Oldham WM, Rahaghi FN"
+  journal: "Precision in Pulmonary, Critical Care, and Sleep Medicine"
+  date: 2020-01-01
+  pages: "241-255"
+
+- title: "Pulmonary Hypertension"
+  author: "Wertheim B, Maron BA, Oldham WM"
+  journal: "Brigham Intensive Review of Internal Medicine, 3rd ed."
+  date: 2018-01-01
+  pages: "906-916"
+
+- title: "Pharmacology of Vascular Tone"
+  author: "Oldham WM, Loscalzo J"
+  journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 4th ed."
+  date: 2016-01-01
+  pages: "385-402"

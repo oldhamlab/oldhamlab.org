@@ -74,32 +74,62 @@ def orcid_dois():
     return out
 
 
-def load_yaml_dois(path):
-    """Pull `doi:` values and any hand-written fields out of the existing file.
+MANUAL_FIELDS = ("title", "author", "journal", "date", "pages", "volume", "path")
 
-    Deliberately a regex rather than a YAML parse so the script has no
+
+def unquote(v):
+    v = v.strip()
+    if len(v) > 1 and v[0] == v[-1] and v[0] in "\"'":
+        v = v[1:-1]
+    return v
+
+
+def load_overrides(path):
+    """Parse tools/papers-overrides.yml into (annotations, manual records).
+
+    Deliberately a hand-rolled parse rather than PyYAML so the script has no
     third-party dependency -- it has to run for anyone with just Python.
+
+    An entry carrying a `title:` is a complete record and is used as-is: book
+    chapters have no Crossref DOI, so there is nothing to look up. An entry
+    with only a `doi:` is either a seed (pull this paper in) or an annotation
+    (attach an award or commentary to it).
     """
     if not path.exists():
-        return {}
+        return {}, []
     blocks = re.split(r"\n(?=- )", path.read_text(encoding="utf8"))
-    kept = {}
+    ann, manual = {}, []
     for b in blocks:
-        # Anchored to the doi:/path: keys -- a `note:` may cite an editorial's
-        # own DOI, and that is commentary, not one of his papers.
+        if not b.lstrip().startswith("- "):
+            continue
+        fields = {}
+        for f in KEEP_FIELDS + MANUAL_FIELDS:
+            # Anchored to the key -- a `note:` may cite an editorial's own DOI,
+            # and that is commentary, not one of his papers.
+            fm = re.search(rf"^\s*(?:-\s*)?{f}:\s*(.+?)\s*(?:#[^\"']*)?$", b, re.M)
+            if fm:
+                fields[f] = unquote(fm.group(1))
         m = (re.search(r"^\s*(?:-\s*)?doi:\s*\"?([^\"\s]+)\"?\s*(?:#.*)?$", b, re.M)
              or re.search(r"^\s*(?:-\s*)?path:\s*\"?https?://doi\.org/(10\.[^\"\s]+)\"?\s*(?:#.*)?$",
                           b, re.M))
-        if not m:
-            continue
-        doi = m.group(1).lower().strip()
-        extra = {}
-        for f in KEEP_FIELDS:
-            fm = re.search(rf'^\s*{f}:\s*(.+)$', b, re.M)
-            if fm:
-                extra[f] = fm.group(1).strip()
-        kept.setdefault(doi, {}).update(extra)  # merge repeated stubs
-    return kept
+        if fields.get("title"):
+            fields["doi"] = m.group(1).lower().strip() if m else None
+            manual.append(fields)
+        elif m:
+            doi = m.group(1).lower().strip()
+            extra = {k: v for k, v in fields.items() if k in KEEP_FIELDS}
+            ann.setdefault(doi, {}).update(extra)  # merge repeated stubs
+    return ann, manual
+
+
+def bold_lab(authors):
+    """Bold lab surnames in a hand-written author string."""
+    out = []
+    for n in authors.split(","):
+        n = n.strip()
+        fam = re.split(r"\s+", n)[0]
+        out.append(f"<strong>{n}</strong>" if fam in LAB else n)
+    return ", ".join(out)
 
 
 def crossref(dois, offline=False):
@@ -238,11 +268,12 @@ def to_record(doi, m):
 def build():
     print("fetching ORCID…", file=sys.stderr)
     dois = orcid_dois()
-    hand = load_yaml_dois(OVERRIDES)
+    hand, manual = load_overrides(OVERRIDES)
     for d in hand:
         if d not in dois:
             dois.append(d)
-    print(f"  {len(dois)} DOIs ({len(hand)} from papers-overrides.yml)", file=sys.stderr)
+    print(f"  {len(dois)} DOIs ({len(hand)} from papers-overrides.yml), "
+          f"{len(manual)} manual entries", file=sys.stderr)
 
     meta = crossref(dois)
 
@@ -293,8 +324,31 @@ def build():
 
     for r in kept:
         r.update(hand.get(r["doi"], {}))
-    # `drop: true` in papers.yml suppresses an entry -- used for preprints
-    # whose published version Crossref does not link back to.
+
+    # Book chapters have no Crossref record, so they are authored in full in
+    # the overrides file and merged in here.
+    seen = {r["doi"] for r in kept if r["doi"]}
+    for f in manual:
+        if f.get("doi") and f["doi"] in seen:
+            continue
+        d = f.get("date") or ""
+        kept.append({
+            "doi": f.get("doi"),
+            "title": f["title"],
+            "author": bold_lab(f.get("author", "")),
+            "journal": f.get("journal", ""),
+            "date": d if len(d) == 10 else f"{d[:4]}-01-01",
+            "year": int(d[:4]) if d[:4].isdigit() else None,
+            "volume": f.get("volume"),
+            "pages": f.get("pages"),
+            "path": f.get("path"),
+            "chapter": True,
+            "type": "book-chapter",
+            **{k: v for k, v in f.items() if k in KEEP_FIELDS},
+        })
+
+    # `drop: true` suppresses an entry -- used for preprints whose published
+    # version Crossref does not link back to.
     dropped = [r for r in kept if str(r.get("drop", "")).lower() == "true"]
     kept = [r for r in kept if r not in dropped]
     if dropped:
@@ -323,14 +377,21 @@ def emit(records):
         out.append(f'  author: {yaml_str(r["author"])}')
         out.append(f'  journal: {yaml_str(r["journal"])}')
         out.append(f'  date: {r["date"]}')
-        out.append(f'  path: "https://doi.org/{r["doi"]}"')
-        out.append(f'  doi: "{r["doi"]}"')
+        # A chapter with neither DOI nor URL has nothing to link to; the
+        # template falls back to plain text when `path` is absent.
+        path = r.get("path") or (f'https://doi.org/{r["doi"]}' if r.get("doi") else None)
+        if path:
+            out.append(f"  path: {yaml_str(path)}")
+        if r.get("doi"):
+            out.append(f'  doi: "{r["doi"]}"')
         if r.get("volume"):
             out.append(f'  volume: {yaml_str(r["volume"])}')
         if r.get("pages"):
             out.append(f'  pages: {yaml_str(r["pages"])}')
         if r.get("preprint"):
             out.append("  preprint: true")
+        if r.get("chapter"):
+            out.append("  chapter: true")
         for f in ("award", "note", "equal"):
             if r.get(f):
                 v = r[f].strip()

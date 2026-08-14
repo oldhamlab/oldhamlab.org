@@ -15,6 +15,15 @@
   volume: "11"
   pages: "e199449"
 
+- title: "Exploring the Lung–Liver Axis in Pulmonary Arterial Hypertension"
+  author: "<strong>Singh N</strong>, Lawson J, Ragavendran A, … <strong>Oldham WM</strong>, Ventetuolo CE"
+  journal: "Comprehensive Physiology"
+  date: 2026-06-01
+  path: "https://doi.org/10.1002/cph4.70171"
+  doi: "10.1002/cph4.70171"
+  volume: "16"
+  pages: "e70171"
+
 - title: "Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis"
   author: "<strong>Ziehr DR</strong>, <strong>Li F</strong>, Parnell KM, … <strong>Oldham WM</strong>"
   journal: "Science Translational Medicine"
@@ -23,6 +32,8 @@
   doi: "10.1126/scitranslmed.ads2673"
   volume: "18"
   pages: "eads2673"
+  note: "Research Highlight: Crunkhorn S. Inhibiting lactate transport reduces lung fibrosis. <em>Nature Reviews Drug Discovery.</em> 2026."
+  equal: "Ziehr DR and Li F contributed equally"
 
 - title: "ExplainBind: Explainable Physicochemical Determinants of Protein–Ligand Binding via Non-Covalent Interactions"
   author: "Meng Z, Bai Z, Yuan K, … <strong>Oldham WM</strong>, Loscalzo J"
@@ -30,6 +41,14 @@
   date: 2026-03-05
   path: "https://doi.org/10.64898/2026.03.03.707476"
   doi: "10.64898/2026.03.03.707476"
+  preprint: true
+
+- title: "Targeting NEDD9-SH3 with a Covalent Peptide Controls Endothelial Phenotype"
+  author: "Samokhin AO, Seo HS, Leed A, … <strong>Oldham WM</strong>, Maron BA"
+  journal: "bioRxiv"
+  date: 2025-07-11
+  path: "https://doi.org/10.1101/2025.07.10.663547"
+  doi: "10.1101/2025.07.10.663547"
   preprint: true
 
 - title: "Dyspnea and Right-Sided Heart Failure in a Patient With a History of Pneumonectomy"
@@ -40,6 +59,7 @@
   doi: "10.1016/j.chpulm.2025.100149"
   volume: "3"
   pages: "100149"
+  equal: "Johnson SW and Kwan MC contributed equally"
 
 - title: "Targeting type-2 inflammation in pulmonary hypertension: lessons from a novel model"
   author: "<strong>Singh N</strong>, <strong>Oldham WM</strong>"
@@ -50,6 +70,22 @@
   volume: "328"
   pages: "L669-L670"
 
+- title: "ALDH7A1 protects against ferroptosis by generating membrane NADH and regulating FSP1"
+  author: "Yang JS, Morris AJ, Kamizaki K, … <strong>Oldham WM</strong>, Hsu VW"
+  journal: "Cell"
+  date: 2025-05-01
+  path: "https://doi.org/10.1016/j.cell.2025.03.019"
+  doi: "10.1016/j.cell.2025.03.019"
+  volume: "188"
+  pages: "2569-2585.e20"
+
+- title: "Exercise Intolerance"
+  author: "Loscalzo J, <strong>Oldham WM</strong>"
+  journal: "Harrison's Principles of Internal Medicine, 22nd ed."
+  date: 2025-01-04
+  pages: "291-292"
+  chapter: true
+
 - title: "Targeting Cardiac Fibrosis With a Vaccine Against Fibroblast Activation Protein"
   author: "<strong>Oldham WM</strong>"
   journal: "Circulation Research"
@@ -59,6 +95,20 @@
   volume: "136"
   pages: "41-43"
 
+- title: "Disturbances of Respiratory Function"
+  author: "Washko G, <strong>Oldham WM</strong>"
+  journal: "Harrison's Principles of Internal Medicine, 22nd ed."
+  date: 2025-01-03
+  pages: "2201-2206"
+  chapter: true
+
+- title: "Pharmacology of Vascular Tone"
+  author: "<strong>Oldham WM</strong>, Loscalzo J"
+  journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 5th ed."
+  date: 2025-01-02
+  pages: "489-506"
+  chapter: true
+
 - title: "Mechano-dependent sorbitol accumulation supports biomolecular condensate"
   author: "Torrino S, <strong>Oldham WM</strong>, Tejedor AR, … Bertero T"
   journal: "Cell"
@@ -67,6 +117,22 @@
   doi: "10.1016/j.cell.2024.10.048"
   volume: "188"
   pages: "447-464.e20"
+
+- title: "Antifibrotic Therapies"
+  author: "<strong>Oldham WM</strong>, Hunninghake GM"
+  journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 5th ed."
+  date: 2025-01-01
+  pages: "1094-1099"
+  chapter: true
+
+- title: "Leukemia inhibitory factor (LIF) receptor amplifies pathogenic activation of fibroblasts in lung fibrosis"
+  author: "<strong>Nguyen HN</strong>, Jeong Y, Kim Y, … <strong>Oldham WM</strong>, Brenner MB"
+  journal: "Proceedings of the National Academy of Sciences"
+  date: 2024-12-10
+  path: "https://doi.org/10.1073/pnas.2401899121"
+  doi: "10.1073/pnas.2401899121"
+  volume: "121"
+  pages: "e2401899121"
 
 - title: "Diverse NKT cells regulate early inflammation and neurological outcomes after cardiac arrest and resuscitation"
   author: "Tamura T, Cheng C, Villaseñor-Altamirano AB, … <strong>Oldham WM</strong>, Weil BR"
@@ -93,6 +159,7 @@
   path: "https://doi.org/10.1161/circgen.124.004741"
   doi: "10.1161/circgen.124.004741"
   volume: "17"
+  equal: "McGarrity S and Ziehr DR contributed equally"
 
 - title: "The bacterial quorum sensing signal 2’-aminoacetophenone rewires immune cell bioenergetics through the Ppargc1a/Esrra axis to mediate tolerance to infection"
   author: "Chakraborty A, Bandyopadhaya A, <strong>Singh VK</strong>, Kovacic F, Cha S, <strong>Oldham WM</strong>, Tzika AA, Rahme LG"
@@ -112,6 +179,15 @@
   volume: "210"
   pages: "256-257"
 
+- title: "Immune mechanisms in fibrotic interstitial lung disease"
+  author: "Kamiya M, Carter H, Espindola MS, … <strong>Oldham WM</strong>, Kim EY"
+  journal: "Cell"
+  date: 2024-07-01
+  path: "https://doi.org/10.1016/j.cell.2024.05.015"
+  doi: "10.1016/j.cell.2024.05.015"
+  volume: "187"
+  pages: "3506-3530"
+
 - title: "Dietary intake and glutamine-serine metabolism control pathologic vascular stiffness"
   author: "Rachedi NS, Tang Y, Tai YY, … <strong>Oldham WM</strong>, Chan SY"
   journal: "Cell Metabolism"
@@ -130,6 +206,20 @@
   volume: "326"
   pages: "L252-L265"
   award: "APSselect award winner, American Physiological Society"
+
+- title: "Pulmonary Hypertension"
+  author: "Wertheim B, Maron BA, <strong>Oldham WM</strong>"
+  journal: "Brigham Intensive Review of Internal Medicine, 4th ed."
+  date: 2024-01-02
+  pages: "1028-1038"
+  chapter: true
+
+- title: "New Agents in Pulmonary Disease"
+  author: "<strong>Oldham WM</strong>"
+  journal: "Brigham Intensive Review of Internal Medicine, 4th ed."
+  date: 2024-01-01
+  pages: "470-476"
+  chapter: true
 
 - title: "Striated preferentially expressed gene deficiency leads to mitochondrial dysfunction in developing cardiomyocytes"
   author: "<strong>Li G</strong>, Huang H, Wu Y, … <strong>Oldham WM</strong>, Perrella MA"
@@ -247,6 +337,7 @@
   doi: "10.1016/j.jacc.2021.02.056"
   volume: "77"
   pages: "2040-2052"
+  equal: "Oldham WM and Hemnes AR contributed equally"
 
 - title: "Systemic vascular distensibility relates to exercise capacity in connective tissue disease"
   author: "<strong>Singh I</strong>, Oliveira RKF, Naeije R, <strong>Oldham WM</strong>, Faria-Urbina M, Waxman AB, Systrom DM"
@@ -274,6 +365,13 @@
   doi: "10.1038/s43018-020-00148-7"
   volume: "2"
   pages: "66-82"
+
+- title: "Precision medicine in pulmonary hypertension"
+  author: "<strong>Singh I</strong>, <strong>Oldham WM</strong>, Rahaghi FN"
+  journal: "Precision in Pulmonary, Critical Care, and Sleep Medicine"
+  date: 2020-01-01
+  pages: "241-255"
+  chapter: true
 
 - title: "Reaction rate of pyruvate and hydrogen peroxide: assessing antioxidant capacity of pyruvate under biological conditions"
   author: "Guarino VA, <strong>Oldham WM</strong>, Loscalzo J, Zhang YY"
@@ -375,6 +473,7 @@
   pages: "864-876"
   award: "Editor's Pick, Circulation Research"
   note: "Editorial: Arena R, Ozemek C, Laddu-Patel D, Myers J. Refining the risk prediction of cardiorespiratory fitness with network analysis. <em>Circulation Research.</em> 2018;122:804."
+  equal: "Oldham WM and Oliveira RK contributed equally"
 
 - title: "The Long Noncoding RNA LnRPT Puts the Brakes on Pulmonary Artery Smooth Muscle Cell Proliferation"
   author: "<strong>Oldham WM</strong>"
@@ -411,6 +510,13 @@
   doi: "10.1089/ars.2017.7439"
   volume: "28"
   pages: "165-166"
+
+- title: "Pulmonary Hypertension"
+  author: "Wertheim B, Maron BA, <strong>Oldham WM</strong>"
+  journal: "Brigham Intensive Review of Internal Medicine, 3rd ed."
+  date: 2018-01-01
+  pages: "906-916"
+  chapter: true
 
 - title: "Rapamycin-induced miR-21 promotes mitochondrial homeostasis and adaptation in mTORC1 activated cells"
   author: "<strong>Lam HC</strong>, Liu HJ, Baglini CV, … <strong>Oldham WM</strong>, Henske EP"
@@ -481,6 +587,13 @@
   path: "https://doi.org/10.1007/978-3-319-23594-3_8"
   doi: "10.1007/978-3-319-23594-3_8"
   pages: "135-145"
+
+- title: "Pharmacology of Vascular Tone"
+  author: "<strong>Oldham WM</strong>, Loscalzo J"
+  journal: "Principles of Pharmacology: The Pathophysiologic Basis of Drug Therapy, 4th ed."
+  date: 2016-01-01
+  pages: "385-402"
+  chapter: true
 
 - title: "Protocol for Exercise Hemodynamic Assessment: Performing an Invasive Cardiopulmonary Exercise Test in Clinical Practice"
   author: "Berry NC, Manyoo A, <strong>Oldham WM</strong>, … Maron BA"

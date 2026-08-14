@@ -1,8 +1,5 @@
 ---
 title: "Papers"
-description: >-
-  The lab's published work. The complete record, including earlier work on
-  G protein structure and signalling, is on ORCID.
 listing:
   - id: all-papers
     contents: papers.yml

@@ -142,10 +142,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-journal','listing-date','listing-doi','listing-volume','listing-pages','listing-preprint','listing-award','listing-note',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-journal','listing-date','listing-doi','listing-volume','listing-pages','listing-note','listing-equal','listing-preprint','listing-chapter','listing-award',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-journal","listing-date","listing-doi","listing-volume","listing-pages","listing-preprint","listing-award","listing-note"],
+      searchColumns: ["listing-title","listing-author","listing-journal","listing-date","listing-doi","listing-volume","listing-pages","listing-note","listing-equal","listing-preprint","listing-chapter","listing-award"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -416,19 +416,19 @@ window.Quarto = {
     </div>
   </div>
 
-  <div class="paper" data-index="1" data-listing-date-sort="1778040000000">
+  <div class="paper" data-index="1" data-listing-date-sort="1780286400000">
+    <span class="paper-year">2026</span>
+    <div>
+      <a class="paper-title" href="https://doi.org/10.1002/cph4.70171">Exploring the Lung–Liver Axis in Pulmonary Arterial Hypertension</a>
+      <span class="paper-meta">&lt;strong&gt;Singh N&lt;/strong&gt;, Lawson J, Ragavendran A, … &lt;strong&gt;Oldham WM&lt;/strong&gt;, Ventetuolo CE · <em>Comprehensive Physiology</em></span>
+    </div>
+  </div>
+
+  <div class="paper" data-index="2" data-listing-date-sort="1778040000000">
     <span class="paper-year">2026</span>
     <div>
       <a class="paper-title" href="https://doi.org/10.1126/scitranslmed.ads2673">Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis</a>
       <span class="paper-meta">&lt;strong&gt;Ziehr DR&lt;/strong&gt;, &lt;strong&gt;Li F&lt;/strong&gt;, Parnell KM, … &lt;strong&gt;Oldham WM&lt;/strong&gt; · <em>Science Translational Medicine</em></span>
-    </div>
-  </div>
-
-  <div class="paper" data-index="2" data-listing-date-sort="1772686800000">
-    <span class="paper-year">2026</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.64898/2026.03.03.707476">ExplainBind: Explainable Physicochemical Determinants of Protein–Ligand Binding via Non-Covalent Interactions</a>
-      <span class="paper-meta">Meng Z, Bai Z, Yuan K, … &lt;strong&gt;Oldham WM&lt;/strong&gt;, Loscalzo J · <em>bioRxiv</em></span>
     </div>
   </div>
 
