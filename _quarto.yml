@@ -33,17 +33,15 @@ website:
   # `creator:` attribution - the account is no longer used.
   twitter-card:
     card-style: summary_large_image
-  google-analytics:
-    tracking-id: "G-KZ6PJ54VTV"
-    anonymize-ip: true
-  # NOTE: Quarto 1.9 changed the default to `express` (opt-in, blocks cookies
-  # until consent). `implied` preserves the behaviour this site had on 1.2 so
-  # the toolchain upgrade doesn't silently change analytics. Switch to
-  # `express` if you'd rather have opt-in consent.
-  cookie-consent:
-    type: implied
-    style: simple
-    palette: light
+  # No analytics, deliberately. The site sets no cookies, so there is no consent
+  # banner and nothing to consent to. The only third-party request left is the
+  # Google Maps iframe on the contact page, which is there on purpose.
+  #
+  # Adding `google-analytics:` back would also bring back the cookie-consent
+  # banner - Quarto emits the two together, they are not separable. If visitor
+  # numbers are ever wanted, prefer a cookieless option (Netlify's server-side
+  # Analytics, or a beacon such as Cloudflare Web Analytics) so the banner does
+  # not return.
   search:
     location: navbar
     type: overlay
@@ -76,13 +74,18 @@ website:
         href: https://github.com/oldhamlab
         aria-label: "GitHub"
 
-  # No page-footer. The only thing that has to appear at the bottom is the
-  # cookie-consent control, which Quarto injects on its own.
+  # No page-footer, and with analytics removed there is no cookie-consent
+  # control either, so Quarto emits no <footer> at all.
 
 format:
   html:
     theme: custom.scss
     toc: false
+    # No math anywhere on this site, but Quarto loads MathJax from jsDelivr and
+    # an ES6 polyfill from cdnjs on every page regardless. Both send visitor IPs
+    # to a third party -- the same reason the fonts are self-hosted -- and the
+    # polyfill is pointless in current browsers. `plain` emits no math scripts.
+    html-math-method: plain
     # Off: adds a hover glyph to every heading, and nests an anchor link
     # inside teaser headings that are already links.
     anchor-sections: false

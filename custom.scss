@@ -718,29 +718,6 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   .alumnus { grid-template-columns: 1fr; row-gap: 2px; }
 }
 
-// ── Footer ────────────────────────────────────────────────────────────
-// There is no page-footer. The only thing left at the bottom is Quarto's
-// cookie-consent control, which it centres by default and which looks
-// stranded on its own. Pull it to the content's left edge and quiet it down.
-.nav-footer {
-  background: var(--bg) !important;
-  border-top: 0;
-  margin: var(--s6) auto 0;
-  padding-block: var(--s3);
-  padding-inline: 0;
-  font-size: .8125rem;
-  color: var(--muted);
-  justify-content: flex-start;
-  // Align to the content column rather than the viewport edge.
-  max-width: var(--container);
-  width: 100%;
-}
-.nav-footer > * { text-align: left !important; flex: 0 0 auto; margin: 0; padding-inline: 0; }
-.nav-footer .nav-footer-left:empty,
-.nav-footer .nav-footer-right:empty { display: none; }
-.nav-footer a { color: var(--muted); text-decoration: none; }
-.nav-footer a:hover { color: var(--accent); text-decoration: underline; }
-
 // ── Navbar icon links ─────────────────────────────────────────────────
 .navbar .quarto-navbar-tools a,
 .navbar .nav-link .bi { font-size: 1.05rem; }
