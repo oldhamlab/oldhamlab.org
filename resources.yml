@@ -36,20 +36,20 @@
 
 - title: "MYC and proliferating cell metabolism in hypoxia"
   kind: compendium
-  text: "Metabolic flux analysis and code supporting the MYC paper. Sequencing
-    data are deposited under BioProject
-    [PRJNA721596](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA721596)."
+  text: "Everything behind the *eLife* paper: metabolic flux analysis, RNA-seq,
+    and the analysis code."
   url: "https://github.com/oldhamlab/Copeland.2023.hypoxia.flux"
   paper: "10.7554/eLife.82597"
   project: pulmonary-vascular-metabolism
-
-- title: "Prolyl hydroxylase inhibition in lung fibroblasts"
-  kind: compendium
-  text: "RNA-seq analysis of molidustat-treated lung fibroblasts."
-  url: "https://github.com/oldhamlab/rnaseq.lf.hypoxia.molidustat"
+  links:
+    - "[Raw data and figure code](https://github.com/oldhamlab/Copeland.2023.hypoxia.flux) — research compendium, [archived at Software Heritage](https://archive.softwareheritage.org/swh:1:dir:8d4a7dedb9580a6317f7855946f12fa71c289e40;origin=https://github.com/oldhamlab/Copeland.2023.hypoxia.flux;visit=swh:1:snp:327f738c480cc37f2da627af403863b160e0e56e;anchor=swh:1:rev:354bd99459367f373c7b8a641bca4667bf96c779)"
+    - "[RNA-seq reads](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA721596) — NIH SRA, PRJNA721596"
+    - "[Prolyl hydroxylase inhibition RNA-seq](https://github.com/oldhamlab/rnaseq.lf.hypoxia.molidustat) — molidustat-treated lung fibroblasts"
 
 - title: "Endothelial immunometabolic phenotypes"
   kind: compendium
-  text: "LC–MS data from the endothelial immunometabolism work."
+  text: "LC–MS data and analysis supporting the endothelial immunometabolism
+    paper."
   url: "https://github.com/oldhamlab/Xiao.2021.endothelial.immunometabolism"
+  paper: "10.1161/circresaha.120.318805"
 
