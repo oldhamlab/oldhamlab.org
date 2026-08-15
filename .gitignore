@@ -8,6 +8,10 @@
 /.quarto/
 **/*.quarto_ipynb
 
+# Netlify renders the site from source on every push (see netlify.toml).
+# The output is a build artifact and is not committed.
+/_site/
+
 # Editor / tooling
 .claude/
 

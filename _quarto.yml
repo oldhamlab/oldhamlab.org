@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: _site
+  # Do NOT add pre-render/post-render hooks. Netlify builds this site on every
+  # push (netlify.toml) and its image has Python, so a hook would run
+  # tools/update-papers.py in CI -- hitting ORCID and Crossref on each build and
+  # publishing a papers.yml that disagrees with the repo. Regenerate locally and
+  # commit the result instead.
   render:
     - "*.qmd"
     - "people/*.qmd"
