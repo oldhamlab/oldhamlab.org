@@ -1,0 +1,58 @@
+# Netlify renders this site with Quarto.
+#
+# This file OVERRIDES the Netlify UI build settings for `command` and `publish`.
+# Three things must NOT be added here:
+#
+#   [build.processing]  - Pretty URLs are configured in the UI (html.pretty_urls
+#                         = true). netlify.toml overrides UI settings per key, so
+#                         declaring this risks turning every extensionless URL
+#                         (/people, /people/oldham) into a 404 while the build
+#                         still reports success.
+#   [[plugins]]         - @netlify/plugin-emails is installed from the UI and
+#   [functions]           merges itself in. Redeclaring invites a conflict.
+#
+# Never add `set -x` or echo the environment: NETLIFY_EMAILS_SECRET is a live
+# secret and Netlify fails builds that leak env values into the log.
+
+[build]
+  publish = "_site"
+  command = '''
+set -euo pipefail
+command -v curl tar sha256sum >/dev/null
+uname -srm
+
+TARBALL="quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
+URL="https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/${TARBALL}"
+DEST="${HOME}/quarto-${QUARTO_VERSION}"
+
+echo "--- installing quarto ${QUARTO_VERSION}"
+rm -rf "${DEST}"; mkdir -p "${DEST}"
+curl -fsSL --retry 3 --retry-delay 5 --max-time 300 -o "/tmp/${TARBALL}" "${URL}"
+echo "${QUARTO_SHA256}  /tmp/${TARBALL}" | sha256sum -c -
+tar -xzf "/tmp/${TARBALL}" -C "${DEST}" --strip-components=1
+rm -f "/tmp/${TARBALL}"
+export PATH="${DEST}/bin:${PATH}"
+quarto --version
+
+echo "--- rendering"
+rm -rf _site .quarto
+quarto render
+
+# `quarto render` exits 0 on warnings, so assert the output is whole. A
+# half-rendered site that returns 200 on every page is the only failure mode
+# that would otherwise publish silently.
+echo "--- verifying output"
+test -s _site/index.html
+test -s _site/people.html
+test -s _site/search.json
+test -s _site/fonts/inter-latin.woff2   # guards `resources: fonts/` in _quarto.yml
+n="$(find _site -type f | wc -l)"
+echo "rendered ${n} files"
+test "${n}" -ge 70
+'''
+
+[build.environment]
+  # Bump both together. The checksum is in the release's
+  # quarto-<version>-checksums.txt on GitHub.
+  QUARTO_VERSION = "1.10.18"
+  QUARTO_SHA256  = "afad071b5bd22c02f2d300695743189d3650e0537a53073e654b630cff2b0c73"
