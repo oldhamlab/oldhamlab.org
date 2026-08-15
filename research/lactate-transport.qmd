@@ -6,6 +6,16 @@ description: >-
   pulmonary fibrosis.
 order: 10
 toc: false
+listing:
+  - id: project-data
+    contents: ../resources.yml
+    include:
+      project: lactate-transport
+    template: ../_projectdata.ejs
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
 ---
 
 Idiopathic pulmonary fibrosis is a fatal disease characterized by excessive
@@ -72,3 +82,10 @@ National Heart, Lung, and Blood Institute, R01 HL167718.
   </div>
 </div>
 ```
+
+## Data and code
+
+::: {#project-data}
+:::
+
+[All resources →](../resources.qmd)

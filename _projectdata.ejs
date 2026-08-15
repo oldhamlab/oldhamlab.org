@@ -1,0 +1,16 @@
+```{=html}
+<%
+const md = t => String(t)
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+  .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+%>
+<ul class="res-links">
+<% for (const item of items) { %>
+  <% if (item.links) { for (const l of item.links) { %>
+  <li><%= md(l) %></li>
+  <% } } else { %>
+  <li><a href="<%= item.url %>"><%= item.title %></a></li>
+  <% } %>
+<% } %>
+</ul>
+```

@@ -823,8 +823,23 @@ main.content > .fig-wide:first-child { margin-top: 0; }
 // Three current members have no portrait. Without a figure the two-column
 // grid would squeeze their training into the 220px photo column.
 .person-top:not(:has(.person-figure)) { grid-template-columns: minmax(0, 1fr); }
-// ...and with a figure but no training, don't leave a dangling empty column.
-.person-top:not(:has(.person-meta)) { grid-template-columns: 220px; }
+// ...and with a figure but no training block, a one-column grid stranded the
+// portrait beside ~900px of nothing, with the biography starting underneath.
+// Float it instead so the text wraps alongside. Aliya was an undergraduate
+// while she was here, so she has no training block to fill that column.
+.person-top:not(:has(.person-meta)) {
+  display: block;
+  margin-bottom: 0;
+  overflow: visible;
+
+  .person-figure {
+    float: left;
+    width: 220px;
+    margin: 0 var(--s5) var(--s3) 0;
+  }
+}
+// The next section must not ride up beside a floated portrait.
+.person-top:not(:has(.person-meta)) ~ :is(h2, section) { clear: left; }
 
 @media (max-width: 700px) {
   .person-top { grid-template-columns: 1fr !important; gap: var(--s4); }

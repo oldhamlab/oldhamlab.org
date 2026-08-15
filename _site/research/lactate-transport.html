@@ -37,6 +37,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -47,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-83d24bc872d0e650d7f132f80d7262ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e511c2c732fc27c3fa8834fd58d45b8b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6968c3c36a1fb287897d245d6eb17758.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-project-data .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-kind','listing-text','listing-url','listing-paper','listing-project','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-kind","listing-text","listing-url","listing-paper","listing-project","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-project-data'] = new List('listing-project-data', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KZ6PJ54VTV"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -103,6 +134,35 @@ cookieconsent.run({
   
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Lactate transport – Oldham Lab">
 <meta property="og:description" content="Myofibroblast differentiation depends on sustained glycolysis, and therefore on lactate export. We are defining monocarboxylate transport as a target in pulmonary fibrosis.">
@@ -243,6 +303,30 @@ cookieconsent.run({
     </div>
   </div>
 </div>
+</section>
+<section id="data-and-code" class="level2">
+<h2 data-anchor-id="data-and-code">Data and code</h2>
+<div id="listing-project-data" class="quarto-listing quarto-listing-container-custom">
+
+<ul class="res-links">
+
+  
+  <li><a href="https://doi.org/10.5281/zenodo.19256433">Raw data and figure code</a> — Zenodo</li>
+  
+  <li><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1011992">RNA-seq reads</a> — NIH SRA, PRJNA1011992</li>
+  
+  <li><a href="https://doi.org/10.5281/zenodo.19198539">RNA-seq pipeline and summarised data</a> — Zenodo, archived from <a href="https://github.com/oldhamlab/rnaseq.hs.lf.tgfb.mcti">GitHub</a></li>
+  
+  <li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325253">Xenium spatial data</a> — NIH GEO, GSE325253</li>
+  
+  <li><a href="https://doi.org/10.5281/zenodo.19244873">Xenium pipeline and summarised data</a> — Zenodo</li>
+  
+
+</ul>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p><a href="../resources.html">All resources →</a></p>
+
 
 
 </section>

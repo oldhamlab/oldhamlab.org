@@ -6,6 +6,16 @@ description: >-
   testing whether blocking it prevents vascular remodeling.
 order: 30
 toc: false
+listing:
+  - id: project-data
+    contents: ../resources.yml
+    include:
+      project: pulmonary-vascular-metabolism
+    template: ../_projectdata.ejs
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
 ---
 
 Pulmonary hypertension arising from chronic lung disease is common and carries
@@ -68,3 +78,10 @@ a patient population with few options.
   </div>
 </div>
 ```
+
+## Data and code
+
+::: {#project-data}
+:::
+
+[All resources →](../resources.qmd)

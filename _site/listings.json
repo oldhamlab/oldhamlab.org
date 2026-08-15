@@ -55,5 +55,13 @@
       "/people/leahy.html",
       "/people/cohen.html"
     ]
+  },
+  {
+    "listing": "/research/lactate-transport.html",
+    "items": []
+  },
+  {
+    "listing": "/research/pulmonary-vascular-metabolism.html",
+    "items": []
   }
 ]

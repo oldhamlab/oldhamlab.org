@@ -238,6 +238,13 @@
     "text": "Key paper\n\n  \n    2026\n    \n      Lactate\n        transport inhibition therapeutically reprograms fibroblast metabolism in\n        experimental pulmonary fibrosis\n      Ziehr DR, Li F, Parnell KM, et al.\n        Science Translational Medicine."
   },
   {
+    "objectID": "research/lactate-transport.html#data-and-code",
+    "href": "research/lactate-transport.html#data-and-code",
+    "title": "Lactate transport",
+    "section": "Data and code",
+    "text": "Data and code\n\n\n\n\n  \n  Raw data and figure code — Zenodo\n  \n  RNA-seq reads — NIH SRA, PRJNA1011992\n  \n  RNA-seq pipeline and summarised data — Zenodo, archived from GitHub\n  \n  Xenium spatial data — NIH GEO, GSE325253\n  \n  Xenium pipeline and summarised data — Zenodo\n  \n\n\nNo matching items\n\nAll resources →"
+  },
+  {
     "objectID": "research/pulmonary-vascular-metabolism.html",
     "href": "research/pulmonary-vascular-metabolism.html",
     "title": "Metabolic regulation in pulmonary vascular disease",
@@ -250,5 +257,12 @@
     "title": "Metabolic regulation in pulmonary vascular disease",
     "section": "Key paper",
     "text": "Key paper\n\n  \n    2023\n    \n      MYC overrides\n        HIF-1α to regulate proliferating primary cell metabolism in hypoxia\n      Copeland CA, Olenchock BA, Ziehr DR, et al.\n        eLife."
+  },
+  {
+    "objectID": "research/pulmonary-vascular-metabolism.html#data-and-code",
+    "href": "research/pulmonary-vascular-metabolism.html#data-and-code",
+    "title": "Metabolic regulation in pulmonary vascular disease",
+    "section": "Data and code",
+    "text": "Data and code\n\n\n\n\n  \n  Raw data and figure code — research compendium, archived at Software Heritage\n  \n  RNA-seq reads — NIH SRA, PRJNA721596\n  \n  Prolyl hydroxylase inhibition RNA-seq — molidustat-treated lung fibroblasts\n  \n\n\nNo matching items\n\nAll resources →"
   }
 ]
