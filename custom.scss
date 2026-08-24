@@ -635,8 +635,8 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 }
 
 // Compact variant for the home page: role and name only.
-// No portraits here: only half the current lab has one, so a photo grid
-// renders two tall cells beside two short ones. The portraits live on the
+// No portraits here: not everyone in the current lab has one, so a photo
+// grid renders tall cells beside short ones. The portraits live on the
 // People page, where a photo-less row expands into a text block instead.
 .roster--compact {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -797,7 +797,7 @@ main.content > .fig-wide:first-child { margin-top: 0; }
   align-items: start;
   margin-bottom: var(--s5);
 }
-// Three current members have no portrait. Without a figure the two-column
+// Two current members have no portrait. Without a figure the two-column
 // grid would squeeze their training into the 220px photo column.
 .person-top:not(:has(.person-figure)) { grid-template-columns: minmax(0, 1fr); }
 // ...and with a figure but no training block, a one-column grid stranded the

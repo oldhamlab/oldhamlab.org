@@ -1,6 +1,7 @@
 ---
 title: "Navneet Singh"
 subtitle: "Physician-Scientist"
+image: "/people/singh.jpg"
 status: current
 role: faculty
 order: 20
@@ -12,6 +13,10 @@ pub-match: "Singh N"
 ---
 
 ::: {.person-top}
+::: {.person-figure}
+![](/people/singh.jpg){.person-photo fig-alt="Navneet Singh"}
+:::
+
 ::: {.person-meta}
 #### Education and Training
 
