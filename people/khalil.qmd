@@ -1,6 +1,7 @@
 ---
 title: "Aseel Khalil"
 subtitle: "Graduate Student"
+image: "/people/khalil.jpg"
 status: current
 role: student
 order: 50
@@ -12,6 +13,10 @@ pub-match: "Khalil A"
 ---
 
 ::: {.person-top}
+::: {.person-figure}
+![](/people/khalil.jpg){.person-photo fig-alt="Aseel Khalil"}
+:::
+
 ::: {.person-meta}
 #### Education and Training
 
