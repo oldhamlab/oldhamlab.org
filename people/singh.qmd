@@ -20,10 +20,13 @@ pub-match: "Singh N"
 ::: {.person-meta}
 #### Education and Training
 
-[Fellow, Pulmonary and Critical Care Medicine]{.et-role}
+[Research Fellow, Brown Respiratory Research Training Program]{.et-role} [2022–2024]{.et-year}
 [Brown University, Providence, RI]{.et-place}
 
-[ScM in Clinical and Translational Research]{.et-role}
+[Clinical Fellow, Pulmonary and Critical Care Medicine]{.et-role} [2019–2022]{.et-year}
+[Brown University, Providence, RI]{.et-place}
+
+[ScM in Clinical and Translational Research]{.et-role} [2024]{.et-year}
 [Brown University, Providence, RI]{.et-place}
 
 [MD]{.et-role} [2015]{.et-year}
