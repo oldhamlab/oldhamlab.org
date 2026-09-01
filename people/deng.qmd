@@ -1,0 +1,27 @@
+---
+title: "Ziqiao Deng"
+subtitle: "Master's Student"
+status: current
+role: masters
+order: 55
+started: "2026-09"
+description: >-
+  Master's student developing a cell-based assay to identify small-molecule
+  L2HGDH inhibitors.
+pub-match: "Deng Z"
+---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[ScM in Biotechnology]{.et-role} [In progress]{.et-year}
+[Brown University, Providence, RI]{.et-place}
+
+[BS in Pharmaceutical Chemistry]{.et-role} [2026]{.et-year}
+[University of Toronto, Toronto, Canada]{.et-place}
+:::
+:::
+
+Ziqiao joined the lab in September 2026. Her research focuses on identifying
+small-molecule L2HGDH inhibitors using a cell-based assay.
