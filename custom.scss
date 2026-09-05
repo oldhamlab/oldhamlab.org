@@ -123,10 +123,6 @@ $grid-body-width:         1120px !default;
   --accent:    #176955;
   --accent-hover: #0f4d3d;
 
-  --measure:   40rem;    // 640px ~ 66ch at 17px
-  --container: 1120px;
-  --gutter:    24px;
-
   --s1: 8px;  --s2: 16px; --s3: 24px; --s4: 32px;
   --s5: 48px; --s6: 64px; --s7: 96px;
 
@@ -134,6 +130,39 @@ $grid-body-width:         1120px !default;
   --ls-head:    -.02em;
   --ls-mid:     -.012em;
   --ls-caps:    .09em;
+}
+
+// Three treatments repeat across nearly every block below. Mixins, not
+// %placeholders + @extend: @extend hoists the merged rule to the point of
+// DEFINITION, and several rules here depend on being emitted last to win on
+// equal specificity. @include copies declarations in place, preserving order.
+
+// The metadata voice: section labels, role lines, column heads.
+@mixin caps-label {
+  font-family: $headings-font-family;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+// Secondary running text: bylines, citation lines, descriptions.
+@mixin meta-text {
+  font-size: .9375rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+// The title of an item in any listing. Inter, not Inter Tight: the tight face
+// is drawn for display sizes, and a 70-character paper title set in it is
+// hard work. Tracking is eased from --ls-head for the same reason.
+@mixin item-title {
+  font-family: $font-family-sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.006em;
 }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -183,18 +212,6 @@ h4, h5, h6 { font-weight: 500; letter-spacing: var(--ls-mid); }
   line-height: 1.5;
   letter-spacing: var(--ls-mid);
   color: var(--text);
-}
-
-// Uppercase tracked label - the metadata voice
-.label {
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
-  display: block;
-  margin-bottom: var(--s2);
 }
 
 // No prose measure. Headline, lede and body all run the full container width.
@@ -334,11 +351,6 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 .section { margin-top: var(--s7); }
 .section > h2:first-child { margin-top: 0; }
 
-.rule-top {
-  border-top: 1px solid var(--hairline);
-  padding-top: var(--s4);
-}
-
 // ── Research teaser cards ─────────────────────────────────────────────
 // Two columns, not auto-fit: four teasers in a 3-wide grid strands one
 // orphan on the second row.
@@ -377,11 +389,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 }
 .paper:last-child { border-bottom: 1px solid var(--hairline); }
 .paper-year {
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  color: var(--muted);
+  @include caps-label;
   font-variant-numeric: tabular-nums;
 }
 .paper-title { display: block; letter-spacing: var(--ls-mid); }
@@ -407,10 +415,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   // Quarto puts a rule under every h2; the section already has one.
   border-bottom: 0;
   margin: 0;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  color: var(--muted);
+  @include caps-label;
   font-variant-numeric: tabular-nums;
   position: sticky;
   top: calc(56px + var(--s2));
@@ -431,11 +436,8 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   // 70-character paper title set in it at 20px is hard work. Tracking is
   // eased from -.02em for the same reason -- display tracking on running
   // text closes the letters up.
-  font-family: $font-family-sans-serif;
+  @include item-title;
   font-size: 1.1875rem;
-  font-weight: 500;
-  line-height: 1.35;
-  letter-spacing: -.006em;
 }
 // A bare `a { font-weight: 400 }` was overriding the inherited 500, so every
 // DOI-linked title rendered lighter than the unlinked book-chapter titles.
@@ -445,9 +447,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 .pub-authors,
 .pub-source {
   margin: 2px 0 0;
-  font-size: .9375rem;
-  line-height: 1.5;
-  color: var(--muted);
+  @include meta-text;
 }
 
 .pub-note {
@@ -474,12 +474,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 .grant-group-label {
   border-bottom: 0;      // Quarto puts a rule under every h2
   margin: 0 0 var(--s3);
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
+  @include caps-label;
 }
 .grant + .grant {
   margin-top: var(--s3);
@@ -495,9 +490,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 }
 .grant-meta {
   margin: 2px 0 0;
-  font-size: .9375rem;
-  line-height: 1.5;
-  color: var(--muted);
+  @include meta-text;
 }
 // Same width for every range, so the lines start on a common edge.
 .grant-years { font-variant-numeric: tabular-nums; }
@@ -607,12 +600,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
 .person-role {
   display: block;
   margin: 0 0 4px;
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
+  @include caps-label;
 }
 
 .person-name {
@@ -665,12 +653,8 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   padding-bottom: var(--s1);
 
   span {
-    font-family: $headings-font-family;
+    @include caps-label;
     font-size: .6875rem;
-    font-weight: 500;
-    letter-spacing: var(--ls-caps);
-    text-transform: uppercase;
-    color: var(--muted);
   }
 }
 
@@ -739,12 +723,11 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   color: var(--muted);
   p { margin: 0; }
 }
-.quarto-title-banner { background: transparent; }
 
 // ── Research figures ──────────────────────────────────────────────────
-// Two sizes: .fig-wide runs the container, .fig-narrow is a diagram that
-// would look absurd blown up to 1120px.
-.fig-wide, .fig-narrow {
+// .fig-wide runs the full container; .fig-narrow-wide is for a portrait-ish
+// diagram that would look absurd blown up to 1120px.
+.fig-wide {
   margin: var(--s5) 0;
 
   // No frame. The figures are built on the page background, so a border
@@ -756,8 +739,7 @@ main.content > * + :is(section.level1, section.level2) { margin-top: var(--s6); 
   }
   p { margin: 0; }
 }
-.fig-narrow { max-width: 30rem; }
-// For portrait-ish diagrams: wider than .fig-narrow but not full container,
+// Wider than a diagram wants at 1120px, but not the full container,
 // so a tall schematic doesn't dominate the page.
 .fig-narrow-wide { max-width: 38rem; }
 
@@ -781,12 +763,7 @@ main.content > .fig-wide:first-child { margin-top: 0; }
 
 // The role line under the name: a quiet left-aligned label, not a centred tag.
 #title-block-header .subtitle {
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
+  @include caps-label;
   margin-top: .35rem;
 }
 
@@ -850,12 +827,7 @@ main.content > .fig-wide:first-child { margin-top: 0; }
 .person-meta {
   h4 {
     margin: 0 0 var(--s3);
-    font-family: $headings-font-family;
-    font-size: .75rem;
-    font-weight: 500;
-    letter-spacing: var(--ls-caps);
-    text-transform: uppercase;
-    color: var(--muted);
+    @include caps-label;
   }
 
   // One training entry per paragraph: role + right-aligned year, place beneath.
@@ -884,12 +856,7 @@ main.content > .fig-wide:first-child { margin-top: 0; }
 
   h3 {
     margin-top: 0;
-    font-family: $headings-font-family;
-    font-size: .75rem;
-    font-weight: 500;
-    letter-spacing: var(--ls-caps);
-    text-transform: uppercase;
-    color: var(--muted);
+    @include caps-label;
     margin-bottom: var(--s2);
   }
 }
@@ -904,12 +871,7 @@ main.content > .fig-wide:first-child { margin-top: 0; }
 
   label {
     display: block;
-    font-family: $headings-font-family;
-    font-size: .75rem;
-    font-weight: 500;
-    letter-spacing: var(--ls-caps);
-    text-transform: uppercase;
-    color: var(--muted);
+    @include caps-label;
     margin-bottom: .4rem;
   }
 
@@ -972,7 +934,6 @@ img { max-width: 100%; height: auto; }
 
 // ── Quarto listing defaults, quieted ──────────────────────────────────
 .quarto-listing { margin-top: var(--s4); }
-.listing-actions-group { gap: var(--s2); }
 
 // ── Home: one type treatment across the three listings ────────────────
 // Research teasers, the lab roster and recent papers stack in the same column,
@@ -985,19 +946,13 @@ img { max-width: 100%; height: auto; }
 .teaser h3,
 .labcard-name,
 a.paper-title {
-  font-family: $font-family-sans-serif;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  line-height: 1.35;
-  letter-spacing: -.006em;
+  @include item-title;
 }
 .teaser h3 a { font-weight: inherit; }
 .teaser p,
 .labcard-role,
 .paper-meta {
-  font-size: .9375rem;
-  line-height: 1.5;
-  color: var(--muted);
+  @include meta-text;
 }
 
 // ── News ──────────────────────────────────────────────────────────────
@@ -1017,10 +972,7 @@ a.paper-title {
 .news-year-label {
   border-bottom: 0;      // Quarto puts a rule under every h2
   margin: 0;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  color: var(--muted);
+  @include caps-label;
   font-variant-numeric: tabular-nums;
   position: sticky;
   top: calc(56px + var(--s2));
@@ -1037,12 +989,7 @@ a.paper-title {
 .news-when {
   display: block;
   margin: 0 0 var(--s1);
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
+  @include caps-label;
 }
 .news-text {
   margin: 0;
@@ -1067,12 +1014,7 @@ a.paper-title {
 .brief-when {
   display: block;
   margin-bottom: 4px;
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
+  @include caps-label;
 }
 .brief-text {
   margin: 0;
@@ -1091,12 +1033,7 @@ a.paper-title {
 .res-group-label {
   border-bottom: 0;      // Quarto puts a rule under every h2
   margin: 0 0 var(--s3);
-  font-family: $headings-font-family;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--muted);
+  @include caps-label;
 }
 .res + .res {
   margin-top: var(--s3);
@@ -1107,28 +1044,20 @@ a.paper-title {
   margin: 0;
   // Inter, matching every other item title on the site; h3 would otherwise
   // pull in Inter Tight.
-  font-family: $font-family-sans-serif;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  line-height: 1.35;
-  letter-spacing: -.006em;
+  @include item-title;
 }
 .res-title a { color: inherit; text-decoration: none; font-weight: inherit; }
 .res-title a:hover { text-decoration: underline; }
 .res-text {
   margin: 2px 0 0;
-  font-size: .9375rem;
-  line-height: 1.5;
-  color: var(--muted);
+  @include meta-text;
 }
 // Deposit locations for a paper, listed under its description.
 .res-links {
   list-style: none;
   margin: var(--s1) 0 0;
   padding: 0;
-  font-size: .9375rem;
-  line-height: 1.5;
-  color: var(--muted);
+  @include meta-text;
 }
 .res-links li { padding-left: 1em; text-indent: -1em; }
 .res-links li + li { margin-top: 2px; }

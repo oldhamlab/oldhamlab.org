@@ -7,6 +7,15 @@ description: >-
 order: 10
 toc: false
 listing:
+  - id: key-paper
+    contents: ../papers.yml
+    include:
+      doi: "10.1126/scitranslmed.ads2673"
+    template: ../_papers.ejs
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
   - id: project-data
     contents: ../resources.yml
     include:
@@ -68,20 +77,8 @@ National Heart, Lung, and Blood Institute, R01 HL167718.
 
 ## Key paper
 
-```{=html}
-<div class="papers">
-  <div class="paper">
-    <span class="paper-year">2026</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.1126/scitranslmed.ads2673">Lactate
-        transport inhibition therapeutically reprograms fibroblast metabolism in
-        experimental pulmonary fibrosis</a>
-      <span class="paper-meta">Ziehr DR, Li F, Parnell KM, et al.
-        <em>Science Translational Medicine.</em></span>
-    </div>
-  </div>
-</div>
-```
+::: {#key-paper}
+:::
 
 ## Data and code
 

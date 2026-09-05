@@ -7,6 +7,15 @@ description: >-
 order: 30
 toc: false
 listing:
+  - id: key-paper
+    contents: ../papers.yml
+    include:
+      doi: "10.7554/elife.82597"
+    template: ../_papers.ejs
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
   - id: project-data
     contents: ../resources.yml
     include:
@@ -65,19 +74,8 @@ a patient population with few options.
 
 ## Key paper
 
-```{=html}
-<div class="papers">
-  <div class="paper">
-    <span class="paper-year">2023</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.7554/eLife.82597">MYC overrides
-        HIF-1α to regulate proliferating primary cell metabolism in hypoxia</a>
-      <span class="paper-meta">Copeland CA, Olenchock BA, Ziehr DR, et al.
-        <em>eLife.</em></span>
-    </div>
-  </div>
-</div>
-```
+::: {#key-paper}
+:::
 
 ## Data and code
 
