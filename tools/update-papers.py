@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate papers.yml from ORCID + Crossref.
 
-Usage:  python3 tools/update-papers.py [--offline]
+Usage:  python3 tools/update-papers.py
 
 ORCID is the starting point but it is neither complete nor clean, so this
 script does three things beyond fetching:
@@ -19,7 +19,7 @@ awards, commentary, co-first authorship, suppressions, and DOIs ORCID does not
 list -- lives in tools/papers-overrides.yml, which this script only ever reads.
 """
 
-import argparse
+import html
 import json
 import pathlib
 import re
@@ -202,12 +202,10 @@ def bold_lab(authors):
     return ", ".join(out)
 
 
-def crossref(dois, offline=False):
+def crossref(dois):
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
     todo = [d for d in dois if d not in cache]
-    if todo and offline:
-        print(f"  offline: {len(todo)} DOIs not cached, skipping", file=sys.stderr)
-    elif todo:
+    if todo:
         for i, doi in enumerate(todo, 1):
             url = ("https://api.crossref.org/works/"
                    + urllib.parse.quote(doi, safe="") + f"?mailto={MAILTO}")
@@ -224,10 +222,7 @@ def crossref(dois, offline=False):
 
 def clean(s):
     """Crossref titles carry JATS markup and HTML entities."""
-    s = re.sub(r"<[^>]+>", "", s or "")
-    for a, b in (("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"),
-                 ("&quot;", '"'), ("&#39;", "'"), ("&apos;", "'")):
-        s = s.replace(a, b)
+    s = html.unescape(re.sub(r"<[^>]+>", "", s or ""))
     s = re.sub(r"\s+", " ", s).strip()
     for bad, good in TITLE_FIXUPS.items():
         s = s.replace(bad, good)
@@ -235,14 +230,6 @@ def clean(s):
     # flat, with no markup to preserve.
     s = re.sub(r"\[(\d+)([A-Z][a-z]?)\]", r"[<sup>\1</sup>\2]", s)
     return s
-
-
-def year_of(m):
-    for k in ("published-print", "published-online", "published", "issued"):
-        parts = (m.get(k) or {}).get("date-parts") or [[None]]
-        if parts[0] and parts[0][0]:
-            return parts[0][0]
-    return None
 
 
 def date_of(m):
@@ -291,17 +278,7 @@ def fmt_authors(m):
             parts.append("\u2026")
             gap = True
 
-    out = ""
-    for i, x in enumerate(parts):
-        if i == 0:
-            out = x
-        elif x == "\u2026":
-            out += ", " + x
-        elif parts[i - 1] == "\u2026":
-            out += " " + x
-        else:
-            out += ", " + x
-    return out
+    return ", ".join(parts).replace("\u2026, ", "\u2026 ")
 
 
 # Words that must keep their capital in sentence case: proper nouns, gene
@@ -430,11 +407,12 @@ def similar(a, b):
 
 
 def to_record(doi, m):
+    date = date_of(m)
     return {
         "doi": doi,
         "title": sentence_case(clean((m.get("title") or [""])[0])),
-        "year": year_of(m),
-        "date": date_of(m),
+        "year": int(date[:4]) if date else None,
+        "date": date,
         "author": fmt_authors(m),
         "journal": clean((m.get("container-title") or [""])[0]),
         "type": m.get("type"),
@@ -594,10 +572,6 @@ def emit(records):
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--offline", action="store_true",
-                    help="use only the Crossref cache; do not hit the network")
-    a = ap.parse_args()
     recs = build()
     (ROOT / "papers.yml").write_text(emit(recs), encoding="utf8")
     npre = sum(1 for r in recs if r.get("preprint"))
