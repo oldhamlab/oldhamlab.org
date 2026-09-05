@@ -92,8 +92,20 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     link-external-icon: false
+    # sidebar-width and margin-width MUST match. Quarto reserves both columns
+    # even though this site uses neither (navbar, no sidebar; no margin
+    # content), and unequal values leave the body column off-centre in the
+    # viewport -- 169px of gutter on the left against 152px on the right.
+    # Anything using the full-bleed break-out `calc(50% - 50vw)`, which assumes
+    # its container is centred, then sits half that error off: the .plate
+    # micrograph on the home page fell 8px short on the left while overflowing
+    # 8px on the right, where overflow-x: clip hid it.
+    #
+    # 180, not 240: both centre the column, but 240 also narrows it (1044px vs
+    # 1077px at a 1280px viewport) to reserve room for a sidebar that does not
+    # exist.
     grid:
       body-width: 1120px
-      sidebar-width: 240px
+      sidebar-width: 180px
       margin-width: 180px
       gutter-width: 1.5rem
