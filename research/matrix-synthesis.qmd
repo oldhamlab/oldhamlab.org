@@ -6,6 +6,16 @@ description: >-
   blocking their transport attenuates fibrosis.
 order: 20
 toc: false
+listing:
+  - id: key-paper
+    contents: ../papers.yml
+    include:
+      doi: "10.1172/jci.insight.199449"
+    template: ../_papers.ejs
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
 ---
 
 Extracellular matrix production by myofibroblasts is the central pathologic
@@ -67,17 +77,5 @@ acts on the substrate supply for matrix production.
 
 ## Key paper
 
-```{=html}
-<div class="papers">
-  <div class="paper">
-    <span class="paper-year">2026</span>
-    <div>
-      <a class="paper-title" href="https://doi.org/10.1172/jci.insight.199449">TGF-β
-        coordinates alanine synthesis and import for myofibroblast differentiation
-        in pulmonary fibrosis</a>
-      <span class="paper-meta">Li F, Vigder N, Ziehr DR, et al.
-        <em>JCI Insight.</em></span>
-    </div>
-  </div>
-</div>
-```
+::: {#key-paper}
+:::
