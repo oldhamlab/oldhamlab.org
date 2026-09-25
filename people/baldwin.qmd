@@ -1,0 +1,27 @@
+---
+title: "Philip Baldwin"
+subtitle: "Master's Student"
+status: current
+role: masters
+order: 55
+started: "2026-09"
+description: >-
+  Master's student developing a cell-based assay to identify small-molecule
+  L2HGDH inhibitors.
+pub-match: "Baldwin P"
+---
+
+::: {.person-top}
+::: {.person-meta}
+#### Education and Training
+
+[ScM in Biotechnology]{.et-role} [In progress]{.et-year}
+[Brown University, Providence, RI]{.et-place}
+
+[BS in Biochemistry]{.et-role} [2026]{.et-year}
+[Arizona State University, Tempe, AZ]{.et-place}
+:::
+:::
+
+Philip joined the lab in September 2026. His research focuses on identifying
+small-molecule L2HGDH inhibitors using a cell-based assay.
