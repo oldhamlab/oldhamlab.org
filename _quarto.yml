@@ -33,15 +33,13 @@ website:
   # `creator:` attribution - the account is no longer used.
   twitter-card:
     card-style: summary_large_image
-  # No analytics, deliberately. The site sets no cookies, so there is no consent
-  # banner and nothing to consent to. The only third-party request left is the
-  # Google Maps iframe on the contact page, which is there on purpose.
+  # Analytics is Cloudflare Web Analytics (include-in-header under format.html):
+  # cookieless, so there is no consent banner and nothing to consent to. It and
+  # the Google Maps iframe on the contact page are the only third-party requests,
+  # both there on purpose.
   #
-  # Adding `google-analytics:` back would also bring back the cookie-consent
-  # banner - Quarto emits the two together, they are not separable. If visitor
-  # numbers are ever wanted, prefer a cookieless option (Netlify's server-side
-  # Analytics, or a beacon such as Cloudflare Web Analytics) so the banner does
-  # not return.
+  # Do NOT use `google-analytics:` - it brings back the cookie-consent banner;
+  # Quarto emits the two together, they are not separable.
   search:
     location: navbar
     type: overlay
@@ -74,8 +72,8 @@ website:
         href: https://github.com/oldhamlab
         aria-label: "GitHub"
 
-  # No page-footer, and with analytics removed there is no cookie-consent
-  # control either, so Quarto emits no <footer> at all.
+  # No page-footer, and with no cookie-based analytics there is no
+  # cookie-consent control either, so Quarto emits no <footer> at all.
 
 format:
   html:
@@ -90,6 +88,11 @@ format:
     # inside teaser headings that are already links.
     anchor-sections: false
     smooth-scroll: true
+    # Cloudflare Web Analytics beacon (see the note under `website:`). The
+    # token is public - it ships in every page's HTML.
+    include-in-header:
+      text: |
+        <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c7ee85af035e401aaa9a138cd3c92383"}'></script>
     link-external-newwindow: true
     link-external-icon: false
     # sidebar-width and margin-width MUST match. Quarto reserves both columns
