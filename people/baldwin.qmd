@@ -1,6 +1,7 @@
 ---
 title: "Philip Baldwin"
 subtitle: "Master's Student"
+image: "/people/baldwin.jpg"
 status: current
 role: masters
 order: 55
@@ -12,6 +13,10 @@ pub-match: "Baldwin P"
 ---
 
 ::: {.person-top}
+::: {.person-figure}
+![](/people/baldwin.jpg){.person-photo fig-alt="Philip Baldwin"}
+:::
+
 ::: {.person-meta}
 #### Education and Training
 
