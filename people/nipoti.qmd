@@ -20,5 +20,5 @@ pub-match: "Nipoti J"
 :::
 
 Jacob joined the lab in August 2026. As an undergraduate at the University of
-New Hampshire he studied cell signaling in salamander limb regeneration, and he
+New Hampshire he studied cell signaling in salamander lens regeneration, and he
 worked as an emergency medical technician in Brockton, Massachusetts.
