@@ -84,8 +84,8 @@ $lead-font-weight:        400 !default;
 
 // ── Color ─────────────────────────────────────────────────────────────
 // Light only. One accent, three jobs: links, focus ring, current-nav mark.
-$body-bg:                 #fdfcfb !default;
-$body-color:              #1a1817 !default;
+$body-bg:                 #ffffff !default;
+$body-color:              #111010 !default;
 $primary:                 #176955 !default;   // BUH emerald, darkened: 6.6:1 on canvas
 $link-color:              #176955 !default;
 $link-hover-color:        #0f4d3d !default;
@@ -95,9 +95,9 @@ $border-color:            #e2e6e4 !default;
 // `navbar.background: body` in _quarto.yml, is what prevents the slab.
 $navbar-bg:               transparent !default;
 $navbar-light-bg:         transparent !default;
-$navbar-light-color:      rgba(26, 24, 23, .68) !default;
-$navbar-light-hover-color:#1a1817 !default;
-$navbar-light-active-color:#1a1817 !default;
+$navbar-light-color:      rgba(17, 16, 16, .78) !default;
+$navbar-light-hover-color:#111010 !default;
+$navbar-light-active-color:#111010 !default;
 $navbar-padding-y:        0 !default;
 $nav-link-padding-y:      .5rem !default;
 $nav-link-font-size:      .9375rem !default;
@@ -113,13 +113,13 @@ $grid-body-width:         1120px !default;
 /*-- scss:rules --*/
 
 :root {
-  --bg:        #fdfcfb;
-  --surface:   #f2eeec;
+  --bg:        #ffffff;
+  --surface:   #f5f2f0;
   --hairline:  #e2e6e4;
   --rule:      #b8b1af;
   --img-edge:  #cfc8c6;
-  --text:      #1a1817;
-  --muted:     #6f6a69;
+  --text:      #111010;
+  --muted:     #5c5756;
   --accent:    #176955;
   --accent-hover: #0f4d3d;
 
@@ -268,7 +268,7 @@ a.paper-title:hover { color: inherit; text-decoration: underline; }
   position: relative;
   font-size: .9375rem;
   font-weight: 400;
-  color: rgba(26, 24, 23, .68) !important;
+  color: rgba(17, 16, 16, .78) !important;
   letter-spacing: 0;
   // One value drives both the padding and the inset of the active rule below,
   // so they cannot drift. !important is needed because Bootstrap's
