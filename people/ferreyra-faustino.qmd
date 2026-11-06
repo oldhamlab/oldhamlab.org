@@ -34,9 +34,9 @@ pub-cite: "Ferreyra Faustino DE"
 :::
 :::
 
-Diana is a PhD candidate in the [Pathobiology Graduate
-Program](https://pathobiology.biomed.brown.edu/) studying lactate transporters
-in idiopathic pulmonary fibrosis. She has previously conducted research in two
-distinct areas: pancreatic ductal adenocarcinoma, and the pharmacokinetics of
-P-gp and BCRP. In her free time, she loves to travel, eat, and make pottery
-pieces.
+Diana joined the lab in February 2026. She is a PhD candidate in the
+[Pathobiology Graduate Program](https://pathobiology.biomed.brown.edu/) studying
+lactate transporters in idiopathic pulmonary fibrosis. She has previously
+conducted research in two distinct areas: pancreatic ductal adenocarcinoma, and
+the pharmacokinetics of P-gp and BCRP. In her free time, she loves to travel,
+eat, and make pottery pieces.
